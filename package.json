@@ -1,0 +1,36 @@
+{
+  "name": "bivia",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run web --workspace @bivia/player",
+    "dev:admin": "npm run dev --workspace @bivia/admin",
+    "ios": "npm run ios --workspace @bivia/player",
+    "android": "npm run android --workspace @bivia/player",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present && npm run test:dependencies && npm run test:engine",
+    "build": "npm run build:web --workspace @bivia/player && npm run build --workspace @bivia/admin",
+    "test:backend": "python3 supabase/tests/run.py",
+    "build:native": "npm run build:native --workspace @bivia/player",
+    "postinstall": "patch-package --error-on-fail",
+    "test:dependencies": "node --test tests/dependency-compat.test.cjs",
+    "test:engine": "node --import tsx --test supabase/functions/_shared/trivia-engine.test.ts"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.13",
+    "patch-package": "8.0.1",
+    "query-string": "7.1.3"
+  },
+  "overrides": {
+    "query-string": {
+      "decode-uri-component": "0.5.0"
+    }
+  }
+}

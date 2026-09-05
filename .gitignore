@@ -1,0 +1,25 @@
+node_modules/
+.expo/
+dist/
+.env
+.env.local
+.env.*.local
+.DS_Store
+*.tsbuildinfo
+supabase/.temp/
+supabase/.branches/
+
+dist-native/
+
+# Local tooling and credentials
+.claude/
+*.log
+*.pem
+*.key
+*.p8
+*.p12
+*.mobileprovision
+*.keystore
+*.jks
+.env.*
+!.env.example
