@@ -23,3 +23,5 @@ dist-native/
 *.jks
 .env.*
 !.env.example
+
+.vercel/

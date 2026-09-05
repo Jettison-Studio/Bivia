@@ -1,5 +1,7 @@
 # Bivia
 
+Live web player: [bivia.vercel.app](https://bivia.vercel.app). Hosted setup and remaining account/AI configuration: [docs/HOSTED.md](docs/HOSTED.md).
+
 A fresh standalone trivia app for web, iOS, and Android, with a separate editorial dashboard. WordPress is a design and behavior reference only. There is no WordPress runtime or data migration.
 
 ## Stack
