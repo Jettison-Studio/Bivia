@@ -1,0 +1,78 @@
+{
+  "projectRef": "lluycxbwwiiivnkoxfai",
+  "url": "https://lluycxbwwiiivnkoxfai.supabase.co",
+  "deployedAt": "2026-09-05",
+  "transport": "Supabase connector",
+  "migrations": [
+    {
+      "file": "20260905123803_bivia_foundation.sql",
+      "localVersion": "20260905123803",
+      "remoteVersion": "20260905155519",
+      "name": "bivia_foundation"
+    },
+    {
+      "file": "20260905125447_avatars_account_deletion.sql",
+      "localVersion": "20260905125447",
+      "remoteVersion": "20260905155555",
+      "name": "avatars_account_deletion"
+    },
+    {
+      "file": "20260905130041_serialize_avatar_account_deletion.sql",
+      "localVersion": "20260905130041",
+      "remoteVersion": "20260905155601",
+      "name": "serialize_avatar_account_deletion"
+    },
+    {
+      "file": "20260905131350_protect_avatar_finalization.sql",
+      "localVersion": "20260905131350",
+      "remoteVersion": "20260905155608",
+      "name": "protect_avatar_finalization"
+    },
+    {
+      "file": "20260905144743_trivia_engine.sql",
+      "localVersion": "20260905144743",
+      "remoteVersion": "20260905155614",
+      "name": "trivia_engine"
+    },
+    {
+      "file": "20260905150902_engine_contract_hardening.sql",
+      "localVersion": "20260905150902",
+      "remoteVersion": "20260905155619",
+      "name": "engine_contract_hardening"
+    },
+    {
+      "file": "20260905152658_engine_background_responses.sql",
+      "localVersion": "20260905152658",
+      "remoteVersion": "20260905155625",
+      "name": "engine_background_responses"
+    },
+    {
+      "file": "20260905154219_engine_evidence_search_capacity.sql",
+      "localVersion": "20260905154219",
+      "remoteVersion": "20260905155632",
+      "name": "engine_evidence_search_capacity"
+    },
+    {
+      "file": "20260905155232_production_category_catalog.sql",
+      "localVersion": "20260905155232",
+      "remoteVersion": "20260905155636",
+      "name": "production_category_catalog"
+    }
+  ],
+  "functions": [
+    "avatar-upload",
+    "trivia-engine"
+  ],
+  "verification": {
+    "categories": 10,
+    "users": 0,
+    "quizzes": 0,
+    "engineRuns": 0,
+    "allApplicationTablesRls": true
+  },
+  "pending": [
+    "Upload OPENAI_API_KEY through authenticated secret management",
+    "Configure hosted Auth redirects, email delivery, and first administrator",
+    "Reconcile migration version mapping before using CLI db push"
+  ]
+}

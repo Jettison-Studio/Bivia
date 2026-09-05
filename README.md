@@ -75,3 +75,7 @@ Guest practice with persisted results; regular, timed, and challenger modes; ser
 Development content is deliberately small: 30 practice questions and 15 server questions. It needs editorial review and expansion before launch.
 
 See [build status](docs/BUILD-STATUS.md), [backend contracts](docs/BACKEND.md), [admin usage](apps/admin/README.md), and the [WordPress audit](WORDPRESS-AUDIT.md).
+
+## Hosted backend
+
+The database and both Edge Functions are deployed to the Bivia Supabase project. Hosted AI secrets, sign-in configuration, and an administrator account still require setup. See [deployment status and migration mapping](docs/HOSTED.md) before pushing further database changes.

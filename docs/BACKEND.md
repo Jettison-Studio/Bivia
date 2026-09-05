@@ -4,7 +4,7 @@ This is a fresh Supabase/PostgreSQL implementation. It does not read, call, or r
 
 ## Local development
 
-Docker is required. Tested with Supabase CLI **2.116.0**, PostgreSQL 17, and all four versioned migrations.
+Docker is required. Tested with Supabase CLI **2.116.0**, PostgreSQL 17, and the repository migrations.
 
 ```sh
 npx --yes supabase@2.116.0 start --exclude realtime,imgproxy,studio,logflare,vector,supavisor
@@ -29,7 +29,7 @@ To reset this **local project's** data and replay the migrations and seed:
 npx --yes supabase@2.116.0 db reset --local
 ```
 
-This deletes local accounts and attempts. Do not run it while another developer is using the local app. No hosted Supabase project has been created, linked, or deployed.
+This deletes local accounts and attempts. Do not run it while another developer is using the local app. The hosted project is deployed separately; see [hosted status](HOSTED.md).
 
 ## Database and security boundaries
 

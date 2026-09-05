@@ -1,6 +1,6 @@
 # Build status — September 5, 2026
 
-This is the first working standalone build. It is configured for local development, with a shared web/iOS/Android player and a separate admin dashboard. No WordPress runtime, migration, or hosted deployment is involved.
+This is the first working standalone build. It is configured for local development, with a shared web/iOS/Android player and a separate admin dashboard. No WordPress runtime or content migration is involved. The hosted Supabase schema and Edge Functions are deployed; see [hosted status](HOSTED.md) for pending secrets and authentication setup.
 
 ## Delivered
 
@@ -39,4 +39,4 @@ See README commands and [backend test documentation](BACKEND.md) for repeatable 
 6. Calibrate the trivia engine against human reviews and real player difficulty. Confirm NIV licensing that permits AI use and supply verified licensed passages; current development uses original scripture-reference clues.
 7. Add administrative user/group moderation and any additional launch requirements beyond the current editorial dashboard.
 
-No production deployment or store submission has been performed. A server-only OpenAI credential is configured for the authorized engine trial. Local environments and unapproved development questions are not production data.
+The Supabase schema and Edge Functions are deployed; frontend hosting and store submission have not been performed. A server-only OpenAI credential is configured for the authorized engine trial. Local environments and unapproved development questions are not production data.
