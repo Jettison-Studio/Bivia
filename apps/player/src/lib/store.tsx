@@ -14,6 +14,7 @@ import { supabase } from "./supabase";
 type LocalProfile = { name: string; categories: string[] };
 type Store = {
   ready: boolean;
+  authReady: boolean;
   profile: LocalProfile;
   results: Result[];
   session: Session | null;
@@ -30,6 +31,7 @@ export function Provider({ children }: { children: React.ReactNode }) {
     }),
     [results, setResults] = useState<Result[]>([]),
     [session, setSession] = useState<Session | null>(null);
+  const [authReady, setAuthReady] = useState(!supabase);
   const resultsRef = useRef<Result[]>([]);
   useEffect(() => {
     Promise.all([
@@ -51,11 +53,22 @@ export function Provider({ children }: { children: React.ReactNode }) {
       .catch(() => {})
       .finally(() => setReady(true));
     if (!supabase) return;
-    supabase.auth.getSession().then(({ data }) => setSession(data.session));
-    const { data } = supabase.auth.onAuthStateChange((_event, s) =>
-      setSession(s),
-    );
-    return () => data.subscription.unsubscribe();
+    let active = true;
+    let authEventReceived = false;
+    supabase.auth.getSession().then(({ data }) => {
+      if (active && !authEventReceived) setSession(data.session);
+    }).catch(() => {}).finally(() => {
+      if (active) setAuthReady(true);
+    });
+    const { data } = supabase.auth.onAuthStateChange((_event, s) => {
+      authEventReceived = true;
+      setSession(s);
+      setAuthReady(true);
+    });
+    return () => {
+      active = false;
+      data.subscription.unsubscribe();
+    };
   }, []);
   useEffect(() => {
     if (Platform.OS === "web" || !supabase) return;
@@ -75,6 +88,7 @@ export function Provider({ children }: { children: React.ReactNode }) {
   }, []);
   const value: Store = {
     ready,
+    authReady,
     profile,
     results,
     session,

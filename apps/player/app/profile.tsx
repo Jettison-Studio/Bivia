@@ -1,8 +1,8 @@
 import { ProfilePhoto } from "../src/components/ProfilePhoto";
 import { DeleteAccount } from "../src/components/DeleteAccount";
 import React, { useEffect, useState } from "react";
-import { View, TextInput, Pressable, Modal } from "react-native";
-import { router } from "expo-router";
+import { View, TextInput, Pressable, Modal, ActivityIndicator } from "react-native";
+import { Redirect, router } from "expo-router";
 import { categories, quizzes } from "@bivia/core";
 import { Page } from "../src/components/Page";
 import {
@@ -19,7 +19,13 @@ import {
 import { useBivia } from "../src/lib/store";
 import { supabase } from "../src/lib/supabase";
 export default function Profile() {
-  const { session } = useBivia();
+  const { session, authReady } = useBivia();
+  if (!authReady) return (
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <ActivityIndicator accessibilityLabel="Loading account" color={c.primary} />
+    </View>
+  );
+  if (!session) return <Redirect href="/auth" />;
   // Switching accounts remounts the editor before any previous user's fields render.
   return <ProfileEditor key={session?.user.id ?? "practice"} />;
 }

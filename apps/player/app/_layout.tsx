@@ -3,7 +3,6 @@ import { Stack, router, usePathname } from "expo-router";
 import {
   View,
   Pressable,
-  ScrollView,
   useWindowDimensions,
   ActivityIndicator,
 } from "react-native";
@@ -26,7 +25,8 @@ const nav = [
 function Shell() {
   const { width } = useWindowDimensions();
   const path = usePathname();
-  const { profile } = useBivia();
+  const { session, authReady } = useBivia();
+  const visibleNav = nav.filter((item) => item.path !== "/profile" || !!session);
   const compact = width < 720;
   const gameplay = path.startsWith("/quiz/");
   return (
@@ -62,7 +62,7 @@ function Shell() {
         </Pressable>
         {!compact && (
           <View style={{ flexDirection: "row", gap: 36 }}>
-            {nav.map((n) => (
+            {visibleNav.map((n) => (
               <Pressable
                 key={n.path}
                 accessibilityRole="link"
@@ -86,7 +86,7 @@ function Shell() {
             ))}
           </View>
         )}
-        <Pressable
+        {authReady && (session ? <Pressable
           accessibilityRole="button"
           accessibilityLabel="Open profile"
           onPress={() => router.push("/profile")}
@@ -100,13 +100,27 @@ function Shell() {
           }}
         >
           <T style={{ color: c.primary, fontFamily: font.bold }}>
-            {profile.name ? (
-              profile.name.slice(0, 1).toUpperCase()
-            ) : (
-              <Icon name="person-outline" color={c.primary} size={18} />
-            )}
+            <Icon name="person-outline" color={c.primary} size={18} />
           </T>
-        </Pressable>
+        </Pressable> : (
+          <Pressable
+            accessibilityRole="link"
+            accessibilityLabel="Log in or create an account"
+            onPress={() => router.push("/auth")}
+            style={{
+              minHeight: 44,
+              paddingHorizontal: compact ? 12 : 18,
+              borderRadius: 24,
+              backgroundColor: c.lavender,
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <T style={{ color: c.primary, fontFamily: font.semibold, fontSize: 13 }}>
+              Log in / Sign up
+            </T>
+          </Pressable>
+        ))}
       </View>
       <View style={{ flex: 1 }}>
         <Stack
@@ -128,7 +142,7 @@ function Shell() {
             backgroundColor: "white",
           }}
         >
-          {nav.map((n) => (
+          {visibleNav.map((n) => (
             <Pressable
               key={n.path}
               accessibilityRole="link"
