@@ -27,6 +27,7 @@ export interface RankedQuestion {
   options: string[];
   hint: string;
   hintReference: string;
+  hintUsed: boolean;
   selectedIndexes: number[];
 }
 export interface RankedFeedback {
@@ -47,13 +48,16 @@ export interface RankedAttempt {
   score: number;
   wrongCount: number;
   status: "active" | "completed";
+  awaitingNext: boolean;
+  readingScripture: boolean;
   questionIndex: number;
   questionCount: number;
   questionStartedAt: string;
   deadlineAt: string | null;
   serverNow: string;
   question: RankedQuestion | null;
-  feedback?: RankedFeedback;
+  feedback?: RankedFeedback | null;
+  reviewQuestion?: RankedQuestion | null;
 }
 export interface AnswerRequest {
   attemptId: string;
@@ -79,3 +83,8 @@ export const submitAnswer = (request: AnswerRequest) =>
     p_option_index: request.optionIndex,
     p_request_id: request.requestId,
   });
+
+export const continueQuestion = (id: string) => rpc<RankedAttempt>("bivia_continue_question_v1", { p_attempt_id: id });
+export const useQuestionHint = (id: string, questionId: string) => rpc<RankedAttempt>("bivia_use_hint_v1", { p_attempt_id: id, p_question_id: questionId });
+
+export const readyQuestion = (id: string, questionId: string) => rpc<RankedAttempt>("bivia_ready_question_v1", { p_attempt_id: id, p_question_id: questionId });

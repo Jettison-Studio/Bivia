@@ -1,0 +1,240 @@
+{
+  "id": "be83437a-3cd4-42ae-bba4-02d589d563a5",
+  "draftId": "media-page-to-screen-20260906-v1",
+  "title": "Page to screen",
+  "subtitle": "Look closely at books, stories and screen craft.",
+  "description": "Look closely at books, stories and screen craft.",
+  "categoryId": "media",
+  "mode": "category",
+  "status": "draft",
+  "reviewState": "4_proposals_1_holds_0_missing",
+  "publishedAt": "",
+  "scheduledAt": "",
+  "updatedAt": "2026-09-06T20:47:24.368282+00:00",
+  "editorialDate": "2026-09-06",
+  "translation": "NIV",
+  "sourceMode": "references",
+  "hintKind": "original_clue",
+  "passageId": null,
+  "revision": 1,
+  "verification": {
+    "factsResearched": true,
+    "allOptionsReviewed": true,
+    "publicDomainContextChecked": false,
+    "exactNivRangesRetrieved": true,
+    "surroundingNivContextRetrieved": true,
+    "fullReadingLeakageReviewed": true,
+    "retrievalMethod": "Configured YouVersion version 111; hashes only retained",
+    "localPlayerRetrievalTested": false,
+    "blindPlaytestCompleted": false,
+    "engineGatesRun": false,
+    "humanApproved": false,
+    "publicationAuthorized": false,
+    "editorialShortfall": 1,
+    "editorialRecommendation": "4 proposals, 1 author holds, 0 missing. No final approval or measured hint benefit.",
+    "passageEvidenceFile": "media-page-to-screen.v1-passage-checks.json"
+  },
+  "questions": [
+    {
+      "id": "media-page-to-screen-q1-v1",
+      "prompt": "What distinguishes a codex from a scroll?",
+      "answers": [
+        "Writing on both sides",
+        "Separate leaves bound along one edge",
+        "Text arranged in columns",
+        "Writing on papyrus"
+      ],
+      "correctIndex": 1,
+      "hint": "Think of turning pages instead of unrolling a long strip.",
+      "reference": "Revelation 5:1",
+      "explanation": "A codex joins leaves along an edge in book form. Double-sided writing, columns and papyrus do not themselves define that structure. The vision explicitly describes a scroll written on both sides, which helps eliminate a tempting alternative. Revelation concerns the Lamb\u2019s worthiness to open the sealed scroll; it is not a bookbinding history lesson.",
+      "factualSourceUrls": [
+        "https://folgerpedia.folger.edu/Glossary_of_book_history_terms",
+        "https://library.csun.edu/sca/peek-stacks/codex-hall"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/REV.5.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/REV.5.1?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/REV.5.NIV",
+      "nivContentSha256": "8946ee329c99f19b8a44f117e6491be8f710aa39550de73f0c059c27b4530bc7",
+      "contextPassageId": "REV.5.1-7",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "The passage rules out double-sided writing as the defining distinction without naming a codex. The hint adds how the object is handled. Historical scrolls were commonly written on one side; do not turn that custom into an absolute. Book format belongs to Media publishing scope.",
+      "concept": "Codex structure versus scroll features",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    },
+    {
+      "id": "media-page-to-screen-q2-v1",
+      "prompt": "Which note in a finely printed book may identify its printer, paper and typeface?",
+      "answers": [
+        "An index",
+        "An epigraph",
+        "A glossary",
+        "A colophon"
+      ],
+      "correctIndex": 3,
+      "hint": "Look near the end for details about how the book was made.",
+      "reference": "Romans 16:22",
+      "explanation": "A colophon can record production details and those responsible for making a book. Tertius identifies himself as the person who wrote down Paul\u2019s letter; this supplies an analogy to a production credit distinct from authorship. The greeting is not called a modern colophon in the question or explanation. An index locates topics, an epigraph supplies an opening quotation, and a glossary explains terms.",
+      "factualSourceUrls": [
+        "https://www.abaa.org/glossary/colophon",
+        "https://folgerpedia.folger.edu/Glossary_of_book_history_terms",
+        "https://guides.loc.gov/russell-maret/glossary"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/ROM.16.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/ROM.16.22?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/ROM.16.NIV",
+      "nivContentSha256": "b2c5ad8e33e81319add56b141b1a4cce851a727a094b969c00dde66fe7766969",
+      "contextPassageId": "ROM.16.21-27",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "pending_hint_refinement",
+      "authorFinding": "Specific scribal-credit connection, but the label requires book knowledge. The position hint narrows index versus epigraph less than a novice may need; benefit unmeasured. LOC indexed glossary supported the details but its full-page open failed; accessible ABAA and Folger supply the factual basis.",
+      "concept": "Colophon and production attribution",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    },
+    {
+      "id": "media-page-to-screen-q3-v1",
+      "prompt": "Which John Steinbeck novel follows brothers Caleb and Aron Trask?",
+      "answers": [
+        "East of Eden",
+        "The Grapes of Wrath",
+        "Of Mice and Men",
+        "Cannery Row"
+      ],
+      "correctIndex": 0,
+      "hint": "Its title places the story beyond the garden in Genesis.",
+      "reference": "Genesis 4:6-9",
+      "explanation": "East of Eden reworks Cain-and-Abel themes through the Trask family. The reading offers the brother-rivalry source pattern without including Genesis 4:16, where the title wording appears. The other choices are different Steinbeck novels. The paid hint adds the title\u2019s geographical image rather than claiming that the biblical brothers are literally the novel\u2019s characters.",
+      "factualSourceUrls": [
+        "https://steinbeck.org/learn/",
+        "https://www.steinbeckintheschools.com/east-of-eden-reading-guides/character-summaries"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/GEN.4.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/GEN.4.6-9?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/GEN.4.NIV",
+      "nivContentSha256": "69c012440f8f994b85c3f9ce3cb0b5a4d5731de80ecb49d93c0a2ee6a8a760c9",
+      "contextPassageId": "GEN.4.1-10",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Direct literary-source connection; recognizing the novel still needs familiarity. No universal difficulty reduction claimed. The displayed range omits the exact title phrase, and no excerpt from the copyrighted novel is stored. Do not flatten every Trask character into a one-to-one biblical counterpart.",
+      "concept": "East of Eden and Cain-Abel adaptation",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    },
+    {
+      "id": "media-page-to-screen-q4-v1",
+      "prompt": "Which 1998 animated film follows a Hebrew child raised in Egypt\u2019s royal household?",
+      "answers": [
+        "The Road to El Dorado",
+        "Joseph: King of Dreams",
+        "The Prince of Egypt",
+        "Sinbad: Legend of the Seven Seas"
+      ],
+      "correctIndex": 2,
+      "hint": "It features the song \u2018When You Believe\u2019.",
+      "reference": "Exodus 2:5-10",
+      "explanation": "The Prince of Egypt adapts Moses\u2019 story; the passage\u2019s adoption into Pharaoh\u2019s household supports the title\u2019s royal-Egypt connection. The other options are different animated films. The adaptation changes family relationships and dramatizes events; the Bible passage, not the screenplay, is the source for what Exodus says.",
+      "factualSourceUrls": [
+        "https://www.universalpicturesathome.com/movies/the-prince-of-egypt",
+        "https://www.dreamworks.com/movies/the-prince-of-egypt",
+        "https://www.oscars.org/oscars/ceremonies/1999"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/EXO.2.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/EXO.2.5-10?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/EXO.2.NIV",
+      "nivContentSha256": "a641a9b9ec7ad07feac740d305af9a07c10479866ecc2e8f71763ae27ead47dc",
+      "contextPassageId": "EXO.2.1-10",
+      "difficulty": {
+        "fact1to5": 1,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Easy adaptation recognition without a Moses-name answer. Joseph is a plausible Egyptian biblical-story confusion, though release year can independently help knowledgeable players. Distributor synopsis/year verified; the Academy\u2019s 1999 ceremony record independently verifies the song hint. Historical ledger used Exodus 2:2\u20133 for pitch, not this exact adoption range.",
+      "concept": "Prince of Egypt and royal adoption",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    },
+    {
+      "id": "media-page-to-screen-q5-v1",
+      "prompt": "Which household objects can a Foley artist use for a convincing clip-clop of hooves?",
+      "answers": [
+        "A bag of dried rice shaken gently",
+        "Two hollow coconut halves tapped in rhythm",
+        "A sheet of cellophane crumpled slowly",
+        "A piece of canvas rubbed over slats"
+      ],
+      "correctIndex": 1,
+      "hint": "The hard hollow shells make short, resonant knocks.",
+      "reference": "Judges 5:22",
+      "explanation": "Coconut halves are a traditional hoofbeat effect. Rice and other small grains can suggest rain, cellophane can suggest crackling, and canvas over slats can make wind effects. The song of Deborah evokes galloping hoofbeats during battle. This is only an acoustic analogy; no claim that the biblical sound was artificial.",
+      "factualSourceUrls": [
+        "https://theatrecrafts.com/pages/home/topics/sound/sound-effects-for-the-stage/"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/JDG.5.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/JDG.5.22?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/JDG.5.NIV",
+      "nivContentSha256": "7f986e3cc845efb88a601c109d3a63fda615bde0f5ede08b6a9d85b89a1e4934",
+      "contextPassageId": "JDG.5.19-27",
+      "difficulty": {
+        "fact1to5": 1,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "author_hold",
+      "authorFinding": "Hold: the reading mainly restates the target sound, like the held Entertainment thunder sheet. All options are believable sound-making props, but factual correctness does not resolve weak added inference. Also overlaps live-stage sound-effect territory; replace before counting ready.",
+      "concept": "Foley hoofbeats using coconut shells",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { ScripturePreview } from "./ScripturePreview";
 import type { EditorialQuiz } from "./workspace";
 export function Preview({
   quiz,
@@ -21,7 +22,7 @@ export function Preview({
   return (
     <dialog ref={dialog} onCancel={close} className="preview-dialog">
       <div className="section-heading">
-        <span className="muted">Player preview · unranked</span>
+        <span className="muted">Editorial answer review</span>
         <button
           aria-label="Close preview"
           className="icon-button"
@@ -43,6 +44,7 @@ export function Preview({
           <p className="muted">
             Question {index + 1} of {quiz.questions.length}
           </p>
+          <ScripturePreview key={question.reference} reference={question.reference} />
           <h3>{question.prompt || "Your question will appear here."}</h3>
           <button className="hint-toggle" onClick={() => setHint(!hint)}>
             {hint ? "Hide Bible hint" : "Need a hint? Open your Bible clue"}

@@ -1,0 +1,23 @@
+{
+  "translation": "NIV",
+  "bibleId": 111,
+  "licensedTextStored": false,
+  "checks": [
+    {
+      "passageId": "2SA.2.18-19",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/2SA.2.18-19?format=text",
+      "httpStatus": 200,
+      "reference": "2 Samuel 2:18-19",
+      "contentSha256": "260d2fcfa46af0acd82e71a49241b3d0f2db51348a9a266a27d45d80a598e443",
+      "checkedAt": "2026-09-06T21:52:24.368173+00:00"
+    },
+    {
+      "passageId": "2SA.2.18-23",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/2SA.2.18-23?format=text",
+      "httpStatus": 200,
+      "reference": "2 Samuel 2:18-23",
+      "contentSha256": "97d6c91c4eac49113bc9a5abe8386e17e4acf8e8695dcf1e545f4e6f9e98e351",
+      "checkedAt": "2026-09-06T21:52:24.855758+00:00"
+    }
+  ]
+}

@@ -1,0 +1,266 @@
+{
+  "id": "86755da3-6cc4-4f8d-abac-86f82afc17cb",
+  "draftId": "nature-built-for-this-20260906-v3",
+  "title": "Built for this",
+  "subtitle": "Sure feet, sharp senses, and the quiet tricks that keep life going.",
+  "description": "Sure feet, sharp senses, and the quiet tricks that keep life going.",
+  "categoryId": "nature",
+  "mode": "category",
+  "status": "draft",
+  "reviewState": "awaiting_independent_verification_and_playtest",
+  "publishedAt": "",
+  "scheduledAt": "",
+  "updatedAt": "2026-09-06T19:40:07.458216+00:00",
+  "translation": "NIV",
+  "sourceMode": "references",
+  "hintKind": "original_clue",
+  "passageId": null,
+  "verification": {
+    "factsResearched": true,
+    "allOptionsReviewed": true,
+    "publicDomainContextChecked": true,
+    "exactNivRangesRetrieved": true,
+    "surroundingNivContextRetrieved": true,
+    "fullReadingLeakageReviewed": true,
+    "retrievalMethod": "Configured YouVersion API, version 111",
+    "localPlayerRetrievalTested": false,
+    "blindPlaytestCompleted": false,
+    "engineGatesRun": false,
+    "humanApproved": false,
+    "publicationAuthorized": false,
+    "editorialShortfall": 0,
+    "editorialRecommendation": "Replacement proposals awaiting review; preserve existing playtest clearances. No final approval.",
+    "passageEvidenceFile": "focused-repairs-20260906.passage-checks.json",
+    "roundValidationStatus": "blocked_by_static_admin_category_list",
+    "roundValidationErrors": [
+      "Choose a category."
+    ],
+    "needsWritingRevision": 0,
+    "pendingRepairReviewQuestions": 0,
+    "passageEvidenceFiles": [
+      "nature-built-for-this.v1-passage-checks.json",
+      "focused-repairs-20260906.passage-checks.json"
+    ]
+  },
+  "questions": [
+    {
+      "id": "nature-built-for-this-q1-v2",
+      "prompt": "What gives mountain goats extra grip on bare rock?",
+      "answers": [
+        "Hard, smooth soles",
+        "Soft pads inside hard hoof rims",
+        "Deep grooves in the hoof walls",
+        "Long toes that dig into rock"
+      ],
+      "correctIndex": 1,
+      "hint": "Picture the sole of a climbing shoe.",
+      "hintKind": "original_clue",
+      "passageId": null,
+      "reference": "Psalm 104:18",
+      "explanation": "Mountain goats have pliable split hooves with soft inner pads and a hard outer lining. This combination helps grip rock. Hard smooth soles, deep hoof-wall grooves and toes digging into solid rock are not the documented traction mechanism. Psalm 104 praises habitats provided for animals, without identifying a North American species or describing hoof anatomy.",
+      "factualSourceUrls": [
+        "https://www.nps.gov/articles/mountain-goats.htm",
+        "https://www.nps.gov/places/along-the-way-15.htm",
+        "https://www.nps.gov/noca/learn/nature/mountain-goats.htm"
+      ],
+      "contextSourceUrls": [
+        "https://ebible.org/eng-web/PSA104.htm"
+      ],
+      "nivContextUrl": "https://www.bible.com/bible/111/PSA.104.NIV",
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/PSA.104.18?format=text",
+      "nivContentSha256": "31190ba4ead855fb9b4e9689b530207bbb22e76fd05706ab20fca6c3d6838c05",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "lineage": {
+        "kind": "revision",
+        "previousQuestionId": "nature-built-for-this-q1-v1"
+      },
+      "authorFinding": "Replaced claws, adhesive hairs and suction cups with competing hoof structures. Correct feature and climbing-shoe hint retained. Distractor credibility requires re-review."
+    },
+    {
+      "id": "nature-built-for-this-q2-v1",
+      "prompt": "Turkey vultures are unusually good at finding food with which sense?",
+      "answers": [
+        "Sight",
+        "Hearing",
+        "Touch",
+        "Smell"
+      ],
+      "correctIndex": 3,
+      "hint": "Their next meal may be hidden beneath a thick canopy of leaves.",
+      "hintKind": "original_clue",
+      "passageId": null,
+      "reference": "Luke 17:37",
+      "explanation": "Turkey vultures can locate carcasses by smell, including carcasses hidden beneath trees. Jesus uses the gathering of vultures at a body in teaching about the day of the Son of Man. The connection concerns finding carrion; the passage does not identify turkey vultures or their sensory mechanism.",
+      "factualSourceUrls": [
+        "https://www.allaboutbirds.org/guide/Turkey_Vulture/",
+        "https://www.allaboutbirds.org/news/do-vultures-find-dead-animals-by-smell-or-by-tracking-predators-or-scavengers-on-the-ground/"
+      ],
+      "contextSourceUrls": [
+        "https://ebible.org/eng-web/LUK17.htm"
+      ],
+      "nivContextUrl": "https://www.bible.com/bible/111/LUK.17.NIV",
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/LUK.17.37?format=text",
+      "nivContentSha256": "adfacb26f429a7c9a45bd3747ab67bfa3e94a0c4692e99197ef5a3ff66cd33c7",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      }
+    },
+    {
+      "id": "nature-built-for-this-q3-v3",
+      "prompt": "Why can squash vine borers make a well-watered plant wilt?",
+      "answers": [
+        "They prevent flowers from being pollinated",
+        "They block water moving through the stem",
+        "They remove the leaves’ wax coating",
+        "They keep roots from taking in oxygen"
+      ],
+      "correctIndex": 1,
+      "hint": "Water in the soil still has to reach the leaves.",
+      "reference": "Jonah 4:7-8",
+      "explanation": "Squash vine borer larvae feed inside stems and obstruct water flow, causing wilting even when water is available. Pollination concerns fruit set; the documented damage is inside stems rather than leaf coatings or root aeration. Jonah’s plant withers after being chewed; the modern comparison concerns damage interrupting a plant’s functioning, not identification of the biblical plant or worm.",
+      "factualSourceUrls": [
+        "https://yardandgarden.extension.iastate.edu/faq/how-do-i-prevent-damage-my-squash-plants-squash-vine-borer",
+        "https://extension.umn.edu/garden-and-home/yard-and-garden/yard-and-garden-insects/squash-vine-borers"
+      ],
+      "contextSourceUrls": [
+        "https://ebible.org/eng-web/JON04.htm"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/JON.4.7-8?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/JON.4.NIV",
+      "nivContentSha256": "3178eaeb60eae5b02a2ee10c67294361e4898f9e3beb74dd4fb7ecf781349ad9",
+      "contextPassageId": "JON.4.3-11",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Replaces the held wheat reserve question. Biblical chewing-to-withering supplies the causal puzzle; the paid clue adds the water route. Do not identify Jonah’s plant as squash or its worm as a North American insect. Context concerns Jonah’s anger and God’s concern for Nineveh.",
+      "concept": "Stem borer damage interrupts water transport",
+      "lineage": {
+        "kind": "replacement",
+        "previousQuestionId": "nature-built-for-this-q3-v1",
+        "previousReference": "John 12:24"
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    },
+    {
+      "id": "nature-built-for-this-q4-v1",
+      "prompt": "Which cue helps many migrating birds sense autumn, even while the weather stays warm?",
+      "answers": [
+        "A full moon",
+        "The first frost",
+        "Shortening daylight",
+        "A drop in air pressure"
+      ],
+      "correctIndex": 2,
+      "hint": "The cue follows Earth's yearly journey around the Sun.",
+      "hintKind": "original_clue",
+      "passageId": null,
+      "reference": "Jeremiah 8:7",
+      "explanation": "Changes in day length help many birds time seasonal migration. Weather and food also influence actual departures. Jeremiah contrasts birds observing their seasons with people failing to heed God; he does not describe the physiological mechanism.",
+      "factualSourceUrls": [
+        "https://www.allaboutbirds.org/news/the-basics-how-why-and-where-of-bird-migration/",
+        "https://spaceplace.nasa.gov/seasons/en/"
+      ],
+      "contextSourceUrls": [
+        "https://ebible.org/eng-web/JER08.htm"
+      ],
+      "nivContextUrl": "https://www.bible.com/bible/111/JER.8.NIV",
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/JER.8.7?format=text",
+      "nivContentSha256": "ccd26dc6ab51aee29fffb0f7ab1f30a2aa72d4b566f14e6246eb524a39375b7d",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      }
+    },
+    {
+      "id": "nature-built-for-this-q5-v2",
+      "prompt": "What do aspen stems grown from one tree’s roots usually share?",
+      "answers": [
+        "The same age",
+        "The same height",
+        "The same lifespan",
+        "The same genetic makeup"
+      ],
+      "correctIndex": 3,
+      "hint": "This growth skips pollen and seeds.",
+      "hintKind": "original_clue",
+      "passageId": null,
+      "reference": "Isaiah 11:1-3",
+      "explanation": "Root sprouts are vegetative offspring of one aspen and ordinarily share its genetic makeup. Stems can arise at different times and experience different growth or survival, so age, height and lifespan need not match. Somatic mutations do not justify a claim that every cell is forever identical. Isaiah uses new growth as a Davidic ruler image, not aspen biology.",
+      "factualSourceUrls": [
+        "https://research.fs.usda.gov/silvics/quaking-aspen",
+        "https://research.fs.usda.gov/feis/species-reviews/poptre"
+      ],
+      "contextSourceUrls": [
+        "https://www.biblegateway.com/passage/?search=Isaiah+11:1-10&version=KJV"
+      ],
+      "nivContextUrl": "https://www.bible.com/bible/111/ISA.11.NIV",
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/ISA.11.1-3?format=text",
+      "nivContentSha256": "7931cb9862e338590b7c31fd3621a6a5aa9a8ae7ea862e31c91124bab4b1858b",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "lineage": {
+        "kind": "revision",
+        "previousQuestionId": "nature-built-for-this-q5-v1"
+      },
+      "authorFinding": "Asks the consequence of root sprouting instead of naming the process already stated by Isaiah. No root/shoot answer option remains. The paid clue introduces the absence of sexual reproduction; benefit still unmeasured."
+    }
+  ],
+  "coordinatorReview": {
+    "approvedQuestions": 0,
+    "heldQuestions": 2,
+    "additionalDistractorRevisions": 1,
+    "revisionRequiredIds": [
+      "nature-built-for-this-q1-v1",
+      "nature-built-for-this-q3-v1",
+      "nature-built-for-this-q5-v1"
+    ],
+    "notes": [
+      "Revise implausible suction-cup and retractable-claw distractors; keep an easy opener with credible hoof/grip alternatives.",
+      "Hold: packed lunch restates stored fuel and does not distinguish starch; improve Scripture connection and incremental hint usefulness or replace.",
+      "Hold: Isaiah roots/shoot wording repeats the answer; no-pollination hint eliminates two choices and fungal links are weak. Change inference or pairing."
+    ],
+    "reviewedRevision": 1,
+    "currentRevisionApproved": false
+  },
+  "revision": 3,
+  "previousDraftId": "nature-built-for-this-20260906-v2",
+  "coordinatorAssembly": {
+    "source": "nature-built-for-this.draft.json",
+    "editoriallyReviewed": true,
+    "independentlyVerified": false,
+    "runtimeTested": false,
+    "finalApproved": false,
+    "difficultyOrderMeasured": false
+  }
+}

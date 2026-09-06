@@ -1,0 +1,248 @@
+{
+  "id": "86755da3-6cc4-4f8d-abac-86f82afc17cb",
+  "draftId": "nature-built-for-this-20260906-v1",
+  "title": "Built for this",
+  "subtitle": "Sure feet, sharp senses, and the quiet tricks that keep life going.",
+  "description": "Sure feet, sharp senses, and the quiet tricks that keep life going.",
+  "categoryId": "nature",
+  "mode": "category",
+  "status": "draft",
+  "reviewState": "coordinator_revision_required",
+  "publishedAt": "",
+  "scheduledAt": "",
+  "updatedAt": "2026-09-06T19:19:52.773770+00:00",
+  "translation": "NIV",
+  "sourceMode": "references",
+  "hintKind": "original_clue",
+  "passageId": null,
+  "verification": {
+    "factsResearched": true,
+    "allOptionsReviewed": true,
+    "publicDomainContextChecked": true,
+    "exactNivRangesRetrieved": true,
+    "surroundingNivContextRetrieved": true,
+    "fullReadingLeakageReviewed": true,
+    "retrievalMethod": "Configured YouVersion API, version 111",
+    "localPlayerRetrievalTested": false,
+    "blindPlaytestCompleted": false,
+    "engineGatesRun": false,
+    "humanApproved": false,
+    "publicationAuthorized": false,
+    "editorialShortfall": 3,
+    "editorialRecommendation": "Coordinator: Q1 distractor revision; Q3 and Q5 held; Q2 and Q4 await local playtest. Zero approved.",
+    "passageEvidenceFile": "nature-built-for-this.v1-passage-checks.json",
+    "roundValidationStatus": "blocked_by_static_admin_category_list",
+    "roundValidationErrors": [
+      "Choose a category."
+    ]
+  },
+  "questions": [
+    {
+      "id": "nature-built-for-this-q1-v1",
+      "prompt": "What gives mountain goats extra grip on bare rock?",
+      "answers": [
+        "Retractable claws",
+        "Soft pads inside split hooves",
+        "Microscopic adhesive hairs",
+        "Suction cups under their toes"
+      ],
+      "correctIndex": 1,
+      "hint": "Picture the sole of a climbing shoe.",
+      "hintKind": "original_clue",
+      "passageId": null,
+      "reference": "Psalm 104:18",
+      "explanation": "The psalm pairs wild goats with mountain habitat. North American mountain goats have spreading split hooves and soft inner pads that help grip rocky ledges. This is an adaptation comparison, not an identification of the biblical wild goats as the North American species.",
+      "factualSourceUrls": [
+        "https://www.nps.gov/articles/mountain-goats.htm",
+        "https://www.nps.gov/places/along-the-way-15.htm"
+      ],
+      "contextSourceUrls": [
+        "https://ebible.org/eng-web/PSA104.htm"
+      ],
+      "nivContextUrl": "https://www.bible.com/bible/111/PSA.104.NIV",
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/PSA.104.18?format=text",
+      "nivContentSha256": "31190ba4ead855fb9b4e9689b530207bbb22e76fd05706ab20fca6c3d6838c05",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": 1,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_revision_required",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "coordinatorFinding": "Revise implausible suction-cup and retractable-claw distractors; keep an easy opener with credible hoof/grip alternatives."
+    },
+    {
+      "id": "nature-built-for-this-q2-v1",
+      "prompt": "Turkey vultures are unusually good at finding food with which sense?",
+      "answers": [
+        "Sight",
+        "Hearing",
+        "Touch",
+        "Smell"
+      ],
+      "correctIndex": 3,
+      "hint": "Their next meal may be hidden beneath a thick canopy of leaves.",
+      "hintKind": "original_clue",
+      "passageId": null,
+      "reference": "Luke 17:37",
+      "explanation": "Turkey vultures can locate carcasses by smell, including carcasses hidden beneath trees. Jesus uses the gathering of vultures at a body in teaching about the day of the Son of Man. The connection concerns finding carrion; the passage does not identify turkey vultures or their sensory mechanism.",
+      "factualSourceUrls": [
+        "https://www.allaboutbirds.org/guide/Turkey_Vulture/",
+        "https://www.allaboutbirds.org/news/do-vultures-find-dead-animals-by-smell-or-by-tracking-predators-or-scavengers-on-the-ground/"
+      ],
+      "contextSourceUrls": [
+        "https://ebible.org/eng-web/LUK17.htm"
+      ],
+      "nivContextUrl": "https://www.bible.com/bible/111/LUK.17.NIV",
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/LUK.17.37?format=text",
+      "nivContentSha256": "adfacb26f429a7c9a45bd3747ab67bfa3e94a0c4692e99197ef5a3ff66cd33c7",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": 1,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "awaiting_local_playtest",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      }
+    },
+    {
+      "id": "nature-built-for-this-q3-v1",
+      "prompt": "What stored substance mainly fuels a wheat seed as it begins to sprout?",
+      "answers": [
+        "Starch",
+        "Chlorophyll",
+        "Cellulose",
+        "Nitrates"
+      ],
+      "correctIndex": 0,
+      "hint": "The grain starts with a packed lunch of its own.",
+      "hintKind": "original_clue",
+      "passageId": null,
+      "reference": "John 12:24",
+      "explanation": "Wheat stores substantial starch in its endosperm. Germination mobilizes these reserves to support the growing seedling. Jesus uses a planted grain as an image of his death and fruitfulness; this is not a botanical claim that a seed embryo must die to germinate.",
+      "factualSourceUrls": [
+        "https://psfaculty.plantsciences.ucdavis.edu/plantsciences_faculty/beckles/wheat.html",
+        "https://extension.umn.edu/agriculture/crop-production/small-grains/spring-wheat-growth-and-development-guide",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4407426/",
+        "https://openstax.org/books/biology-2e/pages/3-2-carbohydrates",
+        "https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis",
+        "https://openstax.org/books/biology-2e/pages/22-3-prokaryotic-metabolism"
+      ],
+      "contextSourceUrls": [
+        "https://ebible.org/eng-web/JHN12.htm"
+      ],
+      "nivContextUrl": "https://www.bible.com/bible/111/JHN.12.NIV",
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/JHN.12.24?format=text",
+      "nivContentSha256": "92ccf8bf84360bd7bc5440fe5bff3b32e7fc63fdf5b8af082b839d02c569affe",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_revision_required",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "coordinatorFinding": "Hold: packed lunch restates stored fuel and does not distinguish starch; improve Scripture connection and incremental hint usefulness or replace."
+    },
+    {
+      "id": "nature-built-for-this-q4-v1",
+      "prompt": "Which cue helps many migrating birds sense autumn, even while the weather stays warm?",
+      "answers": [
+        "A full moon",
+        "The first frost",
+        "Shortening daylight",
+        "A drop in air pressure"
+      ],
+      "correctIndex": 2,
+      "hint": "The cue follows Earth's yearly journey around the Sun.",
+      "hintKind": "original_clue",
+      "passageId": null,
+      "reference": "Jeremiah 8:7",
+      "explanation": "Changes in day length help many birds time seasonal migration. Weather and food also influence actual departures. Jeremiah contrasts birds observing their seasons with people failing to heed God; he does not describe the physiological mechanism.",
+      "factualSourceUrls": [
+        "https://www.allaboutbirds.org/news/the-basics-how-why-and-where-of-bird-migration/",
+        "https://spaceplace.nasa.gov/seasons/en/"
+      ],
+      "contextSourceUrls": [
+        "https://ebible.org/eng-web/JER08.htm"
+      ],
+      "nivContextUrl": "https://www.bible.com/bible/111/JER.8.NIV",
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/JER.8.7?format=text",
+      "nivContentSha256": "ccd26dc6ab51aee29fffb0f7ab1f30a2aa72d4b566f14e6246eb524a39375b7d",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": 1,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "awaiting_local_playtest",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      }
+    },
+    {
+      "id": "nature-built-for-this-q5-v1",
+      "prompt": "How can one quaking aspen produce a grove of genetic copies?",
+      "answers": [
+        "Seeds from the same parent",
+        "New shoots from its roots",
+        "Pollen from the same tree",
+        "Fungal links between trunks"
+      ],
+      "correctIndex": 1,
+      "hint": "A new stem can begin without a flower ever being pollinated.",
+      "hintKind": "original_clue",
+      "passageId": null,
+      "reference": "Isaiah 11:1-3",
+      "explanation": "Quaking aspen commonly reproduces vegetatively through root sprouts, producing a clone. Seeds and pollen involve sexual reproduction, while fungal connections do not turn separate trees into genetic copies. Isaiah uses new growth from the stump and roots of Jesse as a picture of a coming ruler, not a lesson about aspen genetics.",
+      "factualSourceUrls": [
+        "https://research.fs.usda.gov/silvics/quaking-aspen",
+        "https://research.fs.usda.gov/feis/species-reviews/poptre"
+      ],
+      "contextSourceUrls": [
+        "https://www.biblegateway.com/passage/?search=Isaiah+11:1-10&version=KJV"
+      ],
+      "nivContextUrl": "https://www.bible.com/bible/111/ISA.11.NIV",
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/ISA.11.1-3?format=text",
+      "nivContentSha256": "7931cb9862e338590b7c31fd3621a6a5aa9a8ae7ea862e31c91124bab4b1858b",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_revision_required",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "coordinatorFinding": "Hold: Isaiah roots/shoot wording repeats the answer; no-pollination hint eliminates two choices and fungal links are weak. Change inference or pairing."
+    }
+  ],
+  "coordinatorReview": {
+    "approvedQuestions": 0,
+    "heldQuestions": 2,
+    "additionalDistractorRevisions": 1,
+    "revisionRequiredIds": [
+      "nature-built-for-this-q1-v1",
+      "nature-built-for-this-q3-v1",
+      "nature-built-for-this-q5-v1"
+    ],
+    "notes": [
+      "Revise implausible suction-cup and retractable-claw distractors; keep an easy opener with credible hoof/grip alternatives.",
+      "Hold: packed lunch restates stored fuel and does not distinguish starch; improve Scripture connection and incremental hint usefulness or replace.",
+      "Hold: Isaiah roots/shoot wording repeats the answer; no-pollination hint eliminates two choices and fungal links are weak. Change inference or pairing."
+    ]
+  }
+}

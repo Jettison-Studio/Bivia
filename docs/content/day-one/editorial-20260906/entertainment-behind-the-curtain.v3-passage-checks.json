@@ -1,0 +1,23 @@
+{
+  "translation": "NIV",
+  "bibleId": 111,
+  "licensedTextStored": false,
+  "checks": [
+    {
+      "passageId": "LUK.12.16-21",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/LUK.12.16-21?format=text",
+      "httpStatus": 200,
+      "reference": "Luke 12:16-21",
+      "contentSha256": "9a593fca10c933bafc7f6b9de8c124f2fee59944481343a455c950f55f0caddd",
+      "checkedAt": "2026-09-06T21:33:42.125703+00:00"
+    },
+    {
+      "passageId": "LUK.12.13-21",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/LUK.12.13-21?format=text",
+      "httpStatus": 200,
+      "reference": "Luke 12:13-21",
+      "contentSha256": "96dab13f322702bb2fa898ec592f0cd94655c98f8e900fbfc75d02f1b6f2163a",
+      "checkedAt": "2026-09-06T21:33:42.535768+00:00"
+    }
+  ]
+}

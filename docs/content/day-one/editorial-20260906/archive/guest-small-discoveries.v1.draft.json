@@ -1,0 +1,241 @@
+{
+  "id": "6ddd7c42-b721-4384-b422-6de658934629",
+  "draftId": "guest-small-discoveries-20260906-v1",
+  "title": "Small discoveries",
+  "subtitle": "Everyday things worth a second look.",
+  "description": "Everyday things worth a second look.",
+  "categoryId": "mixed",
+  "mode": "category",
+  "status": "draft",
+  "reviewState": "4_proposals_1_holds_0_missing",
+  "publishedAt": "",
+  "scheduledAt": "",
+  "updatedAt": "2026-09-06T20:46:55.217516+00:00",
+  "editorialDate": "2026-09-06",
+  "translation": "NIV",
+  "sourceMode": "references",
+  "hintKind": "original_clue",
+  "passageId": null,
+  "revision": 1,
+  "verification": {
+    "factsResearched": true,
+    "allOptionsReviewed": true,
+    "publicDomainContextChecked": false,
+    "exactNivRangesRetrieved": true,
+    "surroundingNivContextRetrieved": true,
+    "fullReadingLeakageReviewed": true,
+    "retrievalMethod": "Configured YouVersion version 111; hashes only retained",
+    "localPlayerRetrievalTested": false,
+    "blindPlaytestCompleted": false,
+    "engineGatesRun": false,
+    "humanApproved": false,
+    "publicationAuthorized": false,
+    "editorialShortfall": 1,
+    "editorialRecommendation": "4 proposals, 1 author holds, 0 missing. No final approval or measured hint benefit.",
+    "passageEvidenceFile": "guest-small-discoveries.v1-passage-checks.json"
+  },
+  "questions": [
+    {
+      "id": "guest-small-discoveries-q1-v1",
+      "prompt": "How does a hot griddle mainly transfer heat into dough touching its surface?",
+      "answers": [
+        "Convection",
+        "Conduction",
+        "Radiation",
+        "Evaporation"
+      ],
+      "correctIndex": 1,
+      "hint": "Focus on the place where the dough meets the cooking surface.",
+      "reference": "Leviticus 2:5",
+      "explanation": "Heat passes by conduction across the contact between a hot cooking surface and dough. The reading describes a grain offering prepared on a griddle; it supplies a concrete example of contact cooking, not a physics explanation.",
+      "factualSourceUrls": [
+        "https://www.kingarthurbaking.com/blog/2021/10/04/how-to-turn-any-home-oven-into-a-pizza-oven"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/LEV.2.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/LEV.2.5?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/LEV.2.NIV",
+      "nivContentSha256": "f48b1e6a8694c1a5f7e8a8aa6d28246147b78d9fe481b3ae3acc6e98c86c11af",
+      "contextPassageId": "LEV.2.4-9",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "unapproved",
+      "authorFinding": "Easy terminology transfer. Hint directs attention to contact but may add little for players who already know conduction; benefit unmeasured. Rejected 1 Kings 19:6 pairing because NIV specifies coals, not a baking stone.",
+      "concept": "contact heat transfer from griddle to dough",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "science"
+    },
+    {
+      "id": "guest-small-discoveries-q2-v1",
+      "prompt": "Why do you see distant lightning before hearing its thunder?",
+      "answers": [
+        "Thunder begins several seconds after the flash",
+        "The light has a shorter distance to travel",
+        "Light travels much faster than sound",
+        "Your ears take several seconds to detect sound"
+      ],
+      "correctIndex": 2,
+      "hint": "The flash and thunder originate in the same lightning event.",
+      "reference": "Job 37:3\u20134",
+      "explanation": "Light reaches an observer far faster than the sound of thunder. Elihu's speech places the flash before the roar, offering an observable sequence; it does not state a measured speed of either wave.",
+      "factualSourceUrls": [
+        "https://www.weather.gov/fgz/Lightning"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/JOB.37.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/JOB.37.3-4?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/JOB.37.NIV",
+      "nivContentSha256": "ac45266694d4c47d7426faa447d1e2b8c2d5232dd2b0f22874ef959c8743050b",
+      "contextPassageId": "JOB.37.1-8",
+      "difficulty": {
+        "fact1to5": 1,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "unapproved",
+      "authorFinding": "Easy causal explanation with competing timing, distance and perception hypotheses. Hint weakens the delayed-origin option. Adjacent passage reused from held Entertainment thunder-sheet question; different concept, but avoid both in a final session.",
+      "concept": "lightning thunder arrival speeds",
+      "lineage": {
+        "kind": "new_concept_with_held_passage_overlap",
+        "historicalLedgerChecked": true,
+        "relatedHeldQuestion": "entertainment-behind-the-curtain-q5-v2"
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "science"
+    },
+    {
+      "id": "guest-small-discoveries-q3-v1",
+      "prompt": "In traditional winnowing, what carries the loose chaff away from the grain?",
+      "answers": [
+        "Moving air",
+        "Flowing water",
+        "A mesh screen",
+        "Rotating grindstones"
+      ],
+      "correctIndex": 0,
+      "hint": "The lighter pieces travel farther from where the mixture falls.",
+      "reference": "Luke 3:17",
+      "explanation": "Winnowing uses moving air to separate lighter chaff from heavier grain. John's image distinguishes gathering grain from disposing of chaff; burning follows separation and is not the separating mechanism. The surrounding passage concerns judgment, not instructions for farming.",
+      "factualSourceUrls": [
+        "https://www.fao.org/4/x0039e/X0039E06.htm"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/LUK.3.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/LUK.3.17?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/LUK.3.NIV",
+      "nivContentSha256": "5143c6d1b3f53b50a1cc187345cd2d799c6d0d1fc83816a9f8626956cbed3a33",
+      "contextPassageId": "LUK.3.15-20",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "unapproved",
+      "authorFinding": "All choices are real processing mechanisms. Reading names the operation but does not name the answer; hint supplies weight contrast. Familiarity with winnowing still affects difficulty.",
+      "concept": "winnowing airflow separates chaff",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "food"
+    },
+    {
+      "id": "guest-small-discoveries-q4-v1",
+      "prompt": "Which place would best protect old family letters?",
+      "answers": [
+        "A sunny windowsill",
+        "A damp cellar",
+        "A hot attic",
+        "A cool, dry, dark cupboard"
+      ],
+      "correctIndex": 3,
+      "hint": "Avoid moisture and large swings in temperature.",
+      "reference": "Jeremiah 32:14",
+      "explanation": "Stable, cool, relatively dry storage away from light helps preserve paper. Jeremiah directs that purchase documents be placed in a clay jar for long keeping. The shared idea is protective storage; a modern letter need not be sealed in an ancient-style jar.",
+      "factualSourceUrls": [
+        "https://www.loc.gov/preservation/care/paper.html"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/JER.32.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/JER.32.14?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/JER.32.NIV",
+      "nivContentSha256": "3d18873c672f6018283afcc8701822d0edd4795a335b1e39d7ee3b4b51713c5b",
+      "contextPassageId": "JER.32.9-15",
+      "difficulty": {
+        "fact1to5": 1,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "unapproved",
+      "authorFinding": "Intentionally easy guest choice among real household locations. Passage makes preservation purpose explicit; modern environmental conditions require outside knowledge. Hint may largely confirm the obvious choice; measure before approval.",
+      "concept": "protective storage of family letters",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "media"
+    },
+    {
+      "id": "guest-small-discoveries-q5-v1",
+      "prompt": "Which structure allows a typical bony fish to take oxygen from water?",
+      "answers": [
+        "Scales",
+        "Gills",
+        "Pectoral fins",
+        "A swim bladder"
+      ],
+      "correctIndex": 1,
+      "hint": "It has many thin folds supplied with blood vessels.",
+      "reference": "Isaiah 50:2",
+      "explanation": "Gills provide a large surface for gas exchange. The prophetic image describes fish dying when water disappears, but does not identify the respiratory mechanism. Some fish have additional adaptations for breathing air.",
+      "factualSourceUrls": [
+        "https://qrius.si.edu/taxonomy/term/12176"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/ISA.50.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/ISA.50.2?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/ISA.50.NIV",
+      "nivContentSha256": "ac92172874dd72e001b0c36bd0736cd7c9f5fd7cdfe6a39de47d99684a724f50",
+      "contextPassageId": "ISA.50.1-5",
+      "difficulty": {
+        "fact1to5": 1,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "author_hold",
+      "authorFinding": "Fact and four real anatomical choices are sound, but the passage contributes only a generic need for water. Hold for a more distinctive Scripture-to-fact connection; do not count as guest-ready.",
+      "concept": "fish gill gas exchange",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "nature"
+    }
+  ],
+  "delivery": "device_local_guest"
+}

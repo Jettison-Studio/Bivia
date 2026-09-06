@@ -1,0 +1,55 @@
+{
+  "translation": "NIV",
+  "bibleId": 111,
+  "licensedTextStored": false,
+  "checks": [
+    {
+      "passageId": "EXO.5.6-8",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/EXO.5.6-8?format=text",
+      "httpStatus": 200,
+      "reference": "Exodus 5:6-8",
+      "contentSha256": "81a9d38a61081a91b2272cff97952e5fb24c6d69f5e882d7f11400e85eb08bfd",
+      "checkedAt": "2026-09-06T19:43:32.939440+00:00"
+    },
+    {
+      "passageId": "EXO.5.6-14",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/EXO.5.6-14?format=text",
+      "httpStatus": 200,
+      "reference": "Exodus 5:6-14",
+      "contentSha256": "a9d18a16aa496f8e7ae66c15a71f0c1d153f9c687d62a28ab0abfdb078123929",
+      "checkedAt": "2026-09-06T19:43:33.487479+00:00"
+    },
+    {
+      "passageId": "GEN.6.14",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/GEN.6.14?format=text",
+      "httpStatus": 200,
+      "reference": "Genesis 6:14",
+      "contentSha256": "e7efad9782a19da1e6f020ae8f399973cf7bd0f0c559a21154066f8707880b55",
+      "checkedAt": "2026-09-06T19:43:33.826960+00:00"
+    },
+    {
+      "passageId": "GEN.6.13-22",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/GEN.6.13-22?format=text",
+      "httpStatus": 200,
+      "reference": "Genesis 6:13-22",
+      "contentSha256": "0bdb9e1adc864aecd2348af10bae9523e21c62183d6b10072d370f101e5796a8",
+      "checkedAt": "2026-09-06T19:43:34.281851+00:00"
+    },
+    {
+      "passageId": "ISA.40.3-5",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/ISA.40.3-5?format=text",
+      "httpStatus": 200,
+      "reference": "Isaiah 40:3-5",
+      "contentSha256": "888c30762ff5e4943cd6328201c94bf8e3a096e1b0c6dafca40cf6ec983d086c",
+      "checkedAt": "2026-09-06T19:43:34.734463+00:00"
+    },
+    {
+      "passageId": "ISA.40.1-8",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/ISA.40.1-8?format=text",
+      "httpStatus": 200,
+      "reference": "Isaiah 40:1-8",
+      "contentSha256": "bc771173018424b6e21a585c0ed45103a4f3ee13e37a5b5cbe2ccd410e730ad7",
+      "checkedAt": "2026-09-06T19:43:35.259793+00:00"
+    }
+  ]
+}

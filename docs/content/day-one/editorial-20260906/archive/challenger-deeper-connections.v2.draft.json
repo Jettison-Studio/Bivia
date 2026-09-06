@@ -1,0 +1,450 @@
+{
+  "id": "0ab1cf57-afbc-41c4-92a5-d82c742ed19a",
+  "draftId": "challenger-deeper-connections-20260906-v2",
+  "title": "Deeper connections",
+  "subtitle": "Start with familiar ideas, then look closer.",
+  "description": "Start with familiar ideas, then look closer.",
+  "categoryId": "mixed",
+  "mode": "challenger",
+  "status": "draft",
+  "reviewState": "10_proposals_0_held_10_missing",
+  "publishedAt": "",
+  "scheduledAt": "",
+  "updatedAt": "2026-09-06T21:15:49.475259+00:00",
+  "editorialDate": "2026-09-06",
+  "translation": "NIV",
+  "sourceMode": "references",
+  "hintKind": "original_clue",
+  "passageId": null,
+  "revision": 2,
+  "verification": {
+    "factsResearched": true,
+    "allOptionsReviewed": true,
+    "publicDomainContextChecked": false,
+    "exactNivRangesRetrieved": true,
+    "surroundingNivContextRetrieved": true,
+    "fullReadingLeakageReviewed": true,
+    "retrievalMethod": "Configured YouVersion version 111; hashes only retained",
+    "localPlayerRetrievalTested": false,
+    "blindPlaytestCompleted": false,
+    "engineGatesRun": false,
+    "humanApproved": false,
+    "publicationAuthorized": false,
+    "editorialShortfall": 10,
+    "editorialRecommendation": "10 proposals, 0 held, 10 missing; no final approval.",
+    "passageEvidenceFile": "challenger-deeper-connections.v1-passage-checks.json",
+    "modeFinding": "10 of twenty authored. Ordering is provisional until all bands and blind playtests are complete; no measured progression claimed.",
+    "rejectedResearch": "Proverbs 25:20 NIV uses wound rather than soda; abandoned vinegar/baking-soda pairing. 2 Kings 1:2 checked for a potential literary title connection but not authored pending source verification."
+  },
+  "questions": [
+    {
+      "id": "challenger-deeper-connections-q1-v1",
+      "prompt": "Which motion chiefly causes the Sun\u2019s apparent daily journey across our sky?",
+      "answers": [
+        "Earth orbiting the Sun",
+        "The Sun spinning on its axis",
+        "Earth spinning on its axis",
+        "The Moon orbiting Earth"
+      ],
+      "correctIndex": 2,
+      "hint": "Think about a day, rather than a year.",
+      "reference": "Ecclesiastes 1:5",
+      "explanation": "Earth's rotation produces the Sun's apparent daily motion. Ecclesiastes describes the recurring appearance from an observer's viewpoint as part of its reflection on cycles. The verse is not presenting an orbital model.",
+      "factualSourceUrls": [
+        "https://solarscience.msfc.nasa.gov/suntime/slshow.stm"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/ECC.1.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/ECC.1.5?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/ECC.1.NIV",
+      "nivContentSha256": "4c6d032f40c949f0268918c6a101197fc678a37a3c25521a075baa9b64a4ae8b",
+      "contextPassageId": "ECC.1.2-11",
+      "difficulty": {
+        "fact1to5": 1,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "unapproved",
+      "authorFinding": "Four actual celestial motions. Day-versus-year clue distinguishes rotation from orbit. Reading supplies the daily cycle, but may add little to an already familiar astronomy question.",
+      "concept": "Earth rotation and apparent daily solar motion",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "science"
+    },
+    {
+      "id": "challenger-deeper-connections-q2-v1",
+      "prompt": "Which stance gives the widest side-to-side base of support?",
+      "answers": [
+        "Feet side by side, shoulder-width apart",
+        "Feet touching side by side",
+        "One foot directly in front of the other",
+        "Standing on one foot"
+      ],
+      "correctIndex": 0,
+      "hint": "Imagine the outline around all the points where your feet touch the floor.",
+      "reference": "Psalm 18:36",
+      "explanation": "A wider lateral separation of the feet enlarges the side-to-side base of support. The psalm associates a broad path with secure footing. This is an analogy between room for stable placement and stance geometry, not a promise that one stance prevents every fall.",
+      "factualSourceUrls": [
+        "https://journals.physiology.org/doi/full/10.1152/jn.00916.2009",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2934921/"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/PSA.18.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/PSA.18.36?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/PSA.18.NIV",
+      "nivContentSha256": "4dfd5b9053a4618c1ed7635681652c3c5459a152bd34671a17866de87dd5dfc9",
+      "contextPassageId": "PSA.18.32-39",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "unapproved",
+      "authorFinding": "Four real balance stances. Restrict answer to side-to-side width, not universal stability or overall polygon area. Nearby context overlaps held Fitness bronze-bow question; no accepted repeat. Publisher fetch failed, but full primary paper is now available through PMC.",
+      "concept": "Lateral stance width and base of support",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "fitness"
+    },
+    {
+      "id": "challenger-deeper-connections-q3-v1",
+      "prompt": "What rising air do eagles often use to gain height without flapping?",
+      "answers": [
+        "Jet streams",
+        "Downdrafts",
+        "Sea breezes",
+        "Thermals"
+      ],
+      "correctIndex": 3,
+      "hint": "Sun-warmed ground helps create these columns of air.",
+      "reference": "Isaiah 40:31",
+      "explanation": "Thermals are rising columns of relatively warm air that soaring birds can use for lift. Isaiah uses soaring eagles as an image of renewed strength. The flight example illuminates the image without reducing its spiritual promise to an aerodynamic explanation.",
+      "factualSourceUrls": [
+        "https://academy.allaboutbirds.org/golden-eagle-soaring-on-a-thermal/",
+        "https://www.youtube.com/watch?v=azQJKhN1yNs"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/ISA.40.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/ISA.40.31?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/ISA.40.NIV",
+      "nivContentSha256": "17d95409da3025145ab8b8e74f95c2877457aa7e6bc8cabc99bb2db44c7b8f39",
+      "contextPassageId": "ISA.40.25-31",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "unapproved",
+      "authorFinding": "Reading's soaring-with-renewed-strength image supports sustained flight with reduced flapping. Four real atmospheric motions. Hint provides the thermal source. Eagles also use other forms of lift; do not claim exclusivity.",
+      "concept": "Eagle thermal soaring",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "nature"
+    },
+    {
+      "id": "challenger-deeper-connections-q4-v1",
+      "prompt": "Which woodworker\u2019s machine, like a potter\u2019s wheel, rotates the work being shaped?",
+      "answers": [
+        "A bandsaw",
+        "A lathe",
+        "A drill press",
+        "A jointer"
+      ],
+      "correctIndex": 1,
+      "hint": "It can turn a square wood blank into a round chair leg.",
+      "reference": "Jeremiah 18:3\u20134",
+      "explanation": "A wood lathe holds and rotates the workpiece while cutting tools shape it. A potter's wheel also rotates the material being shaped, though clay is formed differently. Jeremiah's lesson concerns the potter's authority to reshape, not a historical origin claim about lathes.",
+      "factualSourceUrls": [
+        "https://www.eastsurreywoodturners.org/WoodturningFAQ.php",
+        "https://www.powermatic.com/media/akeneo_connector/asset_files/M/_/M_1794224B_4224B_Lathe_Manual__Edition_8__1__91a5.pdf"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/JER.18.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/JER.18.3-4?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/JER.18.NIV",
+      "nivContentSha256": "c2d8cdc60b26a9a594e88199879b070ca5eaf20ab92512b604317b5d7f93500a",
+      "contextPassageId": "JER.18.1-10",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "unapproved",
+      "authorFinding": "Four real workshop machines; distinguish rotating workpiece from rotating drill or cutter. Hint adds a familiar turned product. Pottery-wheel operation requires common outside knowledge beyond the text.",
+      "concept": "Rotating workpiece analogy between pottery wheel and lathe",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "history"
+    },
+    {
+      "id": "challenger-deeper-connections-q5-v1",
+      "prompt": "Which biological feature best explains the locusts\u2019 cold-to-sunshine change in activity?",
+      "answers": [
+        "Metamorphosis",
+        "Photoperiodism",
+        "Ectothermy",
+        "Diapause"
+      ],
+      "correctIndex": 2,
+      "hint": "Focus on body temperature, rather than life stage or seasonal day length.",
+      "reference": "Nahum 3:17",
+      "explanation": "Locust activity is sensitive to body temperature, and these ectotherms use environmental warmth and behavior to regulate it. Nahum compares unreliable officials with locusts that settle in cold and depart in sunshine. It is a judgment image built around observed behavior, not a claim that every sunny moment triggers flight.",
+      "factualSourceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3145186/",
+        "https://www.fao.org/ag/locusts/common/ecg/347_en_DLG1e.pdf"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/NAM.3.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/NAM.3.17?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/NAM.3.NIV",
+      "nivContentSha256": "ad03ce65ed093537fd48835ec377c726026d69d64d5ab26262bbf88a0e556f13",
+      "contextPassageId": "NAM.3.14-19",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "unapproved",
+      "authorFinding": "All four terms describe real aspects of insect biology. Specific cold/sunshine contrast supports the inference. Avoid saying insects generate no metabolic heat or are passive thermometers. Hint narrows competing life-cycle interpretations.",
+      "concept": "Locust ectothermy and temperature-dependent activity",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "nature"
+    },
+    {
+      "id": "challenger-deeper-connections-q6-v2",
+      "prompt": "Which modern approach resembles preparing the temple\u2019s stone blocks before they reached the building site?",
+      "answers": [
+        "Shoring",
+        "Underpinning",
+        "Prefabrication",
+        "Retrofitting"
+      ],
+      "correctIndex": 2,
+      "hint": "Modern wall panels can arrive ready to lift into place.",
+      "reference": "1 Kings 6:7",
+      "explanation": "Prefabrication prepares building components before installation at their final location. The temple account describes stones dressed at the quarry, so the shared principle is preparing components away from their place of assembly. It does not describe a modern factory or modular building system.",
+      "factualSourceUrls": [
+        "https://solutions.iccsafe.org/offsite",
+        "https://www.riba.org/media/lv2d0iem/riba-cpd-core-curriculum-2018.pdf"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/1KI.6.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/1KI.6.7?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/1KI.6.NIV",
+      "nivContentSha256": "81cb1346e96c066f8da8412f90abef489deb437bba8fae282cd993fcd65f7e11",
+      "contextPassageId": "1KI.6.1-10",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 45
+      },
+      "reviewState": "unapproved",
+      "authorFinding": "Four real construction approaches. Reading supplies a distinctive location/process contrast; clue supplies a modern example. Label familiarity still determines difficulty.",
+      "concept": "Offsite preparation and prefabrication analogy",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "history"
+    },
+    {
+      "id": "challenger-deeper-connections-q7-v2",
+      "prompt": "Which publishing label best fits a replacement text that restores the original and adds substantial material?",
+      "answers": [
+        "An unchanged reprint",
+        "A facsimile",
+        "A translation",
+        "A revised edition"
+      ],
+      "correctIndex": 3,
+      "hint": "Printing more copies can leave a text unchanged; this version does not.",
+      "reference": "Jeremiah 36:32",
+      "explanation": "A revised edition includes changes to an earlier text, while an unchanged reprint repeats it. Jeremiah\u2019s new scroll restores the burned text and adds words. This is a comparison with modern publishing terminology, not a claim about ancient ISBNs or printed editions.",
+      "factualSourceUrls": [
+        "https://www.isbn-international.org/node/88",
+        "https://www.isbn.org/faqs_formats_reprints_editions"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/JER.36.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/JER.36.32?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/JER.36.NIV",
+      "nivContentSha256": "801009e0805a99c3433738b2adfd30a0863527e8957f1b44ea9f523a431af21e",
+      "contextPassageId": "JER.36.27-32",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 45
+      },
+      "reviewState": "unapproved",
+      "authorFinding": "Four real publishing forms. Reading's added words distinguish revised content from mere duplication. Stem repeats the decisive condition, so test whether reading contribution is sufficient; clue also may be redundant.",
+      "concept": "Revised edition versus unchanged reprint",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "media"
+    },
+    {
+      "id": "challenger-deeper-connections-q8-v2",
+      "prompt": "Before grain is winnowed, what is threshing meant to do?",
+      "answers": [
+        "Free kernels from the harvested stalks",
+        "Blow away loose chaff",
+        "Grind kernels into flour",
+        "Separate bran from flour"
+      ],
+      "correctIndex": 0,
+      "hint": "An animal\u2019s hooves can do this job without turning grain into flour.",
+      "reference": "Deuteronomy 25:4",
+      "explanation": "Threshing releases grain from the plant structures to which it is attached. Winnowing then uses air movement to separate loose lighter material. The command concerns allowing a working ox to eat; its treading image supplies a concrete threshing action.",
+      "factualSourceUrls": [
+        "https://www.fao.org/4/x0039e/X0039E06.htm",
+        "https://www.fao.org/4/t0522e/T0522E07.htm"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/DEU.25.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/DEU.25.4?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/DEU.25.NIV",
+      "nivContentSha256": "3c7278e448afc0f5e81ac47ac623aea034f54842f31c2e57b6b2ebea461dcada",
+      "contextPassageId": "DEU.25.1-10",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 45
+      },
+      "reviewState": "unapproved",
+      "authorFinding": "All options are genuine grain-processing tasks. Related to guest winnowing but asks a distinct preceding operation, explicitly tracked. Hint rules against flour grinding but partly repeats treading clue. Do not place both questions back-to-back across guest/category play.",
+      "concept": "Threshing versus winnowing and milling",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "food"
+    },
+    {
+      "id": "challenger-deeper-connections-q9-v2",
+      "prompt": "Which optical behavior forms a clear face image in still water?",
+      "answers": [
+        "Diffuse reflection",
+        "Specular reflection",
+        "Refraction",
+        "Diffraction"
+      ],
+      "correctIndex": 1,
+      "hint": "A smooth surface sends neighboring reflected rays in orderly directions.",
+      "reference": "Proverbs 27:19",
+      "explanation": "Specular reflection from a smooth surface preserves the directional relationships needed for a recognizable reflected image. Rough surfaces scatter reflected light across differing directions. The proverb compares a face reflected in water with the relationship between life and heart; it does not distinguish optical terminology.",
+      "factualSourceUrls": [
+        "https://openstax.org/books/college-physics-2e/pages/25-2-the-law-of-reflection"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/PRO.27.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/PRO.27.19?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/PRO.27.NIV",
+      "nivContentSha256": "965b29f2c13d87870fe0180d2de199d8746d5fd0708f7483454f0806e083bd34",
+      "contextPassageId": "PRO.27.17-24",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 45
+      },
+      "reviewState": "unapproved",
+      "authorFinding": "Reading supplies a recognizable image in water; four real optical processes. Related to earlier Pepper\u2019s Ghost optics, but different question and passage. Hint adds smooth-surface behavior; technical vocabulary may dominate difficulty.",
+      "concept": "Specular reflection versus diffuse reflection",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "science"
+    },
+    {
+      "id": "challenger-deeper-connections-q10-v2",
+      "prompt": "A pear branch is grafted onto quince rootstock. What fruit should that branch produce?",
+      "answers": [
+        "Quinces",
+        "A pear\u2013quince hybrid fruit",
+        "Pears",
+        "Pears one year and quinces the next"
+      ],
+      "correctIndex": 2,
+      "hint": "Grafting joins the plants without crossing their reproductive cells.",
+      "reference": "Romans 11:17\u201318",
+      "explanation": "A grafted pear scion retains its fruit identity on compatible quince rootstock. The rootstock can influence vigor and other characteristics without turning that branch into a sexual hybrid. Paul\u2019s olive-tree analogy emphasizes the supporting root and humility; it is not a promise about fruit traits.",
+      "factualSourceUrls": [
+        "https://www.rhs.org.uk/advice/beginners-guide/fruit-basics/rootstocks/",
+        "https://open.lib.umn.edu/horticulture/part/chapter-10-grafting/"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/ROM.11.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/ROM.11.17-18?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/ROM.11.NIV",
+      "nivContentSha256": "d051c0dfc25f8a5dddc9db60c78039794eb76e989f794576393ad5e50dac7522",
+      "contextPassageId": "ROM.11.16-24",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 45
+      },
+      "reviewState": "unapproved",
+      "authorFinding": "Four plausible novice models for joined plants. Question is restricted to the pear branch, excluding rootstock suckers that might bear different fruit. Hint distinguishes grafting from breeding. Root-supported branch idea is relevant, but text does not explicitly settle fruit identity. Some pear cultivars require compatible interstocks; assume successful compatible graft.",
+      "concept": "Scion fruit identity versus rootstock and hybridization",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "nature"
+    }
+  ],
+  "delivery": "daily_round"
+}

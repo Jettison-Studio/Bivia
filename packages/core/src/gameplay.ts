@@ -10,7 +10,7 @@ export const modeLabels: Record<Mode, string> = {
 export function timeLimit(mode: Mode, index = 0): number {
   if (mode !== 'timed') return 30;
   const safeIndex = Number.isFinite(index) ? Math.max(0, Math.floor(index)) : 0;
-  return [30, 25, 20, 15, 10, 5, 2.5][Math.min(safeIndex, 6)]!;
+  return Math.max(15, 30 - 2 * safeIndex);
 }
 
 /** Practice scoring only. Ranked results must be computed on the server. */

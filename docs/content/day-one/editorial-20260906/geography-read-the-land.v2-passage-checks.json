@@ -1,0 +1,79 @@
+{
+  "checkedAt": "2026-09-06T17:56:27.676142+00:00",
+  "version": 111,
+  "provider": "YouVersion",
+  "method": "Configured API; no user/session mutation",
+  "licensedTextStored": false,
+  "passages": [
+    {
+      "usfm": "1SA.14.13",
+      "reference": "1 Samuel 14:13",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/1SA.14.13?format=text",
+      "httpStatus": 200,
+      "contentSha256": "fa814f3a248bee3c86f1291a35f43d557939764d645e28743c0a901ee24e0325"
+    },
+    {
+      "usfm": "1SA.14.4-13",
+      "reference": "1 Samuel 14:4-13",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/1SA.14.4-13?format=text",
+      "httpStatus": 200,
+      "contentSha256": "1de31f5f5fd16782d7419c081c49304a7511769af4bd195b18cdce3345e8aa45"
+    },
+    {
+      "usfm": "ACT.27.20",
+      "reference": "Acts 27:20",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/ACT.27.20?format=text",
+      "httpStatus": 200,
+      "contentSha256": "d5b65edbe709bf5d97fd1b75b8fdcf8d449d4905db9f91b05174ffd86e350db8"
+    },
+    {
+      "usfm": "ACT.27.18-26",
+      "reference": "Acts 27:18-26",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/ACT.27.18-26?format=text",
+      "httpStatus": 200,
+      "contentSha256": "4ad131b57ebdbfe00e00561e7d76e67b8f62836f5b3083f8cbc1e8643d8b3b46"
+    },
+    {
+      "usfm": "JON.2.3-6",
+      "reference": "Jonah 2:3-6",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JON.2.3-6?format=text",
+      "httpStatus": 200,
+      "contentSha256": "3db0b33722007f7e9f8b648329edb82e19a442644bc465393697fb3cd66e6dd5"
+    },
+    {
+      "usfm": "JON.2.1-10",
+      "reference": "Jonah 2:1-10",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JON.2.1-10?format=text",
+      "httpStatus": 200,
+      "contentSha256": "886cdcddf91f39702e52bdbbaf18ec786ca8a9dbdfade79673f881100ee39f8e"
+    },
+    {
+      "usfm": "JOB.14.18-20",
+      "reference": "Job 14:18-20",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JOB.14.18-20?format=text",
+      "httpStatus": 200,
+      "contentSha256": "b801ecddbcf129fc1e56e6bdd0c14b9d1f5e384cd8cbb46320dafe2bae00c0dd"
+    },
+    {
+      "usfm": "JOB.14.14-22",
+      "reference": "Job 14:14-22",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JOB.14.14-22?format=text",
+      "httpStatus": 200,
+      "contentSha256": "02348fc9482de59589c957646e6e0522c61731d58566ff4aa50d32af58a5d02e"
+    },
+    {
+      "usfm": "2KI.3.16-18",
+      "reference": "2 Kings 3:16-18",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/2KI.3.16-18?format=text",
+      "httpStatus": 200,
+      "contentSha256": "580544641e7d87b3318997aacd372041aaad804c95b873705d222a31d9f2cda4"
+    },
+    {
+      "usfm": "2KI.3.11-20",
+      "reference": "2 Kings 3:11-20",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/2KI.3.11-20?format=text",
+      "httpStatus": 200,
+      "contentSha256": "9756666cb28644118ba7cae532f99d7772ab741859d983dcfd41dfde4f03bf98"
+    }
+  ]
+}

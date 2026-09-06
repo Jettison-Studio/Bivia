@@ -1,0 +1,121 @@
+{
+  "id": "efb5f412-6364-4652-bb4a-4db90dd75f25",
+  "draftId": "history-clever-tools-20260906-v1",
+  "title": "Clever tools",
+  "subtitle": "Explore the ideas behind printed pages and an ancient measurement of Earth.",
+  "description": "Explore the ideas behind printed pages and an ancient measurement of Earth.",
+  "categoryId": "history",
+  "mode": "category",
+  "status": "draft",
+  "reviewState": "incomplete_shortfall_3_unapproved",
+  "publishedAt": "",
+  "scheduledAt": "",
+  "updatedAt": "2026-09-06T19:34:09.607733+00:00",
+  "editorialDate": "2026-09-06",
+  "translation": "NIV",
+  "sourceMode": "references",
+  "hintKind": "original_clue",
+  "passageId": null,
+  "revision": 1,
+  "verification": {
+    "factsResearched": true,
+    "allOptionsReviewed": true,
+    "publicDomainContextChecked": true,
+    "publicDomainContextLimitation": null,
+    "exactNivRangesRetrieved": true,
+    "surroundingNivContextRetrieved": true,
+    "fullReadingLeakageReviewed": true,
+    "retrievalMethod": "Configured YouVersion API version 111; hashes only retained",
+    "localPlayerRetrievalTested": false,
+    "blindPlaytestCompleted": false,
+    "engineGatesRun": false,
+    "humanApproved": false,
+    "publicationAuthorized": false,
+    "editorialShortfall": 3,
+    "editorialRecommendation": "Only two candidates authored; three missing. Both need coordinator bridge/hint review, not approval. Pause category expansion for focused repairs.",
+    "passageEvidenceFile": "history-clever-tools.v1-passage-checks.json"
+  },
+  "questions": [
+    {
+      "id": "history-clever-tools-q1-v1",
+      "prompt": "In traditional letterpress printing, which part of the type carries ink onto the paper?",
+      "answers": [
+        "The recessed grooves",
+        "The raised letter faces",
+        "The flat metal backing",
+        "The spaces between letters"
+      ],
+      "correctIndex": 1,
+      "hint": "Imagine which parts of an inked rubber stamp touch the paper.",
+      "reference": "Job 38:14",
+      "explanation": "Letterpress prints from raised, inked surfaces. Recessed ink belongs to intaglio; backing and spaces are not the intended printing surfaces. Job compares the emerging detail of dawn to a seal shaping clay, within God\u2019s challenge to Job. The comparison concerns an impression, not an ancient prediction of printing.",
+      "factualSourceUrls": [
+        "https://www.vam.ac.uk/articles/what-is-print",
+        "https://printinghistory.org/timeline/"
+      ],
+      "contextSourceUrls": [
+        "https://ebible.org/eng-web/JOB38.htm"
+      ],
+      "nivContextUrl": "https://www.bible.com/bible/111/JOB.38.NIV",
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/JOB.38.14?format=text",
+      "nivContentSha256": "6c127feccc61211b558636e20f54eae71ae4c72d696ad070aa1d2a493db14819",
+      "contextPassageId": "JOB.38.12-21",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "awaiting_local_playtest",
+      "authorFinding": "A seal can itself be recessed, so do not claim Job establishes the raised geometry of letterpress. Test whether the stamp analogy helps beyond the seal reading.",
+      "concept": "Letterpress relief printing",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    },
+    {
+      "id": "history-clever-tools-q2-v1",
+      "prompt": "Eratosthenes compared Sun angles in two cities. What else did he need to estimate Earth\u2019s circumference?",
+      "answers": [
+        "The depth of a well",
+        "The distance to the Sun",
+        "The distance between the cities",
+        "The height of nearby mountains"
+      ],
+      "correctIndex": 2,
+      "hint": "The angle tells him what fraction of a full circle he is measuring.",
+      "reference": "2 Kings 20:9-11",
+      "explanation": "The angular difference supplies a fraction of a circle; the distance between cities supplies the corresponding arc length. A well\u2019s depth, mountain height and Earth\u2013Sun distance are not the missing baseline in this method. The biblical shadow moves as a divine sign to Hezekiah, not as an Earth-measurement experiment.",
+      "factualSourceUrls": [
+        "https://imagine.gsfc.nasa.gov/features/cosmic/earth_info.html",
+        "https://spdf.gsfc.nasa.gov/pub/documents/old/websites/sunearthday.nasa.gov/2005/astronomer/act_5.htm"
+      ],
+      "contextSourceUrls": [
+        "https://ebible.org/eng-web/2KI20.htm"
+      ],
+      "nivContextUrl": "https://www.bible.com/bible/111/2KI.20.NIV",
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/2KI.20.9-11?format=text",
+      "nivContentSha256": "73c607d414dd0c9a3aead28ef278e24572a91a21ee10d26c0fb42872a415d832",
+      "contextPassageId": "2KI.20.4-11",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "uncertain_pairing",
+      "authorFinding": "The passage supplies measurable shadow movement but not the city baseline. Bridge strength and hint benefit need review. Do not assert the miracle\u2019s mechanism or a precise stadia conversion.",
+      "concept": "Eratosthenes angular fraction and city baseline",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "coordinatorFinding": "Supernatural shadow movement does not help derive city baseline. Retain as uncertain pairing."
+    }
+  ]
+}

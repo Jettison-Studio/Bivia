@@ -1,0 +1,39 @@
+{
+  "translation": "NIV",
+  "bibleId": 111,
+  "licensedTextStored": false,
+  "checks": [
+    {
+      "passageId": "ACT.27.7-8",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/ACT.27.7-8?format=text",
+      "httpStatus": 200,
+      "reference": "Acts 27:7-8",
+      "contentSha256": "e47c50cf5d5ce6379deed961a3da72af47fd7c3b79facf3a5dbb29b8b2e0ab0f",
+      "checkedAt": "2026-09-06T20:23:30.277676+00:00"
+    },
+    {
+      "passageId": "ACT.27.4-10",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/ACT.27.4-10?format=text",
+      "httpStatus": 200,
+      "reference": "Acts 27:4-10",
+      "contentSha256": "1a15d1e8fdd4b43afee94914a1a6fde0a4acffae324a8b3231e907962ad5a369",
+      "checkedAt": "2026-09-06T20:23:30.721606+00:00"
+    },
+    {
+      "passageId": "2SA.18.23",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/2SA.18.23?format=text",
+      "httpStatus": 200,
+      "reference": "2 Samuel 18:23",
+      "contentSha256": "75b4c414b5573f52252728466be41ed8b64411fc5c73725f11a43eb5a15e2ef5",
+      "checkedAt": "2026-09-06T20:23:31.051065+00:00"
+    },
+    {
+      "passageId": "2SA.18.19-27",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/2SA.18.19-27?format=text",
+      "httpStatus": 200,
+      "reference": "2 Samuel 18:19-27",
+      "contentSha256": "c1c65cc613cbac144513379835bcdacc56a2d8de6c041c514ea1525725c20c4b",
+      "checkedAt": "2026-09-06T20:23:31.780514+00:00"
+    }
+  ]
+}

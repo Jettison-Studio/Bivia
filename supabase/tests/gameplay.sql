@@ -1,5 +1,9 @@
 -- Run against Bivia local DB only: docker exec -i supabase_db_Bivia psql -U postgres -v ON_ERROR_STOP=1 < supabase/tests/gameplay.sql
 begin;
+-- Restore archived seed fixtures only inside this rolled-back test transaction.
+update public.quizzes set status='published',publish_at=clock_timestamp()-interval '1 day'
+where id in ('10000000-0000-4000-8000-000000000001','10000000-0000-4000-8000-000000000002','10000000-0000-4000-8000-000000000003');
+
 create extension if not exists pgtap with schema extensions;
 set search_path=public,extensions;
 select plan(27);
@@ -32,6 +36,7 @@ select is((select v->>'questionIndex' from test_state where k='answer'),'1','Cor
 select is(public.bivia_answer_v1((select (v->>'id')::uuid from test_state where k='attempt'),(select (v->'question'->>'id')::uuid from test_state where k='attempt'),0,'30000000-0000-4000-8000-000000000001'),(select v from test_state where k='answer'),'Same request returns identical response without extra points');
 select throws_ok($$select public.bivia_answer_v1((select (v->>'id')::uuid from test_state where k='attempt'),(select (v->'question'->>'id')::uuid from test_state where k='attempt'),1,'30000000-0000-4000-8000-000000000001')$$,'P0001','Request ID already used for another answer','Reusing a request ID for changed payload rejected');
 reset role;
+select public.bivia_continue_question_v1((select (v->>'id')::uuid from test_state where k='answer'));
 update public.attempts set question_started_at=clock_timestamp()-interval '31 seconds' where user_id='20000000-0000-4000-8000-000000000001';
 set local role authenticated;
 insert into test_state values('late',public.bivia_answer_v1((select (v->>'id')::uuid from test_state where k='answer'),(select (v->'question'->>'id')::uuid from test_state where k='answer'),2,gen_random_uuid()));

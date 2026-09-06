@@ -1,0 +1,953 @@
+{
+  "id": "0ab1cf57-afbc-41c4-92a5-d82c742ed19a",
+  "draftId": "challenger-deeper-connections-20260906-v4",
+  "title": "Deeper connections",
+  "subtitle": "Start with familiar ideas, then look closer.",
+  "description": "Start with familiar ideas, then look closer.",
+  "categoryId": "mixed",
+  "mode": "challenger",
+  "status": "draft",
+  "reviewState": "awaiting_independent_verification_and_playtest",
+  "publishedAt": "",
+  "scheduledAt": "",
+  "updatedAt": "2026-09-06T22:04:45.687275+00:00",
+  "editorialDate": "2026-09-06",
+  "translation": "NIV",
+  "sourceMode": "references",
+  "hintKind": "original_clue",
+  "passageId": null,
+  "revision": 4,
+  "verification": {
+    "factsResearched": true,
+    "allOptionsReviewed": true,
+    "publicDomainContextChecked": false,
+    "exactNivRangesRetrieved": true,
+    "surroundingNivContextRetrieved": true,
+    "fullReadingLeakageReviewed": true,
+    "retrievalMethod": "Configured YouVersion version 111; hashes only retained",
+    "localPlayerRetrievalTested": false,
+    "blindPlaytestCompleted": false,
+    "engineGatesRun": false,
+    "humanApproved": false,
+    "publicationAuthorized": false,
+    "editorialShortfall": 2,
+    "editorialRecommendation": "Seven editorial clearances; eleven pending; two arithmetic/probability items held for trivia-identity review. No final approvals.",
+    "passageEvidenceFile": "challenger-deeper-connections.v1-passage-checks.json",
+    "modeFinding": "Proposed full order separates terminology and recall burden from mechanistic/quantitative reasoning. Author after-reading levels rise from 1 through 4; no measured progression or hint benefit. Final item is an explicitly modeled load-sharing problem.",
+    "rejectedResearch": "Proverbs25:20 NIV uses wound rather than soda; vinegar/soda pairing was discarded. Baal-Zebub literary-title research has now been sourced and authored as former Q20."
+  },
+  "questions": [
+    {
+      "id": "challenger-deeper-connections-q1-v1",
+      "prompt": "Which motion chiefly causes the Sun’s apparent daily journey across our sky?",
+      "answers": [
+        "Earth orbiting the Sun",
+        "The Sun spinning on its axis",
+        "Earth spinning on its axis",
+        "The Moon orbiting Earth"
+      ],
+      "correctIndex": 2,
+      "hint": "Think about a day, rather than a year.",
+      "reference": "Ecclesiastes 1:5",
+      "explanation": "Earth's rotation produces the Sun's apparent daily motion. Ecclesiastes describes the recurring appearance from an observer's viewpoint as part of its reflection on cycles. The verse is not presenting an orbital model.",
+      "factualSourceUrls": [
+        "https://solarscience.msfc.nasa.gov/suntime/slshow.stm"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/ECC.1.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/ECC.1.5?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/ECC.1.NIV",
+      "nivContentSha256": "4c6d032f40c949f0268918c6a101197fc678a37a3c25521a075baa9b64a4ae8b",
+      "contextPassageId": "ECC.1.2-11",
+      "difficulty": {
+        "fact1to5": 1,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Four actual celestial motions. Day-versus-year clue distinguishes rotation from orbit. Reading supplies the daily cycle, but may add little to an already familiar astronomy question.",
+      "concept": "Earth rotation and apparent daily solar motion",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "science",
+      "authorOrder": 1,
+      "priorAuthoringNumber": 1,
+      "difficultyBasis": "familiar_fact"
+    },
+    {
+      "id": "challenger-deeper-connections-q3-v1",
+      "prompt": "What rising air do eagles often use to gain height without flapping?",
+      "answers": [
+        "Jet streams",
+        "Downdrafts",
+        "Sea breezes",
+        "Thermals"
+      ],
+      "correctIndex": 3,
+      "hint": "Sun-warmed ground helps create these columns of air.",
+      "reference": "Isaiah 40:31",
+      "explanation": "Thermals are rising columns of relatively warm air that soaring birds can use for lift. Isaiah uses soaring eagles as an image of renewed strength. The flight example illuminates the image without reducing its spiritual promise to an aerodynamic explanation.",
+      "factualSourceUrls": [
+        "https://academy.allaboutbirds.org/golden-eagle-soaring-on-a-thermal/",
+        "https://www.youtube.com/watch?v=azQJKhN1yNs"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/ISA.40.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/ISA.40.31?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/ISA.40.NIV",
+      "nivContentSha256": "17d95409da3025145ab8b8e74f95c2877457aa7e6bc8cabc99bb2db44c7b8f39",
+      "contextPassageId": "ISA.40.25-31",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Reading's soaring-with-renewed-strength image supports sustained flight with reduced flapping. Four real atmospheric motions. Hint provides the thermal source. Eagles also use other forms of lift; do not claim exclusivity. Coordinator rated as easy; rising excludes downdraft.",
+      "concept": "Eagle thermal soaring",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "nature",
+      "authorOrder": 2,
+      "priorAuthoringNumber": 3,
+      "difficultyBasis": "familiar_fact"
+    },
+    {
+      "id": "challenger-deeper-connections-q2-v1",
+      "prompt": "Which stance gives the widest side-to-side base of support?",
+      "answers": [
+        "Feet side by side, shoulder-width apart",
+        "Feet touching side by side",
+        "One foot directly in front of the other",
+        "Standing on one foot"
+      ],
+      "correctIndex": 0,
+      "hint": "Imagine the outline around all the points where your feet touch the floor.",
+      "reference": "Psalm 18:36",
+      "explanation": "A wider lateral separation of the feet enlarges the side-to-side base of support. The psalm associates a broad path with secure footing. This is an analogy between room for stable placement and stance geometry, not a promise that one stance prevents every fall.",
+      "factualSourceUrls": [
+        "https://journals.physiology.org/doi/full/10.1152/jn.00916.2009",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2934921/"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/PSA.18.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/PSA.18.36?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/PSA.18.NIV",
+      "nivContentSha256": "4dfd5b9053a4618c1ed7635681652c3c5459a152bd34671a17866de87dd5dfc9",
+      "contextPassageId": "PSA.18.32-39",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Four real balance stances. Restrict answer to side-to-side width, not universal stability or overall polygon area. Nearby context overlaps held Fitness bronze-bow question; no accepted repeat. Publisher fetch failed, but full primary paper is now available through PMC.",
+      "concept": "Lateral stance width and base of support",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "fitness",
+      "authorOrder": 3,
+      "priorAuthoringNumber": 2,
+      "difficultyBasis": "spatial_reasoning"
+    },
+    {
+      "id": "challenger-deeper-connections-q16-v4",
+      "prompt": "Which illusionist made handcuff escapes a signature act?",
+      "answers": [
+        "Harry Kellar",
+        "Jean-Eugène Robert-Houdin",
+        "Harry Houdini",
+        "Howard Thurston"
+      ],
+      "correctIndex": 2,
+      "hint": "His wife was known as Bess.",
+      "reference": "Acts 12:6–8",
+      "explanation": "Houdini built his reputation partly through escapes from restraints, advertised in surviving publicity. Peter’s release from chains provides the restraint-and-release connection. Acts attributes the rescue to an angel; the comparison does not explain it as an illusion.",
+      "factualSourceUrls": [
+        "https://www.loc.gov/resource/varshoud.hs009/?sp=1",
+        "https://blogs.loc.gov/loc/2020/10/hollywood-houdini-and-the-halloween-seance-of-1936/"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/ACT.12.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/ACT.12.6-8?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/ACT.12.NIV",
+      "nivContentSha256": "ff63883eb04087a0aff6a1ee5fd12f30399f2bc0fcd0126937ccfb6b1b323157",
+      "contextPassageId": "ACT.12.6-12",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 45
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Four real stage magicians. The reading supplies an escape scene but identifying the performer remains outside recall. Spouse clue depends on biographical familiarity and may add little; measure rather than assume benefit.",
+      "concept": "Houdini and handcuff escape performance",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "entertainment",
+      "authorOrder": 4,
+      "priorAuthoringNumber": 16,
+      "difficultyBasis": "performer_recall"
+    },
+    {
+      "id": "challenger-deeper-connections-q6-v2",
+      "prompt": "Which modern approach resembles preparing the temple’s stone blocks before they reached the building site?",
+      "answers": [
+        "Shoring",
+        "Underpinning",
+        "Prefabrication",
+        "Retrofitting"
+      ],
+      "correctIndex": 2,
+      "hint": "Modern wall panels can arrive ready to lift into place.",
+      "reference": "1 Kings 6:7",
+      "explanation": "Prefabrication prepares building components before installation at their final location. The temple account describes stones dressed at the quarry, so the shared principle is preparing components away from their place of assembly. It does not describe a modern factory or modular building system.",
+      "factualSourceUrls": [
+        "https://solutions.iccsafe.org/offsite",
+        "https://www.riba.org/media/lv2d0iem/riba-cpd-core-curriculum-2018.pdf"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/1KI.6.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/1KI.6.7?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/1KI.6.NIV",
+      "nivContentSha256": "81cb1346e96c066f8da8412f90abef489deb437bba8fae282cd993fcd65f7e11",
+      "contextPassageId": "1KI.6.1-10",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 45
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Four real construction approaches. Reading supplies a distinctive location/process contrast; clue supplies a modern example. Label familiarity still determines difficulty.",
+      "concept": "Offsite preparation and prefabrication analogy",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "history",
+      "authorOrder": 6,
+      "priorAuthoringNumber": 6,
+      "difficultyBasis": "process_analogy"
+    },
+    {
+      "id": "challenger-deeper-connections-q7-v4",
+      "prompt": "Compared with the burned scroll, which modern publishing label best fits Jeremiah’s replacement?",
+      "answers": [
+        "A reprint",
+        "A facsimile",
+        "A translation",
+        "A revised edition"
+      ],
+      "correctIndex": 3,
+      "hint": "Collectors distinguish changes to a text from simply making more copies.",
+      "reference": "Jeremiah 36:32",
+      "explanation": "A revised edition includes changes to an earlier text, while an unchanged reprint repeats it. Jeremiah’s new scroll restores the burned text and adds words. This is a comparison with modern publishing terminology, not a claim about ancient ISBNs or printed editions.",
+      "factualSourceUrls": [
+        "https://www.isbn-international.org/node/88",
+        "https://www.isbn.org/faqs_formats_reprints_editions"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/JER.36.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/JER.36.32?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/JER.36.NIV",
+      "nivContentSha256": "801009e0805a99c3433738b2adfd30a0863527e8957f1b44ea9f523a431af21e",
+      "contextPassageId": "JER.36.27-32",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 45
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Repaired after coordinator hold: the stem no longer says substantial additions or labels the reprint unchanged. Reading supplies added words. Clue introduces the collector distinction without repeating which change occurred.",
+      "concept": "Revised edition versus unchanged reprint",
+      "lineage": {
+        "kind": "editorial_repair",
+        "previousQuestionId": "challenger-deeper-connections-q7-v2",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "media",
+      "authorOrder": 7,
+      "priorAuthoringNumber": 7,
+      "difficultyBasis": "reading_comparison"
+    },
+    {
+      "id": "challenger-deeper-connections-q8-v2",
+      "prompt": "Before grain is winnowed, what is threshing meant to do?",
+      "answers": [
+        "Free kernels from the harvested stalks",
+        "Blow away loose chaff",
+        "Grind kernels into flour",
+        "Separate bran from flour"
+      ],
+      "correctIndex": 0,
+      "hint": "An animal’s hooves can do this job without turning grain into flour.",
+      "reference": "Deuteronomy 25:4",
+      "explanation": "Threshing releases grain from the plant structures to which it is attached. Winnowing then uses air movement to separate loose lighter material. The command concerns allowing a working ox to eat; its treading image supplies a concrete threshing action.",
+      "factualSourceUrls": [
+        "https://www.fao.org/4/x0039e/X0039E06.htm",
+        "https://www.fao.org/4/t0522e/T0522E07.htm"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/DEU.25.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/DEU.25.4?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/DEU.25.NIV",
+      "nivContentSha256": "3c7278e448afc0f5e81ac47ac623aea034f54842f31c2e57b6b2ebea461dcada",
+      "contextPassageId": "DEU.25.1-10",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 45
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "All options are genuine grain-processing tasks. Related to guest winnowing but asks a distinct preceding operation, explicitly tracked. Hint rules against flour grinding but partly repeats treading clue. Do not place both questions back-to-back across guest/category play.",
+      "concept": "Threshing versus winnowing and milling",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "food",
+      "authorOrder": 8,
+      "priorAuthoringNumber": 8,
+      "difficultyBasis": "process_distinction"
+    },
+    {
+      "id": "challenger-deeper-connections-q10-v4",
+      "prompt": "A pear branch is grafted onto quince rootstock. What fruit should that branch produce?",
+      "answers": [
+        "Quinces",
+        "A pear–quince hybrid fruit",
+        "Pears",
+        "Both pears and quinces on that branch"
+      ],
+      "correctIndex": 2,
+      "hint": "Grafting joins the plants without crossing their reproductive cells.",
+      "reference": "Romans 11:17–18",
+      "explanation": "A grafted pear scion retains its fruit identity on compatible quince rootstock. The rootstock can influence vigor and other characteristics without turning that branch into a sexual hybrid. Paul’s olive-tree analogy emphasizes the supporting root and humility; it is not a promise about fruit traits.",
+      "factualSourceUrls": [
+        "https://www.rhs.org.uk/advice/beginners-guide/fruit-basics/rootstocks/",
+        "https://open.lib.umn.edu/horticulture/part/chapter-10-grafting/"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/ROM.11.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/ROM.11.17-18?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/ROM.11.NIV",
+      "nivContentSha256": "d051c0dfc25f8a5dddc9db60c78039794eb76e989f794576393ad5e50dac7522",
+      "contextPassageId": "ROM.11.16-24",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 45
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Coordinator allowed prior concept for playtest but flagged alternating-year distractor. Replaced with the plausible whole-tree-versus-branch misconception: both fruit types on that branch. Distinguish rootstock suckers and multi-scion trees. Compatible successful graft assumed; rootstock can affect traits without changing cultivar identity. Revised choice awaits review.",
+      "concept": "Scion fruit identity versus rootstock and hybridization",
+      "lineage": {
+        "kind": "distractor_repair",
+        "previousQuestionId": "challenger-deeper-connections-q10-v2",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "nature",
+      "authorOrder": 9,
+      "priorAuthoringNumber": 10,
+      "difficultyBasis": "grafting_misconception"
+    },
+    {
+      "id": "challenger-deeper-connections-q4-v1",
+      "prompt": "Which woodworker’s machine, like a potter’s wheel, rotates the work being shaped?",
+      "answers": [
+        "A bandsaw",
+        "A lathe",
+        "A drill press",
+        "A jointer"
+      ],
+      "correctIndex": 1,
+      "hint": "It can turn a square wood blank into a round chair leg.",
+      "reference": "Jeremiah 18:3–4",
+      "explanation": "A wood lathe holds and rotates the workpiece while cutting tools shape it. A potter's wheel also rotates the material being shaped, though clay is formed differently. Jeremiah's lesson concerns the potter's authority to reshape, not a historical origin claim about lathes.",
+      "factualSourceUrls": [
+        "https://www.eastsurreywoodturners.org/WoodturningFAQ.php",
+        "https://www.powermatic.com/media/akeneo_connector/asset_files/M/_/M_1794224B_4224B_Lathe_Manual__Edition_8__1__91a5.pdf"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/JER.18.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/JER.18.3-4?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/JER.18.NIV",
+      "nivContentSha256": "c2d8cdc60b26a9a594e88199879b070ca5eaf20ab92512b604317b5d7f93500a",
+      "contextPassageId": "JER.18.1-10",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Four real workshop machines; distinguish rotating workpiece from rotating drill or cutter. Hint adds a familiar turned product. Pottery-wheel operation requires common outside knowledge beyond the text.",
+      "concept": "Rotating workpiece analogy between pottery wheel and lathe",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "history",
+      "authorOrder": 10,
+      "priorAuthoringNumber": 4,
+      "difficultyBasis": "mechanism_analogy"
+    },
+    {
+      "id": "challenger-deeper-connections-q11-v3",
+      "prompt": "What made the Rosetta Stone especially useful for deciphering Egyptian writing?",
+      "answers": [
+        "An illustrated picture dictionary",
+        "An alphabet arranged in order",
+        "The same decree in several scripts",
+        "A complete list of Egyptian kings"
+      ],
+      "correctIndex": 2,
+      "hint": "Scholars could already read its Greek version.",
+      "reference": "Acts 2:6–8",
+      "explanation": "The Rosetta Stone records a decree in hieroglyphic, demotic and Greek scripts. The readable Greek helped scholars work toward the Egyptian texts. Acts describes people hearing speech in their own languages; the shared idea is access to meaning across languages, not a natural explanation of Pentecost.",
+      "factualSourceUrls": [
+        "https://www.britishmuseum.org/sites/default/files/2022-10/Hieroglyphs_unlocking_ancient_Egypt_large_print_guide_The_British_Museum_2.pdf",
+        "https://sharinghistory.museumwnf.org/database_item.php?id=object%3BAWE%3Buk%3B107%3Ben%3BN"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/ACT.2.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/ACT.2.6-8?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/ACT.2.NIV",
+      "nivContentSha256": "9c2e563f0ae4b0bf3f1843083436c594494fae8eb3485718f14ffdb14be0b5bd",
+      "contextPassageId": "ACT.2.5-13",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 45
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Four plausible ancient-document formats. Three scripts is not the same as three unrelated languages. Reading supplies multilingual access analogy, not a cipher lesson. Hint adds the already-readable anchor.",
+      "concept": "Parallel inscriptions and Rosetta Stone decipherment",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "history",
+      "authorOrder": 11,
+      "priorAuthoringNumber": 11,
+      "difficultyBasis": "historical_mechanism"
+    },
+    {
+      "id": "challenger-deeper-connections-q18-v5",
+      "prompt": "For a steady tone at the same pitch, what wave property increases as it gets louder?",
+      "answers": [
+        "Frequency",
+        "Wavelength",
+        "Speed through the air",
+        "Pressure amplitude"
+      ],
+      "correctIndex": 3,
+      "hint": "Picture giving a playground swing a stronger push on each trip, without a faster rhythm.",
+      "reference": "Exodus 19:19",
+      "explanation": "At fixed frequency and otherwise comparable conditions, greater sound-pressure amplitude corresponds to greater intensity and ordinarily greater perceived loudness. The reading says the trumpet sound grows louder; it does not specify frequency, waveform, or a physical mechanism for the divine event.",
+      "factualSourceUrls": [
+        "https://openstax.org/books/university-physics-volume-1/pages/17-3-sound-intensity"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/EXO.19.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/EXO.19.19?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/EXO.19.NIV",
+      "nivContentSha256": "63627be692d5e0c0c8dc2d42cb12a5317148d0e7f707e87866908643deb0b838",
+      "contextPassageId": "EXO.19.16-25",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 45
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Four real wave properties. Same-pitch condition avoids confusing loudness with frequency. Different sound attribute from accepted Science timbre question. Hint names pressure swings and may closely paraphrase amplitude; evaluate clue value. Post-freeze hint repair: Uses a familiar motion analogy to distinguish strength of oscillation from repetition rate, without naming pressure or restating its definition. Not an exact model of pendulum timing. Test whether the extra analogy helps rather than adding another inference.",
+      "concept": "Sound pressure amplitude versus pitch and wave speed",
+      "lineage": {
+        "kind": "post_freeze_hint_only_repair",
+        "previousQuestionId": "challenger-deeper-connections-q18-v4",
+        "originalSlotId": "challenger-deeper-connections-q18-v4",
+        "frozenFinalPosition": 12,
+        "priorAuthoringNumber": 18,
+        "sourceArtifact": "challenger-deeper-connections.draft.json",
+        "note": "Question, answers, key, reference, explanation and evidence unchanged."
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "science",
+      "authorOrder": 12,
+      "priorAuthoringNumber": 18,
+      "difficultyBasis": "wave_property_distinction",
+      "hintRepair": {
+        "previousHint": "The pressure swings become larger, without happening more often.",
+        "reason": "Uses a familiar motion analogy to distinguish strength of oscillation from repetition rate, without naming pressure or restating its definition. Not an exact model of pendulum timing. Test whether the extra analogy helps rather than adding another inference.",
+        "coordinatorRequest": "Analogical nudge; previous hint directly restated the correct answer."
+      }
+    },
+    {
+      "id": "challenger-deeper-connections-q17-v5",
+      "categoryId": "entertainment",
+      "prompt": "Which Shakespeare tragedy disguises an advancing army in a way that resembles the man's first description of people?",
+      "answers": [
+        "Hamlet",
+        "King Lear",
+        "Macbeth",
+        "Julius Caesar"
+      ],
+      "correctIndex": 2,
+      "hint": "Three witches give the title character misleading assurances about his future.",
+      "reference": "Mark 8:23–25",
+      "concept": "Macbeth: soldiers carrying branches make Birnam Wood appear to move",
+      "explanation": "In Macbeth, Malcolm's soldiers carry branches to conceal their numbers, making Birnam Wood appear to move toward Dunsinane. The man's initial tree-like perception of people provides a visual comparison. Mark describes restored sight; this does not imply camouflage in the healing account or claim that Shakespeare borrowed from it.",
+      "factualSourceUrls": [
+        "https://www.folger.edu/explore/shakespeares-works/macbeth/read/5/4/",
+        "https://www.rsc.org.uk/learn/schools-and-teachers/teacher-resources/signing-shakespeare-for-deaf-students/act-5"
+      ],
+      "difficulty": {
+        "fact1to5": 4,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 45
+      },
+      "authorFinding": "Concrete dramatic action, not word-definition or arithmetic. Reading supplies the distinctive moving-tree image omitted from the stem. All four choices are Shakespeare tragedies involving rulers and conflict. Witches hint is a separate strong recognition route. The full display includes eventual clear sight, preventing the first perception from becoming the conclusion. Needs playtest for title-recognition dependence. This is a proposed replacement for final Q5, not a claim that its difficulty belongs at Q5. Consider the middle/later band against other literary questions; avoid clustering with Golding. No duplicate Macbeth concept found in the editorial artifacts.",
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "hintKind": "original_clue",
+      "passageId": null,
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/MRK.8.23-25?format=text",
+      "nivContentSha256": "101cf1fd38f70e9caf28147384edaa6433b746d8b5418f8eb8e451b0961bbe0c",
+      "contextPassageId": "MRK.8.22-26",
+      "nivContextUrl": "https://www.bible.com/bible/111/MRK.8.NIV",
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/MRK.8.NIV"
+      ],
+      "lineage": {
+        "kind": "post_freeze_editorial_replacement",
+        "previousQuestionId": "challenger-deeper-connections-q17-v4",
+        "originalSlotId": "challenger-deeper-connections-q17-v4",
+        "frozenFinalPosition": 5,
+        "priorAuthoringNumber": 17,
+        "sourceArtifact": "challenger-deeper-connections.draft.json",
+        "frozenManifestSha256": "7aaa9d70c0a8d84bb7d2aabbec761453e1963f8f71aa8106d0f31265950edbbd",
+        "note": "Separate proposal only; does not replace the frozen artifact."
+      }
+    },
+    {
+      "id": "challenger-deeper-connections-q5-v1",
+      "prompt": "Which biological feature best explains the locusts’ cold-to-sunshine change in activity?",
+      "answers": [
+        "Metamorphosis",
+        "Photoperiodism",
+        "Ectothermy",
+        "Diapause"
+      ],
+      "correctIndex": 2,
+      "hint": "Focus on body temperature, rather than life stage or seasonal day length.",
+      "reference": "Nahum 3:17",
+      "explanation": "Locust activity is sensitive to body temperature, and these ectotherms use environmental warmth and behavior to regulate it. Nahum compares unreliable officials with locusts that settle in cold and depart in sunshine. It is a judgment image built around observed behavior, not a claim that every sunny moment triggers flight.",
+      "factualSourceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3145186/",
+        "https://www.fao.org/ag/locusts/common/ecg/347_en_DLG1e.pdf"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/NAM.3.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/NAM.3.17?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/NAM.3.NIV",
+      "nivContentSha256": "ad03ce65ed093537fd48835ec377c726026d69d64d5ab26262bbf88a0e556f13",
+      "contextPassageId": "NAM.3.14-19",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "All four terms describe real aspects of insect biology. Specific cold/sunshine contrast supports the inference. Avoid saying insects generate no metabolic heat or are passive thermometers. Hint narrows competing life-cycle interpretations.",
+      "concept": "Locust ectothermy and temperature-dependent activity",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "nature",
+      "authorOrder": 15,
+      "priorAuthoringNumber": 5,
+      "difficultyBasis": "biological_terminology"
+    },
+    {
+      "id": "challenger-deeper-connections-q12-v4",
+      "prompt": "In an engraved intaglio print, where is the ink that forms the lines held?",
+      "answers": [
+        "In grooves cut below the surface",
+        "On raised ridges above the surface",
+        "Across unmarked flat areas",
+        "In openings through a mesh"
+      ],
+      "correctIndex": 0,
+      "hint": "Think about the residue left after wiping a scratched cutting board.",
+      "reference": "Job 19:23–24",
+      "explanation": "Intaglio engraving holds line-forming ink in incised grooves, which transfer it under pressure to paper. Job wishes for durable written or engraved words. The shared action is cutting into a surface; the passage does not describe printing from a metal plate.",
+      "factualSourceUrls": [
+        "https://www.metmuseum.org/perspectives/materials-and-techniques-printmaking-engraving"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/JOB.19.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/JOB.19.23-24?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/JOB.19.NIV",
+      "nivContentSha256": "6b3e82773cb5a10e828098fe8ccf8cdd2150029951149fe10f2d7da9900aeadf",
+      "contextPassageId": "JOB.19.21-29",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 45
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Four real printmaking mechanisms. Distinct from category History relief-printing question, but intentionally related opposite technique; avoid neighboring sessions if repetition becomes noticeable. Hint provides wiping mechanism but is close to the answer. Post-freeze hint repair: Uses a household wiping analogy without naming ink, grooves, cuts or the correct option. The player must transfer the retained-residue idea to printing. Could still be strong; benefit remains unmeasured.",
+      "concept": "Intaglio ink in recessed engraved lines",
+      "lineage": {
+        "kind": "post_freeze_hint_only_repair",
+        "previousQuestionId": "challenger-deeper-connections-q12-v3",
+        "originalSlotId": "challenger-deeper-connections-q12-v3",
+        "frozenFinalPosition": 14,
+        "priorAuthoringNumber": 12,
+        "sourceArtifact": "challenger-deeper-connections.draft.json",
+        "note": "Question, answers, key, reference, explanation and evidence unchanged."
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "media",
+      "authorOrder": 14,
+      "priorAuthoringNumber": 12,
+      "difficultyBasis": "mechanism_and_terminology",
+      "hintRepair": {
+        "previousHint": "Wiping the surface leaves ink sheltered in the cuts.",
+        "reason": "Uses a household wiping analogy without naming ink, grooves, cuts or the correct option. The player must transfer the retained-residue idea to printing. Could still be strong; benefit remains unmeasured.",
+        "coordinatorRequest": "Analogical nudge; previous hint directly restated the correct answer."
+      }
+    },
+    {
+      "id": "challenger-deeper-connections-q15-v4",
+      "categoryId": "science",
+      "prompt": "Which kitchen item releases a gas that can quickly tarnish the metal in these coins?",
+      "answers": [
+        "Dry table salt",
+        "A freshly cut hard-boiled egg",
+        "Uncooked white rice",
+        "Granulated white sugar"
+      ],
+      "correctIndex": 1,
+      "hint": "Think of the element associated with an egg's distinctive smell.",
+      "reference": "Luke 15:8–10",
+      "concept": "Hydrogen sulfide from a boiled egg tarnishes silver",
+      "explanation": "The coins identify silver. A freshly cut hard-boiled egg releases hydrogen sulfide, which can produce silver-sulfide tarnish. The parable concerns joy over repentance; it does not describe tarnished coins or a cleaning method.",
+      "factualSourceUrls": [
+        "https://www.canada.ca/en/conservation-institute/services/preventive-conservation/guidelines-collections/metal-objects/understanding-silver-tarnish.html"
+      ],
+      "difficulty": {
+        "fact1to5": 4,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 45
+      },
+      "authorFinding": "Reading identifies the metal, then the player connects it to household chemistry. Choices are familiar kitchen materials; the key needs no chemical vocabulary. The hint supplies a sulfur route. Evidence demonstrates freshly polished silver exposed to a freshly cut egg in a covered container; no universal tarnishing time claimed. Narrow question concerns a released gas, not every possible effect of salt or moisture. Modern chemistry is separate from the parable. Author difficulty is unmeasured; test whether the other kitchen choices remain credible. The old final Q20 slot is lineage only: consider moving this to the middle/later band instead of assuming it is the hardest. Luke15:5 already appears in Fitness, but this is a different parable and concept.",
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "hintKind": "original_clue",
+      "passageId": null,
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/LUK.15.8-10?format=text",
+      "nivContentSha256": "959f00feda4d7f9ea66642339aed26cda6c52c767bf1572d369bec1ede03b52f",
+      "contextPassageId": "LUK.15.1-10",
+      "nivContextUrl": "https://www.bible.com/bible/111/LUK.15.NIV",
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/LUK.15.NIV"
+      ],
+      "lineage": {
+        "kind": "post_freeze_editorial_replacement",
+        "previousQuestionId": "challenger-deeper-connections-q15-v3",
+        "originalSlotId": "challenger-deeper-connections-q15-v3",
+        "frozenFinalPosition": 20,
+        "priorAuthoringNumber": 15,
+        "sourceArtifact": "challenger-deeper-connections.draft.json",
+        "frozenManifestSha256": "7aaa9d70c0a8d84bb7d2aabbec761453e1963f8f71aa8106d0f31265950edbbd",
+        "note": "Separate proposal only; does not replace the frozen artifact."
+      }
+    },
+    {
+      "id": "challenger-deeper-connections-q19-v4",
+      "prompt": "If an ordinary solar eclipse darkened a midday sky, which Moon phase would it require?",
+      "answers": [
+        "Full moon",
+        "First quarter",
+        "New moon",
+        "Third quarter"
+      ],
+      "correctIndex": 2,
+      "hint": "The Moon must pass between Earth and the Sun.",
+      "reference": "Amos 8:9",
+      "explanation": "A solar eclipse can occur only at new moon, with the Moon between Earth and Sun and sufficiently aligned. Amos describes daylight darkening in a judgment oracle. The question is an explicitly hypothetical natural event, not a claim that an eclipse explains or dates the prophecy.",
+      "factualSourceUrls": [
+        "https://science.nasa.gov/moon/eclipses/",
+        "https://science.nasa.gov/eclipses/geometry/"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/AMO.8.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/AMO.8.9?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/AMO.8.NIV",
+      "nivContentSha256": "05aa5f0df325caec9b84085d26f2e113a6b4745e2186fb946f0a07002b95d0bd",
+      "contextPassageId": "AMO.8.4-10",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 45
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Four real lunar phases. Display verse9 contains no phase label. Broader context separately mentions a New Moon observance, which is not evidence that the predicted darkness happened during that observance. Hint gives alignment, not the phase word. Possible weak reading contribution remains visible.",
+      "concept": "Solar eclipse geometry and new moon phase",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "geography",
+      "authorOrder": 13,
+      "priorAuthoringNumber": 19,
+      "difficultyBasis": "spatial_astronomy"
+    },
+    {
+      "id": "challenger-deeper-connections-q9-v2",
+      "prompt": "Which optical behavior forms a clear face image in still water?",
+      "answers": [
+        "Diffuse reflection",
+        "Specular reflection",
+        "Refraction",
+        "Diffraction"
+      ],
+      "correctIndex": 1,
+      "hint": "A smooth surface sends neighboring reflected rays in orderly directions.",
+      "reference": "Proverbs 27:19",
+      "explanation": "Specular reflection from a smooth surface preserves the directional relationships needed for a recognizable reflected image. Rough surfaces scatter reflected light across differing directions. The proverb compares a face reflected in water with the relationship between life and heart; it does not distinguish optical terminology.",
+      "factualSourceUrls": [
+        "https://openstax.org/books/college-physics-2e/pages/25-2-the-law-of-reflection"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/PRO.27.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/PRO.27.19?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/PRO.27.NIV",
+      "nivContentSha256": "965b29f2c13d87870fe0180d2de199d8746d5fd0708f7483454f0806e083bd34",
+      "contextPassageId": "PRO.27.17-24",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 4,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 45
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Reading supplies a recognizable image in water; four real optical processes. Related to earlier Pepper’s Ghost optics, but different question and passage. Hint adds smooth-surface behavior; technical vocabulary may dominate difficulty. Coordinator notes unfamiliar terminology may make this harder than grafting; later position assigned for that reason.",
+      "concept": "Specular reflection versus diffuse reflection",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "science",
+      "authorOrder": 16,
+      "priorAuthoringNumber": 9,
+      "difficultyBasis": "optical_terminology"
+    },
+    {
+      "id": "challenger-deeper-connections-q13-v3",
+      "prompt": "Which score instruction could match the harps’ silence for a whole musical section?",
+      "answers": [
+        "Legato",
+        "Rubato",
+        "Vibrato",
+        "Tacet"
+      ],
+      "correctIndex": 3,
+      "hint": "It shares a Latin root with tacit, meaning unspoken.",
+      "reference": "Psalm 137:1–4",
+      "explanation": "Tacet directs an instrument not to play during a movement or long section. The exiles hang up their harps and lament the demand for songs. The instruction is a modern scoring analogy, not an assertion that the psalm contains music notation.",
+      "factualSourceUrls": [
+        "https://www.merriam-webster.com/dictionary/tacet"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/PSA.137.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/PSA.137.1-4?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/PSA.137.NIV",
+      "nivContentSha256": "fbad3cd22c5fac32160900511d3f3b261b63a5d102de42546f5b88468e716c41",
+      "contextPassageId": "PSA.137.1-9",
+      "difficulty": {
+        "fact1to5": 4,
+        "afterFullReading1to5": 4,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 45
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Four real musical terms. Full passage supplies unused instruments and reluctance to sing. Hint adds a related English word rather than simply defining silence again. Vocabulary-heavy; author difficulty only. Context's later violent lament was read, but display remains verses1–4.",
+      "concept": "Tacet and instrumental silence",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "music",
+      "authorOrder": 17,
+      "priorAuthoringNumber": 13,
+      "difficultyBasis": "musical_terminology"
+    },
+    {
+      "id": "challenger-deeper-connections-q20-v4",
+      "prompt": "Which William Golding novel’s title echoes the deity consulted in this account?",
+      "answers": [
+        "The Inheritors",
+        "Lord of the Flies",
+        "Pincher Martin",
+        "The Spire"
+      ],
+      "correctIndex": 1,
+      "hint": "Schoolboys stranded on an island form increasingly violent rival groups.",
+      "reference": "2 Kings 1:2",
+      "explanation": "Lord of the Flies invokes the name associated with Baal-Zebub or Beelzebub. Kings portrays Ahaziah consulting the deity of Ekron instead of Israel's God. Golding’s novel uses a related title allusion; it does not retell this episode.",
+      "factualSourceUrls": [
+        "https://www.encyclopedia.com/arts/culture-magazines/golding-william-19-september-1911-19-june-1993",
+        "https://www.newadvent.org/cathen/02388c.htm",
+        "https://william-golding.co.uk/books/lord-of-the-flies/"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/2KI.1.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/2KI.1.2?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/2KI.1.NIV",
+      "nivContentSha256": "0b7d7ff9a8d75e943852cbfe0ed3a8ea75cac9fb510c1b887f4e2cc1afee0e8a",
+      "contextPassageId": "2KI.1.1-8",
+      "difficulty": {
+        "fact1to5": 4,
+        "afterFullReading1to5": 4,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 45
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Four actual Golding novels. Reading supplies the name; recognizing the title connection requires literary or linguistic knowledge. Plot clue supplies a more familiar route. Etymological history is complex; avoid making claims about the deity's precise original role or collapsing every later usage.",
+      "concept": "Lord of the Flies title and Baal-Zebub allusion",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "media",
+      "authorOrder": 18,
+      "priorAuthoringNumber": 20,
+      "difficultyBasis": "literary_allusion"
+    },
+    {
+      "id": "challenger-deeper-connections-q14-v3",
+      "prompt": "Which composer wrote an oratorio centered on the prophet in this scene?",
+      "answers": [
+        "George Frideric Handel",
+        "Felix Mendelssohn",
+        "Joseph Haydn",
+        "Johann Sebastian Bach"
+      ],
+      "correctIndex": 1,
+      "hint": "He also composed music for A Midsummer Night’s Dream.",
+      "reference": "1 Kings 18:36–39",
+      "explanation": "Mendelssohn's oratorio Elijah dramatizes episodes from the prophet's life, including the confrontation at Mount Carmel. The reading identifies the prophet and event; knowing the composer requires musical knowledge. The score adapts biblical material rather than reproducing only this passage.",
+      "factualSourceUrls": [
+        "https://lsolive.lso.co.uk/products/lso0898-mendelssohn",
+        "https://lsolive.lso.co.uk/products/lso0826-mendelssohn"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/1KI.18.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/1KI.18.36-39?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/1KI.18.NIV",
+      "nivContentSha256": "fc602b66ced0eb3912738cd309289642a91770cd1447c0704f49dac54fac5f62",
+      "contextPassageId": "1KI.18.30-39",
+      "difficulty": {
+        "fact1to5": 4,
+        "afterFullReading1to5": 4,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 45
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Four plausible composers of sacred concert music. The passage gives Elijah, not the correct composer name. Hint adds a famous second work. Cultural familiarity may dominate; no measured hint reduction.",
+      "concept": "Mendelssohn Elijah composer identification",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "music",
+      "authorOrder": 19,
+      "priorAuthoringNumber": 14,
+      "difficultyBasis": "repertoire_recall"
+    }
+  ],
+  "delivery": "daily_round",
+  "coordinatorAssembly": {
+    "source": "challenger-deeper-connections.draft.json",
+    "editoriallyReviewed": true,
+    "independentlyVerified": false,
+    "runtimeTested": false,
+    "finalApproved": false,
+    "difficultyOrderMeasured": false
+  }
+}

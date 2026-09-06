@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-09-06T19:10:03.644Z",
+  "draftId": "nature-built-for-this-20260906-v1",
+  "parsedQuestions": 5,
+  "roundValidationErrors": [
+    "Choose a category."
+  ],
+  "manualTwentyQuestionProbe": {
+    "note": "Synthetic in-memory structural probe only; not authored content or saved to a database.",
+    "parsed": 20,
+    "mixedChallengerValidationErrors": []
+  },
+  "humanApproved": false,
+  "categoryValidationInterpretation": "Static helper mismatch; connected save path explicitly accepts backend catalog categories; runtime save verification pending. Standalone validate() errors do not prove a connected-save blocker.",
+  "connectedSaveSourceInspected": "/Users/lukefrederick/Projects/REACT/Bivia/apps/admin/src/App.tsx:164",
+  "runtimeSaveVerified": false
+}

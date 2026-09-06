@@ -1,3 +1,4 @@
+import type { DailySlot } from "./backend";
 import { EngineWorkspace } from "./engine/EngineWorkspace";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { CategoryManager } from "./CategoryManager";
@@ -16,7 +17,6 @@ import {
   blankQuestion,
   blankQuiz,
   download,
-  loadWorkspace,
   parseQuestions,
   storageKey,
   validate,
@@ -26,25 +26,55 @@ import { QuestionEditor } from "./QuestionEditor";
 import { Preview } from "./Preview";
 
 export function App() {
-  const [initial] = useState(loadWorkspace);
   const [categories, setCategories] =
     useState<EditorialCategory[]>(loadLocalCategories);
   const [connected, setConnected] = useState(false);
   const [busy, setBusy] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [quizzes, setQuizzes] = useState(initial.quizzes);
+  const [quizzes, setQuizzes] = useState<EditorialQuiz[]>([]);
   const [editor, setEditor] = useState<EditorialQuiz | null>(null);
   const [dirty, setDirty] = useState(false);
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState("all");
-  const [notice, setNotice] = useState(initial.error);
+  const [notice, setNotice] = useState("");
   const [errors, setErrors] = useState<string[]>([]);
   const [preview, setPreview] = useState(false);
   const [settings, setSettings] = useState(false);
   const [categoryPage, setCategoryPage] = useState(false);
-  const [enginePage, setEnginePage] = useState(false);
+  const [dailySlots, setDailySlots] = useState<DailySlot[]>([]);
+  const [replaceDaily, setReplaceDaily] = useState(false);
+  const [enginePage, setEnginePage] = useState(true);
   const upload = useRef<HTMLInputElement>(null);
+  const [sessionRevision, setSessionRevision] = useState(0);
+  useEffect(() => {
+    if (!backend) return;
+    const { data } = backend.auth.onAuthStateChange(event => {
+      if (event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED') setSessionRevision(n => n + 1);
+      if (event === 'SIGNED_OUT') {setConnected(false); setQuizzes([]); setDailySlots([]);}
+    });
+    return () => data.subscription.unsubscribe();
+  }, []);
+  useEffect(() => {
+    if (!backend) return;
+    let active = true;
+    setBusy(true);
+    void (async () => {
+      try {
+        const { data, error } = await backend.auth.getSession();
+        if (error) throw error;
+        if (!data.session) return;
+        const content = await loadContent();
+        if (!active) return;
+        setQuizzes(content.quizzes); setCategories(content.categories);
+        setDailySlots(content.dailyRounds); setConnected(true); setErrors([]);
+      } catch (error) {
+        if (active) setErrors([error && typeof error === 'object' && 'message' in error ? String(error.message) : 'Could not load editorial access. Retry below.']);
+      } finally { if (active) setBusy(false); }
+    })();
+    return () => { active = false; };
+  }, [sessionRevision]);
+
   useEffect(() => {
     const handler = (event: BeforeUnloadEvent) => {
       if (dirty) {
@@ -77,6 +107,7 @@ export function App() {
     if (busy) return false;
     if (dirty && !window.confirm("Discard your unsaved edits?")) return false;
     setEditor(null);
+    setReplaceDaily(false);
     setDirty(false);
     setErrors([]);
     return true;
@@ -93,6 +124,7 @@ export function App() {
       if (error) throw error;
       const content = await loadContent();
       setQuizzes(content.quizzes);
+        setDailySlots(content.dailyRounds);
       setCategories(content.categories);
       setConnected(true);
       setPassword("");
@@ -116,13 +148,14 @@ export function App() {
     if (!leave()) return;
     await backend?.auth.signOut();
     setConnected(false);
-    const local = loadWorkspace();
-    setQuizzes(local.quizzes);
+    setQuizzes([]);
+    setDailySlots([]);
+    setEnginePage(true);
     setCategories(loadLocalCategories());
-    setNotice("Returned to your local workspace.");
+    setNotice("");
   };
   const save = async (status: EditorialQuiz["status"]) => {
-    if (!editor || busy) return;
+    if (!connected || !editor || busy) return;
     const problems =
       status === "draft" && !connected
         ? !editor.title.trim()
@@ -154,18 +187,20 @@ export function App() {
     if (connected) {
       setBusy(true);
       try {
-        const id = await saveContent(saved);
+        const id = await saveContent(saved, replaceDaily);
         const content = await loadContent();
         setQuizzes(content.quizzes);
+        setDailySlots(content.dailyRounds);
         setCategories(content.categories);
         setEditor(content.quizzes.find((q) => q.id === id) ?? saved);
         setDirty(false);
+        setReplaceDaily(false);
         setErrors([]);
         setNotice(
           status === "published"
-            ? "Quiz published to the player catalog."
+            ? "Daily round published."
             : status === "scheduled"
-              ? "Quiz scheduled. Players can access it at the selected time."
+              ? "Daily round scheduled. Players can access it at the selected time."
               : "Draft saved to the backend.",
         );
       } catch (error) {
@@ -205,6 +240,17 @@ export function App() {
           : "Draft saved in this browser.",
     );
   };
+  if (!connected) return <main style={{maxWidth: 480, margin: '10vh auto', padding: 24}}>
+    <a className="wordmark" href="#">bivia<span>.</span></a>
+    <h1>The trivia workshop.</h1>
+    <p>Sign in to build, review, and schedule NIV rounds.</p>
+    {backend ? <form onSubmit={event => {event.preventDefault(); void connect();}}>
+      <label>Email<input type="email" autoComplete="username" required value={email} onChange={e => setEmail(e.target.value)} /></label>
+      <label>Password<input type="password" autoComplete="current-password" required value={password} onChange={e => setPassword(e.target.value)} /></label>
+      <button className="primary full-width" disabled={busy}>{busy ? 'Connecting…' : 'Sign in'}</button>
+    </form> : <p>The content service needs to be configured.</p>}
+    {!!errors.length && <><div role="alert" className="error-box">{errors.join(' ')}</div><button className="secondary full-width" disabled={busy} onClick={() => setSessionRevision(n => n + 1)}>Retry editorial access</button></>}
+  </main>;
   return (
     <div className="app-shell">
       <aside className="sidebar">
@@ -347,6 +393,7 @@ export function App() {
                     "The exported draft could not be loaded. Refresh the quiz library.",
                   );
                 setQuizzes(content.quizzes);
+        setDailySlots(content.dailyRounds);
                 setCategories(content.categories);
                 setEditor(draft);
                 setDirty(false);
@@ -396,7 +443,7 @@ export function App() {
                 </h2>
                 <p>
                   {connected
-                    ? "Content loads from the backend. Export a copy at any time. Local drafts remain saved separately in this browser."
+                    ? "Content loads from the builder. Export a copy at any time."
                     : "Drafts, schedules, and publication labels are saved in this browser. They are separate from the player app. Export regularly to keep your work."}
                 </p>
                 <button
@@ -416,7 +463,7 @@ export function App() {
                       publishing update the connected backend.
                     </p>
                     <button className="secondary" onClick={disconnect}>
-                      Sign out and use local workspace
+                      Sign out
                     </button>
                   </>
                 ) : backend ? (
@@ -428,7 +475,7 @@ export function App() {
                   >
                     <p>
                       Sign in with an administrator account to load and manage
-                      backend content. Your local drafts remain separate.
+                      builder content.
                     </p>
                     <label>
                       Email
@@ -562,11 +609,8 @@ export function App() {
                         </select>
                       </label>
                       <label>
-                        {connected
-                          ? "Game modes are chosen by players"
-                          : "Game mode"}
+                        Game mode
                         <select
-                          disabled={connected}
                           value={editor.mode}
                           onChange={(e) =>
                             update({
@@ -668,7 +712,8 @@ export function App() {
                   </button>
                 </div>
                 <aside className="publish-panel">
-                  <h2>Publication</h2>
+                  <h2>Daily publication</h2>
+                  {connected && <div className="small-note"><strong>Upcoming editions</strong>{dailySlots.filter(slot => slot.mode === editor.mode && (editor.mode !== 'category' || slot.category_id === editor.categoryId)).slice(0, 7).map(slot => <p key={slot.id}>{slot.edition_day} UTC · {quizzes.find(q => q.id === slot.quiz_id)?.title ?? 'Scheduled quiz'}</p>)}{!dailySlots.some(slot => slot.mode === editor.mode && (editor.mode !== 'category' || slot.category_id === editor.categoryId)) && <p>No round scheduled for this slot.</p>}</div>}
                   <span className={`status ${editor.status}`}>
                     {editor.status}
                   </span>
@@ -684,6 +729,7 @@ export function App() {
                       onChange={(e) => update({ scheduledAt: e.target.value })}
                     />
                   </label>
+                  {connected && <label className="small-note"><input type="checkbox" checked={replaceDaily} onChange={e => setReplaceDaily(e.target.checked)} /> Replace existing daily round in this slot</label>}
                   <button
                     className="secondary full-width"
                     onClick={() => save("scheduled")}
@@ -696,11 +742,11 @@ export function App() {
                     onClick={() => save("published")}
                     disabled={busy}
                   >
-                    {connected ? "Publish quiz" : "Mark published locally"}
+                    {connected ? "Publish for today" : "Mark published locally"}
                   </button>
                   <p className="small-note">
                     {connected
-                      ? "Published quizzes appear in the player catalog. Scheduled quizzes appear at the selected time."
+                      ? "Each UTC day has one round per topic, plus Timed and Challenger. Scheduling places this quiz in that daily slot."
                       : "Local statuses only. These actions do not make content available to players."}
                   </p>
                   <hr />

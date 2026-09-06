@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { TextInput, View, Pressable, Platform } from "react-native";
 import { router, useLocalSearchParams } from "expo-router";
 import * as Linking from "expo-linking";
@@ -15,15 +15,20 @@ import {
 } from "../src/components/ui";
 import { supabase } from "../src/lib/supabase";
 export default function Auth() {
-  const { next } = useLocalSearchParams<{ next?: string }>();
+  const { next, mode: requestedMode } = useLocalSearchParams<{ next?: string; mode?: string }>();
   const destination =
     next && /^\/(quiz\/|invite[?]|group\/)/.test(next) ? next : "/profile";
-  const [mode, setMode] = useState<"login" | "signup" | "reset">("login"),
+  const [mode, setMode] = useState<"login" | "signup" | "reset">(requestedMode === "signup" ? "signup" : "login"),
     [email, setEmail] = useState(""),
     [password, setPassword] = useState(""),
-    [name, setName] = useState(""),
+    [firstName, setFirstName] = useState(""),
+    [lastName, setLastName] = useState(""),
     [message, setMessage] = useState(""),
     [busy, setBusy] = useState(false);
+  useEffect(() => {
+    setMode(requestedMode === "signup" ? "signup" : "login");
+    setMessage("");
+  }, [requestedMode]);
   async function submit() {
     setBusy(true);
     setMessage("");
@@ -34,8 +39,8 @@ export default function Auth() {
         );
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim()))
         throw new Error("Enter a valid email address.");
-      if (mode === "signup" && !name.trim())
-        throw new Error("Enter your name.");
+      if (mode === "signup" && (!firstName.trim() || !lastName.trim()))
+        throw new Error("Enter your first and last name.");
       if (mode !== "reset" && password.length < 8)
         throw new Error("Use a password with at least 8 characters.");
       if (mode === "reset") {
@@ -50,7 +55,7 @@ export default function Auth() {
           email: email.trim(),
           password,
           options: {
-            data: { display_name: name.trim() },
+            data: { first_name: firstName.trim(), last_name: lastName.trim(), display_name: firstName.trim() },
             emailRedirectTo: Linking.createURL("/profile"),
           },
         });
@@ -86,36 +91,48 @@ export default function Auth() {
         <Heading
           title={
             mode === "signup"
-              ? "Stay curious, together."
+              ? "Glad you’re game."
               : mode === "reset"
                 ? "Let’s get you back in."
                 : "Welcome back."
           }
           subtitle={
             mode === "signup"
-              ? "A little knowledge goes a long way."
+              ? undefined
               : mode === "reset"
                 ? "We’ll email you a password reset link."
                 : "Your next discovery is waiting."
           }
         />
         {mode === "signup" && (
-          <View style={{ gap: 7 }}>
-            <T style={s.label}>Your name</T>
+          <View style={{ gap: 20 }}>
             <TextInput
-              accessibilityLabel="Your name"
-              autoComplete="name"
-              value={name}
-              onChangeText={setName}
+              accessibilityLabel="First name"
+              placeholder="First name"
+              placeholderTextColor={c.muted}
+              autoComplete="given-name"
+              value={firstName}
+              onChangeText={setFirstName}
+              style={s.input}
+              maxLength={60}
+            />
+            <TextInput
+              accessibilityLabel="Last name"
+              placeholder="Last name"
+              placeholderTextColor={c.muted}
+              autoComplete="family-name"
+              value={lastName}
+              onChangeText={setLastName}
               style={s.input}
               maxLength={60}
             />
           </View>
         )}
         <View style={{ gap: 7 }}>
-          <T style={s.label}>Email</T>
           <TextInput
             accessibilityLabel="Email"
+            placeholder="Email address"
+            placeholderTextColor={c.muted}
             autoComplete="email"
             keyboardType="email-address"
             autoCapitalize="none"
@@ -126,9 +143,10 @@ export default function Auth() {
         </View>
         {mode !== "reset" && (
           <View style={{ gap: 7 }}>
-            <T style={s.label}>Password</T>
             <TextInput
               accessibilityLabel="Password"
+              placeholder="Password"
+              placeholderTextColor={c.muted}
               autoComplete={
                 mode === "signup" ? "new-password" : "current-password"
               }

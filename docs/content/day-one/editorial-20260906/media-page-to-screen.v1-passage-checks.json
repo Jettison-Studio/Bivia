@@ -1,0 +1,87 @@
+{
+  "translation": "NIV",
+  "bibleId": 111,
+  "licensedTextStored": false,
+  "checks": [
+    {
+      "passageId": "REV.5.1",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/REV.5.1?format=text",
+      "httpStatus": 200,
+      "reference": "Revelation 5:1",
+      "contentSha256": "8946ee329c99f19b8a44f117e6491be8f710aa39550de73f0c059c27b4530bc7",
+      "checkedAt": "2026-09-06T20:31:27.627467+00:00"
+    },
+    {
+      "passageId": "REV.5.1-7",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/REV.5.1-7?format=text",
+      "httpStatus": 200,
+      "reference": "Revelation 5:1-7",
+      "contentSha256": "6a23dc17536a4b994cfae4ed4122595b33875907435689eca3ce570a9a75e792",
+      "checkedAt": "2026-09-06T20:31:28.414300+00:00"
+    },
+    {
+      "passageId": "ROM.16.22",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/ROM.16.22?format=text",
+      "httpStatus": 200,
+      "reference": "Romans 16:22",
+      "contentSha256": "b2c5ad8e33e81319add56b141b1a4cce851a727a094b969c00dde66fe7766969",
+      "checkedAt": "2026-09-06T20:31:28.722305+00:00"
+    },
+    {
+      "passageId": "ROM.16.21-27",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/ROM.16.21-27?format=text",
+      "httpStatus": 200,
+      "reference": "Romans 16:21-27",
+      "contentSha256": "d98ead9e824fadeea79d7411acf30de235953e5adba12313460ef19eb8192ac9",
+      "checkedAt": "2026-09-06T20:31:29.201395+00:00"
+    },
+    {
+      "passageId": "GEN.4.6-9",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/GEN.4.6-9?format=text",
+      "httpStatus": 200,
+      "reference": "Genesis 4:6-9",
+      "contentSha256": "69c012440f8f994b85c3f9ce3cb0b5a4d5731de80ecb49d93c0a2ee6a8a760c9",
+      "checkedAt": "2026-09-06T20:31:29.811804+00:00"
+    },
+    {
+      "passageId": "GEN.4.1-10",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/GEN.4.1-10?format=text",
+      "httpStatus": 200,
+      "reference": "Genesis 4:1-10",
+      "contentSha256": "ff091b1dd1476a63e55619347faa548f3df6b407a39f5937684215aac25565c3",
+      "checkedAt": "2026-09-06T20:31:30.426563+00:00"
+    },
+    {
+      "passageId": "EXO.2.5-10",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/EXO.2.5-10?format=text",
+      "httpStatus": 200,
+      "reference": "Exodus 2:5-10",
+      "contentSha256": "a641a9b9ec7ad07feac740d305af9a07c10479866ecc2e8f71763ae27ead47dc",
+      "checkedAt": "2026-09-06T20:31:30.929961+00:00"
+    },
+    {
+      "passageId": "EXO.2.1-10",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/EXO.2.1-10?format=text",
+      "httpStatus": 200,
+      "reference": "Exodus 2:1-10",
+      "contentSha256": "c211427c1809ffbe56e7ded41f2b20be4ba545d154cef7fbb6484b99a65b2e4b",
+      "checkedAt": "2026-09-06T20:31:31.359128+00:00"
+    },
+    {
+      "passageId": "JDG.5.22",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JDG.5.22?format=text",
+      "httpStatus": 200,
+      "reference": "Judges 5:22",
+      "contentSha256": "7f986e3cc845efb88a601c109d3a63fda615bde0f5ede08b6a9d85b89a1e4934",
+      "checkedAt": "2026-09-06T20:31:31.719760+00:00"
+    },
+    {
+      "passageId": "JDG.5.19-27",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JDG.5.19-27?format=text",
+      "httpStatus": 200,
+      "reference": "Judges 5:19-27",
+      "contentSha256": "3cbc8f22fc0a30bcdefe55b886f69e9f1d2304c7d6587ba518ad3ad182cd7d7f",
+      "checkedAt": "2026-09-06T20:31:32.269349+00:00"
+    }
+  ]
+}

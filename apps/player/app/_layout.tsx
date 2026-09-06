@@ -26,13 +26,13 @@ function Shell() {
   const { width } = useWindowDimensions();
   const path = usePathname();
   const { session, authReady } = useBivia();
-  const visibleNav = nav.filter((item) => item.path !== "/profile" || !!session);
+  const showNavigation = authReady && !!session;
   const compact = width < 720;
   const gameplay = path.startsWith("/quiz/");
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: "white" }}>
       <StatusBar style="dark" />
-      <View
+      {!gameplay && <View
         style={{
           height: 80,
           borderBottomWidth: 1,
@@ -60,9 +60,9 @@ function Shell() {
             bivia<T style={{ fontSize: 37, color: c.pink }}>•</T>
           </T>
         </Pressable>
-        {!compact && (
+        {showNavigation && !compact && (
           <View style={{ flexDirection: "row", gap: 36 }}>
-            {visibleNav.map((n) => (
+            {nav.map((n) => (
               <Pressable
                 key={n.path}
                 accessibilityRole="link"
@@ -121,7 +121,7 @@ function Shell() {
             </T>
           </Pressable>
         ))}
-      </View>
+      </View>}
       <View style={{ flex: 1 }}>
         <Stack
           screenOptions={{
@@ -131,7 +131,7 @@ function Shell() {
           }}
         />
       </View>
-      {compact && !gameplay && (
+      {showNavigation && compact && !gameplay && (
         <View
           style={{
             flexDirection: "row",
@@ -142,7 +142,7 @@ function Shell() {
             backgroundColor: "white",
           }}
         >
-          {visibleNav.map((n) => (
+          {nav.map((n) => (
             <Pressable
               key={n.path}
               accessibilityRole="link"

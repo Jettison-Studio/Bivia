@@ -24,25 +24,22 @@ test('invalid scoring inputs cannot inflate results or produce NaN', () => {
   }
 });
 
-test('timed questions accelerate to 2.5 seconds while other modes retain the 30-second bonus', () => {
-  assert.deepEqual(Array.from({ length: 10 }, (_, i) => timeLimit('timed', i)), [30, 25, 20, 15, 10, 5, 2.5, 2.5, 2.5, 2.5]);
+test('timed questions accelerate gradually with a readable 15-second floor while other modes retain the 30-second bonus', () => {
+  assert.deepEqual(Array.from({ length: 10 }, (_, i) => timeLimit('timed', i)), [30, 28, 26, 24, 22, 20, 18, 16, 15, 15]);
   assert.equal(timeLimit('category', 19), 30);
   assert.equal(timeLimit('challenger', 19), 30);
+  assert.equal(timeLimit('timed', 100), 15);
+  assert.equal(timeLimit('timed', 1.9), 28);
   assert.equal(timeLimit('timed', -1), 30);
   assert.equal(timeLimit('timed', Number.NaN), 30);
 });
 
-test('sample library supplies six complete categories, a timed quiz, and a challenger', () => {
-  assert.equal(categories.length, 6);
-  assert.equal(new Set(categories.map(category => category.id)).size, 6);
-  assert.equal(quizzes.filter(quiz => quiz.mode === 'category').length, 6);
-  for (const category of categories) {
-    const quiz = quizzes.find(quiz => quiz.categoryId === category.id);
-    assert.equal(quiz?.questions.length, 5);
-  }
-  assert.equal(quizzes.find(quiz => quiz.mode === 'timed')?.questions.length, 10);
-  assert.equal(quizzes.find(quiz => quiz.mode === 'challenger')?.questions.length, 20);
-  for (const quiz of quizzes) assert.deepEqual(validateQuiz(quiz), [], quiz.id);
+test('public practice library contains only the reviewed NIV guest round', () => {
+  assert.equal(quizzes.length, 1);
+  assert.equal(quizzes[0].id, 'guest-niv-day-one');
+  assert.equal(quizzes[0].questions.length, 5);
+  for (const question of quizzes[0].questions) assert.ok(question.reference.endsWith(' · NIV'));
+  assert.deepEqual(validateQuiz(quizzes[0]), []);
 });
 
 test('authoring validation rejects blank content, duplicate options, invalid keys, and repeated IDs', () => {

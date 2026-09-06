@@ -1,0 +1,240 @@
+{
+  "id": "164e2601-5b0c-4619-b0ad-b3c80989633c",
+  "draftId": "music-join-the-song-20260906-v1",
+  "title": "Join the song",
+  "subtitle": "Follow familiar patterns from a chorus to the concert stage.",
+  "description": "Follow familiar patterns from a chorus to the concert stage.",
+  "categoryId": "music",
+  "mode": "category",
+  "status": "draft",
+  "reviewState": "three_editorially_reviewed_two_held",
+  "publishedAt": "",
+  "scheduledAt": "",
+  "updatedAt": "2026-09-06T20:11:18.195217+00:00",
+  "editorialDate": "2026-09-06",
+  "translation": "NIV",
+  "sourceMode": "references",
+  "hintKind": "original_clue",
+  "passageId": null,
+  "revision": 1,
+  "verification": {
+    "factsResearched": true,
+    "allOptionsReviewed": true,
+    "publicDomainContextChecked": true,
+    "exactNivRangesRetrieved": true,
+    "surroundingNivContextRetrieved": true,
+    "fullReadingLeakageReviewed": true,
+    "retrievalMethod": "Configured YouVersion version 111; hashes only retained",
+    "localPlayerRetrievalTested": false,
+    "blindPlaytestCompleted": false,
+    "engineGatesRun": false,
+    "humanApproved": false,
+    "publicationAuthorized": false,
+    "editorialShortfall": 2,
+    "editorialRecommendation": "Q1/Q4/Q5 advance to verification/playtest; Q2 replacement required, Q3 held. No final approval.",
+    "passageEvidenceFile": "music-join-the-song.v1-passage-checks.json"
+  },
+  "questions": [
+    {
+      "id": "music-join-the-song-q1-v1",
+      "prompt": "In a typical pop song, which section returns with the same main lyrics and tune?",
+      "answers": [
+        "The introduction",
+        "The bridge",
+        "The chorus",
+        "The verse"
+      ],
+      "correctIndex": 2,
+      "hint": "It often carries the song\u2019s title.",
+      "reference": "Psalm 136:1-3",
+      "explanation": "A chorus commonly returns with stable lyrics and melody, whereas verses usually develop changing words and a bridge supplies contrast. Psalm 136 uses a recurring thanksgiving refrain. That repeated textual structure provides the analogy; no ancient pop-song arrangement or surviving melody is claimed.",
+      "factualSourceUrls": [
+        "https://online.berklee.edu/takenote/four-critical-listening-tips-for-songwriters/",
+        "https://online.berklee.edu/takenote/writing-bridges-for-your-songs-can-be-much-easier/"
+      ],
+      "contextSourceUrls": [
+        "https://ebible.org/eng-web/PSA136.htm"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/PSA.136.1-3?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/PSA.136.NIV",
+      "nivContentSha256": "2aa6e0a81bb5c84f3355edc262c5ad0a0a805008a9eeeb4d7f67242b9cbb7dd2",
+      "contextPassageId": "PSA.136.1-9",
+      "difficulty": {
+        "fact1to5": 1,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Easy opener. Repetition is visible in the reading but the musical label is not. Chorus/refrain are related, not universally interchangeable; the question deliberately specifies a typical pop song.",
+      "concept": "Recurring chorus and refrain structure",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    },
+    {
+      "id": "music-join-the-song-q2-v1",
+      "prompt": "A soloist sings a short phrase, then a choir answers it. Which musical pattern is this?",
+      "answers": [
+        "A canon",
+        "Call and response",
+        "Unison singing",
+        "A drone"
+      ],
+      "correctIndex": 1,
+      "hint": "The reply may stay the same even when the leader\u2019s phrase changes.",
+      "reference": "Psalm 24:8-10",
+      "explanation": "Call and response alternates a musical call with a reply. A canon overlaps staggered entries of a melody; unison joins the same line; a drone sustains a pitch. Psalm 24 presents questions about the King of glory and answers identifying the Lord. This is a question-and-answer textual analogy, not proof of a particular ancient performance arrangement.",
+      "factualSourceUrls": [
+        "https://www.carnegiehall.org/Education/Programs/Link-Up/National-Program/The-Orchestra-Swings/Communicating-Through-Swing"
+      ],
+      "contextSourceUrls": [
+        "https://ebible.org/eng-web/PSA024.htm"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/PSA.24.8-10?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/PSA.24.NIV",
+      "nivContentSha256": "ad2d74c6268b18939f5d1ca1796eb883703e57f43e2d5bcc213ee71aed0fda39",
+      "contextPassageId": "PSA.24.1-10",
+      "difficulty": {
+        "fact1to5": 1,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "revision_required",
+      "authorFinding": "Q1 concerns a returning section, Q2 alternating participants. Both are easy forms and may feel repetitive; test variety. Hint adds a fixed-response variant but may have little value after the direct question.",
+      "concept": "Musical call and response",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "coordinatorFinding": "Definition is nearly verbatim; hint adds little. Replace for variety rather than retaining two easy structure questions."
+    },
+    {
+      "id": "music-join-the-song-q3-v1",
+      "prompt": "How can a trumpeter change notes without pressing different valves?",
+      "answers": [
+        "By covering tone holes",
+        "By adjusting a reed",
+        "By moving a slide",
+        "By changing the lip vibration"
+      ],
+      "correctIndex": 3,
+      "hint": "The same length of brass tubing supports a series of natural notes.",
+      "reference": "1 Corinthians 14:7-8",
+      "explanation": "A player\u2019s vibrating lips excite different resonances in the trumpet\u2019s harmonic series with the same tube length. Valves provide additional tube lengths but are not needed for every note change. Tone holes, reeds and a playing slide describe mechanisms associated with other wind instruments. Paul uses distinct notes and a recognizable trumpet call to illustrate intelligible communication that builds up the church.",
+      "factualSourceUrls": [
+        "https://www.yamaha.com/en/musical_instrument_guide/trumpet/mechanism/mechanism002.html"
+      ],
+      "contextSourceUrls": [
+        "https://ebible.org/eng-web/1CO14.htm"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/1CO.14.7-8?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/1CO.14.NIV",
+      "nivContentSha256": "75eebf02178556ab8bd2692100cc6b67e9c5f9c836182cfc94e71e09aaff0019",
+      "contextPassageId": "1CO.14.6-12",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "author_hold",
+      "authorFinding": "The reading motivates distinct notes but does not materially distinguish these mechanisms. Hold the pairing for coordinator scrutiny instead of claiming that merely mentioning a trumpet provides the required inference. This is not the accepted Science timbre question.",
+      "concept": "Trumpet lip excitation of harmonics",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    },
+    {
+      "id": "music-join-the-song-q4-v1",
+      "prompt": "Which Handel oratorio includes the chorus \u201cFor unto us a Child is born\u201d?",
+      "answers": [
+        "Messiah",
+        "Saul",
+        "Israel in Egypt",
+        "Judas Maccabaeus"
+      ],
+      "correctIndex": 0,
+      "hint": "The same work contains the famous Hallelujah chorus.",
+      "reference": "Isaiah 9:6-7",
+      "explanation": "The chorus belongs to Handel\u2019s Messiah. The libretto draws this movement from Isaiah\u2019s royal-child passage, so the reading is a direct artistic source rather than an attached theme. The other options are different Handel oratorios. The paid hint supplies a second recognizable movement.",
+      "factualSourceUrls": [
+        "https://data.carnegiehall.org/works/51657/about",
+        "https://lsolive.lso.co.uk/products/lso0607-handel",
+        "https://handelandhaydn.org/messiah-online/"
+      ],
+      "contextSourceUrls": [
+        "https://ebible.org/eng-web/ISA09.htm"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/ISA.9.6-7?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/ISA.9.NIV",
+      "nivContentSha256": "77a9a921b53220b20cf810ba49a6c176ded079dba0d8b3399f0948dc918e59df",
+      "contextPassageId": "ISA.9.1-7",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "The movement title is a public-domain historical title, not stored NIV passage text. Only that title is quoted; no song lyrics are supplied. Explain the work\u2019s Christian reading without erasing Isaiah\u2019s royal promise in context. No claim every performance follows identical numbering.",
+      "concept": "Handel Messiah and Isaiah source text",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    },
+    {
+      "id": "music-join-the-song-q5-v1",
+      "prompt": "Which band had a 1965 hit with a song adapted from Ecclesiastes?",
+      "answers": [
+        "The Beatles",
+        "The Beach Boys",
+        "The Animals",
+        "The Byrds"
+      ],
+      "correctIndex": 3,
+      "hint": "Think of folk rock with a chiming electric twelve-string guitar.",
+      "reference": "Ecclesiastes 3:1-8",
+      "explanation": "The Byrds recorded Pete Seeger\u2019s Turn! Turn! Turn!, whose adapted text comes from Ecclesiastes. The passage can prompt recognition of the song; identifying the band adds a music-history step. The other groups are plausible contemporary bands but not the performer of this particular hit. The reading remains NIV; the historic lyric\u2019s older English wording is not substituted.",
+      "factualSourceUrls": [
+        "https://www.officialcharts.com/songs/byrds-turn-turn-turn-to-everything-there-is-a-season/",
+        "https://www.rockhall.com/wp-content/uploads/2024/03/The_Byrds_1991.pdf",
+        "https://www.rhino.com/article/the-byrds"
+      ],
+      "contextSourceUrls": [
+        "https://ebible.org/eng-web/ECC03.htm"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/ECC.3.1-8?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/ECC.3.NIV",
+      "nivContentSha256": "5c75e782febc17fc255ec143bf59833243481289a5baaddcd548b0c6a7a25044",
+      "contextPassageId": "ECC.3.1-10",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "The full passage is eight verses and deliberately provides recognition cues without naming the band. No new lyric quotation stored. Hint usefulness depends on knowledge of the band\u2019s sound; do not assume it reduces difficulty for everyone. Other bands also used twelve-string guitars, so this is a nudge, not unique proof.",
+      "concept": "Byrds Ecclesiastes adaptation",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    }
+  ]
+}

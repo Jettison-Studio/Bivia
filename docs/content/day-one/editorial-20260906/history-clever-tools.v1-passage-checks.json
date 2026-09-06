@@ -1,0 +1,39 @@
+{
+  "translation": "NIV",
+  "bibleId": 111,
+  "licensedTextStored": false,
+  "checks": [
+    {
+      "passageId": "JOB.38.14",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JOB.38.14?format=text",
+      "httpStatus": 200,
+      "reference": "Job 38:14",
+      "contentSha256": "6c127feccc61211b558636e20f54eae71ae4c72d696ad070aa1d2a493db14819",
+      "checkedAt": "2026-09-06T19:30:09.525062+00:00"
+    },
+    {
+      "passageId": "JOB.38.12-21",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JOB.38.12-21?format=text",
+      "httpStatus": 200,
+      "reference": "Job 38:12-21",
+      "contentSha256": "2dc11f7c40868b4880529f97ee70ab8609188dc7f9f369c9d778d3d8cd55d6ce",
+      "checkedAt": "2026-09-06T19:30:10.049440+00:00"
+    },
+    {
+      "passageId": "2KI.20.9-11",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/2KI.20.9-11?format=text",
+      "httpStatus": 200,
+      "reference": "2 Kings 20:9-11",
+      "contentSha256": "73c607d414dd0c9a3aead28ef278e24572a91a21ee10d26c0fb42872a415d832",
+      "checkedAt": "2026-09-06T19:30:10.737674+00:00"
+    },
+    {
+      "passageId": "2KI.20.4-11",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/2KI.20.4-11?format=text",
+      "httpStatus": 200,
+      "reference": "2 Kings 20:4-11",
+      "contentSha256": "07ad0bb3cd9612de193511ad3cccc2f6e6ffc8a146c0aa4950b3073293e6f473",
+      "checkedAt": "2026-09-06T19:30:11.237721+00:00"
+    }
+  ]
+}

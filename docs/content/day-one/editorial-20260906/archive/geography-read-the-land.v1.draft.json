@@ -1,0 +1,219 @@
+{
+  "id": "174fc581-08e7-4ef8-a5c5-a54dc17b36d2",
+  "draftId": "geo-read-the-land-20260906-v1",
+  "title": "Read the land",
+  "subtitle": "Find your bearings, read a hillside, and discover what water leaves behind.",
+  "description": "Find your bearings, read a hillside, and discover what water leaves behind.",
+  "categoryId": "geography",
+  "mode": "category",
+  "status": "draft",
+  "reviewState": "unapproved",
+  "publishedAt": "",
+  "scheduledAt": "",
+  "updatedAt": "2026-09-06T14:31:14.946405Z",
+  "editorialDate": "2026-09-06",
+  "translation": "NIV",
+  "sourceMode": "references",
+  "hintKind": "original_clue",
+  "passageId": null,
+  "verification": {
+    "factsResearched": true,
+    "allOptionsReviewed": true,
+    "publicDomainContextChecked": true,
+    "exactNivRangesRetrieved": true,
+    "surroundingNivContextRetrieved": true,
+    "fullReadingLeakageReviewed": true,
+    "retrievalMethod": "Configured YouVersion API, version 111; not the authenticated local Edge function",
+    "localPlayerRetrievalTested": false,
+    "blindPlaytestCompleted": false,
+    "engineGatesRun": false,
+    "humanApproved": false,
+    "publicationAuthorized": false,
+    "editorialShortfall": 2,
+    "editorialRecommendation": "Review q1, q2 and q4; hold q3 for distractors and q5 for a more distinctive Scripture connection. Five candidates are supplied, not five quality-approved questions."
+  },
+  "questions": [
+    {
+      "id": "geo-read-the-land-q1-v1",
+      "prompt": "On one topographic map, which feature best identifies the hillside where a hiker gains height most rapidly over a short horizontal distance?",
+      "answers": [
+        "Contour lines printed more thickly",
+        "Contour lines packed closely together",
+        "Contour lines labeled with higher elevations",
+        "Contour lines forming wider closed loops"
+      ],
+      "correctIndex": 1,
+      "hint": "Jonathan's climb suggests comparing upward gain with ground covered. Each step between adjacent contours represents the same change in height.",
+      "reference": "1 Samuel 14:13",
+      "explanation": "Closely spaced contours show a large elevation change over a short horizontal distance. Jonathan's demanding ascent is a natural connection to steep terrain; the story does not describe a map. Line thickness marks index contours, and high elevation alone does not establish steepness.",
+      "factualSourceUrls": [
+        "https://pubs.usgs.gov/gip/TopographicMapSymbols/topomapsymbols.pdf"
+      ],
+      "contextSourceUrls": [
+        "https://ebible.org/eng-web/1SA14.htm"
+      ],
+      "nivContextUrl": "https://www.bible.com/bible/111/1SA.14.NIV",
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/1SA.14.13?format=text",
+      "nivContentSha256": "fa814f3a248bee3c86f1291a35f43d557939764d645e28743c0a901ee24e0325",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": 1,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "unapproved",
+      "lineage": {
+        "kind": "intentional_revision",
+        "runId": "4582e7cb-2225-4cf4-b3f9-074b22813088",
+        "candidateId": "q3"
+      }
+    },
+    {
+      "id": "geo-read-the-land-q2-v1",
+      "prompt": "At sea in the Northern Hemisphere, Polaris's angle above the horizon gives a sailor a direct estimate of which navigational quantity?",
+      "answers": [
+        "Longitude",
+        "Magnetic declination",
+        "Course over ground",
+        "Latitude"
+      ],
+      "correctIndex": 3,
+      "hint": "Imagine sailing toward the North Pole: Polaris would appear progressively higher in your sky.",
+      "reference": "Acts 27:20",
+      "explanation": "Polaris's height above the horizon approximately matches the observer's northern latitude. Losing sight of the sky in Acts provides a meaningful connection to celestial navigation. The account does not identify Polaris or say which method the crew used, and their peril also involved the continuing storm.",
+      "factualSourceUrls": [
+        "https://vos.noaa.gov/MWL/aug_08/navigation_tools.shtml",
+        "https://www.ncei.noaa.gov/products/magnetic-declination",
+        "https://www.ncei.noaa.gov/products/world-magnetic-model"
+      ],
+      "contextSourceUrls": [
+        "https://www.biblegateway.com/passage/?search=Acts+27:18-26&version=KJV"
+      ],
+      "nivContextUrl": "https://www.bible.com/bible/111/ACT.27.NIV",
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/ACT.27.20?format=text",
+      "nivContentSha256": "d5b65edbe709bf5d97fd1b75b8fdcf8d449d4905db9f91b05174ffd86e350db8",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": 2,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "unapproved",
+      "lineage": {
+        "kind": "new_concept",
+        "note": "Other Acts 27 passages were used for wind shelter and swimming; this is a different verse and answer concept."
+      }
+    },
+    {
+      "id": "geo-read-the-land-q3-v1",
+      "prompt": "In a mountain cloud forest, leaves can drip even during a period with fog but no rain. Where can that extra water come from?",
+      "answers": [
+        "Airborne droplets caught by the canopy",
+        "Water vapor released by the leaves",
+        "Groundwater forced upward through the soil",
+        "Rainwater created as leaves break down"
+      ],
+      "correctIndex": 0,
+      "hint": "Moses entered a cloud rather than merely standing beneath one. Now picture a tree canopy in that position, with damp air moving through its branches.",
+      "reference": "Exodus 24:15-18",
+      "explanation": "Leaves and branches can intercept suspended fog droplets; accumulated water can then drip to the ground. Moses entering the cloud supplies the spatial association. The passage concerns God's presence at Sinai; it neither identifies a cloud forest there nor explains its hydrology.",
+      "factualSourceUrls": [
+        "https://research.fs.usda.gov/treesearch/64402",
+        "https://research.fs.usda.gov/treesearch/38433",
+        "https://www.usgs.gov/water-science-school/science/evapotranspiration-and-water-cycle?page=0"
+      ],
+      "contextSourceUrls": [
+        "https://ebible.org/eng-web/EXO24.htm"
+      ],
+      "nivContextUrl": "https://www.bible.com/bible/111/EXO.24.NIV",
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/EXO.24.15-18?format=text",
+      "nivContentSha256": "0337f774cbc020dd67d6c6c31b3eb0d234721079a66e186fe8b0821b3023a7fe",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": 1,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "unapproved_needs_distractor_revision",
+      "lineage": {
+        "kind": "intentional_revision",
+        "runId": "4582e7cb-2225-4cf4-b3f9-074b22813088",
+        "candidateId": "q4"
+      }
+    },
+    {
+      "id": "geo-read-the-land-q4-v1",
+      "prompt": "At Minnesota's Interstate State Park, deep, rounded potholes remain in rock above today's river. What helped grind these holes during ancient floods?",
+      "answers": [
+        "Salt crystals expanding in cracks",
+        "Tree roots splitting the rock",
+        "Sand and pebbles swirling in the water",
+        "Ice repeatedly freezing inside cracks"
+      ],
+      "correctIndex": 2,
+      "hint": "The water in Job's image wears down stone. A flood can also carry hard material that works against the rock again and again.",
+      "reference": "Job 14:18-20",
+      "explanation": "The Minnesota DNR describes sand and pebbles swirling in floodwater and grinding the potholes at Interstate State Park. Job uses worn rock as an image of hope being destroyed; he is lamenting, not teaching geology. The modern connection adds the abrasive role of material carried by water.",
+      "factualSourceUrls": [
+        "https://www.dnr.state.mn.us/sites/default/files/assets/mcv/2024/may-jun/yn/YN-7Wonders.pdf",
+        "https://home.nps.gov/articles/000/weathering-erosion.htm",
+        "https://home.nps.gov/subjects/erosion/weathering.htm"
+      ],
+      "contextSourceUrls": [
+        "https://www.biblegateway.com/passage/?search=Job+14:14-22&version=KJV"
+      ],
+      "nivContextUrl": "https://www.bible.com/bible/111/JOB.14.NIV",
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/JOB.14.18-20?format=text",
+      "nivContentSha256": "b801ecddbcf129fc1e56e6bdd0c14b9d1f5e384cd8cbb46320dafe2bae00c0dd",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": 1,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "unapproved",
+      "lineage": {
+        "kind": "intentional_revision",
+        "runId": "4582e7cb-2225-4cf4-b3f9-074b22813088",
+        "candidateId": "q2",
+        "note": "Same abrasion concept and chapter; a specific landform replaces the general comparison of sediment loads."
+      }
+    },
+    {
+      "id": "geo-read-the-land-q5-v1",
+      "prompt": "A shallow farm well runs dry whenever a nearby irrigation well pumps heavily, then recovers after pumping stops. What best explains this repeated pattern?",
+      "answers": [
+        "Silt blocking the shallow well's intake",
+        "Pumping lowering the surrounding water table",
+        "Drought reducing the area's rainfall",
+        "Mineral deposits clogging the shallow well"
+      ],
+      "correctIndex": 1,
+      "hint": "Separate wellheads need not mean separate supplies. The water people compete for can extend beneath both properties.",
+      "reference": "Genesis 26:19-22",
+      "explanation": "Heavy pumping can lower groundwater levels around a well and affect nearby wells drawing from connected groundwater. Recovery when pumping stops supports this explanation over persistent blockage or regional drought. Isaac's disputes concern access to wells; the passage does not establish shared aquifers or diagnose a pumping problem.",
+      "factualSourceUrls": [
+        "https://www.usgs.gov/water-science-school/science/groundwater-wells",
+        "https://pubs.usgs.gov/gip/gw_ruralhomeowner/gw_ruralhomeowner_new.html",
+        "https://pubs.usgs.gov/of/1995/ofr-95-398/of95-398.html"
+      ],
+      "contextSourceUrls": [
+        "https://ebible.org/eng-web/GEN26.htm"
+      ],
+      "nivContextUrl": "https://www.bible.com/bible/111/GEN.26.NIV",
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/GEN.26.19-22?format=text",
+      "nivContentSha256": "719a45087ce81172f235abec656e401a5b410b837db52abed089e2c504c778d7",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": 2,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "unapproved_needs_connection_revision",
+      "lineage": {
+        "kind": "new_concept",
+        "note": "Different from the earlier oasis and floodplain-root candidates; keep groundwater-family repetition visible."
+      }
+    }
+  ]
+}

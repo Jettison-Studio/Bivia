@@ -1,17 +1,18 @@
-import { CatalogSection } from "../src/components/CatalogSection";
-import React, { useState } from "react";
+import { dailyLabel, type DailyRound } from "../src/lib/daily";
+import { useDaily } from "../src/lib/useDaily";
+import React, { useState, useCallback } from "react";
 import {
   View,
   Pressable,
   TextInput,
   useWindowDimensions,
-  ScrollView,
 } from "react-native";
-import { router } from "expo-router";
+import { router, useFocusEffect } from "expo-router";
 import { LinearGradient } from "expo-linear-gradient";
 import { categories, quizzes } from "@bivia/core";
 import { Page } from "../src/components/Page";
 import { T, Icon, LegacyIcon, Button, c, s, font } from "../src/components/ui";
+import { supabase } from "../src/lib/supabase";
 import { useBivia } from "../src/lib/store";
 const icons: Record<string, string> = {
   fitness: "barbell-outline",
@@ -23,16 +24,37 @@ const icons: Record<string, string> = {
 };
 export default function Home() {
   const { width } = useWindowDimensions();
-  const { profile, results } = useBivia();
+  const { profile, session, authReady } = useBivia();
+  const daily = useDaily();
+  function openQuiz(round?: DailyRound) {
+    if (daily.error) { void daily.refresh(); return; }
+    if (!authReady || daily.loading || !round) return;
+    const destination = `/quiz/${round.quizId}?mode=${round.mode}&daily=${round.id}${round.attemptId ? `&attempt=${round.attemptId}${round.status === "completed" ? "&view=results" : ""}` : ""}`;
+    router.push(session ? destination as any : {
+      pathname: "/auth",
+      params: { next: destination },
+    });
+  }
   const [search, setSearch] = useState("");
   const [onlyFavorites, setOnlyFavorites] = useState(false);
+  const [favorites, setFavorites] = useState<string[]>([]);
+  const [favoritesError, setFavoritesError] = useState(false);
+  useFocusEffect(useCallback(() => {
+    let active = true;
+    setFavorites([]);setFavoritesError(false);
+    if (session && supabase) void supabase.from("profiles").select("preferred_categories").eq("id", session.user.id).single().then(({data,error}) => {
+      if (active) {setFavorites(data?.preferred_categories ?? []);setFavoritesError(!!error);}
+    });
+    return () => {active=false;};
+  }, [session?.user.id]));
   const compact = width < 760;
-  const timed = quizzes.find((q) => q.mode === "timed")!,
-    challenger = quizzes.find((q) => q.mode === "challenger")!;
-  const shown = categories.filter(
+  const topicWidth = compact ? "48%" : "32%";
+  const timed = daily.data?.rounds.find(q => q.mode === "timed"),
+    challenger = daily.data?.rounds.find(q => q.mode === "challenger");
+  const shown = (daily.data?.categories ?? categories).filter(
     (cat) =>
       cat.name.toLowerCase().includes(search.toLowerCase()) &&
-      (!onlyFavorites || profile.categories.includes(cat.id)),
+      (!session || !onlyFavorites || favorites.includes(cat.id)),
   );
   return (
     <Page>
@@ -41,25 +63,19 @@ export default function Home() {
           flexDirection: "row",
           alignItems: "center",
           justifyContent: "space-between",
-          marginBottom: 26,
+          marginBottom: 28,
         }}
       >
-        <View>
-          <T style={{ fontSize: 13, color: c.muted, marginBottom: 6 }}>
+        <View style={{ flex: 1 }}>
+          <T accessibilityRole="header" style={[s.h1, { fontSize: compact ? 28 : 34 }]}>
             {new Date().toLocaleDateString("en-US", {
               weekday: "long",
               month: "long",
               day: "numeric",
             })}
           </T>
-          <T
-            accessibilityRole="header"
-            style={[s.h1, { fontSize: compact ? 28 : 34 }]}
-          >
-            A little trivia. A little faith.
-          </T>
-          <T style={{ color: c.muted, marginTop: 7 }}>
-            Big discoveries start with a good question.
+          <T style={{ fontSize: 14, color: c.muted, marginTop: 8 }}>
+            Trivia with a hint of bible
           </T>
         </View>
         {!compact && (
@@ -88,36 +104,17 @@ export default function Home() {
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 1 }}
         style={{
-          borderRadius: 18,
-          padding: compact ? 26 : 36,
+          borderRadius: 24,
+          padding: compact ? 24 : 36,
           overflow: "hidden",
         }}
       >
         <View style={{ flexDirection: "row", gap: 20, alignItems: "center" }}>
           <View style={{ flex: 1 }}>
-            <View
-              style={{
-                flexDirection: "row",
-                alignItems: "center",
-                gap: 8,
-                marginBottom: 15,
-              }}
-            >
-              <Icon name="sparkles-outline" size={17} color="#eadfff" />
-              <T
-                style={{
-                  fontSize: 13,
-                  color: "#eadfff",
-                  fontFamily: font.medium,
-                }}
-              >
-                Trivia with a hint of Bible
-              </T>
-            </View>
             <T
               style={{
-                fontSize: compact ? 29 : 38,
-                lineHeight: compact ? 36 : 46,
+                fontSize: compact ? 28 : 36,
+                lineHeight: compact ? 36 : 44,
                 fontFamily: font.bold,
                 color: "white",
                 letterSpacing: -1,
@@ -139,7 +136,12 @@ export default function Home() {
             <Button
               variant="white"
               icon="arrow-forward"
-              onPress={() => router.push(`/quiz/${quizzes[0].id}` as any)}
+              disabled={!authReady || (!!session && (daily.loading || (!daily.data?.rounds.length && !daily.error)))}
+              onPress={() => session
+                ? openQuiz(daily.data?.rounds.find(round => round.status === "active")
+                  ?? daily.data?.rounds.find(round => round.status === "unplayed")
+                  ?? daily.data?.rounds[0])
+                : router.push(`/quiz/${quizzes[0].id}` as any)}
               style={{ alignSelf: "flex-start", marginTop: 24 }}
             >
               Let’s play
@@ -198,20 +200,19 @@ export default function Home() {
           )}
         </View>
       </LinearGradient>
-      <CatalogSection />
       <View
         style={{
-          marginTop: 32,
-          marginBottom: 16,
+          marginTop: 36,
+          marginBottom: 18,
           flexDirection: "row",
           justifyContent: "space-between",
           alignItems: "center",
         }}
       >
         <T accessibilityRole="header" style={s.h2}>
-          Warm up with practice
+          Today’s trivia
         </T>
-        <T style={s.small}>Try a different pace</T>
+
       </View>
       <View style={{ flexDirection: compact ? "column" : "row", gap: 16 }}>
         {[
@@ -223,7 +224,7 @@ export default function Home() {
             bg: "#f2ebff",
             color: c.primary,
             label: "Timed trivia",
-            count: "10 questions",
+
           },
           {
             quiz: challenger,
@@ -233,21 +234,23 @@ export default function Home() {
             bg: "#fff0f7",
             color: "#b80070",
             label: "Challenger",
-            count: "20 questions",
+
           },
         ].map((x) => (
           <Pressable
             key={x.title}
             accessibilityRole="button"
-            accessibilityLabel={`Play ${x.label}`}
-            onPress={() => router.push(`/quiz/${x.quiz.id}` as any)}
-            style={({ hovered }: any) => ({
+            accessibilityLabel={`${session ? "Play" : "Sign in to play"} ${x.label}`}
+            disabled={!authReady || daily.loading || (!x.quiz && !daily.error)}
+            onPress={() => openQuiz(x.quiz)}
+            style={({ hovered, pressed }: any) => ({
               flex: 1,
-              padding: 24,
-              borderRadius: 15,
+              padding: compact ? 22 : 26,
+              borderRadius: 22,
+              opacity: pressed ? 0.88 : 1,
               backgroundColor: x.bg,
               borderWidth: 1,
-              borderColor: hovered ? x.color : "transparent",
+              borderColor: hovered ? x.color + "55" : "transparent",
             })}
           >
             <View
@@ -260,8 +263,8 @@ export default function Home() {
               <View
                 style={{
                   backgroundColor: "white",
-                  borderRadius: 11,
-                  padding: 10,
+                  borderRadius: 14,
+                  padding: 11,
                 }}
               >
                 <LegacyIcon name={x.icon} size={26} />
@@ -276,7 +279,7 @@ export default function Home() {
                 {x.label}
               </T>
             </View>
-            <T style={[s.h2, { marginTop: 18 }]}>{x.title}</T>
+            <T style={[s.h2, { marginTop: 20, fontSize: 23, lineHeight: 31 }]}>{x.title}</T>
             <T style={{ fontSize: 14, color: c.muted, marginTop: 5 }}>
               {x.description}
             </T>
@@ -288,13 +291,18 @@ export default function Home() {
                 alignItems: "center",
               }}
             >
-              <T style={{ fontSize: 12, color: x.color }}>{x.count}</T>
-              <Icon name="arrow-forward" color={x.color} size={20} />
+              <View style={{ gap: 4 }}>
+                {!!x.quiz && <T style={{ fontSize: 12, color: x.color }}>{x.quiz.questionCount} questions</T>}
+                <T style={{ fontSize: 13, color: x.color, fontFamily: font.semibold }}>
+                  {dailyLabel(x.quiz, daily.loading, daily.error)}
+                </T>
+              </View>
+              <Icon name={x.quiz?.status === "completed" ? "checkmark-circle" : "arrow-forward"} color={x.color} size={20} />
             </View>
           </Pressable>
         ))}
       </View>
-      <View style={{ marginTop: 34, marginBottom: 18, gap: 16 }}>
+      <View style={{ marginTop: 36, marginBottom: 18, gap: 16 }}>
         <View
           style={{
             flexDirection: "row",
@@ -305,7 +313,7 @@ export default function Home() {
           <T accessibilityRole="header" style={s.h2}>
             Find your thing
           </T>
-          <Pressable
+          {session && <Pressable
             accessibilityRole="button"
             onPress={() => setOnlyFavorites(!onlyFavorites)}
           >
@@ -318,7 +326,7 @@ export default function Home() {
             >
               {onlyFavorites ? "All topics" : "My topics"}
             </T>
-          </Pressable>
+          </Pressable>}
         </View>
         <View
           style={{
@@ -326,7 +334,7 @@ export default function Home() {
             alignItems: "center",
             gap: 10,
             paddingHorizontal: 15,
-            borderRadius: 10,
+            borderRadius: 14,
             backgroundColor: c.surface,
           }}
         >
@@ -349,26 +357,25 @@ export default function Home() {
           />
         </View>
       </View>
-      <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 14 }}>
+      <View style={{ flexDirection: "row", flexWrap: "wrap", columnGap: "2%", rowGap: 14 }}>
         {shown.map((cat) => {
-          const quiz = quizzes.find(
-            (q) => q.categoryId === cat.id && q.mode === "category",
-          )!;
-          const played = results.some((r) => r.quizId === quiz.id);
+          const quiz = daily.data?.rounds.find(q => q.categoryId === cat.id && q.mode === "category");
+          const played = quiz?.status === "completed";
           return (
             <Pressable
               key={cat.id}
               accessibilityRole="button"
-              accessibilityLabel={`Play ${cat.name}`}
-              onPress={() => router.push(`/quiz/${quiz.id}` as any)}
-              style={({ hovered }: any) => ({
-                width: compact ? "47.5%" : "31.8%",
-                flexGrow: 1,
+              accessibilityLabel={`${session ? "Play" : "Sign in to play"} ${cat.name}`}
+              disabled={!authReady || daily.loading || (!quiz && !daily.error)}
+              onPress={() => openQuiz(quiz)}
+              style={({ hovered, pressed }: any) => ({
+                width: topicWidth,
+                backgroundColor: pressed ? c.lavender : hovered ? "#fcfaff" : "white",
                 borderWidth: 1,
-                borderColor: hovered ? c.primary : c.border,
-                borderRadius: 14,
-                padding: compact ? 18 : 22,
-                gap: 15,
+                borderColor: hovered ? "#d4c2f4" : c.border,
+                borderRadius: 20,
+                padding: compact ? 16 : 22,
+                gap: 18,
               })}
             >
               <View
@@ -382,7 +389,7 @@ export default function Home() {
                   style={{
                     width: 44,
                     height: 44,
-                    borderRadius: 12,
+                    borderRadius: 14,
                     backgroundColor: cat.color + "15",
                     alignItems: "center",
                     justifyContent: "center",
@@ -405,15 +412,16 @@ export default function Home() {
                   {cat.name}
                 </T>
                 <T style={{ fontSize: 12, color: c.muted, marginTop: 3 }}>
-                  {quiz.questions.length} questions ·{" "}
-                  {played ? "Play again" : "Something to discover"}
+                  {quiz ? `${quiz.questionCount} questions · ` : ""}
+                  {dailyLabel(quiz, daily.loading, daily.error)}
                 </T>
               </View>
             </Pressable>
           );
         })}
       </View>
-      {!shown.length && (
+      {onlyFavorites && favoritesError && <T style={{ color: c.muted }}>Couldn’t load your favorite topics. Open your profile to try again.</T>}
+      {!shown.length && !favoritesError && (
         <View style={s.empty}>
           <Icon name="search-outline" size={30} color={c.muted} />
           <T>No topics found.</T>
@@ -442,7 +450,7 @@ export default function Home() {
           A fresh perspective. One question at a time.
         </T>
         <T style={{ fontSize: 11, color: "#928b9d" }}>
-          Sample quizzes · Practice scores stay on this device
+          Daily rounds reset at midnight UTC
         </T>
       </View>
     </Page>

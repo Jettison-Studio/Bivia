@@ -1,0 +1,918 @@
+{
+  "frozenAt": "2026-09-06T22:10:00.246598+00:00",
+  "state": "frozen_until_coordinator_requested_repair_band",
+  "acceptedExistingScienceQuestions": 3,
+  "newFinalApprovals": 0,
+  "activeQuestions": 80,
+  "counts": {
+    "editorial_clear_awaiting_verification_and_playtest": 65,
+    "pending_coordinator_review": 12,
+    "held_for_editorial_repair": 3
+  },
+  "drafts": [
+    {
+      "artifact": "challenger-deeper-connections.draft.json",
+      "draftId": "challenger-deeper-connections-20260906-v4",
+      "questionCount": 20,
+      "sha256": "030d9cc8ce51c3ffbfb153e6ad6cebdd3b5704acdea912cae3dd3bd05616e3ad"
+    },
+    {
+      "artifact": "entertainment-behind-the-curtain.draft.json",
+      "draftId": "entertainment-behind-the-curtain-20260906-v4",
+      "questionCount": 5,
+      "sha256": "106eca87b3e3d114a6b5dc2e265820f0f421f673ba6664383122a9cf45e78a95"
+    },
+    {
+      "artifact": "fitness-move-smarter.draft.json",
+      "draftId": "fitness-move-smarter-20260906-v5",
+      "questionCount": 5,
+      "sha256": "497c90bf598bc6a09f14c43312931fcd990764bd971f936cbab1ffae19ee1c41"
+    },
+    {
+      "artifact": "food-kitchen-secrets.draft.json",
+      "draftId": "food-kitchen-secrets-20260906-v3",
+      "questionCount": 5,
+      "sha256": "f20bf85ca56a0e8a87be80a7e4abe1ebea1b31c05ccd2ffa2de19e85c0c03504"
+    },
+    {
+      "artifact": "geography-read-the-land.draft.json",
+      "draftId": "geo-read-the-land-20260906-v3",
+      "questionCount": 5,
+      "sha256": "929e0c97b7e55deded5f131400da0879f4ed3c85e6a95f0511ac0b35da47b925"
+    },
+    {
+      "artifact": "guest-small-discoveries.draft.json",
+      "draftId": "guest-small-discoveries-20260906-v4",
+      "questionCount": 5,
+      "sha256": "95b0c585e958fbf944279ae85b4aab4861ad3025bfda87f3756f82d007f8ad03"
+    },
+    {
+      "artifact": "history-clever-tools.draft.json",
+      "draftId": "history-clever-tools-20260906-v4",
+      "questionCount": 5,
+      "sha256": "bceadd5e00073f39577fdc9f00ac72b1390c8e8a09e5532bf7d6b7880d7b6843"
+    },
+    {
+      "artifact": "media-page-to-screen.draft.json",
+      "draftId": "media-page-to-screen-20260906-v3",
+      "questionCount": 5,
+      "sha256": "a3e805ad9ddf7c365a238dc380d238c3d6dc19aaf2aed77e45b2449de132558d"
+    },
+    {
+      "artifact": "music-join-the-song.draft.json",
+      "draftId": "music-join-the-song-20260906-v3",
+      "questionCount": 5,
+      "sha256": "01060fc59d95d312397bf698490099a17baa9bb861004539f5b64414e25ccdaa"
+    },
+    {
+      "artifact": "nature-built-for-this.draft.json",
+      "draftId": "nature-built-for-this-20260906-v3",
+      "questionCount": 5,
+      "sha256": "05c8909ff055c3925b08441f70e9e2c9a01100f8c19599ae4594c3c596b61e32"
+    },
+    {
+      "artifact": "sports-read-the-play.draft.json",
+      "draftId": "sports-read-the-play-20260906-v2",
+      "questionCount": 5,
+      "sha256": "d08194f6fffd0543688086277aa8d4f275a430c98bbec71f93d77801e0b44ee4"
+    },
+    {
+      "artifact": "timed-quick-connections.draft.json",
+      "draftId": "timed-quick-connections-20260906-v5",
+      "questionCount": 10,
+      "sha256": "273f9968869249299a7cf7d2448af7f09653daf11453c7a1cdd759a9b9f1feec"
+    }
+  ],
+  "files": [
+    {
+      "path": "DAY-ONE-COVERAGE.json",
+      "sha256": "643e5f9cf3c0042cb19e19921c04fdbf12d62e4c365fedff82fccc53e46ffc1c",
+      "bytes": 8796
+    },
+    {
+      "path": "DAY-ONE-COVERAGE.md",
+      "sha256": "cc11fb5567f66f0c5102077ace843a7116479cd63c4f30972feb34cc4c6fc8d5",
+      "bytes": 2095
+    },
+    {
+      "path": "REVIEW-QUEUE.json",
+      "sha256": "e3ad7b42de2c7ec543b9e0c8bf3dfa0023e38ead19d2c6535fb74f9cff3cd7ea",
+      "bytes": 77855
+    },
+    {
+      "path": "REVIEW-QUEUE.md",
+      "sha256": "813b4cd19cd3a488ec4b2659f4667489d16b2066c038aaf239ac4cdc39a2e6ee",
+      "bytes": 21871
+    },
+    {
+      "path": "STABLE-HANDOFF-QA.json",
+      "sha256": "cf470ace27cbb2539a02546e19b4997380e90f7dcae840a47ed732c3e54ef099",
+      "bytes": 32344
+    },
+    {
+      "path": "STABLE-HANDOFF.md",
+      "sha256": "650f37f87ea8bcfe3cfb37c45bc896d75dbbd29ba37573c309c0a33aa9130fd6",
+      "bytes": 2383
+    },
+    {
+      "path": "archive/README.md",
+      "sha256": "a6c7f9cd28a69923ee0ac496bc46f7d61bb8678189f6430cfa7e320b11a11a90",
+      "bytes": 429
+    },
+    {
+      "path": "archive/challenger-deeper-connections.v1.draft.json",
+      "sha256": "003bfe3db7a1c1bdf303ff106e789ef2e51ad1ca0c4e9e1144b227bea522d161",
+      "bytes": 11803
+    },
+    {
+      "path": "archive/challenger-deeper-connections.v1.review.md",
+      "sha256": "70ecd511396c132cd350f46c021dbe1cd227f93ead2682ec8047aef2982a171c",
+      "bytes": 5700
+    },
+    {
+      "path": "archive/challenger-deeper-connections.v2.draft.json",
+      "sha256": "d4442008a67f76f656414f4484e6af54d255eb29b2b2bd24c30971b577a0e87b",
+      "bytes": 22030
+    },
+    {
+      "path": "archive/challenger-deeper-connections.v2.review.md",
+      "sha256": "49abcf8a383373f2c99b111c7d672c75ad2230a0b03e778dc54cb2704ee37ffd",
+      "bytes": 10282
+    },
+    {
+      "path": "archive/challenger-deeper-connections.v3.draft.json",
+      "sha256": "241afb981a73942df00db281266dec0b422dd889a46d820fcfa5f5ca492f3c8f",
+      "bytes": 32418
+    },
+    {
+      "path": "archive/challenger-deeper-connections.v3.review.md",
+      "sha256": "06c078ad416c2633fa816f8dc390f1cf2114930de5b86054df3ab1ec19931c1d",
+      "bytes": 15398
+    },
+    {
+      "path": "archive/entertainment-behind-the-curtain.v1.draft.json",
+      "sha256": "a5aa5317f3b14bfff3cc7c89d61bd34703356456a55e43ae462f4e89ae73e0f7",
+      "bytes": 12822
+    },
+    {
+      "path": "archive/entertainment-behind-the-curtain.v1.review.md",
+      "sha256": "d80315d561551ca58677b9ad61d13b9c10c6ba75a652d662399065dbd9a785e6",
+      "bytes": 6679
+    },
+    {
+      "path": "archive/entertainment-behind-the-curtain.v2.draft.json",
+      "sha256": "f456abc56f525b2765e1d330cbfbc97ecf412fb02878a49d1449aa04a83855f8",
+      "bytes": 12973
+    },
+    {
+      "path": "archive/entertainment-behind-the-curtain.v3.draft.json",
+      "sha256": "72032c0865bbf4ef59a2b750a6d4aefd0e8976f848e851973e9fa04638e89b1e",
+      "bytes": 13468
+    },
+    {
+      "path": "archive/entertainment-behind-the-curtain.v3.review.md",
+      "sha256": "5d31a48fd61a66775c9398bd4038d5da43fedf53b9bc4b3a13cedaa1e281d981",
+      "bytes": 7845
+    },
+    {
+      "path": "archive/fitness-move-smarter.v1.draft.json",
+      "sha256": "3eb9c4cedab7293d404a5dbe0ea84a12effd2f3eac3d8920cf8422ee99b755fa",
+      "bytes": 11685
+    },
+    {
+      "path": "archive/fitness-move-smarter.v1.review.md",
+      "sha256": "d82c3a4af4e946aba64e1c3e2e9996df91fb778040ece020fa509f6563566789",
+      "bytes": 5955
+    },
+    {
+      "path": "archive/fitness-move-smarter.v2.draft.json",
+      "sha256": "e69e03caa52668c34265f4b7ba593809f7dfb04f1c4a74c1c5443e15385e704e",
+      "bytes": 12273
+    },
+    {
+      "path": "archive/fitness-move-smarter.v2.review.md",
+      "sha256": "cbd183250560c210ec302053a1a5a92113a258c43542268913dc5be8d529eaf8",
+      "bytes": 6699
+    },
+    {
+      "path": "archive/fitness-move-smarter.v3.draft.json",
+      "sha256": "7f410af947e770b56612d897de0a0db7d91a3c716d8f01a53577027b87d8c0c1",
+      "bytes": 12914
+    },
+    {
+      "path": "archive/fitness-move-smarter.v3.review.md",
+      "sha256": "a1becee0ac15714fc1dbb5dd0b4e1efccad63f17830044a380e2ae9a2c549541",
+      "bytes": 7131
+    },
+    {
+      "path": "archive/fitness-move-smarter.v4.draft.json",
+      "sha256": "e00a22573f69aa1d3ae69fd0b060570e9e7d47a038bdb08a8ec0629d493d00fb",
+      "bytes": 13765
+    },
+    {
+      "path": "archive/fitness-move-smarter.v4.review.md",
+      "sha256": "931373fac4e5e5e6097e81445b03d01d78dea080a9742440268da3ca18ab9fc7",
+      "bytes": 7854
+    },
+    {
+      "path": "archive/food-kitchen-secrets.v1.draft.json",
+      "sha256": "6f2ae2e54106862e6a5431f3ca63aa9e7c56691f2d7e81fdcb60f5bc80b97190",
+      "bytes": 11314
+    },
+    {
+      "path": "archive/food-kitchen-secrets.v1.review.md",
+      "sha256": "e5dccd2e070affd94dfe102ce7cca21b2ba539f7b4ef14e354546b443c444c45",
+      "bytes": 7091
+    },
+    {
+      "path": "archive/food-kitchen-secrets.v2.draft.json",
+      "sha256": "09688f1bf9e6bd3841e62129529842b93bd45ce468f245c5cb09203fff5527eb",
+      "bytes": 12736
+    },
+    {
+      "path": "archive/food-kitchen-secrets.v2.review.md",
+      "sha256": "bd68fef3244472d4d9694f7db33ec4a4909be7ff88b7e149ef059cafba8b1707",
+      "bytes": 759
+    },
+    {
+      "path": "archive/geography-read-the-land.v1.draft.json",
+      "sha256": "e2c6e9740d748c0cc763b822b81075c698b9ccf775b33a4594399f72f0b9ad9f",
+      "bytes": 11059
+    },
+    {
+      "path": "archive/geography-read-the-land.v1.review.md",
+      "sha256": "5f3df24c2a022e2a6f90f9a1ef2cd9b5baac16eb2e8809661ec8c19d88283c29",
+      "bytes": 14680
+    },
+    {
+      "path": "archive/geography-read-the-land.v2.draft.json",
+      "sha256": "ec3c96a087449a8f969966861442884c21fdb94b529f33dd538e71a94e8d47a2",
+      "bytes": 12734
+    },
+    {
+      "path": "archive/geography-read-the-land.v2.review.md",
+      "sha256": "f97956194c6f1355f04f4a762aa69d0aa098d2e8b2cd678961a1525bc872c50f",
+      "bytes": 15808
+    },
+    {
+      "path": "archive/guest-small-discoveries.v1.draft.json",
+      "sha256": "8eed1dc31577fbf9a0011006b2e7b8d5b0cb380048fcfefdc243309680b05771",
+      "bytes": 10785
+    },
+    {
+      "path": "archive/guest-small-discoveries.v1.review.md",
+      "sha256": "761f20bd04a224ba5d710a41f0dfe3b840e265d0a4e3ed47a3f476e327d4c266",
+      "bytes": 4770
+    },
+    {
+      "path": "archive/guest-small-discoveries.v2.draft.json",
+      "sha256": "ffadbd1135d8937cd9d08c1ce15a1d580685d99b37fdfe081d40dfc77ff46970",
+      "bytes": 11091
+    },
+    {
+      "path": "archive/guest-small-discoveries.v2.review.md",
+      "sha256": "6d81e729cece24b6a5660dcbee42cfa203312e81c0a201b9584c110ab04b3e8e",
+      "bytes": 4486
+    },
+    {
+      "path": "archive/guest-small-discoveries.v3.draft.json",
+      "sha256": "37236cc60494c84975cf3f9c16e4b1a8b3f8b7f9d5ea3813f2c78c798527b053",
+      "bytes": 11985
+    },
+    {
+      "path": "archive/guest-small-discoveries.v3.review.md",
+      "sha256": "d470a15164bff57211da9d374a3d5875dbcbbede25e037e9d287815ab2c40571",
+      "bytes": 5903
+    },
+    {
+      "path": "archive/history-clever-tools.v1.draft.json",
+      "sha256": "45beedd908b8fc8a5a80dd7fa2d8a1f15311444a4c02a4fb84a3ce42dba8d8f0",
+      "bytes": 5726
+    },
+    {
+      "path": "archive/history-clever-tools.v1.review.md",
+      "sha256": "7686e5448c489ae4dbd9ca7e2ec8b77974c092b4663867bdd80dd5d95d9feaee",
+      "bytes": 3656
+    },
+    {
+      "path": "archive/history-clever-tools.v2.draft.json",
+      "sha256": "bce0baddb03a764db1600cf2e86b2c7f458f36c2e715e089a65911579c69a2f6",
+      "bytes": 12582
+    },
+    {
+      "path": "archive/history-clever-tools.v2.review.md",
+      "sha256": "6d280d92433cc861b2cd7a7d9683998fc9d614c97ab55d43dbdf26a5ad59f081",
+      "bytes": 6898
+    },
+    {
+      "path": "archive/history-clever-tools.v3.draft.json",
+      "sha256": "7eefb158e6936828a6da2678377b5741a925d9350a38c510c84c57b661cf6751",
+      "bytes": 13432
+    },
+    {
+      "path": "archive/history-clever-tools.v3.review.md",
+      "sha256": "8caae243018aae484d898d4704fd14e354e4a5022ba25f70a8900dd17c386b63",
+      "bytes": 7542
+    },
+    {
+      "path": "archive/media-page-to-screen.v1.draft.json",
+      "sha256": "261378400dac011f4783bef9c5fa3718497dc512e44f3f9a94a69ebb060248ed",
+      "bytes": 12292
+    },
+    {
+      "path": "archive/media-page-to-screen.v1.review.md",
+      "sha256": "cbe54e476f17d6baf2a96a6a987963ab9cc7e8ea94bdfa327e60c905c8aa39ac",
+      "bytes": 6520
+    },
+    {
+      "path": "archive/media-page-to-screen.v2.draft.json",
+      "sha256": "a215497fe61856a59d51a94f0bf7add0f73ec1d0652f6e4f41b474368ed40007",
+      "bytes": 12285
+    },
+    {
+      "path": "archive/media-page-to-screen.v2.review.md",
+      "sha256": "63fbd49272fcfb1ed23660be1b6834ca8df602f46d95c5ea7ebe616ca16d129a",
+      "bytes": 6969
+    },
+    {
+      "path": "archive/music-join-the-song.v1.draft.json",
+      "sha256": "f7922b92281427f275601c3fc39afa173a664f20aeb2a9683ca64940d192207c",
+      "bytes": 12120
+    },
+    {
+      "path": "archive/music-join-the-song.v1.review.md",
+      "sha256": "43debbe88fa029766c07f6f94ca574e1a3b62ee1d57baf609bc2f7d90842d4c3",
+      "bytes": 6844
+    },
+    {
+      "path": "archive/music-join-the-song.v2.draft.json",
+      "sha256": "9cccfc3232a90ebbc9c4b2a277f0bf4e30902491f48a25f80700fa91bbe24095",
+      "bytes": 12518
+    },
+    {
+      "path": "archive/music-join-the-song.v2.review.md",
+      "sha256": "21c03a889344015565107cdcd54563d1869a76b2c159a19c0c39d8dfd030c088",
+      "bytes": 7094
+    },
+    {
+      "path": "archive/nature-built-for-this.v1.draft.json",
+      "sha256": "b13250a556d5e641552f7e2448efd665c911e8595784aa00f3e9d460d790c207",
+      "bytes": 11236
+    },
+    {
+      "path": "archive/nature-built-for-this.v1.review.md",
+      "sha256": "1dcd15acd77abac73eb128076bdce74a9be515c165c918489f6b5cf817201e0c",
+      "bytes": 11007
+    },
+    {
+      "path": "archive/nature-built-for-this.v2.draft.json",
+      "sha256": "0d76cc9fbf3f47f89c86f165df9ea7e18523b5cb4072dfb209e1fd901c66f509",
+      "bytes": 11720
+    },
+    {
+      "path": "archive/nature-built-for-this.v2.review.md",
+      "sha256": "2393e06d7ad2cb5ce6aabf2750aa36c96a3f0dde518347010a091f6ce5d8a61b",
+      "bytes": 2846
+    },
+    {
+      "path": "archive/sports-read-the-play.v1.draft.json",
+      "sha256": "5f8da8c29678a46897456cbf7f17b3c9044b67475337738ca6ef8476774d79c3",
+      "bytes": 7947
+    },
+    {
+      "path": "archive/sports-read-the-play.v1.review.md",
+      "sha256": "461b8f3302433ba7c0fa03959f600e56863d92bf4875eafdf96e6179edbbe2c7",
+      "bytes": 4049
+    },
+    {
+      "path": "archive/timed-quick-connections.v1.draft.json",
+      "sha256": "4767fc9972f28e136ff5816b51dde4c83574a03e08bde2055d24d276ff41988a",
+      "bytes": 20895
+    },
+    {
+      "path": "archive/timed-quick-connections.v1.review.md",
+      "sha256": "22eece35c4ab715c85dac93ef11d58fbef1f9221b421cb54bfe205509cb0e81d",
+      "bytes": 10122
+    },
+    {
+      "path": "archive/timed-quick-connections.v2.draft.json",
+      "sha256": "5b0d711eb710be3a0e6d2b653331c8ebe0e60ec798feabfd62409c695b3a7fb2",
+      "bytes": 21604
+    },
+    {
+      "path": "archive/timed-quick-connections.v2.review.md",
+      "sha256": "2c1e5c55101453a426306022c5f82d0d8e907f57dbcf1657b4fbb117551e7d76",
+      "bytes": 10687
+    },
+    {
+      "path": "archive/timed-quick-connections.v3.draft.json",
+      "sha256": "45a7e43dd4a210379ae152afb80b7561b10a229b2b1c944a4b369db5da98e7e3",
+      "bytes": 22518
+    },
+    {
+      "path": "archive/timed-quick-connections.v3.review.md",
+      "sha256": "393b6edfbed0c14afe47118e15ce9953e35492fe32dcef0c9ed22b795675516f",
+      "bytes": 11336
+    },
+    {
+      "path": "archive/timed-quick-connections.v4.draft.json",
+      "sha256": "4ad8b5ffa14b4fa63e2e6f69925e9f6d2f54ee4cb97e1d0fc7f4a93ccfdf1b59",
+      "bytes": 23832
+    },
+    {
+      "path": "archive/timed-quick-connections.v4.review.md",
+      "sha256": "c688ef87b02058976d9ef0280de3084b0cbc744f6138ba60f11193f03b0cf2ed",
+      "bytes": 12400
+    },
+    {
+      "path": "challenger-deeper-connections.draft.json",
+      "sha256": "030d9cc8ce51c3ffbfb153e6ad6cebdd3b5704acdea912cae3dd3bd05616e3ad",
+      "bytes": 46014
+    },
+    {
+      "path": "challenger-deeper-connections.review.md",
+      "sha256": "3918c5e9c3f21b5189df58aff4628265ad92d975ef2ea7270bc4e93878ebb498",
+      "bytes": 24396
+    },
+    {
+      "path": "challenger-deeper-connections.v1-passage-checks.json",
+      "sha256": "cfecb00e38aa531d107fd0900dc50d0c7d448b4791817aced9aafe7fd2cb9a2f",
+      "bytes": 14470
+    },
+    {
+      "path": "challenger-deeper-connections.v1-validation.json",
+      "sha256": "4d53a8ac44463c5f2cb19699662abbaf5b5426c29b9bd9ea56214a8119de7520",
+      "bytes": 282
+    },
+    {
+      "path": "challenger-deeper-connections.v2-validation.json",
+      "sha256": "0916da3d10474a55ecf00fc2040fe47f466e44a119463297a5c5206eb833391a",
+      "bytes": 283
+    },
+    {
+      "path": "challenger-deeper-connections.v3-validation.json",
+      "sha256": "7d9888b61241c9ed3c6efc8e6025c017aa8b81e06a7aad01f587250b8fe15cdb",
+      "bytes": 282
+    },
+    {
+      "path": "challenger-deeper-connections.v4-validation.json",
+      "sha256": "5d945073995c4504b1c288f6479082e55e8dbf568a05172d53be26eba460b3b8",
+      "bytes": 282
+    },
+    {
+      "path": "day-one-category-inventory.json",
+      "sha256": "41cf97cd2f8907e2ecf5b6c4e42eefb67b1fbcf9145b857d237750eddb6cac0c",
+      "bytes": 996
+    },
+    {
+      "path": "day-one-player-catalog-snapshot.json",
+      "sha256": "8b6ef58acdf4fd01350b989a2b06399a0fdcd548a916f60879515278e2d1cb27",
+      "bytes": 2493
+    },
+    {
+      "path": "editorial-ledger.json",
+      "sha256": "4c3a3210bd6fdc121a37cfa29c12b6cb340f24e76d77ec8ded0f4d63ffc6e525",
+      "bytes": 168518
+    },
+    {
+      "path": "entertainment-behind-the-curtain.draft.json",
+      "sha256": "106eca87b3e3d114a6b5dc2e265820f0f421f673ba6664383122a9cf45e78a95",
+      "bytes": 15296
+    },
+    {
+      "path": "entertainment-behind-the-curtain.review.md",
+      "sha256": "ac42482790aa42a18b70d3056cfc6728f60b8e851040f042da81c78701f91d6f",
+      "bytes": 8672
+    },
+    {
+      "path": "entertainment-behind-the-curtain.v1-passage-checks.json",
+      "sha256": "c85356f330857088a29c0c864bcafb5dddf462f909887c07d90877d423ecd394",
+      "bytes": 3525
+    },
+    {
+      "path": "entertainment-behind-the-curtain.v1-validation.json",
+      "sha256": "a24d4749582cfe61ade729c1910bfa481edc0398312720afdb008d24c0209194",
+      "bytes": 430
+    },
+    {
+      "path": "entertainment-behind-the-curtain.v2-validation.json",
+      "sha256": "149998b39954fc6be2f54749d8383b42cce349159b5b4378fcc1f759c8794ab1",
+      "bytes": 430
+    },
+    {
+      "path": "entertainment-behind-the-curtain.v3-passage-checks.json",
+      "sha256": "df512dc827aca448953e7012914ff2c5e341524a0f2211558e2d851ffc0f12f8",
+      "bytes": 784
+    },
+    {
+      "path": "entertainment-behind-the-curtain.v3-validation.json",
+      "sha256": "6067feb63aaff27901705780d08c372dbb2b15dcb3b4f56408406dd68633c5c9",
+      "bytes": 431
+    },
+    {
+      "path": "entertainment-behind-the-curtain.v4-passage-checks.json",
+      "sha256": "83f526307362f9ef3275375288b643782ea4860b2407475aa28acc89213ae8df",
+      "bytes": 781
+    },
+    {
+      "path": "entertainment-behind-the-curtain.v4-validation.json",
+      "sha256": "971863c701d8fdacb282466c3cc7f07c5aabf621abf013f03775a66e681b48d6",
+      "bytes": 455
+    },
+    {
+      "path": "fitness-move-smarter.draft.json",
+      "sha256": "497c90bf598bc6a09f14c43312931fcd990764bd971f936cbab1ffae19ee1c41",
+      "bytes": 15296
+    },
+    {
+      "path": "fitness-move-smarter.review.md",
+      "sha256": "2ae9d6d6e8497dc6885b22de0847f440fd86dd34851dd8c7716f4f5a38ca9ae4",
+      "bytes": 8822
+    },
+    {
+      "path": "fitness-move-smarter.v1-passage-checks.json",
+      "sha256": "5f8e76a4ab87c416941900494458efb94cdfa64ec0af565b0e4b842f3f908414",
+      "bytes": 3523
+    },
+    {
+      "path": "fitness-move-smarter.v1-validation.json",
+      "sha256": "d149e9c47016a3f5ff9a873b3945813c959e90446dff1ecd2037be4a15efe2b7",
+      "bytes": 241
+    },
+    {
+      "path": "fitness-move-smarter.v2-validation.json",
+      "sha256": "96ea3a446465454160b01f9ab8d1cbdab5d151a4e3b67a3b50adbdbd748f6648",
+      "bytes": 241
+    },
+    {
+      "path": "fitness-move-smarter.v3-passage-checks.json",
+      "sha256": "ddc3a5f246464b867322a75b7811f0c214cea126b6458f9ae9eb6ea8ce160477",
+      "bytes": 779
+    },
+    {
+      "path": "fitness-move-smarter.v3-validation.json",
+      "sha256": "7bd499f840f137a49135a7aed8c1b2b7ba0ef8d26fa859828c63bbf590841c8b",
+      "bytes": 241
+    },
+    {
+      "path": "fitness-move-smarter.v4-passage-checks.json",
+      "sha256": "f69a4fa5b4b22c302c3cbc259838a5455c710b1415cea1c1631cc03af6a4f111",
+      "bytes": 786
+    },
+    {
+      "path": "fitness-move-smarter.v4-validation.json",
+      "sha256": "1f898e0e6ac05ab005a1a3abd349be20129d5129432f0321248b5a7b30cb8e88",
+      "bytes": 241
+    },
+    {
+      "path": "fitness-move-smarter.v5-passage-checks.json",
+      "sha256": "930e83f3d6b717054d2370139ab4c9aab1acf03ed6f532007ec8deb02b59d599",
+      "bytes": 775
+    },
+    {
+      "path": "fitness-move-smarter.v5-validation.json",
+      "sha256": "ad0c935413e72f6ee6625e0a10d63d342f76576a8b30af5778d8b03727fedba7",
+      "bytes": 241
+    },
+    {
+      "path": "focused-repairs-20260906.passage-checks.json",
+      "sha256": "a179a0e0099c7e52509f7a47c4ffedd4a2734d21e955493a335751aa343545e1",
+      "bytes": 3513
+    },
+    {
+      "path": "focused-repairs-20260906.review.md",
+      "sha256": "14c105e6ff4dacab5bb171bde50f06404219552a5a96265096e861a5fb708032",
+      "bytes": 7071
+    },
+    {
+      "path": "focused-repairs-20260906.validation.json",
+      "sha256": "e74d7fe31206cbe0dd9b11f8cc7588ffa8ce214bc9d88ded193990609107e982",
+      "bytes": 1021
+    },
+    {
+      "path": "focused-repairs-20260906b.review.md",
+      "sha256": "550f57c6cb6c269b1b614124341bb50f907e24674ad84c6152ed258350e46ae3",
+      "bytes": 1896
+    },
+    {
+      "path": "food-kitchen-secrets.draft.json",
+      "sha256": "f20bf85ca56a0e8a87be80a7e4abe1ebea1b31c05ccd2ffa2de19e85c0c03504",
+      "bytes": 12505
+    },
+    {
+      "path": "food-kitchen-secrets.review.md",
+      "sha256": "1bfe5125b2c04d27fa291332666079490a0f0e1f6fb6aa0bf6998347f9b3031a",
+      "bytes": 7132
+    },
+    {
+      "path": "food-kitchen-secrets.v1-passage-checks.json",
+      "sha256": "0ba6d15999ea2428dc3cabc657ba8846b27b18ea5c4defba787c3e7de6331062",
+      "bytes": 3502
+    },
+    {
+      "path": "food-kitchen-secrets.v1-validation.json",
+      "sha256": "e4b1aa6d46b0db778d435da51deb9e14d81cd390a1b9408148a604627655d6a7",
+      "bytes": 670
+    },
+    {
+      "path": "food-kitchen-secrets.v3-validation.json",
+      "sha256": "e20d852a798be4a6ec605c94593a026b45d4af60fe360844506119e0fc8836f4",
+      "bytes": 435
+    },
+    {
+      "path": "geography-read-the-land.draft.json",
+      "sha256": "929e0c97b7e55deded5f131400da0879f4ed3c85e6a95f0511ac0b35da47b925",
+      "bytes": 13196
+    },
+    {
+      "path": "geography-read-the-land.review.md",
+      "sha256": "8a332352cc98a63cb701c3884ab48f1b49ebc87894c568ed5d489cd35eb1c1fe",
+      "bytes": 6869
+    },
+    {
+      "path": "geography-read-the-land.v2-passage-checks.json",
+      "sha256": "3cc74baac6fd81d704b335eb20ec6ae2505fd754be2f4f47bba2a7f1bac29c64",
+      "bytes": 3029
+    },
+    {
+      "path": "geography-read-the-land.v2-validation.json",
+      "sha256": "cb01fd6f5c1d01fba92cf3909bf9c227fdc0a417b5c51706200569267b1f04eb",
+      "bytes": 1166
+    },
+    {
+      "path": "guest-small-discoveries.draft.json",
+      "sha256": "95b0c585e958fbf944279ae85b4aab4861ad3025bfda87f3756f82d007f8ad03",
+      "bytes": 11923
+    },
+    {
+      "path": "guest-small-discoveries.review.md",
+      "sha256": "e384ffb2581911c7cec23d823cd044a4d76c4a64e4d0b799ced083a46afd8328",
+      "bytes": 6575
+    },
+    {
+      "path": "guest-small-discoveries.v1-passage-checks.json",
+      "sha256": "d706dc3880b26a00f2d1b6c212253af3f5cc5aabd73f771a3b62618803bc6b4d",
+      "bytes": 4161
+    },
+    {
+      "path": "guest-small-discoveries.v1-validation.json",
+      "sha256": "1a1c8e5b6a19f8ebfee644e3fe07f4488917ab3f7cdc4b41251396e31e4cbd9b",
+      "bytes": 244
+    },
+    {
+      "path": "guest-small-discoveries.v2-passage-checks.json",
+      "sha256": "2c9b93b244ce977e70843ee1ee9610deb10f03842757e6694cd1b0ad029f1794",
+      "bytes": 776
+    },
+    {
+      "path": "guest-small-discoveries.v2-validation.json",
+      "sha256": "f7c5e7173c300fdee35a841bb081950733b1173945902b22dfd6b819e05cc438",
+      "bytes": 244
+    },
+    {
+      "path": "guest-small-discoveries.v3-validation.json",
+      "sha256": "8d01e60452dbf970e451c3bf72a1423f47d4b048a8903a0bd4a0df0368750bee",
+      "bytes": 244
+    },
+    {
+      "path": "guest-small-discoveries.v4-passage-checks.json",
+      "sha256": "3bdbd6edd3af47020e20f611fef2596b2eaa93e00053aebd14750423265c3084",
+      "bytes": 1117
+    },
+    {
+      "path": "guest-small-discoveries.v4-validation.json",
+      "sha256": "fbfef5d5a71f12ba033c76298fc1856920c0cc9ba6e67bc041576efa8cb012a7",
+      "bytes": 244
+    },
+    {
+      "path": "history-clever-tools.draft.json",
+      "sha256": "bceadd5e00073f39577fdc9f00ac72b1390c8e8a09e5532bf7d6b7880d7b6843",
+      "bytes": 14777
+    },
+    {
+      "path": "history-clever-tools.review.md",
+      "sha256": "8210d636e0999cc2f0352bb3031382c2a829600adfe86c3778a283146a74e7bd",
+      "bytes": 8598
+    },
+    {
+      "path": "history-clever-tools.v1-passage-checks.json",
+      "sha256": "a1278e6156bc3eb3fca7e62af215d181bb66f72b1d58ee8a547ac4de7926f52e",
+      "bytes": 1463
+    },
+    {
+      "path": "history-clever-tools.v1-validation.json",
+      "sha256": "a5ba87a38a9f3ee1d61f5bf263f56e03f6ece678a98581a0e4b2201bca7ddcbb",
+      "bytes": 642
+    },
+    {
+      "path": "history-clever-tools.v2-passage-checks.json",
+      "sha256": "d7303b30c66afa663447d536cc581ec176c58b3029a53cffdedcd4cbf4b04afa",
+      "bytes": 2136
+    },
+    {
+      "path": "history-clever-tools.v2-validation.json",
+      "sha256": "b2936d0604323010d26f79bf41a21895c2a7864cdbfc5a5478c15c0d8d201b7b",
+      "bytes": 435
+    },
+    {
+      "path": "history-clever-tools.v3-passage-checks.json",
+      "sha256": "4d35d9eb682d790c739cbc7c2906a55a3851d5c73ffd3169253a4640ab6c27b4",
+      "bytes": 1446
+    },
+    {
+      "path": "history-clever-tools.v3-validation.json",
+      "sha256": "b80764823d611f0711b42076bbc4af671ecbc148e9aa454dfc77603a1a9b68e1",
+      "bytes": 419
+    },
+    {
+      "path": "history-clever-tools.v4-passage-checks.json",
+      "sha256": "23a398f3d0630aedf496cc34430bf3ab2908494f35fbdb1d190748c906de7045",
+      "bytes": 1120
+    },
+    {
+      "path": "history-clever-tools.v4-validation.json",
+      "sha256": "417759a61e154e43892ad9e587885241999cb1700d0906d0bd1165918688d16f",
+      "bytes": 419
+    },
+    {
+      "path": "media-page-to-screen.draft.json",
+      "sha256": "a3e805ad9ddf7c365a238dc380d238c3d6dc19aaf2aed77e45b2449de132558d",
+      "bytes": 13203
+    },
+    {
+      "path": "media-page-to-screen.review.md",
+      "sha256": "58f2075d1b4a78f2552fae3982b50e01e146de2c514f9712e68dcd5f1cd8bc96",
+      "bytes": 7590
+    },
+    {
+      "path": "media-page-to-screen.v1-passage-checks.json",
+      "sha256": "a0dbf0fb46ab90354328485048d9975ef4e131ca3eac981c1944a67b78e550a9",
+      "bytes": 3499
+    },
+    {
+      "path": "media-page-to-screen.v1-validation.json",
+      "sha256": "0addf769350baefdc661c527395e199d01c5fb38347e727ed9bc43ab422384c0",
+      "bytes": 241
+    },
+    {
+      "path": "media-page-to-screen.v2-validation.json",
+      "sha256": "16546b002550f6bbaeb003ec9ac8d0974eab23edfc61c96cbe6ab586c62ae690",
+      "bytes": 241
+    },
+    {
+      "path": "media-page-to-screen.v3-passage-checks.json",
+      "sha256": "33493fb4308e2b059cfb453f816bbad9817e5202c9461267af51e01bf34beae5",
+      "bytes": 777
+    },
+    {
+      "path": "media-page-to-screen.v3-validation.json",
+      "sha256": "1040a94ecaad7d5e3757570e138de749df1ab7d1454b3a543b16cf0e2fa21b81",
+      "bytes": 241
+    },
+    {
+      "path": "music-join-the-song.draft.json",
+      "sha256": "01060fc59d95d312397bf698490099a17baa9bb861004539f5b64414e25ccdaa",
+      "bytes": 13568
+    },
+    {
+      "path": "music-join-the-song.review.md",
+      "sha256": "6842f40387047957a4dcea3fe4ab888e43d7fa74666526ec4dc2c7a989e6d26b",
+      "bytes": 7795
+    },
+    {
+      "path": "music-join-the-song.v1-passage-checks.json",
+      "sha256": "ac88def78e41817edf405c959c3add6a34848d67916b5bc8e524eb407f4cb5c9",
+      "bytes": 3536
+    },
+    {
+      "path": "music-join-the-song.v1-validation.json",
+      "sha256": "69b93d092a8711491ba83db0881b9ba88e9c039ae9e829802817ae583465e099",
+      "bytes": 240
+    },
+    {
+      "path": "music-join-the-song.v2-passage-checks.json",
+      "sha256": "7aceeb9b11930093d29e960f5bcaacbc643d11866a3f92d38717e9574393053e",
+      "bytes": 784
+    },
+    {
+      "path": "music-join-the-song.v2-validation.json",
+      "sha256": "14c5c1fc92bca83d68bbb21e618d8736055c7b53a38931b479a300ae5c2ead8e",
+      "bytes": 240
+    },
+    {
+      "path": "music-join-the-song.v3-passage-checks.json",
+      "sha256": "bfe84eb13a6fceb8a49f8ba2c397d669f716c4997cad9e360c97be92afa1a8fb",
+      "bytes": 776
+    },
+    {
+      "path": "music-join-the-song.v3-validation.json",
+      "sha256": "a033ab24bafc2b907947c65300bd98a1bc88e51acf6d9b4407135c71f968dd1c",
+      "bytes": 414
+    },
+    {
+      "path": "nature-built-for-this.draft.json",
+      "sha256": "05c8909ff055c3925b08441f70e9e2c9a01100f8c19599ae4594c3c596b61e32",
+      "bytes": 12369
+    },
+    {
+      "path": "nature-built-for-this.review.md",
+      "sha256": "688696d926bb07818324b9138c063deeb5b710b3d5941233f8edfc0cb485f1c9",
+      "bytes": 6705
+    },
+    {
+      "path": "nature-built-for-this.v1-passage-checks.json",
+      "sha256": "6df66c075aa15d99a9fd27f7fbc7645c5592f3075c27f6a5df41befbac167ba8",
+      "bytes": 2966
+    },
+    {
+      "path": "nature-built-for-this.v1-validation.json",
+      "sha256": "25043db0ca2a112ab0590bcc213af014e48dbcea201ff2bbff20b98914facb30",
+      "bytes": 779
+    },
+    {
+      "path": "nature-built-for-this.v2-validation.json",
+      "sha256": "ef357ad1bd6f9692e2b8ced025d601b49c609462d6e441b81a76adc68f7df461",
+      "bytes": 643
+    },
+    {
+      "path": "sports-read-the-play.draft.json",
+      "sha256": "d08194f6fffd0543688086277aa8d4f275a430c98bbec71f93d77801e0b44ee4",
+      "bytes": 12561
+    },
+    {
+      "path": "sports-read-the-play.review.md",
+      "sha256": "7df94db6715b28f048e3068c2f575f4a5c25eecfb4d95baa16794de263d1dd69",
+      "bytes": 7439
+    },
+    {
+      "path": "sports-read-the-play.v1-passage-checks.json",
+      "sha256": "9560ad732b309ba7f50890a419b6448aa387b5c6ab8a6850b75df21d8b1a4635",
+      "bytes": 2140
+    },
+    {
+      "path": "sports-read-the-play.v1-validation.json",
+      "sha256": "9b4a9987536909724e2f9b2b65d519371599d1b846f88dbcfbdfc07bee9b700b",
+      "bytes": 241
+    },
+    {
+      "path": "sports-read-the-play.v2-passage-checks.json",
+      "sha256": "3c63577aec7b885bc9b4f8dcda0ebb1b3576a851b5f3b5081f632737e1708065",
+      "bytes": 1464
+    },
+    {
+      "path": "sports-read-the-play.v2-validation.json",
+      "sha256": "f6056020d6ad6376a97786529e5114998c766708e99a1eb8b644b06749bcdd83",
+      "bytes": 241
+    },
+    {
+      "path": "timed-quick-connections.draft.json",
+      "sha256": "273f9968869249299a7cf7d2448af7f09653daf11453c7a1cdd759a9b9f1feec",
+      "bytes": 24102
+    },
+    {
+      "path": "timed-quick-connections.review.md",
+      "sha256": "b2242d499ad28e2d945b7261e0dce9d7df55d33822ec6920ededba02e17777ff",
+      "bytes": 12832
+    },
+    {
+      "path": "timed-quick-connections.v1-passage-checks.json",
+      "sha256": "e16adbbdcb2bc3e18e0819b543f4f498ff4a3b905c2237ded79c6e110709f280",
+      "bytes": 6919
+    },
+    {
+      "path": "timed-quick-connections.v1-validation.json",
+      "sha256": "0f98eba609e33d8ff3be54c587246335410a87294f2d64a2944010a9b60d6045",
+      "bytes": 278
+    },
+    {
+      "path": "timed-quick-connections.v2-validation.json",
+      "sha256": "9474e8c8d7f415f88a40e3e42f17b12c806b8393b1186d1b2bc0faa44eeb8a6c",
+      "bytes": 278
+    },
+    {
+      "path": "timed-quick-connections.v3-passage-checks.json",
+      "sha256": "76d44b2fac647548b34b66c3758e6f1665a312d9d009e89d3078ad3152184a96",
+      "bytes": 773
+    },
+    {
+      "path": "timed-quick-connections.v3-validation.json",
+      "sha256": "cec8845b115ac09c97ee7e87d124f186a38d4f8ef875315e677190423d3a5fae",
+      "bytes": 245
+    },
+    {
+      "path": "timed-quick-connections.v4-passage-checks.json",
+      "sha256": "b5a95261e383826de21b9ef467e41c246f754ac9a1bc5056fe63dfb9ea173e4f",
+      "bytes": 784
+    },
+    {
+      "path": "timed-quick-connections.v5-passage-checks.json",
+      "sha256": "31a0462230e2d4f84a04b3e2232baee1b64993f1547f0f7816e54462dbda6978",
+      "bytes": 783
+    },
+    {
+      "path": "timed-quick-connections.v5-validation.json",
+      "sha256": "0d0c4f324835e4ace1bd84a6550375d1ee5997711e2a8b0077544db6c0d7315f",
+      "bytes": 419
+    }
+  ]
+}

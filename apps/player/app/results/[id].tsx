@@ -4,14 +4,14 @@ import { router, useLocalSearchParams } from "expo-router";
 import * as Clipboard from "expo-clipboard";
 import { quizzes } from "@bivia/core";
 import { Page } from "../../src/components/Page";
-import { T, Icon, Button, Card, c, s, font } from "../../src/components/ui";
+import { T, Icon, Button, Card, PointsUnit, c, s, font } from "../../src/components/ui";
 import { useBivia } from "../../src/lib/store";
 export default function Results() {
   const { id } = useLocalSearchParams<{ id: string }>();
-  const { results, ready } = useBivia();
+  const { results, ready, session, authReady } = useBivia();
   const [message, setMessage] = useState("");
   const result = results.find((r) => r.id === id);
-  if (!ready)
+  if (!ready || !authReady)
     return (
       <Page>
         <T>Loading your result…</T>
@@ -29,7 +29,7 @@ export default function Results() {
     );
   const quiz = quizzes.find((q) => q.id === result.quizId)!;
   async function share() {
-    const text = `I scored ${result!.score} points in ${quiz.title} on Bivia. Trivia with a hint of Bible!`;
+    const text = `I scored ${result!.score} points in ${quiz.title} on Bivia. Trivia with a hint of bible!`;
     try {
       if (Platform.OS === "web") {
         await Clipboard.setStringAsync(text);
@@ -77,7 +77,7 @@ export default function Results() {
           }}
         >
           {result.score}
-          <T style={{ fontSize: 20, color: c.muted }}> pts</T>
+          <PointsUnit size={20} />
         </T>
         <View style={{ flexDirection: "row", gap: 35, marginBottom: 6 }}>
           <View style={{ alignItems: "center" }}>
@@ -93,16 +93,37 @@ export default function Results() {
             <T style={s.small}>Available points</T>
           </View>
         </View>
-        <T style={{ color: c.muted, textAlign: "center", fontSize: 13 }}>
-          Saved to your practice history on this device.
-        </T>
+        {session && (
+          <T style={{ color: c.muted, textAlign: "center", fontSize: 13 }}>
+            Saved to your practice history on this device.
+          </T>
+        )}
         <View style={{ width: "100%", gap: 12, marginTop: 8 }}>
-          <Button icon="share-outline" onPress={share}>
-            Share your result
-          </Button>
-          <Button variant="secondary" onPress={() => router.replace("/")}>
-            Find another challenge
-          </Button>
+          {session ? (
+            <>
+              <Button icon="share-outline" onPress={share}>
+                Share your result
+              </Button>
+              <Button variant="secondary" onPress={() => router.replace("/")}>
+                Find another challenge
+              </Button>
+            </>
+          ) : (
+            <>
+              <T style={{ color: c.muted, textAlign: "center", marginBottom: 4 }}>
+                There’s more to discover.
+              </T>
+              <Button
+                icon="arrow-forward"
+                onPress={() => router.push({ pathname: "/auth", params: { mode: "signup" } })}
+              >
+                Create account
+              </Button>
+              <Button variant="secondary" onPress={() => router.push("/auth")}>
+                Already have an account? Log in
+              </Button>
+            </>
+          )}
           <Button
             variant="ghost"
             onPress={() => router.replace(`/quiz/${quiz.id}` as any)}

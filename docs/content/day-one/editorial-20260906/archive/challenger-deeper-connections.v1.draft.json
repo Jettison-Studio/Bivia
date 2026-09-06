@@ -1,0 +1,245 @@
+{
+  "id": "0ab1cf57-afbc-41c4-92a5-d82c742ed19a",
+  "draftId": "challenger-deeper-connections-20260906-v1",
+  "title": "Deeper connections",
+  "subtitle": "Start with familiar ideas, then look closer.",
+  "description": "Start with familiar ideas, then look closer.",
+  "categoryId": "mixed",
+  "mode": "challenger",
+  "status": "draft",
+  "reviewState": "5_proposals_0_holds_15_missing",
+  "publishedAt": "",
+  "scheduledAt": "",
+  "updatedAt": "2026-09-06T21:04:09.699222+00:00",
+  "editorialDate": "2026-09-06",
+  "translation": "NIV",
+  "sourceMode": "references",
+  "hintKind": "original_clue",
+  "passageId": null,
+  "revision": 1,
+  "verification": {
+    "factsResearched": true,
+    "allOptionsReviewed": true,
+    "publicDomainContextChecked": false,
+    "exactNivRangesRetrieved": true,
+    "surroundingNivContextRetrieved": true,
+    "fullReadingLeakageReviewed": true,
+    "retrievalMethod": "Configured YouVersion version 111; hashes only retained",
+    "localPlayerRetrievalTested": false,
+    "blindPlaytestCompleted": false,
+    "engineGatesRun": false,
+    "humanApproved": false,
+    "publicationAuthorized": false,
+    "editorialShortfall": 15,
+    "editorialRecommendation": "5 proposals, 0 author holds, 15 missing. No final approval or measured hint benefit.",
+    "passageEvidenceFile": "challenger-deeper-connections.v1-passage-checks.json",
+    "modeFinding": "First five of a planned twenty-question progression. Author-estimated difficulty 1,2,2,3,3; ordering is provisional until all bands and blind playtests are complete. Fifteen missing, no placeholders imported.",
+    "rejectedResearch": "Proverbs 25:20 NIV uses wound rather than soda; abandoned vinegar/baking-soda pairing. 2 Kings 1:2 checked for a potential literary title connection but not authored pending source verification."
+  },
+  "questions": [
+    {
+      "id": "challenger-deeper-connections-q1-v1",
+      "prompt": "Which motion chiefly causes the Sun\u2019s apparent daily journey across our sky?",
+      "answers": [
+        "Earth orbiting the Sun",
+        "The Sun spinning on its axis",
+        "Earth spinning on its axis",
+        "The Moon orbiting Earth"
+      ],
+      "correctIndex": 2,
+      "hint": "Think about a day, rather than a year.",
+      "reference": "Ecclesiastes 1:5",
+      "explanation": "Earth's rotation produces the Sun's apparent daily motion. Ecclesiastes describes the recurring appearance from an observer's viewpoint as part of its reflection on cycles. The verse is not presenting an orbital model.",
+      "factualSourceUrls": [
+        "https://solarscience.msfc.nasa.gov/suntime/slshow.stm"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/ECC.1.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/ECC.1.5?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/ECC.1.NIV",
+      "nivContentSha256": "4c6d032f40c949f0268918c6a101197fc678a37a3c25521a075baa9b64a4ae8b",
+      "contextPassageId": "ECC.1.2-11",
+      "difficulty": {
+        "fact1to5": 1,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "unapproved",
+      "authorFinding": "Four actual celestial motions. Day-versus-year clue distinguishes rotation from orbit. Reading supplies the daily cycle, but may add little to an already familiar astronomy question.",
+      "concept": "Earth rotation and apparent daily solar motion",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "science"
+    },
+    {
+      "id": "challenger-deeper-connections-q2-v1",
+      "prompt": "Which stance gives the widest side-to-side base of support?",
+      "answers": [
+        "Feet side by side, shoulder-width apart",
+        "Feet touching side by side",
+        "One foot directly in front of the other",
+        "Standing on one foot"
+      ],
+      "correctIndex": 0,
+      "hint": "Imagine the outline around all the points where your feet touch the floor.",
+      "reference": "Psalm 18:36",
+      "explanation": "A wider lateral separation of the feet enlarges the side-to-side base of support. The psalm associates a broad path with secure footing. This is an analogy between room for stable placement and stance geometry, not a promise that one stance prevents every fall.",
+      "factualSourceUrls": [
+        "https://journals.physiology.org/doi/full/10.1152/jn.00916.2009"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/PSA.18.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/PSA.18.36?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/PSA.18.NIV",
+      "nivContentSha256": "4dfd5b9053a4618c1ed7635681652c3c5459a152bd34671a17866de87dd5dfc9",
+      "contextPassageId": "PSA.18.32-39",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "unapproved",
+      "authorFinding": "Four real balance stances. Restrict answer to side-to-side width, not universal stability or overall polygon area. Nearby context overlaps held Fitness bronze-bow question; no accepted repeat. Primary paper indexed but full publisher fetch failed; verify through an accessible copy.",
+      "concept": "Lateral stance width and base of support",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "fitness"
+    },
+    {
+      "id": "challenger-deeper-connections-q3-v1",
+      "prompt": "What rising air do eagles often use to gain height without flapping?",
+      "answers": [
+        "Jet streams",
+        "Downdrafts",
+        "Sea breezes",
+        "Thermals"
+      ],
+      "correctIndex": 3,
+      "hint": "Sun-warmed ground helps create these columns of air.",
+      "reference": "Isaiah 40:31",
+      "explanation": "Thermals are rising columns of relatively warm air that soaring birds can use for lift. Isaiah uses soaring eagles as an image of renewed strength. The flight example illuminates the image without reducing its spiritual promise to an aerodynamic explanation.",
+      "factualSourceUrls": [
+        "https://academy.allaboutbirds.org/golden-eagle-soaring-on-a-thermal/",
+        "https://www.youtube.com/watch?v=azQJKhN1yNs"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/ISA.40.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/ISA.40.31?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/ISA.40.NIV",
+      "nivContentSha256": "17d95409da3025145ab8b8e74f95c2877457aa7e6bc8cabc99bb2db44c7b8f39",
+      "contextPassageId": "ISA.40.25-31",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "unapproved",
+      "authorFinding": "Reading's soaring-with-renewed-strength image supports sustained flight with reduced flapping. Four real atmospheric motions. Hint provides the thermal source. Eagles also use other forms of lift; do not claim exclusivity.",
+      "concept": "Eagle thermal soaring",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "nature"
+    },
+    {
+      "id": "challenger-deeper-connections-q4-v1",
+      "prompt": "Which woodworker\u2019s machine, like a potter\u2019s wheel, rotates the work being shaped?",
+      "answers": [
+        "A bandsaw",
+        "A lathe",
+        "A drill press",
+        "A jointer"
+      ],
+      "correctIndex": 1,
+      "hint": "It can turn a square wood blank into a round chair leg.",
+      "reference": "Jeremiah 18:3\u20134",
+      "explanation": "A wood lathe holds and rotates the workpiece while cutting tools shape it. A potter's wheel also rotates the material being shaped, though clay is formed differently. Jeremiah's lesson concerns the potter's authority to reshape, not a historical origin claim about lathes.",
+      "factualSourceUrls": [
+        "https://www.eastsurreywoodturners.org/WoodturningFAQ.php",
+        "https://www.powermatic.com/media/akeneo_connector/asset_files/M/_/M_1794224B_4224B_Lathe_Manual__Edition_8__1__91a5.pdf"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/JER.18.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/JER.18.3-4?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/JER.18.NIV",
+      "nivContentSha256": "c2d8cdc60b26a9a594e88199879b070ca5eaf20ab92512b604317b5d7f93500a",
+      "contextPassageId": "JER.18.1-10",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "unapproved",
+      "authorFinding": "Four real workshop machines; distinguish rotating workpiece from rotating drill or cutter. Hint adds a familiar turned product. Pottery-wheel operation requires common outside knowledge beyond the text.",
+      "concept": "Rotating workpiece analogy between pottery wheel and lathe",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "history"
+    },
+    {
+      "id": "challenger-deeper-connections-q5-v1",
+      "prompt": "Which biological feature best explains the locusts\u2019 cold-to-sunshine change in activity?",
+      "answers": [
+        "Metamorphosis",
+        "Photoperiodism",
+        "Ectothermy",
+        "Diapause"
+      ],
+      "correctIndex": 2,
+      "hint": "Focus on body temperature, rather than life stage or seasonal day length.",
+      "reference": "Nahum 3:17",
+      "explanation": "Locust activity is sensitive to body temperature, and these ectotherms use environmental warmth and behavior to regulate it. Nahum compares unreliable officials with locusts that settle in cold and depart in sunshine. It is a judgment image built around observed behavior, not a claim that every sunny moment triggers flight.",
+      "factualSourceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3145186/",
+        "https://www.fao.org/ag/locusts/common/ecg/347_en_DLG1e.pdf"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/NAM.3.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/NAM.3.17?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/NAM.3.NIV",
+      "nivContentSha256": "ad03ce65ed093537fd48835ec377c726026d69d64d5ab26262bbf88a0e556f13",
+      "contextPassageId": "NAM.3.14-19",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "unapproved",
+      "authorFinding": "All four terms describe real aspects of insect biology. Specific cold/sunshine contrast supports the inference. Avoid saying insects generate no metabolic heat or are passive thermometers. Hint narrows competing life-cycle interpretations.",
+      "concept": "Locust ectothermy and temperature-dependent activity",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "nature"
+    }
+  ],
+  "delivery": "daily_round"
+}

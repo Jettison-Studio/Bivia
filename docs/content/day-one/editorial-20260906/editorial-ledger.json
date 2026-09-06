@@ -1,0 +1,4654 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-06T22:08:50.572356+00:00",
+  "scope": "Local editorial artifacts only; no database read. Historical state is not inferred from a candidate appearing in evidence. Revisions are intentionally linked; do not treat as new inventory.",
+  "drafts": [
+    {
+      "draftId": "geo-read-the-land-20260906-v1",
+      "title": "Read the land",
+      "categoryId": "geography",
+      "mode": "category",
+      "reviewState": "superseded_unapproved_shortfall_2",
+      "questions": [
+        {
+          "id": "geo-read-the-land-q1-v1",
+          "concept": "Contour spacing and slope",
+          "answer": "Contour lines packed closely together",
+          "reference": "1 Samuel 14:13",
+          "categoryId": "geography",
+          "mode": "category",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "intentional_revision",
+            "runId": "4582e7cb-2225-4cf4-b3f9-074b22813088",
+            "candidateId": "q3"
+          }
+        },
+        {
+          "id": "geo-read-the-land-q2-v1",
+          "concept": "Polaris altitude and latitude",
+          "answer": "Latitude",
+          "reference": "Acts 27:20",
+          "categoryId": "geography",
+          "mode": "category",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "note": "Other Acts 27 passages were used for wind shelter and swimming; this is a different verse and answer concept."
+          }
+        },
+        {
+          "id": "geo-read-the-land-q3-v1",
+          "concept": "Canopy interception of fog water",
+          "answer": "Airborne droplets caught by the canopy",
+          "reference": "Exodus 24:15-18",
+          "categoryId": "geography",
+          "mode": "category",
+          "reviewState": "unapproved_needs_distractor_revision",
+          "lineage": {
+            "kind": "intentional_revision",
+            "runId": "4582e7cb-2225-4cf4-b3f9-074b22813088",
+            "candidateId": "q4"
+          }
+        },
+        {
+          "id": "geo-read-the-land-q4-v1",
+          "concept": "River pothole abrasion",
+          "answer": "Sand and pebbles swirling in the water",
+          "reference": "Job 14:18-20",
+          "categoryId": "geography",
+          "mode": "category",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "intentional_revision",
+            "runId": "4582e7cb-2225-4cf4-b3f9-074b22813088",
+            "candidateId": "q2",
+            "note": "Same abrasion concept and chapter; a specific landform replaces the general comparison of sediment loads."
+          }
+        },
+        {
+          "id": "geo-read-the-land-q5-v1",
+          "concept": "Neighboring-well drawdown",
+          "answer": "Pumping lowering the surrounding water table",
+          "reference": "Genesis 26:19-22",
+          "categoryId": "geography",
+          "mode": "category",
+          "reviewState": "unapproved_needs_connection_revision",
+          "lineage": {
+            "kind": "new_concept",
+            "note": "Different from the earlier oasis and floodplain-root candidates; keep groundwater-family repetition visible."
+          }
+        }
+      ],
+      "supersededBy": "geo-read-the-land-20260906-v2",
+      "artifact": "archive/geography-read-the-land.v1.draft.json"
+    },
+    {
+      "draftId": "geo-read-the-land-20260906-v2",
+      "title": "Read the land",
+      "categoryId": "geography",
+      "mode": "category",
+      "reviewState": "superseded_reviewed",
+      "editorialShortfall": 1,
+      "artifact": "archive/geography-read-the-land.v2.draft.json",
+      "questions": [
+        {
+          "id": "geo-read-the-land-q1-v2",
+          "concept": "Contour spacing and slope",
+          "answer": "The closest lines",
+          "reference": "1 Samuel 14:13",
+          "categoryId": "geography",
+          "mode": "category",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "revision",
+            "previousQuestionId": "geo-read-the-land-q1-v1",
+            "priorLineage": {
+              "kind": "intentional_revision",
+              "runId": "4582e7cb-2225-4cf4-b3f9-074b22813088",
+              "candidateId": "q3"
+            }
+          }
+        },
+        {
+          "id": "geo-read-the-land-q2-v2",
+          "concept": "Polaris altitude and latitude",
+          "answer": "Latitude",
+          "reference": "Acts 27:20",
+          "categoryId": "geography",
+          "mode": "category",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "revision",
+            "previousQuestionId": "geo-read-the-land-q2-v1",
+            "priorLineage": {
+              "kind": "new_concept",
+              "note": "Other Acts 27 passages were used for wind shelter and swimming; this is a different verse and answer concept."
+            }
+          }
+        },
+        {
+          "id": "geo-read-the-land-q3-v2",
+          "concept": "Sargasso Sea boundaries and floating seaweed",
+          "answer": "Sargasso Sea",
+          "reference": "Jonah 2:3-6",
+          "categoryId": "geography",
+          "mode": "category",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "geo-read-the-land-q3-v1",
+            "priorLineage": {
+              "kind": "intentional_revision",
+              "runId": "4582e7cb-2225-4cf4-b3f9-074b22813088",
+              "candidateId": "q4"
+            },
+            "note": "Retires cloud-water interception and Exodus 24 from this round. New named-sea concept and Jonah reference; no matching concept in retained history."
+          }
+        },
+        {
+          "id": "geo-read-the-land-q4-v2",
+          "concept": "River pothole abrasion",
+          "answer": "Sand and pebbles swirling in the water",
+          "reference": "Job 14:18-20",
+          "categoryId": "geography",
+          "mode": "category",
+          "reviewState": "coordinator_revision_required",
+          "lineage": {
+            "kind": "revision",
+            "previousQuestionId": "geo-read-the-land-q4-v1",
+            "priorLineage": {
+              "kind": "intentional_revision",
+              "runId": "4582e7cb-2225-4cf4-b3f9-074b22813088",
+              "candidateId": "q2",
+              "note": "Same abrasion concept and chapter; a specific landform replaces the general comparison of sediment loads."
+            }
+          }
+        },
+        {
+          "id": "geo-read-the-land-q5-v2",
+          "concept": "Clear-sky canyon flash floods from distant rain",
+          "answer": "Rain falling farther upstream",
+          "reference": "2 Kings 3:16-18",
+          "categoryId": "geography",
+          "mode": "category",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "geo-read-the-land-q5-v1",
+            "priorLineage": {
+              "kind": "new_concept",
+              "note": "Different from the earlier oasis and floodplain-root candidates; keep groundwater-family repetition visible."
+            },
+            "note": "Retires neighboring-well drawdown and Genesis 26. This is a runoff-source question, distinct from archived wadi identification; do not repeat either in a near-term mixed round."
+          }
+        }
+      ],
+      "supersededBy": "geo-read-the-land-20260906-v3"
+    },
+    {
+      "draftId": "nature-built-for-this-20260906-v1",
+      "title": "Built for this",
+      "categoryId": "nature",
+      "mode": "category",
+      "reviewState": "superseded_coordinator_revision_required",
+      "editorialShortfall": 3,
+      "artifact": "archive/nature-built-for-this.v1.draft.json",
+      "questions": [
+        {
+          "id": "nature-built-for-this-q1-v1",
+          "concept": "Mountain goat hoof traction",
+          "answer": "Soft pads inside split hooves",
+          "reference": "Psalm 104:18",
+          "categoryId": "nature",
+          "mode": "category",
+          "reviewState": "coordinator_revision_required",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "nature-built-for-this-q2-v1",
+          "concept": "Turkey vulture smell and concealed carrion",
+          "answer": "Smell",
+          "reference": "Luke 17:37",
+          "categoryId": "nature",
+          "mode": "category",
+          "reviewState": "awaiting_local_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "nature-built-for-this-q3-v1",
+          "concept": "Wheat seed starch reserves",
+          "answer": "Starch",
+          "reference": "John 12:24",
+          "categoryId": "nature",
+          "mode": "category",
+          "reviewState": "coordinator_revision_required",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "nature-built-for-this-q4-v1",
+          "concept": "Photoperiod and migration timing",
+          "answer": "Shortening daylight",
+          "reference": "Jeremiah 8:7",
+          "categoryId": "nature",
+          "mode": "category",
+          "reviewState": "awaiting_local_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "nature-built-for-this-q5-v1",
+          "concept": "Aspen vegetative root-sprout clones",
+          "answer": "New shoots from its roots",
+          "reference": "Isaiah 11:1-3",
+          "categoryId": "nature",
+          "mode": "category",
+          "reviewState": "coordinator_revision_required",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        }
+      ],
+      "supersededBy": "nature-built-for-this-20260906-v2"
+    },
+    {
+      "draftId": "food-kitchen-secrets-20260906-v1",
+      "title": "Kitchen secrets",
+      "categoryId": "food",
+      "mode": "category",
+      "reviewState": "superseded_reviewed",
+      "editorialShortfall": 3,
+      "artifact": "archive/food-kitchen-secrets.v1.draft.json",
+      "questions": [
+        {
+          "id": "food-kitchen-secrets-q1-v1",
+          "concept": "Raisin preservation by reduced available water",
+          "answer": "Less water available to microbes",
+          "reference": "1 Samuel 25:18",
+          "categoryId": "food",
+          "mode": "category",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "food-kitchen-secrets-q2-v1",
+          "concept": "Butter formation through fat coalescence",
+          "answer": "Fat droplets",
+          "reference": "Proverbs 30:33",
+          "categoryId": "food",
+          "mode": "category",
+          "reviewState": "awaiting_local_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "food-kitchen-secrets-q3-v1",
+          "concept": "Extra virgin olive oil excludes refining",
+          "answer": "Refining the oil",
+          "reference": "Micah 6:15",
+          "categoryId": "food",
+          "mode": "category",
+          "reviewState": "coordinator_revision_required",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "food-kitchen-secrets-q4-v1",
+          "concept": "Grain-legume amino acid complementarity",
+          "answer": "Lentils",
+          "reference": "Ezekiel 4:9",
+          "categoryId": "food",
+          "mode": "category",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "food-kitchen-secrets-q5-v1",
+          "concept": "Carbon dioxide and fermentation pressure",
+          "answer": "Carbon dioxide",
+          "reference": "Matthew 9:17",
+          "categoryId": "food",
+          "mode": "category",
+          "reviewState": "awaiting_local_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        }
+      ],
+      "supersededBy": "food-kitchen-secrets-20260906-v2"
+    },
+    {
+      "draftId": "history-clever-tools-20260906-v1",
+      "title": "Clever tools",
+      "categoryId": "history",
+      "mode": "category",
+      "reviewState": "superseded_reviewed",
+      "editorialShortfall": 3,
+      "artifact": "archive/history-clever-tools.v1.draft.json",
+      "questions": [
+        {
+          "id": "history-clever-tools-q1-v1",
+          "concept": "Letterpress relief printing",
+          "answer": "The raised letter faces",
+          "reference": "Job 38:14",
+          "categoryId": "history",
+          "mode": "category",
+          "reviewState": "awaiting_local_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "history-clever-tools-q2-v1",
+          "concept": "Eratosthenes angular fraction and city baseline",
+          "answer": "The distance between the cities",
+          "reference": "2 Kings 20:9-11",
+          "categoryId": "history",
+          "mode": "category",
+          "reviewState": "uncertain_pairing",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        }
+      ],
+      "pendingRepairReviewQuestions": 0,
+      "supersededBy": "history-clever-tools-20260906-v2"
+    },
+    {
+      "draftId": "nature-built-for-this-20260906-v2",
+      "title": "Built for this",
+      "categoryId": "nature",
+      "mode": "category",
+      "reviewState": "superseded_reviewed",
+      "editorialShortfall": 1,
+      "artifact": "archive/nature-built-for-this.v2.draft.json",
+      "questions": [
+        {
+          "id": "nature-built-for-this-q1-v2",
+          "concept": "What gives mountain goats extra grip on bare rock?",
+          "answer": "Soft pads inside hard hoof rims",
+          "reference": "Psalm 104:18",
+          "categoryId": "nature",
+          "mode": "category",
+          "reviewState": "awaiting_local_playtest",
+          "lineage": {
+            "kind": "revision",
+            "previousQuestionId": "nature-built-for-this-q1-v1"
+          }
+        },
+        {
+          "id": "nature-built-for-this-q2-v1",
+          "concept": "Turkey vultures are unusually good at finding food with which sense?",
+          "answer": "Smell",
+          "reference": "Luke 17:37",
+          "categoryId": "nature",
+          "mode": "category",
+          "reviewState": "awaiting_local_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "nature-built-for-this-q3-v1",
+          "concept": "What stored substance mainly fuels a wheat seed as it begins to sprout?",
+          "answer": "Starch",
+          "reference": "John 12:24",
+          "categoryId": "nature",
+          "mode": "category",
+          "reviewState": "coordinator_revision_required",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "nature-built-for-this-q4-v1",
+          "concept": "Which cue helps many migrating birds sense autumn, even while the weather stays warm?",
+          "answer": "Shortening daylight",
+          "reference": "Jeremiah 8:7",
+          "categoryId": "nature",
+          "mode": "category",
+          "reviewState": "awaiting_local_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "nature-built-for-this-q5-v2",
+          "concept": "What do aspen stems grown from one tree\u2019s roots usually share?",
+          "answer": "The same genetic makeup",
+          "reference": "Isaiah 11:1-3",
+          "categoryId": "nature",
+          "mode": "category",
+          "reviewState": "awaiting_local_playtest",
+          "lineage": {
+            "kind": "revision",
+            "previousQuestionId": "nature-built-for-this-q5-v1"
+          }
+        }
+      ],
+      "pendingRepairReviewQuestions": 0,
+      "supersededBy": "nature-built-for-this-20260906-v3"
+    },
+    {
+      "draftId": "geo-read-the-land-20260906-v3",
+      "title": "Read the land",
+      "categoryId": "geography",
+      "mode": "category",
+      "reviewState": "five_editorially_reviewed_awaiting_verification_and_playtest",
+      "editorialShortfall": 0,
+      "artifact": "geography-read-the-land.draft.json",
+      "questions": [
+        {
+          "id": "geo-read-the-land-q1-v2",
+          "concept": "On a hiking map, which contour lines mark the steepest ground?",
+          "answer": "The closest lines",
+          "reference": "1 Samuel 14:13",
+          "categoryId": "geography",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "revision",
+            "previousQuestionId": "geo-read-the-land-q1-v1",
+            "priorLineage": {
+              "kind": "intentional_revision",
+              "runId": "4582e7cb-2225-4cf4-b3f9-074b22813088",
+              "candidateId": "q3"
+            }
+          }
+        },
+        {
+          "id": "geo-read-the-land-q2-v2",
+          "concept": "What can a sailor estimate from the North Star's height above the horizon?",
+          "answer": "Latitude",
+          "reference": "Acts 27:20",
+          "categoryId": "geography",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "revision",
+            "previousQuestionId": "geo-read-the-land-q2-v1",
+            "priorLineage": {
+              "kind": "new_concept",
+              "note": "Other Acts 27 passages were used for wind shelter and swimming; this is a different verse and answer concept."
+            }
+          }
+        },
+        {
+          "id": "geo-read-the-land-q3-v2",
+          "concept": "Which sea is bounded by ocean currents instead of coastlines?",
+          "answer": "Sargasso Sea",
+          "reference": "Jonah 2:3-6",
+          "categoryId": "geography",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "geo-read-the-land-q3-v1",
+            "priorLineage": {
+              "kind": "intentional_revision",
+              "runId": "4582e7cb-2225-4cf4-b3f9-074b22813088",
+              "candidateId": "q4"
+            },
+            "note": "Retires cloud-water interception and Exodus 24 from this round. New named-sea concept and Jonah reference; no matching concept in retained history."
+          }
+        },
+        {
+          "id": "geo-read-the-land-q4-v3",
+          "concept": "Elevation and tropical mountain climate",
+          "answer": "Its elevation",
+          "reference": "Jeremiah 18:14",
+          "categoryId": "geography",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "geo-read-the-land-q4-v2",
+            "previousReference": "Job 14:18-20"
+          }
+        },
+        {
+          "id": "geo-read-the-land-q5-v2",
+          "concept": "Summer flash floods in Zion can arrive under clear skies. What is their usual trigger?",
+          "answer": "Rain falling farther upstream",
+          "reference": "2 Kings 3:16-18",
+          "categoryId": "geography",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "geo-read-the-land-q5-v1",
+            "priorLineage": {
+              "kind": "new_concept",
+              "note": "Different from the earlier oasis and floodplain-root candidates; keep groundwater-family repetition visible."
+            },
+            "note": "Retires neighboring-well drawdown and Genesis 26. This is a runoff-source question, distinct from archived wadi identification; do not repeat either in a near-term mixed round."
+          }
+        }
+      ]
+    },
+    {
+      "draftId": "nature-built-for-this-20260906-v3",
+      "title": "Built for this",
+      "categoryId": "nature",
+      "mode": "category",
+      "reviewState": "coordinator_editorial_reviewed_except_retained_issues",
+      "editorialShortfall": 0,
+      "artifact": "nature-built-for-this.draft.json",
+      "questions": [
+        {
+          "id": "nature-built-for-this-q1-v2",
+          "concept": "What gives mountain goats extra grip on bare rock?",
+          "answer": "Soft pads inside hard hoof rims",
+          "reference": "Psalm 104:18",
+          "categoryId": "nature",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "revision",
+            "previousQuestionId": "nature-built-for-this-q1-v1"
+          }
+        },
+        {
+          "id": "nature-built-for-this-q2-v1",
+          "concept": "Turkey vultures are unusually good at finding food with which sense?",
+          "answer": "Smell",
+          "reference": "Luke 17:37",
+          "categoryId": "nature",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "nature-built-for-this-q3-v3",
+          "concept": "Stem borer damage interrupts water transport",
+          "answer": "They block water moving through the stem",
+          "reference": "Jonah 4:7-8",
+          "categoryId": "nature",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "nature-built-for-this-q3-v1",
+            "previousReference": "John 12:24"
+          }
+        },
+        {
+          "id": "nature-built-for-this-q4-v1",
+          "concept": "Which cue helps many migrating birds sense autumn, even while the weather stays warm?",
+          "answer": "Shortening daylight",
+          "reference": "Jeremiah 8:7",
+          "categoryId": "nature",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "nature-built-for-this-q5-v2",
+          "concept": "What do aspen stems grown from one tree\u2019s roots usually share?",
+          "answer": "The same genetic makeup",
+          "reference": "Isaiah 11:1-3",
+          "categoryId": "nature",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "revision",
+            "previousQuestionId": "nature-built-for-this-q5-v1"
+          }
+        }
+      ]
+    },
+    {
+      "draftId": "food-kitchen-secrets-20260906-v2",
+      "title": "Kitchen secrets",
+      "categoryId": "food",
+      "mode": "category",
+      "reviewState": "superseded_reviewed",
+      "editorialShortfall": 1,
+      "artifact": "archive/food-kitchen-secrets.v2.draft.json",
+      "questions": [
+        {
+          "id": "food-kitchen-secrets-q1-v2",
+          "concept": "Raisin carbohydrates and food energy",
+          "answer": "Carbohydrate",
+          "reference": "1 Samuel 30:11-12",
+          "categoryId": "food",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "food-kitchen-secrets-q1-v1",
+            "previousReference": "1 Samuel 25:18"
+          }
+        },
+        {
+          "id": "food-kitchen-secrets-q2-v1",
+          "concept": "Butter formation through fat coalescence",
+          "answer": "Fat droplets",
+          "reference": "Proverbs 30:33",
+          "categoryId": "food",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "food-kitchen-secrets-q3-v2",
+          "concept": "Sediment settling in unfiltered coffee",
+          "answer": "To let the grounds settle",
+          "reference": "Jeremiah 48:11",
+          "categoryId": "food",
+          "mode": "category",
+          "reviewState": "replacement_awaiting_coordinator_review",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "food-kitchen-secrets-q3-v1",
+            "previousReference": "Micah 6:15"
+          }
+        },
+        {
+          "id": "food-kitchen-secrets-q4-v2",
+          "concept": "Bread crust Maillard browning",
+          "answer": "Sugars reacting with proteins",
+          "reference": "Ruth 2:14",
+          "categoryId": "food",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "food-kitchen-secrets-q4-v1",
+            "previousReference": "Ezekiel 4:9"
+          }
+        },
+        {
+          "id": "food-kitchen-secrets-q5-v1",
+          "concept": "Carbon dioxide and fermentation pressure",
+          "answer": "Carbon dioxide",
+          "reference": "Matthew 9:17",
+          "categoryId": "food",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        }
+      ],
+      "supersededBy": "food-kitchen-secrets-20260906-v3"
+    },
+    {
+      "draftId": "history-clever-tools-20260906-v2",
+      "title": "Clever tools",
+      "categoryId": "history",
+      "mode": "category",
+      "reviewState": "superseded",
+      "editorialShortfall": 2,
+      "artifact": "archive/history-clever-tools.v2.draft.json",
+      "questions": [
+        {
+          "id": "history-clever-tools-q1-v1",
+          "concept": "Letterpress relief printing",
+          "answer": "The raised letter faces",
+          "reference": "Job 38:14",
+          "categoryId": "history",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "history-clever-tools-q2-v1",
+          "concept": "Eratosthenes angular fraction and city baseline",
+          "answer": "The distance between the cities",
+          "reference": "2 Kings 20:9-11",
+          "categoryId": "history",
+          "mode": "category",
+          "reviewState": "uncertain_pairing",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "history-clever-tools-q3-v2",
+          "concept": "Straw and mud-brick drying",
+          "answer": "To help limit cracking as they dried",
+          "reference": "Exodus 5:6-8",
+          "categoryId": "history",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "history-clever-tools-q4-v2",
+          "concept": "Oakum caulking wooden vessels",
+          "answer": "Filling seams between planks",
+          "reference": "Genesis 6:14",
+          "categoryId": "history",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "history-clever-tools-q5-v2",
+          "concept": "Roman aqueduct routes and gravity gradient",
+          "answer": "To maintain a gentle downhill gradient",
+          "reference": "Isaiah 40:3-5",
+          "categoryId": "history",
+          "mode": "category",
+          "reviewState": "coordinator_revision_required",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        }
+      ],
+      "supersededBy": "history-clever-tools-20260906-v3"
+    },
+    {
+      "draftId": "food-kitchen-secrets-20260906-v3",
+      "title": "Kitchen secrets",
+      "categoryId": "food",
+      "mode": "category",
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "editorialShortfall": 0,
+      "artifact": "food-kitchen-secrets.draft.json",
+      "questions": [
+        {
+          "id": "food-kitchen-secrets-q1-v2",
+          "concept": "Raisin carbohydrates and food energy",
+          "answer": "Carbohydrate",
+          "reference": "1 Samuel 30:11-12",
+          "categoryId": "food",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "food-kitchen-secrets-q1-v1",
+            "previousReference": "1 Samuel 25:18"
+          }
+        },
+        {
+          "id": "food-kitchen-secrets-q2-v1",
+          "concept": "Butter formation through fat coalescence",
+          "answer": "Fat droplets",
+          "reference": "Proverbs 30:33",
+          "categoryId": "food",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "food-kitchen-secrets-q3-v3",
+          "concept": "Sediment settling in unfiltered coffee",
+          "answer": "Letting the cup stand briefly",
+          "reference": "Jeremiah 48:11",
+          "categoryId": "food",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "revision",
+            "previousQuestionId": "food-kitchen-secrets-q3-v2"
+          }
+        },
+        {
+          "id": "food-kitchen-secrets-q4-v2",
+          "concept": "Bread crust Maillard browning",
+          "answer": "Sugars reacting with proteins",
+          "reference": "Ruth 2:14",
+          "categoryId": "food",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "food-kitchen-secrets-q4-v1",
+            "previousReference": "Ezekiel 4:9"
+          }
+        },
+        {
+          "id": "food-kitchen-secrets-q5-v1",
+          "concept": "Carbon dioxide and fermentation pressure",
+          "answer": "Carbon dioxide",
+          "reference": "Matthew 9:17",
+          "categoryId": "food",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        }
+      ]
+    },
+    {
+      "draftId": "music-join-the-song-20260906-v1",
+      "title": "Join the song",
+      "categoryId": "music",
+      "mode": "category",
+      "reviewState": "three_editorially_reviewed_two_held",
+      "editorialShortfall": 2,
+      "artifact": "archive/music-join-the-song.v1.draft.json",
+      "questions": [
+        {
+          "id": "music-join-the-song-q1-v1",
+          "concept": "Recurring chorus and refrain structure",
+          "answer": "The chorus",
+          "reference": "Psalm 136:1-3",
+          "categoryId": "music",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "music-join-the-song-q2-v1",
+          "concept": "Musical call and response",
+          "answer": "Call and response",
+          "reference": "Psalm 24:8-10",
+          "categoryId": "music",
+          "mode": "category",
+          "reviewState": "revision_required",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "music-join-the-song-q3-v1",
+          "concept": "Trumpet lip excitation of harmonics",
+          "answer": "By changing the lip vibration",
+          "reference": "1 Corinthians 14:7-8",
+          "categoryId": "music",
+          "mode": "category",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "music-join-the-song-q4-v1",
+          "concept": "Handel Messiah and Isaiah source text",
+          "answer": "Messiah",
+          "reference": "Isaiah 9:6-7",
+          "categoryId": "music",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "music-join-the-song-q5-v1",
+          "concept": "Byrds Ecclesiastes adaptation",
+          "answer": "The Byrds",
+          "reference": "Ecclesiastes 3:1-8",
+          "categoryId": "music",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        }
+      ],
+      "supersededBy": "music-join-the-song-20260906-v2"
+    },
+    {
+      "draftId": "fitness-move-smarter-20260906-v1",
+      "title": "Move smarter",
+      "categoryId": "fitness",
+      "mode": "category",
+      "reviewState": "one_editorially_reviewed_four_held",
+      "editorialShortfall": 4,
+      "artifact": "archive/fitness-move-smarter.v1.draft.json",
+      "questions": [
+        {
+          "id": "fitness-move-smarter-q1-v1",
+          "concept": "Running clothing and freedom of movement",
+          "answer": "To let the legs move more freely",
+          "reference": "1 Kings 18:46",
+          "categoryId": "fitness",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "historical_reference_reuse",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "fitness-move-smarter-q2-v1",
+          "concept": "Static muscular tension",
+          "answer": "They maintain tension without much change in length",
+          "reference": "Exodus 17:11-12",
+          "categoryId": "fitness",
+          "mode": "category",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "historical_reference_reuse",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "fitness-move-smarter-q3-v1",
+          "concept": "Load position and joint torque",
+          "answer": "It has a shorter lever arm around your joints",
+          "reference": "Luke 15:5",
+          "categoryId": "fitness",
+          "mode": "category",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "fitness-move-smarter-q4-v1",
+          "concept": "Bicycle gearing force-distance tradeoff",
+          "answer": "More pedal turns over that distance",
+          "reference": "Ecclesiastes 10:10",
+          "categoryId": "fitness",
+          "mode": "category",
+          "reviewState": "revision_required",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "fitness-move-smarter-q5-v1",
+          "concept": "Elastic resistance and elongation",
+          "answer": "It gradually increases",
+          "reference": "Psalm 18:34",
+          "categoryId": "fitness",
+          "mode": "category",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        }
+      ],
+      "supersededBy": "fitness-move-smarter-20260906-v2"
+    },
+    {
+      "draftId": "sports-read-the-play-20260906-v1",
+      "title": "Read the play",
+      "categoryId": "sports",
+      "mode": "category",
+      "reviewState": "three_proposals_two_missing",
+      "editorialShortfall": 2,
+      "artifact": "archive/sports-read-the-play.v1.draft.json",
+      "questions": [
+        {
+          "id": "sports-read-the-play-q1-v1",
+          "concept": "Coxswain steering versus propulsion",
+          "answer": "The coxswain",
+          "reference": "James 3:4",
+          "categoryId": "sports",
+          "mode": "category",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "sports-read-the-play-q2-v1",
+          "concept": "Backdoor cut and vacated defensive space",
+          "answer": "A backdoor cut",
+          "reference": "Joshua 8:5-7",
+          "categoryId": "sports",
+          "mode": "category",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "sports-read-the-play-q3-v1",
+          "concept": "Ancient Olympic perishable olive wreath",
+          "answer": "Fresh olive branches",
+          "reference": "1 Corinthians 9:24-25",
+          "categoryId": "sports",
+          "mode": "category",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        }
+      ],
+      "supersededBy": "sports-read-the-play-20260906-v2"
+    },
+    {
+      "draftId": "fitness-move-smarter-20260906-v2",
+      "title": "Move smarter",
+      "categoryId": "fitness",
+      "mode": "category",
+      "reviewState": "superseded",
+      "editorialShortfall": 3,
+      "artifact": "archive/fitness-move-smarter.v2.draft.json",
+      "questions": [
+        {
+          "id": "fitness-move-smarter-q1-v1",
+          "concept": "Running clothing and freedom of movement",
+          "answer": "To let the legs move more freely",
+          "reference": "1 Kings 18:46",
+          "categoryId": "fitness",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "historical_reference_reuse",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "fitness-move-smarter-q2-v1",
+          "concept": "Static muscular tension",
+          "answer": "They maintain tension without much change in length",
+          "reference": "Exodus 17:11-12",
+          "categoryId": "fitness",
+          "mode": "category",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "historical_reference_reuse",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "fitness-move-smarter-q3-v2",
+          "concept": "Load position and joint torque",
+          "answer": "Elbow bent, weight close to the shoulder",
+          "reference": "Luke 15:5",
+          "categoryId": "fitness",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "held_question_repair",
+            "historicalLedgerChecked": true,
+            "replaces": "fitness-move-smarter-q3-v1",
+            "reason": "Replace impossible distractors with real positions; ask about external torque explicitly."
+          }
+        },
+        {
+          "id": "fitness-move-smarter-q4-v1",
+          "concept": "Bicycle gearing force-distance tradeoff",
+          "answer": "More pedal turns over that distance",
+          "reference": "Ecclesiastes 10:10",
+          "categoryId": "fitness",
+          "mode": "category",
+          "reviewState": "revision_required",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "fitness-move-smarter-q5-v1",
+          "concept": "Elastic resistance and elongation",
+          "answer": "It gradually increases",
+          "reference": "Psalm 18:34",
+          "categoryId": "fitness",
+          "mode": "category",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        }
+      ],
+      "supersededBy": "fitness-move-smarter-20260906-v3"
+    },
+    {
+      "draftId": "music-join-the-song-20260906-v2",
+      "title": "Join the song",
+      "categoryId": "music",
+      "mode": "category",
+      "reviewState": "superseded",
+      "editorialShortfall": 1,
+      "artifact": "archive/music-join-the-song.v2.draft.json",
+      "questions": [
+        {
+          "id": "music-join-the-song-q1-v1",
+          "concept": "Recurring chorus and refrain structure",
+          "answer": "The chorus",
+          "reference": "Psalm 136:1-3",
+          "categoryId": "music",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "music-join-the-song-q2-v2",
+          "concept": "Tambourine metal jingles versus drumhead",
+          "answer": "The small loose metal discs",
+          "reference": "1 Corinthians 13:1",
+          "categoryId": "music",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "replacement",
+            "historicalLedgerChecked": true,
+            "replaces": "music-join-the-song-q2-v1",
+            "reason": "Replace near-verbatim call-and-response definition and repetitive structure."
+          }
+        },
+        {
+          "id": "music-join-the-song-q3-v1",
+          "concept": "Trumpet lip excitation of harmonics",
+          "answer": "By changing the lip vibration",
+          "reference": "1 Corinthians 14:7-8",
+          "categoryId": "music",
+          "mode": "category",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "music-join-the-song-q4-v1",
+          "concept": "Handel Messiah and Isaiah source text",
+          "answer": "Messiah",
+          "reference": "Isaiah 9:6-7",
+          "categoryId": "music",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "music-join-the-song-q5-v1",
+          "concept": "Byrds Ecclesiastes adaptation",
+          "answer": "The Byrds",
+          "reference": "Ecclesiastes 3:1-8",
+          "categoryId": "music",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        }
+      ],
+      "supersededBy": "music-join-the-song-20260906-v3"
+    },
+    {
+      "draftId": "sports-read-the-play-20260906-v2",
+      "title": "Read the play",
+      "categoryId": "sports",
+      "mode": "category",
+      "reviewState": "five_editorially_reviewed_awaiting_verification_and_playtest",
+      "editorialShortfall": 0,
+      "artifact": "sports-read-the-play.draft.json",
+      "questions": [
+        {
+          "id": "sports-read-the-play-q1-v2",
+          "concept": "Coxswain steering versus propulsion",
+          "answer": "The coxswain",
+          "reference": "James 3:4",
+          "categoryId": "sports",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "word_cue_repair",
+            "replaces": "sports-read-the-play-q1-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "sports-read-the-play-q2-v1",
+          "concept": "Backdoor cut and vacated defensive space",
+          "answer": "A backdoor cut",
+          "reference": "Joshua 8:5-7",
+          "categoryId": "sports",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "sports-read-the-play-q3-v1",
+          "concept": "Ancient Olympic perishable olive wreath",
+          "answer": "Fresh olive branches",
+          "reference": "1 Corinthians 9:24-25",
+          "categoryId": "sports",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "sports-read-the-play-q4-v2",
+          "concept": "Tacking and upwind progress",
+          "answer": "Tacking",
+          "reference": "Acts 27:7-8",
+          "categoryId": "sports",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "sports-read-the-play-q5-v2",
+          "concept": "Staggered starts equalize curved-lane distances",
+          "answer": "To make the distance equal in every lane",
+          "reference": "2 Samuel 18:23",
+          "categoryId": "sports",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        }
+      ]
+    },
+    {
+      "draftId": "entertainment-behind-the-curtain-20260906-v1",
+      "title": "Behind the curtain",
+      "categoryId": "entertainment",
+      "mode": "category",
+      "reviewState": "two_reviewed_three_held",
+      "editorialShortfall": 3,
+      "artifact": "archive/entertainment-behind-the-curtain.v1.draft.json",
+      "questions": [
+        {
+          "id": "entertainment-behind-the-curtain-q1-v1",
+          "concept": "Pepper\u2019s Ghost reflection and transmission",
+          "answer": "A hidden figure reflected in angled glass",
+          "reference": "1 Corinthians 13:12",
+          "categoryId": "entertainment",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "entertainment-behind-the-curtain-q2-v1",
+          "concept": "Dramatic irony and unequal knowledge",
+          "answer": "Dramatic irony",
+          "reference": "Esther 6:1-10",
+          "categoryId": "entertainment",
+          "mode": "category",
+          "reviewState": "revision_required",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "entertainment-behind-the-curtain-q3-v1",
+          "concept": "Godspell and light imagery",
+          "answer": "Godspell",
+          "reference": "Matthew 5:14-16",
+          "categoryId": "entertainment",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "entertainment-behind-the-curtain-q4-v1",
+          "concept": "Joseph musical and sheaf dream",
+          "answer": "Joseph and the Amazing Technicolor Dreamcoat",
+          "reference": "Genesis 37:5-8",
+          "categoryId": "entertainment",
+          "mode": "category",
+          "reviewState": "coordinator_hold",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "entertainment-behind-the-curtain-q5-v1",
+          "concept": "Theatrical thunder sheet",
+          "answer": "A large flexible metal sheet shaken by handles",
+          "reference": "Job 37:4-5",
+          "categoryId": "entertainment",
+          "mode": "category",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        }
+      ],
+      "supersededBy": "entertainment-behind-the-curtain-20260906-v2"
+    },
+    {
+      "draftId": "media-page-to-screen-20260906-v1",
+      "title": "Page to screen",
+      "categoryId": "media",
+      "mode": "category",
+      "reviewState": "4_proposals_1_holds_0_missing",
+      "editorialShortfall": 1,
+      "artifact": "media-page-to-screen.draft.json",
+      "questions": [
+        {
+          "id": "media-page-to-screen-q1-v1",
+          "concept": "Codex structure versus scroll features",
+          "answer": "Separate leaves bound along one edge",
+          "reference": "Revelation 5:1",
+          "categoryId": "media",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "media-page-to-screen-q2-v1",
+          "concept": "Colophon and production attribution",
+          "answer": "A colophon",
+          "reference": "Romans 16:22",
+          "categoryId": "media",
+          "mode": "category",
+          "reviewState": "pending_hint_refinement",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "media-page-to-screen-q3-v1",
+          "concept": "East of Eden and Cain-Abel adaptation",
+          "answer": "East of Eden",
+          "reference": "Genesis 4:6-9",
+          "categoryId": "media",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "media-page-to-screen-q4-v1",
+          "concept": "Prince of Egypt and royal adoption",
+          "answer": "The Prince of Egypt",
+          "reference": "Exodus 2:5-10",
+          "categoryId": "media",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "media-page-to-screen-q5-v1",
+          "concept": "Foley hoofbeats using coconut shells",
+          "answer": "Two hollow coconut halves tapped in rhythm",
+          "reference": "Judges 5:22",
+          "categoryId": "media",
+          "mode": "category",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        }
+      ]
+    },
+    {
+      "draftId": "entertainment-behind-the-curtain-20260906-v2",
+      "title": "Behind the curtain",
+      "categoryId": "entertainment",
+      "mode": "category",
+      "reviewState": "superseded",
+      "editorialShortfall": 2,
+      "artifact": "archive/entertainment-behind-the-curtain.v2.draft.json",
+      "questions": [
+        {
+          "id": "entertainment-behind-the-curtain-q1-v1",
+          "concept": "Pepper\u2019s Ghost reflection and transmission",
+          "answer": "A hidden figure reflected in angled glass",
+          "reference": "1 Corinthians 13:12",
+          "categoryId": "entertainment",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "entertainment-behind-the-curtain-q2-v2",
+          "concept": "Dramatic irony and unequal knowledge",
+          "answer": "Dramatic irony",
+          "reference": "Esther 6:1-10",
+          "categoryId": "entertainment",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "held_question_repair",
+            "historicalLedgerChecked": true,
+            "replaces": "entertainment-behind-the-curtain-q2-v1",
+            "reason": "Let passage supply information gap; replace generic definition and hint with scene-specific clue."
+          }
+        },
+        {
+          "id": "entertainment-behind-the-curtain-q3-v1",
+          "concept": "Godspell and light imagery",
+          "answer": "Godspell",
+          "reference": "Matthew 5:14-16",
+          "categoryId": "entertainment",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "entertainment-behind-the-curtain-q4-v1",
+          "concept": "Joseph musical and sheaf dream",
+          "answer": "Joseph and the Amazing Technicolor Dreamcoat",
+          "reference": "Genesis 37:5-8",
+          "categoryId": "entertainment",
+          "mode": "category",
+          "reviewState": "coordinator_hold",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "entertainment-behind-the-curtain-q5-v1",
+          "concept": "Theatrical thunder sheet",
+          "answer": "A large flexible metal sheet shaken by handles",
+          "reference": "Job 37:4-5",
+          "categoryId": "entertainment",
+          "mode": "category",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        }
+      ],
+      "supersededBy": "entertainment-behind-the-curtain-20260906-v3"
+    },
+    {
+      "draftId": "guest-small-discoveries-20260906-v1",
+      "title": "Small discoveries",
+      "categoryId": "mixed",
+      "mode": "category",
+      "reviewState": "4_proposals_1_holds_0_missing",
+      "editorialShortfall": 1,
+      "artifact": "guest-small-discoveries.draft.json",
+      "questions": [
+        {
+          "id": "guest-small-discoveries-q1-v1",
+          "concept": "contact heat transfer from griddle to dough",
+          "answer": "Conduction",
+          "reference": "Leviticus 2:5",
+          "categoryId": "science",
+          "mode": "category",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "guest-small-discoveries-q2-v1",
+          "concept": "lightning thunder arrival speeds",
+          "answer": "Light travels much faster than sound",
+          "reference": "Job 37:3\u20134",
+          "categoryId": "science",
+          "mode": "category",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept_with_held_passage_overlap",
+            "historicalLedgerChecked": true,
+            "relatedHeldQuestion": "entertainment-behind-the-curtain-q5-v2"
+          }
+        },
+        {
+          "id": "guest-small-discoveries-q3-v1",
+          "concept": "winnowing airflow separates chaff",
+          "answer": "Moving air",
+          "reference": "Luke 3:17",
+          "categoryId": "food",
+          "mode": "category",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "guest-small-discoveries-q4-v1",
+          "concept": "protective storage of family letters",
+          "answer": "A cool, dry, dark cupboard",
+          "reference": "Jeremiah 32:14",
+          "categoryId": "media",
+          "mode": "category",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "guest-small-discoveries-q5-v1",
+          "concept": "fish gill gas exchange",
+          "answer": "Gills",
+          "reference": "Isaiah 50:2",
+          "categoryId": "nature",
+          "mode": "category",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        }
+      ]
+    },
+    {
+      "draftId": "media-page-to-screen-20260906-v2",
+      "title": "Page to screen",
+      "categoryId": "media",
+      "mode": "category",
+      "reviewState": "superseded",
+      "editorialShortfall": 1,
+      "artifact": "archive/media-page-to-screen.v2.draft.json",
+      "questions": [
+        {
+          "id": "media-page-to-screen-q1-v1",
+          "concept": "Codex structure versus scroll features",
+          "answer": "Separate leaves bound along one edge",
+          "reference": "Revelation 5:1",
+          "categoryId": "media",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "media-page-to-screen-q2-v2",
+          "concept": "Colophon and production attribution",
+          "answer": "A colophon",
+          "reference": "Romans 16:22",
+          "categoryId": "media",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "hint_repair",
+            "previousQuestionId": "media-page-to-screen-q2-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "media-page-to-screen-q3-v1",
+          "concept": "East of Eden and Cain-Abel adaptation",
+          "answer": "East of Eden",
+          "reference": "Genesis 4:6-9",
+          "categoryId": "media",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "media-page-to-screen-q4-v1",
+          "concept": "Prince of Egypt and royal adoption",
+          "answer": "The Prince of Egypt",
+          "reference": "Exodus 2:5-10",
+          "categoryId": "media",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "media-page-to-screen-q5-v1",
+          "concept": "Foley hoofbeats using coconut shells",
+          "answer": "Two hollow coconut halves tapped in rhythm",
+          "reference": "Judges 5:22",
+          "categoryId": "media",
+          "mode": "category",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        }
+      ],
+      "supersededBy": "media-page-to-screen-20260906-v3"
+    },
+    {
+      "draftId": "guest-small-discoveries-20260906-v2",
+      "title": "Small discoveries",
+      "categoryId": "mixed",
+      "mode": "category",
+      "reviewState": "five_proposals_awaiting_review",
+      "editorialShortfall": 0,
+      "artifact": "guest-small-discoveries.draft.json",
+      "questions": [
+        {
+          "id": "guest-small-discoveries-q1-v1",
+          "concept": "contact heat transfer from griddle to dough",
+          "answer": "Conduction",
+          "reference": "Leviticus 2:5",
+          "categoryId": "science",
+          "mode": "category",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "guest-small-discoveries-q2-v1",
+          "concept": "lightning thunder arrival speeds",
+          "answer": "Light travels much faster than sound",
+          "reference": "Job 37:3\u20134",
+          "categoryId": "science",
+          "mode": "category",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept_with_held_passage_overlap",
+            "historicalLedgerChecked": true,
+            "relatedHeldQuestion": "entertainment-behind-the-curtain-q5-v2"
+          }
+        },
+        {
+          "id": "guest-small-discoveries-q3-v1",
+          "concept": "winnowing airflow separates chaff",
+          "answer": "Moving air",
+          "reference": "Luke 3:17",
+          "categoryId": "food",
+          "mode": "category",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "guest-small-discoveries-q4-v1",
+          "concept": "protective storage of family letters",
+          "answer": "A cool, dry, dark cupboard",
+          "reference": "Jeremiah 32:14",
+          "categoryId": "media",
+          "mode": "category",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "guest-small-discoveries-q5-v2",
+          "concept": "Personification through speaking plant characters",
+          "answer": "Personification",
+          "reference": "Judges 9:8\u201315",
+          "categoryId": "entertainment",
+          "mode": "category",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "replacement_of_held_question",
+            "previousQuestionId": "guest-small-discoveries-q5-v1",
+            "historicalLedgerChecked": true
+          }
+        }
+      ]
+    },
+    {
+      "draftId": "timed-quick-connections-20260906-v1",
+      "title": "Quick connections",
+      "categoryId": "mixed",
+      "mode": "timed",
+      "reviewState": "four_reviewed_two_hint_refinements_four_held",
+      "editorialShortfall": 4,
+      "artifact": "timed-quick-connections.draft.json",
+      "questions": [
+        {
+          "id": "timed-quick-connections-q1-v1",
+          "concept": "Pianissimo and a scene's quiet final sound",
+          "answer": "Pianissimo",
+          "reference": "1 Kings 19:11\u201312",
+          "categoryId": "music",
+          "mode": "timed",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q2-v1",
+          "concept": "Mediterranean moisture and westward weather cue",
+          "answer": "Mediterranean Sea",
+          "reference": "Luke 12:54",
+          "categoryId": "geography",
+          "mode": "timed",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q3-v1",
+          "concept": "Mime and gesture-based stage communication",
+          "answer": "Mime",
+          "reference": "Luke 1:22",
+          "categoryId": "entertainment",
+          "mode": "timed",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q4-v1",
+          "concept": "Natron drying in Egyptian embalming",
+          "answer": "To dry the body",
+          "reference": "Genesis 50:2\u20133",
+          "categoryId": "history",
+          "mode": "timed",
+          "reviewState": "pending_hint_refinement",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q5-v1",
+          "concept": "Relay handoff as teaching-succession analogy",
+          "answer": "A relay",
+          "reference": "2 Timothy 2:2",
+          "categoryId": "sports",
+          "mode": "timed",
+          "reviewState": "pending_hint_refinement",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q6-v1",
+          "concept": "Moist-heat cooking classification",
+          "answer": "Steaming",
+          "reference": "Exodus 16:23",
+          "categoryId": "food",
+          "mode": "timed",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q7-v1",
+          "concept": "Capillary transport in a candle wick",
+          "answer": "Capillary action",
+          "reference": "Isaiah 42:3",
+          "categoryId": "science",
+          "mode": "timed",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q8-v1",
+          "concept": "Personal seals and authority authentication",
+          "answer": "Who authorized it",
+          "reference": "Daniel 6:17",
+          "categoryId": "history",
+          "mode": "timed",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q9-v1",
+          "concept": "Combustion oxygen limitation",
+          "answer": "Oxygen",
+          "reference": "Proverbs 26:20",
+          "categoryId": "science",
+          "mode": "timed",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q10-v1",
+          "concept": "Dead Sea salinity and buoyancy",
+          "answer": "Its high salt concentration",
+          "reference": "Ezekiel 47:8\u20139",
+          "categoryId": "geography",
+          "mode": "timed",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        }
+      ]
+    },
+    {
+      "draftId": "guest-small-discoveries-20260906-v3",
+      "title": "Small discoveries",
+      "categoryId": "mixed",
+      "mode": "category",
+      "reviewState": "four_reviewed_one_held_guest_placement",
+      "editorialShortfall": 1,
+      "artifact": "guest-small-discoveries.draft.json",
+      "questions": [
+        {
+          "id": "guest-small-discoveries-q1-v1",
+          "concept": "contact heat transfer from griddle to dough",
+          "answer": "Conduction",
+          "reference": "Leviticus 2:5",
+          "categoryId": "science",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "guest-small-discoveries-q2-v1",
+          "concept": "lightning thunder arrival speeds",
+          "answer": "Light travels much faster than sound",
+          "reference": "Job 37:3\u20134",
+          "categoryId": "science",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept_with_held_passage_overlap",
+            "historicalLedgerChecked": true,
+            "relatedHeldQuestion": "entertainment-behind-the-curtain-q5-v2"
+          }
+        },
+        {
+          "id": "guest-small-discoveries-q3-v1",
+          "concept": "winnowing airflow separates chaff",
+          "answer": "Moving air",
+          "reference": "Luke 3:17",
+          "categoryId": "food",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "guest-small-discoveries-q4-v3",
+          "concept": "Stable polyester document sleeves versus unsuitable plastic films",
+          "answer": "Uncoated polyester",
+          "reference": "Jeremiah 32:14",
+          "categoryId": "media",
+          "mode": "category",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "replacement_of_held_question",
+            "previousQuestionId": "guest-small-discoveries-q4-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "guest-small-discoveries-q5-v2",
+          "concept": "Personification through speaking plant characters",
+          "answer": "Personification",
+          "reference": "Judges 9:8\u201315",
+          "categoryId": "entertainment",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "replacement_of_held_question",
+            "previousQuestionId": "guest-small-discoveries-q5-v1",
+            "historicalLedgerChecked": true
+          }
+        }
+      ]
+    },
+    {
+      "draftId": "challenger-deeper-connections-20260906-v1",
+      "title": "Deeper connections",
+      "categoryId": "mixed",
+      "mode": "challenger",
+      "reviewState": "5_proposals_0_holds_15_missing",
+      "editorialShortfall": 15,
+      "artifact": "challenger-deeper-connections.draft.json",
+      "questions": [
+        {
+          "id": "challenger-deeper-connections-q1-v1",
+          "concept": "Earth rotation and apparent daily solar motion",
+          "answer": "Earth spinning on its axis",
+          "reference": "Ecclesiastes 1:5",
+          "categoryId": "science",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "challenger-deeper-connections-q2-v1",
+          "concept": "Lateral stance width and base of support",
+          "answer": "Feet side by side, shoulder-width apart",
+          "reference": "Psalm 18:36",
+          "categoryId": "fitness",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "challenger-deeper-connections-q3-v1",
+          "concept": "Eagle thermal soaring",
+          "answer": "Thermals",
+          "reference": "Isaiah 40:31",
+          "categoryId": "nature",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "challenger-deeper-connections-q4-v1",
+          "concept": "Rotating workpiece analogy between pottery wheel and lathe",
+          "answer": "A lathe",
+          "reference": "Jeremiah 18:3\u20134",
+          "categoryId": "history",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "challenger-deeper-connections-q5-v1",
+          "concept": "Locust ectothermy and temperature-dependent activity",
+          "answer": "Ectothermy",
+          "reference": "Nahum 3:17",
+          "categoryId": "nature",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        }
+      ]
+    },
+    {
+      "draftId": "timed-quick-connections-20260906-v2",
+      "title": "Quick connections",
+      "categoryId": "mixed",
+      "mode": "timed",
+      "reviewState": "superseded",
+      "editorialShortfall": 2,
+      "artifact": "archive/timed-quick-connections.v2.draft.json",
+      "questions": [
+        {
+          "id": "timed-quick-connections-q1-v1",
+          "concept": "Pianissimo and a scene's quiet final sound",
+          "answer": "Pianissimo",
+          "reference": "1 Kings 19:11\u201312",
+          "categoryId": "music",
+          "mode": "timed",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q2-v1",
+          "concept": "Mediterranean moisture and westward weather cue",
+          "answer": "Mediterranean Sea",
+          "reference": "Luke 12:54",
+          "categoryId": "geography",
+          "mode": "timed",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q3-v1",
+          "concept": "Mime and gesture-based stage communication",
+          "answer": "Mime",
+          "reference": "Luke 1:22",
+          "categoryId": "entertainment",
+          "mode": "timed",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q4-v2",
+          "concept": "Natron drying in Egyptian embalming",
+          "answer": "To dry the body",
+          "reference": "Genesis 50:2\u20133",
+          "categoryId": "history",
+          "mode": "timed",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "editorial_repair",
+            "previousQuestionId": "timed-quick-connections-q4-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q5-v2",
+          "concept": "Relay handoff as teaching-succession analogy",
+          "answer": "A relay",
+          "reference": "2 Timothy 2:2",
+          "categoryId": "sports",
+          "mode": "timed",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "editorial_repair",
+            "previousQuestionId": "timed-quick-connections-q5-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q6-v1",
+          "concept": "Moist-heat cooking classification",
+          "answer": "Steaming",
+          "reference": "Exodus 16:23",
+          "categoryId": "food",
+          "mode": "timed",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q7-v1",
+          "concept": "Capillary transport in a candle wick",
+          "answer": "Capillary action",
+          "reference": "Isaiah 42:3",
+          "categoryId": "science",
+          "mode": "timed",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q8-v2",
+          "concept": "Personal seals and authority authentication",
+          "answer": "Whose authority stands behind the document",
+          "reference": "Daniel 6:17",
+          "categoryId": "history",
+          "mode": "timed",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "editorial_repair",
+            "previousQuestionId": "timed-quick-connections-q8-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q9-v1",
+          "concept": "Combustion oxygen limitation",
+          "answer": "Oxygen",
+          "reference": "Proverbs 26:20",
+          "categoryId": "science",
+          "mode": "timed",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q10-v2",
+          "concept": "Floating equilibrium and displaced volume as water density changes",
+          "answer": "The volume of water displaced",
+          "reference": "Ezekiel 47:8\u20139",
+          "categoryId": "geography",
+          "mode": "timed",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "editorial_repair",
+            "previousQuestionId": "timed-quick-connections-q10-v1",
+            "historicalLedgerChecked": true
+          }
+        }
+      ],
+      "supersededBy": "timed-quick-connections-20260906-v3"
+    },
+    {
+      "draftId": "guest-small-discoveries-20260906-v4",
+      "title": "Small discoveries",
+      "categoryId": "mixed",
+      "mode": "category",
+      "reviewState": "five_editorially_reviewed_awaiting_verification_and_playtest",
+      "editorialShortfall": 0,
+      "artifact": "guest-small-discoveries.draft.json",
+      "questions": [
+        {
+          "id": "guest-small-discoveries-q1-v1",
+          "concept": "contact heat transfer from griddle to dough",
+          "answer": "Conduction",
+          "reference": "Leviticus 2:5",
+          "categoryId": "science",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "guest-small-discoveries-q2-v1",
+          "concept": "lightning thunder arrival speeds",
+          "answer": "Light travels much faster than sound",
+          "reference": "Job 37:3\u20134",
+          "categoryId": "science",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept_with_held_passage_overlap",
+            "historicalLedgerChecked": true,
+            "relatedHeldQuestion": "entertainment-behind-the-curtain-q5-v2"
+          }
+        },
+        {
+          "id": "guest-small-discoveries-q3-v1",
+          "concept": "winnowing airflow separates chaff",
+          "answer": "Moving air",
+          "reference": "Luke 3:17",
+          "categoryId": "food",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "guest-small-discoveries-q4-v4",
+          "concept": "Bread mold as fungi rather than bacteria",
+          "answer": "Fungi",
+          "reference": "Joshua 9:4\u20136",
+          "categoryId": "food",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "replacement_of_held_guest_concept",
+            "previousQuestionId": "guest-small-discoveries-q4-v3",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "guest-small-discoveries-q5-v2",
+          "concept": "Personification through speaking plant characters",
+          "answer": "Personification",
+          "reference": "Judges 9:8\u201315",
+          "categoryId": "entertainment",
+          "mode": "category",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "replacement_of_held_question",
+            "previousQuestionId": "guest-small-discoveries-q5-v1",
+            "historicalLedgerChecked": true
+          }
+        }
+      ]
+    },
+    {
+      "draftId": "challenger-deeper-connections-20260906-v2",
+      "title": "Deeper connections",
+      "categoryId": "mixed",
+      "mode": "challenger",
+      "reviewState": "10_proposals_0_held_10_missing",
+      "editorialShortfall": 10,
+      "artifact": "challenger-deeper-connections.draft.json",
+      "questions": [
+        {
+          "id": "challenger-deeper-connections-q1-v1",
+          "concept": "Earth rotation and apparent daily solar motion",
+          "answer": "Earth spinning on its axis",
+          "reference": "Ecclesiastes 1:5",
+          "categoryId": "science",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "challenger-deeper-connections-q2-v1",
+          "concept": "Lateral stance width and base of support",
+          "answer": "Feet side by side, shoulder-width apart",
+          "reference": "Psalm 18:36",
+          "categoryId": "fitness",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "challenger-deeper-connections-q3-v1",
+          "concept": "Eagle thermal soaring",
+          "answer": "Thermals",
+          "reference": "Isaiah 40:31",
+          "categoryId": "nature",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "challenger-deeper-connections-q4-v1",
+          "concept": "Rotating workpiece analogy between pottery wheel and lathe",
+          "answer": "A lathe",
+          "reference": "Jeremiah 18:3\u20134",
+          "categoryId": "history",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "challenger-deeper-connections-q5-v1",
+          "concept": "Locust ectothermy and temperature-dependent activity",
+          "answer": "Ectothermy",
+          "reference": "Nahum 3:17",
+          "categoryId": "nature",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "challenger-deeper-connections-q6-v2",
+          "concept": "Offsite preparation and prefabrication analogy",
+          "answer": "Prefabrication",
+          "reference": "1 Kings 6:7",
+          "categoryId": "history",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "challenger-deeper-connections-q7-v2",
+          "concept": "Revised edition versus unchanged reprint",
+          "answer": "A revised edition",
+          "reference": "Jeremiah 36:32",
+          "categoryId": "media",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "challenger-deeper-connections-q8-v2",
+          "concept": "Threshing versus winnowing and milling",
+          "answer": "Free kernels from the harvested stalks",
+          "reference": "Deuteronomy 25:4",
+          "categoryId": "food",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "challenger-deeper-connections-q9-v2",
+          "concept": "Specular reflection versus diffuse reflection",
+          "answer": "Specular reflection",
+          "reference": "Proverbs 27:19",
+          "categoryId": "science",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "challenger-deeper-connections-q10-v2",
+          "concept": "Scion fruit identity versus rootstock and hybridization",
+          "answer": "Pears",
+          "reference": "Romans 11:17\u201318",
+          "categoryId": "nature",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        }
+      ]
+    },
+    {
+      "draftId": "challenger-deeper-connections-20260906-v3",
+      "title": "Deeper connections",
+      "categoryId": "mixed",
+      "mode": "challenger",
+      "reviewState": "15_proposals_0_held_5_missing",
+      "editorialShortfall": 5,
+      "artifact": "challenger-deeper-connections.draft.json",
+      "questions": [
+        {
+          "id": "challenger-deeper-connections-q1-v1",
+          "concept": "Earth rotation and apparent daily solar motion",
+          "answer": "Earth spinning on its axis",
+          "reference": "Ecclesiastes 1:5",
+          "categoryId": "science",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "challenger-deeper-connections-q2-v1",
+          "concept": "Lateral stance width and base of support",
+          "answer": "Feet side by side, shoulder-width apart",
+          "reference": "Psalm 18:36",
+          "categoryId": "fitness",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "challenger-deeper-connections-q3-v1",
+          "concept": "Eagle thermal soaring",
+          "answer": "Thermals",
+          "reference": "Isaiah 40:31",
+          "categoryId": "nature",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "challenger-deeper-connections-q4-v1",
+          "concept": "Rotating workpiece analogy between pottery wheel and lathe",
+          "answer": "A lathe",
+          "reference": "Jeremiah 18:3\u20134",
+          "categoryId": "history",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "challenger-deeper-connections-q5-v1",
+          "concept": "Locust ectothermy and temperature-dependent activity",
+          "answer": "Ectothermy",
+          "reference": "Nahum 3:17",
+          "categoryId": "nature",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "challenger-deeper-connections-q6-v2",
+          "concept": "Offsite preparation and prefabrication analogy",
+          "answer": "Prefabrication",
+          "reference": "1 Kings 6:7",
+          "categoryId": "history",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "challenger-deeper-connections-q7-v2",
+          "concept": "Revised edition versus unchanged reprint",
+          "answer": "A revised edition",
+          "reference": "Jeremiah 36:32",
+          "categoryId": "media",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "challenger-deeper-connections-q8-v2",
+          "concept": "Threshing versus winnowing and milling",
+          "answer": "Free kernels from the harvested stalks",
+          "reference": "Deuteronomy 25:4",
+          "categoryId": "food",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "challenger-deeper-connections-q9-v2",
+          "concept": "Specular reflection versus diffuse reflection",
+          "answer": "Specular reflection",
+          "reference": "Proverbs 27:19",
+          "categoryId": "science",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "challenger-deeper-connections-q10-v2",
+          "concept": "Scion fruit identity versus rootstock and hybridization",
+          "answer": "Pears",
+          "reference": "Romans 11:17\u201318",
+          "categoryId": "nature",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "challenger-deeper-connections-q11-v3",
+          "concept": "Parallel inscriptions and Rosetta Stone decipherment",
+          "answer": "The same decree in several scripts",
+          "reference": "Acts 2:6\u20138",
+          "categoryId": "history",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "challenger-deeper-connections-q12-v3",
+          "concept": "Intaglio ink in recessed engraved lines",
+          "answer": "In grooves cut below the surface",
+          "reference": "Job 19:23\u201324",
+          "categoryId": "media",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "challenger-deeper-connections-q13-v3",
+          "concept": "Tacet and instrumental silence",
+          "answer": "Tacet",
+          "reference": "Psalm 137:1\u20134",
+          "categoryId": "music",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "challenger-deeper-connections-q14-v3",
+          "concept": "Mendelssohn Elijah composer identification",
+          "answer": "Felix Mendelssohn",
+          "reference": "1 Kings 18:36\u201339",
+          "categoryId": "music",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "challenger-deeper-connections-q15-v3",
+          "concept": "Unequal load sharing on a two-person carrying pole",
+          "answer": "Two-thirds",
+          "reference": "Numbers 13:23",
+          "categoryId": "science",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        }
+      ]
+    },
+    {
+      "draftId": "challenger-deeper-connections-20260906-v4",
+      "title": "Deeper connections",
+      "categoryId": "mixed",
+      "mode": "challenger",
+      "reviewState": "seven_reviewed_eleven_pending_two_trivia_identity_holds",
+      "editorialShortfall": 2,
+      "artifact": "challenger-deeper-connections.draft.json",
+      "questions": [
+        {
+          "id": "challenger-deeper-connections-q1-v1",
+          "concept": "Earth rotation and apparent daily solar motion",
+          "answer": "Earth spinning on its axis",
+          "reference": "Ecclesiastes 1:5",
+          "categoryId": "science",
+          "mode": "challenger",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          },
+          "authorOrder": 1,
+          "priorAuthoringNumber": 1
+        },
+        {
+          "id": "challenger-deeper-connections-q3-v1",
+          "concept": "Eagle thermal soaring",
+          "answer": "Thermals",
+          "reference": "Isaiah 40:31",
+          "categoryId": "nature",
+          "mode": "challenger",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          },
+          "authorOrder": 2,
+          "priorAuthoringNumber": 3
+        },
+        {
+          "id": "challenger-deeper-connections-q2-v1",
+          "concept": "Lateral stance width and base of support",
+          "answer": "Feet side by side, shoulder-width apart",
+          "reference": "Psalm 18:36",
+          "categoryId": "fitness",
+          "mode": "challenger",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          },
+          "authorOrder": 3,
+          "priorAuthoringNumber": 2
+        },
+        {
+          "id": "challenger-deeper-connections-q16-v4",
+          "concept": "Houdini and handcuff escape performance",
+          "answer": "Harry Houdini",
+          "reference": "Acts 12:6\u20138",
+          "categoryId": "entertainment",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          },
+          "authorOrder": 4,
+          "priorAuthoringNumber": 16
+        },
+        {
+          "id": "challenger-deeper-connections-q17-v4",
+          "concept": "Four equally likely outcomes from two fair coin tosses",
+          "answer": "Two",
+          "reference": "Proverbs 18:18",
+          "categoryId": "entertainment",
+          "mode": "challenger",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          },
+          "authorOrder": 5,
+          "priorAuthoringNumber": 17
+        },
+        {
+          "id": "challenger-deeper-connections-q6-v2",
+          "concept": "Offsite preparation and prefabrication analogy",
+          "answer": "Prefabrication",
+          "reference": "1 Kings 6:7",
+          "categoryId": "history",
+          "mode": "challenger",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          },
+          "authorOrder": 6,
+          "priorAuthoringNumber": 6
+        },
+        {
+          "id": "challenger-deeper-connections-q7-v4",
+          "concept": "Revised edition versus unchanged reprint",
+          "answer": "A revised edition",
+          "reference": "Jeremiah 36:32",
+          "categoryId": "media",
+          "mode": "challenger",
+          "reviewState": "unapproved_repair",
+          "lineage": {
+            "kind": "editorial_repair",
+            "previousQuestionId": "challenger-deeper-connections-q7-v2",
+            "historicalLedgerChecked": true
+          },
+          "authorOrder": 7,
+          "priorAuthoringNumber": 7
+        },
+        {
+          "id": "challenger-deeper-connections-q8-v2",
+          "concept": "Threshing versus winnowing and milling",
+          "answer": "Free kernels from the harvested stalks",
+          "reference": "Deuteronomy 25:4",
+          "categoryId": "food",
+          "mode": "challenger",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          },
+          "authorOrder": 8,
+          "priorAuthoringNumber": 8
+        },
+        {
+          "id": "challenger-deeper-connections-q10-v4",
+          "concept": "Scion fruit identity versus rootstock and hybridization",
+          "answer": "Pears",
+          "reference": "Romans 11:17\u201318",
+          "categoryId": "nature",
+          "mode": "challenger",
+          "reviewState": "unapproved_repair",
+          "lineage": {
+            "kind": "distractor_repair",
+            "previousQuestionId": "challenger-deeper-connections-q10-v2",
+            "historicalLedgerChecked": true
+          },
+          "authorOrder": 9,
+          "priorAuthoringNumber": 10
+        },
+        {
+          "id": "challenger-deeper-connections-q4-v1",
+          "concept": "Rotating workpiece analogy between pottery wheel and lathe",
+          "answer": "A lathe",
+          "reference": "Jeremiah 18:3\u20134",
+          "categoryId": "history",
+          "mode": "challenger",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          },
+          "authorOrder": 10,
+          "priorAuthoringNumber": 4
+        },
+        {
+          "id": "challenger-deeper-connections-q11-v3",
+          "concept": "Parallel inscriptions and Rosetta Stone decipherment",
+          "answer": "The same decree in several scripts",
+          "reference": "Acts 2:6\u20138",
+          "categoryId": "history",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          },
+          "authorOrder": 11,
+          "priorAuthoringNumber": 11
+        },
+        {
+          "id": "challenger-deeper-connections-q18-v4",
+          "concept": "Sound pressure amplitude versus pitch and wave speed",
+          "answer": "Pressure amplitude",
+          "reference": "Exodus 19:19",
+          "categoryId": "science",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          },
+          "authorOrder": 12,
+          "priorAuthoringNumber": 18
+        },
+        {
+          "id": "challenger-deeper-connections-q19-v4",
+          "concept": "Solar eclipse geometry and new moon phase",
+          "answer": "New moon",
+          "reference": "Amos 8:9",
+          "categoryId": "geography",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          },
+          "authorOrder": 13,
+          "priorAuthoringNumber": 19
+        },
+        {
+          "id": "challenger-deeper-connections-q12-v3",
+          "concept": "Intaglio ink in recessed engraved lines",
+          "answer": "In grooves cut below the surface",
+          "reference": "Job 19:23\u201324",
+          "categoryId": "media",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          },
+          "authorOrder": 14,
+          "priorAuthoringNumber": 12
+        },
+        {
+          "id": "challenger-deeper-connections-q5-v1",
+          "concept": "Locust ectothermy and temperature-dependent activity",
+          "answer": "Ectothermy",
+          "reference": "Nahum 3:17",
+          "categoryId": "nature",
+          "mode": "challenger",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          },
+          "authorOrder": 15,
+          "priorAuthoringNumber": 5
+        },
+        {
+          "id": "challenger-deeper-connections-q9-v2",
+          "concept": "Specular reflection versus diffuse reflection",
+          "answer": "Specular reflection",
+          "reference": "Proverbs 27:19",
+          "categoryId": "science",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          },
+          "authorOrder": 16,
+          "priorAuthoringNumber": 9
+        },
+        {
+          "id": "challenger-deeper-connections-q13-v3",
+          "concept": "Tacet and instrumental silence",
+          "answer": "Tacet",
+          "reference": "Psalm 137:1\u20134",
+          "categoryId": "music",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          },
+          "authorOrder": 17,
+          "priorAuthoringNumber": 13
+        },
+        {
+          "id": "challenger-deeper-connections-q20-v4",
+          "concept": "Lord of the Flies title and Baal-Zebub allusion",
+          "answer": "Lord of the Flies",
+          "reference": "2 Kings 1:2",
+          "categoryId": "media",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          },
+          "authorOrder": 18,
+          "priorAuthoringNumber": 20
+        },
+        {
+          "id": "challenger-deeper-connections-q14-v3",
+          "concept": "Mendelssohn Elijah composer identification",
+          "answer": "Felix Mendelssohn",
+          "reference": "1 Kings 18:36\u201339",
+          "categoryId": "music",
+          "mode": "challenger",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          },
+          "authorOrder": 19,
+          "priorAuthoringNumber": 14
+        },
+        {
+          "id": "challenger-deeper-connections-q15-v3",
+          "concept": "Unequal load sharing on a two-person carrying pole",
+          "answer": "Two-thirds",
+          "reference": "Numbers 13:23",
+          "categoryId": "science",
+          "mode": "challenger",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          },
+          "authorOrder": 20,
+          "priorAuthoringNumber": 15
+        }
+      ]
+    },
+    {
+      "draftId": "entertainment-behind-the-curtain-20260906-v3",
+      "title": "Behind the curtain",
+      "categoryId": "entertainment",
+      "mode": "category",
+      "reviewState": "superseded",
+      "artifact": "archive/entertainment-behind-the-curtain.v3.draft.json",
+      "questions": [
+        {
+          "id": "entertainment-behind-the-curtain-q1-v1",
+          "concept": "Pepper\u2019s Ghost reflection and transmission",
+          "answer": "A hidden figure reflected in angled glass",
+          "reference": "1 Corinthians 13:12",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "entertainment-behind-the-curtain-q2-v2",
+          "concept": "Dramatic irony and unequal knowledge",
+          "answer": "Dramatic irony",
+          "reference": "Esther 6:1-10",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "held_question_repair",
+            "historicalLedgerChecked": true,
+            "replaces": "entertainment-behind-the-curtain-q2-v1",
+            "reason": "Let passage supply information gap; replace generic definition and hint with scene-specific clue."
+          }
+        },
+        {
+          "id": "entertainment-behind-the-curtain-q3-v1",
+          "concept": "Godspell and light imagery",
+          "answer": "Godspell",
+          "reference": "Matthew 5:14-16",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "entertainment-behind-the-curtain-q4-v3",
+          "concept": "Soliloquy and staged self-deliberation",
+          "answer": "A soliloquy",
+          "reference": "Luke 12:16\u201321",
+          "reviewState": "unapproved_repair",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "entertainment-behind-the-curtain-q4-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "entertainment-behind-the-curtain-q5-v1",
+          "concept": "Theatrical thunder sheet",
+          "answer": "A large flexible metal sheet shaken by handles",
+          "reference": "Job 37:4-5",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        }
+      ],
+      "supersededBy": "entertainment-behind-the-curtain-20260906-v4"
+    },
+    {
+      "draftId": "media-page-to-screen-20260906-v3",
+      "title": "Page to screen",
+      "categoryId": "media",
+      "mode": "category",
+      "reviewState": "five_editorially_reviewed_awaiting_verification_and_playtest",
+      "artifact": "media-page-to-screen.draft.json",
+      "questions": [
+        {
+          "id": "media-page-to-screen-q1-v1",
+          "concept": "Codex structure versus scroll features",
+          "answer": "Separate leaves bound along one edge",
+          "reference": "Revelation 5:1",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "media-page-to-screen-q2-v2",
+          "concept": "Colophon and production attribution",
+          "answer": "A colophon",
+          "reference": "Romans 16:22",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "hint_repair",
+            "previousQuestionId": "media-page-to-screen-q2-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "media-page-to-screen-q3-v1",
+          "concept": "East of Eden and Cain-Abel adaptation",
+          "answer": "East of Eden",
+          "reference": "Genesis 4:6-9",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "media-page-to-screen-q4-v1",
+          "concept": "Prince of Egypt and royal adoption",
+          "answer": "The Prince of Egypt",
+          "reference": "Exodus 2:5-10",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "media-page-to-screen-q5-v3",
+          "concept": "Jonah sermon in Moby-Dick",
+          "answer": "Moby-Dick",
+          "reference": "Jonah 1:15\u201317",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "media-page-to-screen-q5-v1",
+            "historicalLedgerChecked": true
+          }
+        }
+      ],
+      "editorialShortfall": 0
+    },
+    {
+      "draftId": "timed-quick-connections-20260906-v3",
+      "title": "Quick connections",
+      "categoryId": "mixed",
+      "mode": "timed",
+      "reviewState": "superseded",
+      "artifact": "archive/timed-quick-connections.v3.draft.json",
+      "questions": [
+        {
+          "id": "timed-quick-connections-q1-v1",
+          "concept": "Pianissimo and a scene's quiet final sound",
+          "answer": "Pianissimo",
+          "reference": "1 Kings 19:11\u201312",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q2-v1",
+          "concept": "Mediterranean moisture and westward weather cue",
+          "answer": "Mediterranean Sea",
+          "reference": "Luke 12:54",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q3-v1",
+          "concept": "Mime and gesture-based stage communication",
+          "answer": "Mime",
+          "reference": "Luke 1:22",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q4-v2",
+          "concept": "Natron drying in Egyptian embalming",
+          "answer": "To dry the body",
+          "reference": "Genesis 50:2\u20133",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "editorial_repair",
+            "previousQuestionId": "timed-quick-connections-q4-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q5-v2",
+          "concept": "Relay handoff as teaching-succession analogy",
+          "answer": "A relay",
+          "reference": "2 Timothy 2:2",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "editorial_repair",
+            "previousQuestionId": "timed-quick-connections-q5-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q6-v1",
+          "concept": "Moist-heat cooking classification",
+          "answer": "Steaming",
+          "reference": "Exodus 16:23",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q7-v3",
+          "concept": "Paint tint from the red-white contrast",
+          "answer": "A tint",
+          "reference": "Isaiah 1:18",
+          "reviewState": "unapproved_repair",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "timed-quick-connections-q7-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q8-v2",
+          "concept": "Personal seals and authority authentication",
+          "answer": "Whose authority stands behind the document",
+          "reference": "Daniel 6:17",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "editorial_repair",
+            "previousQuestionId": "timed-quick-connections-q8-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q9-v1",
+          "concept": "Combustion oxygen limitation",
+          "answer": "Oxygen",
+          "reference": "Proverbs 26:20",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q10-v2",
+          "concept": "Floating equilibrium and displaced volume as water density changes",
+          "answer": "The volume of water displaced",
+          "reference": "Ezekiel 47:8\u20139",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "editorial_repair",
+            "previousQuestionId": "timed-quick-connections-q10-v1",
+            "historicalLedgerChecked": true
+          }
+        }
+      ],
+      "supersededBy": "timed-quick-connections-20260906-v4"
+    },
+    {
+      "draftId": "fitness-move-smarter-20260906-v3",
+      "title": "Move smarter",
+      "categoryId": "fitness",
+      "mode": "category",
+      "reviewState": "superseded",
+      "artifact": "archive/fitness-move-smarter.v3.draft.json",
+      "questions": [
+        {
+          "id": "fitness-move-smarter-q1-v1",
+          "concept": "Running clothing and freedom of movement",
+          "answer": "To let the legs move more freely",
+          "reference": "1 Kings 18:46",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "historical_reference_reuse",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "fitness-move-smarter-q2-v1",
+          "concept": "Static muscular tension",
+          "answer": "They maintain tension without much change in length",
+          "reference": "Exodus 17:11-12",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "historical_reference_reuse",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "fitness-move-smarter-q3-v2",
+          "concept": "Load position and joint torque",
+          "answer": "Elbow bent, weight close to the shoulder",
+          "reference": "Luke 15:5",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "held_question_repair",
+            "historicalLedgerChecked": true,
+            "replaces": "fitness-move-smarter-q3-v1",
+            "reason": "Replace impossible distractors with real positions; ask about external torque explicitly."
+          }
+        },
+        {
+          "id": "fitness-move-smarter-q4-v3",
+          "concept": "Shoe tread drainage and wet-floor traction",
+          "answer": "By draining liquid from beneath the sole",
+          "reference": "Psalm 94:18",
+          "reviewState": "unapproved_repair",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "fitness-move-smarter-q4-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "fitness-move-smarter-q5-v1",
+          "concept": "Elastic resistance and elongation",
+          "answer": "It gradually increases",
+          "reference": "Psalm 18:34",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        }
+      ],
+      "supersededBy": "fitness-move-smarter-20260906-v4"
+    },
+    {
+      "draftId": "history-clever-tools-20260906-v3",
+      "title": "Connections across time",
+      "categoryId": "history",
+      "mode": "category",
+      "reviewState": "superseded",
+      "artifact": "archive/history-clever-tools.v3.draft.json",
+      "questions": [
+        {
+          "id": "history-clever-tools-q1-v1",
+          "concept": "Letterpress relief printing",
+          "answer": "The raised letter faces",
+          "reference": "Job 38:14",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "history-clever-tools-q2-v3",
+          "concept": "Harriet Tubman and the Go Down Moses identification signal",
+          "answer": "Harriet Tubman",
+          "reference": "Exodus 8:1\u20133",
+          "reviewState": "unapproved_repair",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "history-clever-tools-q2-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "history-clever-tools-q3-v2",
+          "concept": "Straw and mud-brick drying",
+          "answer": "To help limit cracking as they dried",
+          "reference": "Exodus 5:6-8",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "history-clever-tools-q4-v2",
+          "concept": "Oakum caulking wooden vessels",
+          "answer": "Filling seams between planks",
+          "reference": "Genesis 6:14",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "history-clever-tools-q5-v2",
+          "concept": "Roman aqueduct routes and gravity gradient",
+          "answer": "To maintain a gentle downhill gradient",
+          "reference": "Isaiah 40:3-5",
+          "reviewState": "coordinator_revision_required",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        }
+      ],
+      "supersededBy": "history-clever-tools-20260906-v4"
+    },
+    {
+      "draftId": "history-clever-tools-20260906-v4",
+      "title": "Connections across time",
+      "categoryId": "history",
+      "mode": "category",
+      "reviewState": "five_editorially_reviewed_awaiting_verification_and_playtest",
+      "artifact": "history-clever-tools.draft.json",
+      "questions": [
+        {
+          "id": "history-clever-tools-q1-v1",
+          "concept": "Letterpress relief printing",
+          "answer": "The raised letter faces",
+          "reference": "Job 38:14",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "history-clever-tools-q2-v3",
+          "concept": "Harriet Tubman and the Go Down Moses identification signal",
+          "answer": "Harriet Tubman",
+          "reference": "Exodus 8:1\u20133",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "history-clever-tools-q2-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "history-clever-tools-q3-v2",
+          "concept": "Straw and mud-brick drying",
+          "answer": "To help limit cracking as they dried",
+          "reference": "Exodus 5:6-8",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "history-clever-tools-q4-v2",
+          "concept": "Oakum caulking wooden vessels",
+          "answer": "Filling seams between planks",
+          "reference": "Genesis 6:14",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "history-clever-tools-q5-v4",
+          "concept": "Historical origin and modern meaning of writing on the wall",
+          "answer": "Signs that trouble is coming",
+          "reference": "Daniel 5:25\u201328",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "history-clever-tools-q5-v2",
+            "historicalLedgerChecked": true
+          }
+        }
+      ],
+      "editorialShortfall": 0
+    },
+    {
+      "draftId": "fitness-move-smarter-20260906-v4",
+      "title": "Move smarter",
+      "categoryId": "fitness",
+      "mode": "category",
+      "reviewState": "superseded",
+      "artifact": "archive/fitness-move-smarter.v4.draft.json",
+      "questions": [
+        {
+          "id": "fitness-move-smarter-q1-v1",
+          "concept": "Running clothing and freedom of movement",
+          "answer": "To let the legs move more freely",
+          "reference": "1 Kings 18:46",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "historical_reference_reuse",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "fitness-move-smarter-q2-v4",
+          "concept": "Running-speed test from Asahel\u2019s gazelle comparison",
+          "answer": "A timed short sprint",
+          "reference": "2 Samuel 2:18\u201319",
+          "reviewState": "unapproved_repair",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "fitness-move-smarter-q2-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "fitness-move-smarter-q3-v2",
+          "concept": "Load position and joint torque",
+          "answer": "Elbow bent, weight close to the shoulder",
+          "reference": "Luke 15:5",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "held_question_repair",
+            "historicalLedgerChecked": true,
+            "replaces": "fitness-move-smarter-q3-v1",
+            "reason": "Replace impossible distractors with real positions; ask about external torque explicitly."
+          }
+        },
+        {
+          "id": "fitness-move-smarter-q4-v3",
+          "concept": "Shoe tread drainage and wet-floor traction",
+          "answer": "By draining liquid from beneath the sole",
+          "reference": "Psalm 94:18",
+          "reviewState": "unapproved_repair",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "fitness-move-smarter-q4-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "fitness-move-smarter-q5-v1",
+          "concept": "Elastic resistance and elongation",
+          "answer": "It gradually increases",
+          "reference": "Psalm 18:34",
+          "reviewState": "author_hold",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        }
+      ],
+      "supersededBy": "fitness-move-smarter-20260906-v5"
+    },
+    {
+      "draftId": "fitness-move-smarter-20260906-v5",
+      "title": "Move smarter",
+      "categoryId": "fitness",
+      "mode": "category",
+      "reviewState": "five_editorially_reviewed_awaiting_verification_and_playtest",
+      "artifact": "fitness-move-smarter.draft.json",
+      "questions": [
+        {
+          "id": "fitness-move-smarter-q1-v1",
+          "concept": "Running clothing and freedom of movement",
+          "answer": "To let the legs move more freely",
+          "reference": "1 Kings 18:46",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "historical_reference_reuse",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "fitness-move-smarter-q2-v4",
+          "concept": "Running-speed test from Asahel\u2019s gazelle comparison",
+          "answer": "A timed short sprint",
+          "reference": "2 Samuel 2:18\u201319",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "fitness-move-smarter-q2-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "fitness-move-smarter-q3-v2",
+          "concept": "Load position and joint torque",
+          "answer": "Elbow bent, weight close to the shoulder",
+          "reference": "Luke 15:5",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "held_question_repair",
+            "historicalLedgerChecked": true,
+            "replaces": "fitness-move-smarter-q3-v1",
+            "reason": "Replace impossible distractors with real positions; ask about external torque explicitly."
+          }
+        },
+        {
+          "id": "fitness-move-smarter-q4-v3",
+          "concept": "Shoe tread drainage and wet-floor traction",
+          "answer": "By draining liquid from beneath the sole",
+          "reference": "Psalm 94:18",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "fitness-move-smarter-q4-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "fitness-move-smarter-q5-v5",
+          "concept": "Tree-climbing arm action and pull-ups",
+          "answer": "A pull-up",
+          "reference": "Luke 19:3\u20134",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "fitness-move-smarter-q5-v1",
+            "historicalLedgerChecked": true
+          }
+        }
+      ],
+      "editorialShortfall": 0
+    },
+    {
+      "draftId": "entertainment-behind-the-curtain-20260906-v4",
+      "title": "Behind the curtain",
+      "categoryId": "entertainment",
+      "mode": "category",
+      "reviewState": "five_editorially_reviewed_awaiting_verification_and_playtest",
+      "artifact": "entertainment-behind-the-curtain.draft.json",
+      "questions": [
+        {
+          "id": "entertainment-behind-the-curtain-q1-v1",
+          "concept": "Pepper\u2019s Ghost reflection and transmission",
+          "answer": "A hidden figure reflected in angled glass",
+          "reference": "1 Corinthians 13:12",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "entertainment-behind-the-curtain-q2-v2",
+          "concept": "Dramatic irony and unequal knowledge",
+          "answer": "Dramatic irony",
+          "reference": "Esther 6:1-10",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "held_question_repair",
+            "historicalLedgerChecked": true,
+            "replaces": "entertainment-behind-the-curtain-q2-v1",
+            "reason": "Let passage supply information gap; replace generic definition and hint with scene-specific clue."
+          }
+        },
+        {
+          "id": "entertainment-behind-the-curtain-q3-v1",
+          "concept": "Godspell and light imagery",
+          "answer": "Godspell",
+          "reference": "Matthew 5:14-16",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "entertainment-behind-the-curtain-q4-v3",
+          "concept": "Soliloquy and staged self-deliberation",
+          "answer": "A soliloquy",
+          "reference": "Luke 12:16\u201321",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "entertainment-behind-the-curtain-q4-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "entertainment-behind-the-curtain-q5-v4",
+          "concept": "Ancient theatrical crane and an entrance from above",
+          "answer": "A crane",
+          "reference": "Matthew 28:2\u20134",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "entertainment-behind-the-curtain-q5-v1",
+            "historicalLedgerChecked": true
+          }
+        }
+      ],
+      "editorialShortfall": 0
+    },
+    {
+      "draftId": "music-join-the-song-20260906-v3",
+      "title": "Join the song",
+      "categoryId": "music",
+      "mode": "category",
+      "reviewState": "five_editorially_reviewed_awaiting_verification_and_playtest",
+      "artifact": "music-join-the-song.draft.json",
+      "questions": [
+        {
+          "id": "music-join-the-song-q1-v1",
+          "concept": "Recurring chorus and refrain structure",
+          "answer": "The chorus",
+          "reference": "Psalm 136:1-3",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "music-join-the-song-q2-v2",
+          "concept": "Tambourine metal jingles versus drumhead",
+          "answer": "The small loose metal discs",
+          "reference": "1 Corinthians 13:1",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "replacement",
+            "historicalLedgerChecked": true,
+            "replaces": "music-join-the-song-q2-v1",
+            "reason": "Replace near-verbatim call-and-response definition and repetitive structure."
+          }
+        },
+        {
+          "id": "music-join-the-song-q3-v3",
+          "concept": "Arpeggio word origin and harp",
+          "answer": "Arpeggio",
+          "reference": "Psalm 147:7",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "music-join-the-song-q3-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "music-join-the-song-q4-v1",
+          "concept": "Handel Messiah and Isaiah source text",
+          "answer": "Messiah",
+          "reference": "Isaiah 9:6-7",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "music-join-the-song-q5-v1",
+          "concept": "Byrds Ecclesiastes adaptation",
+          "answer": "The Byrds",
+          "reference": "Ecclesiastes 3:1-8",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        }
+      ],
+      "editorialShortfall": 0
+    },
+    {
+      "draftId": "timed-quick-connections-20260906-v4",
+      "title": "Quick connections",
+      "categoryId": "mixed",
+      "mode": "timed",
+      "reviewState": "superseded",
+      "artifact": "archive/timed-quick-connections.v4.draft.json",
+      "questions": [
+        {
+          "id": "timed-quick-connections-q1-v1",
+          "concept": "Pianissimo and a scene's quiet final sound",
+          "answer": "Pianissimo",
+          "reference": "1 Kings 19:11\u201312",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q2-v1",
+          "concept": "Mediterranean moisture and westward weather cue",
+          "answer": "Mediterranean Sea",
+          "reference": "Luke 12:54",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q3-v1",
+          "concept": "Mime and gesture-based stage communication",
+          "answer": "Mime",
+          "reference": "Luke 1:22",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q4-v2",
+          "concept": "Natron drying in Egyptian embalming",
+          "answer": "To dry the body",
+          "reference": "Genesis 50:2\u20133",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "editorial_repair",
+            "previousQuestionId": "timed-quick-connections-q4-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q5-v2",
+          "concept": "Relay handoff as teaching-succession analogy",
+          "answer": "A relay",
+          "reference": "2 Timothy 2:2",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "editorial_repair",
+            "previousQuestionId": "timed-quick-connections-q5-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q6-v1",
+          "concept": "Moist-heat cooking classification",
+          "answer": "Steaming",
+          "reference": "Exodus 16:23",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q7-v3",
+          "concept": "Paint tint from the red-white contrast",
+          "answer": "A tint",
+          "reference": "Isaiah 1:18",
+          "reviewState": "unapproved_repair",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "timed-quick-connections-q7-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q8-v2",
+          "concept": "Personal seals and authority authentication",
+          "answer": "Whose authority stands behind the document",
+          "reference": "Daniel 6:17",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "editorial_repair",
+            "previousQuestionId": "timed-quick-connections-q8-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q9-v4",
+          "concept": "Scale model proportional length from ark dimensions",
+          "answer": "30 centimeters",
+          "reference": "Genesis 6:15\u201316",
+          "reviewState": "unapproved_repair",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "timed-quick-connections-q9-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q10-v2",
+          "concept": "Floating equilibrium and displaced volume as water density changes",
+          "answer": "The volume of water displaced",
+          "reference": "Ezekiel 47:8\u20139",
+          "reviewState": "unapproved",
+          "lineage": {
+            "kind": "editorial_repair",
+            "previousQuestionId": "timed-quick-connections-q10-v1",
+            "historicalLedgerChecked": true
+          }
+        }
+      ],
+      "supersededBy": "timed-quick-connections-20260906-v5"
+    },
+    {
+      "draftId": "timed-quick-connections-20260906-v5",
+      "title": "Quick connections",
+      "categoryId": "mixed",
+      "mode": "timed",
+      "reviewState": "8_reviewed_1_pending_1_held",
+      "artifact": "timed-quick-connections.draft.json",
+      "questions": [
+        {
+          "id": "timed-quick-connections-q1-v1",
+          "concept": "Pianissimo and a scene's quiet final sound",
+          "answer": "Pianissimo",
+          "reference": "1 Kings 19:11\u201312",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q2-v1",
+          "concept": "Mediterranean moisture and westward weather cue",
+          "answer": "Mediterranean Sea",
+          "reference": "Luke 12:54",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q3-v1",
+          "concept": "Mime and gesture-based stage communication",
+          "answer": "Mime",
+          "reference": "Luke 1:22",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q4-v2",
+          "concept": "Natron drying in Egyptian embalming",
+          "answer": "To dry the body",
+          "reference": "Genesis 50:2\u20133",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "editorial_repair",
+            "previousQuestionId": "timed-quick-connections-q4-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q5-v2",
+          "concept": "Relay handoff as teaching-succession analogy",
+          "answer": "A relay",
+          "reference": "2 Timothy 2:2",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "editorial_repair",
+            "previousQuestionId": "timed-quick-connections-q5-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q6-v1",
+          "concept": "Moist-heat cooking classification",
+          "answer": "Steaming",
+          "reference": "Exodus 16:23",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "new_concept",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q7-v3",
+          "concept": "Paint tint from the red-white contrast",
+          "answer": "A tint",
+          "reference": "Isaiah 1:18",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "timed-quick-connections-q7-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q8-v2",
+          "concept": "Personal seals and authority authentication",
+          "answer": "Whose authority stands behind the document",
+          "reference": "Daniel 6:17",
+          "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+          "lineage": {
+            "kind": "editorial_repair",
+            "previousQuestionId": "timed-quick-connections-q8-v1",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q9-v5",
+          "concept": "Dungeons & Dragons and the twenty-sided die",
+          "answer": "Dungeons & Dragons",
+          "reference": "Proverbs 16:33",
+          "reviewState": "unapproved_repair",
+          "lineage": {
+            "kind": "replacement",
+            "previousQuestionId": "timed-quick-connections-q9-v4",
+            "historicalLedgerChecked": true
+          }
+        },
+        {
+          "id": "timed-quick-connections-q10-v2",
+          "concept": "Floating equilibrium and displaced volume as water density changes",
+          "answer": "The volume of water displaced",
+          "reference": "Ezekiel 47:8\u20139",
+          "reviewState": "coordinator_timing_hold",
+          "lineage": {
+            "kind": "editorial_repair",
+            "previousQuestionId": "timed-quick-connections-q10-v1",
+            "historicalLedgerChecked": true
+          }
+        }
+      ],
+      "editorialShortfall": 1
+    }
+  ],
+  "historicalEvidenceInventory": [
+    {
+      "prompt": "Which gym machine lets you walk or run on a moving belt?",
+      "reference": "Joshua 6:11\u201314",
+      "categoryId": "fitness",
+      "answer": "Treadmill",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "What does a basic pedometer count?",
+      "reference": "Joshua 3:14\u201317",
+      "categoryId": "fitness",
+      "answer": "Steps",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "Where is the biceps brachii muscle located?",
+      "reference": "Judges 15:13\u201314",
+      "categoryId": "fitness",
+      "answer": "Upper arm",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "What is the standard distance of a marathon?",
+      "reference": "Genesis 7:12",
+      "categoryId": "fitness",
+      "answer": "42.195 kilometers",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "What workout term means one complete performance of an exercise movement?",
+      "reference": "Joshua 6:14\u201315",
+      "categoryId": "fitness",
+      "answer": "Repetition",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "Which exercise involves holding your body straight while supported on your forearms and toes?",
+      "reference": "Exodus 17:11\u201312",
+      "categoryId": "fitness",
+      "answer": "Plank",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "In which exercise do you jump your feet apart while raising your arms overhead, then return to the starting position?",
+      "reference": "Genesis 8:8\u20139",
+      "categoryId": "fitness",
+      "answer": "Jumping jacks",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "Which activity uses your arms and legs to propel your body through water without a boat?",
+      "reference": "Acts 27:43\u201344",
+      "categoryId": "fitness",
+      "answer": "Swimming",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "In which running event do teammates pass a baton to the next runner?",
+      "reference": "2 Kings 2:13\u201315",
+      "categoryId": "fitness",
+      "answer": "Relay race",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "Stretching and a joint's available range of motion are most closely associated with which fitness quality?",
+      "reference": "Luke 6:6\u201310",
+      "categoryId": "fitness",
+      "answer": "Flexibility",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "Which unit is commonly used to report heart rate?",
+      "reference": "Daniel 6:10",
+      "categoryId": "fitness",
+      "answer": "Beats per minute",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "Which outdoor activity typically involves following countryside or mountain trails on foot?",
+      "reference": "Luke 24:13\u201315",
+      "categoryId": "fitness",
+      "answer": "Hiking",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "Which optical phenomenon separates white light into colors because different wavelengths bend by different amounts?",
+      "reference": "Genesis 9:12\u201317",
+      "categoryId": "science",
+      "answer": "Dispersion",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "Which property of bitumen helps it form a water-resistant coating?",
+      "reference": "Exodus 2:2\u20133",
+      "categoryId": "science",
+      "answer": "Hydrophobicity",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "Which phase change normally produces dew on cool grass?",
+      "reference": "Judges 6:36\u201340",
+      "categoryId": "science",
+      "answer": "Condensation",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "Which plant structures increase the surface area available for absorbing water directly from soil?",
+      "reference": "Luke 8:6, 13",
+      "categoryId": "science",
+      "answer": "Root hairs",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "A solid iron ax head normally sinks in fresh water because which property is greater for iron than for water?",
+      "reference": "2 Kings 6:4\u20137",
+      "categoryId": "science",
+      "answer": "Density",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "In air, the sound from a plucked harp travels primarily as which kind of wave?",
+      "reference": "1 Samuel 16:23",
+      "categoryId": "science",
+      "answer": "Longitudinal waves",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "Which motion primarily causes the ordinary daily alternation of daylight and darkness?",
+      "reference": "Joshua 10:12\u201314",
+      "categoryId": "science",
+      "answer": "Earth spinning on its axis",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "Which delivery route distinguishes venom from poison in the usual biological distinction?",
+      "reference": "Acts 28:3\u20136",
+      "categoryId": "science",
+      "answer": "Injection through a wound",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "What process occurs when wood reacts with oxygen, releasing heat and often visible flames?",
+      "reference": "Exodus 3:2\u20133",
+      "categoryId": "science",
+      "answer": "Combustion",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "Which mineral consists of sodium chloride and is commonly called rock salt?",
+      "reference": "Genesis 19:24\u201326",
+      "categoryId": "science",
+      "answer": "Halite",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "Seismic waves transmit earthquake energy through material such as rock. Which broad class of waves includes them?",
+      "reference": "Acts 16:25\u201326",
+      "categoryId": "science",
+      "answer": "Mechanical waves",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "Which process releases many of the foul-smelling compounds produced as microbes break down dead tissue?",
+      "reference": "John 11:38\u201339",
+      "categoryId": "science",
+      "answer": "Decomposition",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "What optical phenomenon separates white light into colors in a prism because the glass's refractive index varies with wavelength?",
+      "reference": "Genesis 9:12\u201317",
+      "categoryId": "science",
+      "answer": "Dispersion",
+      "evidenceFiles": [
+        "benchmark.json"
+      ]
+    },
+    {
+      "prompt": "Which property describes bitumen's resistance to being wetted by water?",
+      "reference": "Exodus 2:2\u20133",
+      "categoryId": "science",
+      "answer": "Hydrophobicity",
+      "evidenceFiles": [
+        "benchmark.json"
+      ]
+    },
+    {
+      "prompt": "Which mineral has the chemical formula NaCl?",
+      "reference": "Genesis 19:24\u201326",
+      "categoryId": "science",
+      "answer": "Halite",
+      "evidenceFiles": [
+        "benchmark.json"
+      ]
+    },
+    {
+      "prompt": "Which exercise involves traveling on foot at a pace faster than walking?",
+      "reference": "1 Kings 18:46",
+      "categoryId": "fitness",
+      "answer": "Running",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "What colorful arc can appear when sunlight passes through raindrops?",
+      "reference": "Genesis 9:13\u201316",
+      "categoryId": "science",
+      "answer": "Rainbow",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "Which island country lies just south of Sicily?",
+      "reference": "Acts 28:1\u20132",
+      "categoryId": "geography",
+      "answer": "Malta",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "In a standard track relay, what must one runner pass to the next?",
+      "reference": "Deuteronomy 31:2\u20138",
+      "categoryId": "fitness",
+      "answer": "A baton",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "Grass cools below the air's dew point but stays above freezing. Which process forms liquid droplets on it?",
+      "reference": "Judges 6:36\u201340",
+      "categoryId": "science",
+      "answer": "Condensation",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "Which combination best explains the Dead Sea's high salinity?",
+      "reference": "Ezekiel 47:8\u201310",
+      "categoryId": "geography",
+      "answer": "Strong evaporation and no surface outlet",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "You hold a dumbbell motionless with your elbow fixed at a right angle. Which muscle action describes your elbow flexors?",
+      "reference": "Exodus 17:12",
+      "categoryId": "fitness",
+      "answer": "Isometric",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "Why can a watertight hollow steel ship float while a compact solid steel block sinks?",
+      "reference": "2 Kings 6:5\u20137",
+      "categoryId": "science",
+      "answer": "The hull displaces enough water to balance its weight.",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "Site B is 30\u00b0 east of site A. Using a 24-hour solar day, what is B's local solar time when A's is noon?",
+      "reference": "Joshua 10:12\u201314",
+      "categoryId": "geography",
+      "answer": "2 p.m.",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "After a dumbbell curl, you slowly straighten your elbow to lower the weight. What action are your elbow flexors performing?",
+      "reference": "Mark 2:3\u20134",
+      "categoryId": "fitness",
+      "answer": "Eccentric contraction",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "Which material normally carries a trumpet's sound directly to a listener across an open courtyard?",
+      "reference": "Joshua 6:20",
+      "categoryId": "science",
+      "answer": "Air",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "Which landform rises prominently above surrounding terrain and has a summit?",
+      "reference": "Genesis 8:4\u20135",
+      "categoryId": "geography",
+      "answer": "Mountain",
+      "evidenceFiles": [
+        "benchmark.json",
+        "initial-benchmark.json"
+      ]
+    },
+    {
+      "prompt": "Which material would let the most visible light pass through a lantern's window?",
+      "reference": "Mark 4:21",
+      "categoryId": "science",
+      "answer": "Clear glass",
+      "evidenceFiles": [
+        "challenger-revision.json",
+        "next-rounds.json"
+      ]
+    },
+    {
+      "prompt": "Most of modern Egypt's land area lies on which continent?",
+      "reference": "Genesis 46:6",
+      "categoryId": "geography",
+      "answer": "Africa",
+      "evidenceFiles": [
+        "challenger-revision.json",
+        "next-rounds.json"
+      ]
+    },
+    {
+      "prompt": "On a sunny day, an eagle circles upward with few wingbeats. What is it most likely using to gain height?",
+      "reference": "Isaiah 40:31",
+      "categoryId": "nature",
+      "answer": "Columns of rising warm air",
+      "evidenceFiles": [
+        "challenger-revision.json",
+        "next-rounds.json"
+      ]
+    },
+    {
+      "prompt": "Very salty soil can draw water out of plant root cells across their membranes. What is this movement of water called?",
+      "reference": "Judges 9:45",
+      "categoryId": "science",
+      "answer": "Osmosis",
+      "evidenceFiles": [
+        "challenger-revision.json",
+        "next-rounds.json"
+      ]
+    },
+    {
+      "prompt": "A Middle Eastern desert map marks a usually dry valley that can carry flash floods after rain. Which label best fits?",
+      "reference": "1 Kings 17:5\u20137",
+      "categoryId": "geography",
+      "answer": "Wadi",
+      "evidenceFiles": [
+        "challenger-revision.json",
+        "next-rounds.json"
+      ]
+    },
+    {
+      "prompt": "A Gala apple branch is grafted onto a different apple variety's rootstock. What variety will apples growing from that branch normally be?",
+      "reference": "Romans 11:17",
+      "categoryId": "nature",
+      "answer": "Gala",
+      "evidenceFiles": [
+        "challenger-revision.json",
+        "next-rounds.json"
+      ]
+    },
+    {
+      "prompt": "Which requirement for continued burning does adding another log mainly replenish?",
+      "reference": "Proverbs 26:20",
+      "categoryId": "science",
+      "answer": "Fuel",
+      "evidenceFiles": [
+        "challenger-revision.json",
+        "next-rounds.json"
+      ]
+    },
+    {
+      "prompt": "From Mount Carmel in Israel, in which general direction does the Mediterranean Sea lie?",
+      "reference": "1 Kings 18:42\u201344",
+      "categoryId": "geography",
+      "answer": "West",
+      "evidenceFiles": [
+        "challenger-revision.json",
+        "next-rounds.json"
+      ]
+    },
+    {
+      "prompt": "On an overcast day, an eagle soars beside a steep ridge while steady wind blows against the slope. What most likely keeps it aloft?",
+      "reference": "Job 39:27\u201328",
+      "categoryId": "nature",
+      "answer": "Wind redirected upward by the ridge",
+      "evidenceFiles": [
+        "challenger-revision.json"
+      ]
+    },
+    {
+      "prompt": "A map of Jordan shows a branching, rocky valley that channels storm runoff but normally contains no flowing water. Which landform label best fits?",
+      "reference": "1 Kings 17:5\u20137",
+      "categoryId": "geography",
+      "answer": "Wadi",
+      "evidenceFiles": [
+        "challenger-revision.json"
+      ]
+    },
+    {
+      "prompt": "Which landlocked body of water borders both Israel and Jordan and is famous for letting swimmers float unusually easily?",
+      "reference": "Genesis 19:26",
+      "categoryId": "geography",
+      "answer": "Dead Sea",
+      "evidenceFiles": [
+        "challenger-revision.json"
+      ]
+    },
+    {
+      "prompt": "What is the main way the fluffy structure of a wool sweater helps keep you warm?",
+      "reference": "Job 31:20",
+      "categoryId": "science",
+      "answer": "It traps air that slows heat transfer",
+      "evidenceFiles": [
+        "editorial-sprint.json"
+      ]
+    },
+    {
+      "prompt": "Snakes are ectotherms. What does that mean for how they regulate body temperature?",
+      "reference": "Acts 28:3",
+      "categoryId": "science",
+      "answer": "They rely mainly on external heat",
+      "evidenceFiles": [
+        "editorial-sprint.json"
+      ]
+    },
+    {
+      "prompt": "A flute and a violin play the same note at the same loudness. Which sound property chiefly lets you tell them apart?",
+      "reference": "Genesis 27:22",
+      "categoryId": "science",
+      "answer": "Timbre",
+      "evidenceFiles": [
+        "editorial-sprint.json"
+      ]
+    },
+    {
+      "prompt": "A wider backpack strap spreads the same load over more of your shoulder. Which physical quantity does this reduce?",
+      "reference": "Jeremiah 38:12\u201313",
+      "categoryId": "science",
+      "answer": "Pressure",
+      "evidenceFiles": [
+        "editorial-sprint.json"
+      ]
+    },
+    {
+      "prompt": "Which property makes ordinary fired clay unsuitable for a clip that must bend repeatedly without breaking?",
+      "reference": "Judges 7:19",
+      "categoryId": "science",
+      "answer": "Brittleness",
+      "evidenceFiles": [
+        "editorial-sprint.json"
+      ]
+    },
+    {
+      "prompt": "During the last ice age, what chiefly exposed the Bering land bridge between Asia and North America?",
+      "reference": "Exodus 14:21\u201322",
+      "categoryId": "geography",
+      "answer": "Water becoming stored in vast ice sheets",
+      "evidenceFiles": [
+        "geography-revision.json",
+        "next-rounds.json"
+      ]
+    },
+    {
+      "prompt": "Which process played the main role in carving the Grand Canyon?",
+      "reference": "Job 14:19",
+      "categoryId": "geography",
+      "answer": "River erosion",
+      "evidenceFiles": [
+        "geography-revision.json",
+        "next-rounds.json"
+      ]
+    },
+    {
+      "prompt": "On a topographic map, what do very closely spaced contour lines usually indicate?",
+      "reference": "1 Samuel 14:13",
+      "categoryId": "geography",
+      "answer": "A steep slope",
+      "evidenceFiles": [
+        "geography-revision.json",
+        "next-rounds.json"
+      ]
+    },
+    {
+      "prompt": "On a mountain road, visibility drops inside a layer of tiny liquid-water droplets suspended at road level. What is this weather condition called?",
+      "reference": "Exodus 24:18",
+      "categoryId": "geography",
+      "answer": "Fog",
+      "evidenceFiles": [
+        "geography-revision.json",
+        "next-rounds.json"
+      ]
+    },
+    {
+      "prompt": "Which historic trade network connected China with Mediterranean markets through Central Asia?",
+      "reference": "Genesis 37:25",
+      "categoryId": "geography",
+      "answer": "Silk Road",
+      "evidenceFiles": [
+        "geography-revision.json",
+        "next-rounds.json"
+      ]
+    },
+    {
+      "prompt": "Which coastal landform often provides a natural harbor because surrounding land shelters part of the water from open-sea waves?",
+      "reference": "Acts 27:12",
+      "categoryId": "geography",
+      "answer": "A bay",
+      "evidenceFiles": [
+        "geography-revision.json",
+        "next-rounds.json"
+      ]
+    },
+    {
+      "prompt": "A dependable spring supports a patch of trees and other vegetation in an otherwise dry desert. What is this feature called?",
+      "reference": "Genesis 16:7",
+      "categoryId": "geography",
+      "answer": "An oasis",
+      "evidenceFiles": [
+        "geography-revision.json",
+        "next-rounds.json"
+      ]
+    },
+    {
+      "prompt": "During the last ice age, what chiefly exposed the Bering land bridge between Asia and North America?",
+      "reference": "Job 38:22",
+      "categoryId": "geography",
+      "answer": "Water becoming stored in vast ice sheets",
+      "evidenceFiles": [
+        "geography-revision.json"
+      ]
+    },
+    {
+      "prompt": "With similar water flow and bedrock still exposed, which river would usually scour its rocky channel most effectively?",
+      "reference": "Job 14:19",
+      "categoryId": "geography",
+      "answer": "One carrying hard sand and gravel",
+      "evidenceFiles": [
+        "geography-revision.json"
+      ]
+    },
+    {
+      "prompt": "When planning an uphill hike, which topographic-map feature most strongly warns that a direct route may require scrambling rather than ordinary walking?",
+      "reference": "1 Samuel 14:13",
+      "categoryId": "geography",
+      "answer": "Closely packed contour lines",
+      "evidenceFiles": [
+        "geography-revision.json"
+      ]
+    },
+    {
+      "prompt": "Why can a tropical cloud forest receive more water than a standard rain gauge records?",
+      "reference": "Exodus 24:18",
+      "categoryId": "geography",
+      "answer": "Cloud droplets collecting on leaves",
+      "evidenceFiles": [
+        "geography-revision.json"
+      ]
+    },
+    {
+      "prompt": "Which landscape is most likely to offer abundant clay for brickmaking but little exposed stone to quarry?",
+      "reference": "Genesis 11:3",
+      "categoryId": "geography",
+      "answer": "A broad river alluvial plain",
+      "evidenceFiles": [
+        "geography-revision.json"
+      ]
+    },
+    {
+      "prompt": "A strong wind blows from the northeast across a roughly circular, hilly island. Which coast is generally most sheltered from its direct force?",
+      "reference": "Acts 27:14\u201316",
+      "categoryId": "geography",
+      "answer": "The southwest coast",
+      "evidenceFiles": [
+        "geography-revision.json"
+      ]
+    },
+    {
+      "prompt": "During a long dry spell, what can help river-floodplain trees stay green after nearby upland trees begin to wilt?",
+      "reference": "Jeremiah 17:8",
+      "categoryId": "geography",
+      "answer": "Access to a shallower water table",
+      "evidenceFiles": [
+        "geography-revision.json"
+      ]
+    }
+  ],
+  "additionalRecentOrArchivedPrompts": [
+    "A puddle disappears on a dry afternoon without boiling. Which process explains it?",
+    "How many legs does an insect have?",
+    "What do bees collect from flowers to make honey?",
+    "What do we call the separation of white light into its component colors?",
+    "What gas do plants take in during photosynthesis?",
+    "What is frozen water called?",
+    "What is the capital city of Italy?",
+    "What is the main ingredient in hummus?",
+    "Which chemical messengers can leave a trail that guides other members of a colony toward food?",
+    "Which continent has no permanent native human population?",
+    "Which country is home to the city of Kyoto?",
+    "Which food is made by pressing olives?",
+    "Which fruit is traditionally dried to make raisins?",
+    "Which ingredient helps bread dough rise?",
+    "Which ocean is the largest?",
+    "Which planet is known as the Red Planet?",
+    "Which river flows through Egypt?",
+    "Which shape can cover a flat surface with identical regular tiles and no gaps?",
+    "Which spice comes from the bark of a tree?",
+    "Which type of chemical bond holds positive and negative ions together through electrical attraction?"
+  ],
+  "historicalReviewState": "Mixed: approved benchmark, archived and unapproved evidence. See source files for actual decision history; no live database completeness claim."
+}

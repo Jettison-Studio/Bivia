@@ -45,6 +45,7 @@ export type RunSummary = Pick<
   EngineRun,
   "id" | "status" | "createdAt" | "updatedAt"
 > & {
+  archived?: boolean;
   title?: string;
   callCount?: number;
   estimatedCostUsd?: number;

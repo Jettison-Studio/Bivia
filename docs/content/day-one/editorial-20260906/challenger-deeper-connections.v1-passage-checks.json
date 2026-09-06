@@ -1,0 +1,343 @@
+{
+  "translation": "NIV",
+  "bibleId": 111,
+  "licensedTextStored": false,
+  "checks": [
+    {
+      "passageId": "PRO.25.20",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/PRO.25.20?format=text",
+      "httpStatus": 200,
+      "reference": "Proverbs 25:20",
+      "contentSha256": "f955ed7084d9868cf3c2ebc5c17081b7f7d326729a35f347c1b28cd24a92c0cc",
+      "checkedAt": "2026-09-06T21:00:51.630490+00:00"
+    },
+    {
+      "passageId": "PRO.25.18-25",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/PRO.25.18-25?format=text",
+      "httpStatus": 200,
+      "reference": "Proverbs 25:18-25",
+      "contentSha256": "b7287a513381a368e4d873818b15b2758fab966203b35d2c468ed0a442620d62",
+      "checkedAt": "2026-09-06T21:00:52.107360+00:00"
+    },
+    {
+      "passageId": "ISA.40.31",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/ISA.40.31?format=text",
+      "httpStatus": 200,
+      "reference": "Isaiah 40:31",
+      "contentSha256": "17d95409da3025145ab8b8e74f95c2877457aa7e6bc8cabc99bb2db44c7b8f39",
+      "checkedAt": "2026-09-06T21:00:52.422190+00:00"
+    },
+    {
+      "passageId": "ISA.40.25-31",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/ISA.40.25-31?format=text",
+      "httpStatus": 200,
+      "reference": "Isaiah 40:25-31",
+      "contentSha256": "c26303b2c73e261465c5b262b6fb2ded78a64ab023dc413b62c74f6f309f68f8",
+      "checkedAt": "2026-09-06T21:00:52.968245+00:00"
+    },
+    {
+      "passageId": "ECC.1.5",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/ECC.1.5?format=text",
+      "httpStatus": 200,
+      "reference": "Ecclesiastes 1:5",
+      "contentSha256": "4c6d032f40c949f0268918c6a101197fc678a37a3c25521a075baa9b64a4ae8b",
+      "checkedAt": "2026-09-06T21:00:53.294675+00:00"
+    },
+    {
+      "passageId": "ECC.1.2-11",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/ECC.1.2-11?format=text",
+      "httpStatus": 200,
+      "reference": "Ecclesiastes 1:2-11",
+      "contentSha256": "f26d8c6cb16ad348022ff81061157bf4983d089913293eb756b6f7756d46d3bc",
+      "checkedAt": "2026-09-06T21:00:53.943590+00:00"
+    },
+    {
+      "passageId": "PSA.18.36",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/PSA.18.36?format=text",
+      "httpStatus": 200,
+      "reference": "Psalms 18:36",
+      "contentSha256": "4dfd5b9053a4618c1ed7635681652c3c5459a152bd34671a17866de87dd5dfc9",
+      "checkedAt": "2026-09-06T21:00:54.236433+00:00"
+    },
+    {
+      "passageId": "PSA.18.32-39",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/PSA.18.32-39?format=text",
+      "httpStatus": 200,
+      "reference": "Psalms 18:32-39",
+      "contentSha256": "d246ac4fecd1d94f6f531fd8cd8deabfb61d216d82122383c2f4c0cced4802b7",
+      "checkedAt": "2026-09-06T21:00:54.377159+00:00"
+    },
+    {
+      "passageId": "JER.18.3-4",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JER.18.3-4?format=text",
+      "httpStatus": 200,
+      "reference": "Jeremiah 18:3-4",
+      "contentSha256": "c2d8cdc60b26a9a594e88199879b070ca5eaf20ab92512b604317b5d7f93500a",
+      "checkedAt": "2026-09-06T21:00:55.013692+00:00"
+    },
+    {
+      "passageId": "JER.18.1-10",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JER.18.1-10?format=text",
+      "httpStatus": 200,
+      "reference": "Jeremiah 18:1-10",
+      "contentSha256": "395a16c6fcddad3800608f98e99485fa62f5f42a06a71c1690593a721630e515",
+      "checkedAt": "2026-09-06T21:00:55.484400+00:00"
+    },
+    {
+      "passageId": "NAM.3.17",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/NAM.3.17?format=text",
+      "httpStatus": 200,
+      "reference": "Nahum 3:17",
+      "contentSha256": "ad03ce65ed093537fd48835ec377c726026d69d64d5ab26262bbf88a0e556f13",
+      "checkedAt": "2026-09-06T21:00:55.832970+00:00"
+    },
+    {
+      "passageId": "NAM.3.14-19",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/NAM.3.14-19?format=text",
+      "httpStatus": 200,
+      "reference": "Nahum 3:14-19",
+      "contentSha256": "f3d44b838feeb2707dfe6102f86143950471ed9c6b143c3be6a4484610bf221d",
+      "checkedAt": "2026-09-06T21:00:56.447528+00:00"
+    },
+    {
+      "passageId": "2KI.1.2",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/2KI.1.2?format=text",
+      "httpStatus": 200,
+      "reference": "2 Kings 1:2",
+      "contentSha256": "0b7d7ff9a8d75e943852cbfe0ed3a8ea75cac9fb510c1b887f4e2cc1afee0e8a",
+      "checkedAt": "2026-09-06T21:00:56.780495+00:00"
+    },
+    {
+      "passageId": "2KI.1.1-8",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/2KI.1.1-8?format=text",
+      "httpStatus": 200,
+      "reference": "2 Kings 1:1-8",
+      "contentSha256": "28f193839e436e6434026c3f4e76276ca84b6613ec38df13fe1c7cc7ee65a7b6",
+      "checkedAt": "2026-09-06T21:00:57.266077+00:00"
+    },
+    {
+      "passageId": "1KI.6.7",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/1KI.6.7?format=text",
+      "httpStatus": 200,
+      "reference": "1 Kings 6:7",
+      "contentSha256": "81cb1346e96c066f8da8412f90abef489deb437bba8fae282cd993fcd65f7e11",
+      "checkedAt": "2026-09-06T21:14:01.936706+00:00"
+    },
+    {
+      "passageId": "1KI.6.1-10",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/1KI.6.1-10?format=text",
+      "httpStatus": 200,
+      "reference": "1 Kings 6:1-10",
+      "contentSha256": "0132fcf657cd39e0670e4d542b59f80e2141d40215d497b79936873e60a132a3",
+      "checkedAt": "2026-09-06T21:14:02.438609+00:00"
+    },
+    {
+      "passageId": "JER.36.32",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JER.36.32?format=text",
+      "httpStatus": 200,
+      "reference": "Jeremiah 36:32",
+      "contentSha256": "801009e0805a99c3433738b2adfd30a0863527e8957f1b44ea9f523a431af21e",
+      "checkedAt": "2026-09-06T21:14:02.734912+00:00"
+    },
+    {
+      "passageId": "JER.36.27-32",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JER.36.27-32?format=text",
+      "httpStatus": 200,
+      "reference": "Jeremiah 36:27-32",
+      "contentSha256": "ed06a40feed824a8c5fa482161daf3d5e7c8af4e2ece98112487b5caaac793be",
+      "checkedAt": "2026-09-06T21:14:03.473213+00:00"
+    },
+    {
+      "passageId": "PRO.27.19",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/PRO.27.19?format=text",
+      "httpStatus": 200,
+      "reference": "Proverbs 27:19",
+      "contentSha256": "965b29f2c13d87870fe0180d2de199d8746d5fd0708f7483454f0806e083bd34",
+      "checkedAt": "2026-09-06T21:14:03.887431+00:00"
+    },
+    {
+      "passageId": "PRO.27.17-24",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/PRO.27.17-24?format=text",
+      "httpStatus": 200,
+      "reference": "Proverbs 27:17-24",
+      "contentSha256": "88ded8bf044d45e828e4cbbf2a2380dde233722fe222887404d75c9e61b31e6b",
+      "checkedAt": "2026-09-06T21:14:04.396688+00:00"
+    },
+    {
+      "passageId": "DEU.25.4",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/DEU.25.4?format=text",
+      "httpStatus": 200,
+      "reference": "Deuteronomy 25:4",
+      "contentSha256": "3c7278e448afc0f5e81ac47ac623aea034f54842f31c2e57b6b2ebea461dcada",
+      "checkedAt": "2026-09-06T21:14:04.930787+00:00"
+    },
+    {
+      "passageId": "DEU.25.1-10",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/DEU.25.1-10?format=text",
+      "httpStatus": 200,
+      "reference": "Deuteronomy 25:1-10",
+      "contentSha256": "1ea38bb2a960566190a34cf394446f843099bf50301a23e5afb81e1b2fdc7c8f",
+      "checkedAt": "2026-09-06T21:14:05.543306+00:00"
+    },
+    {
+      "passageId": "ROM.11.17-18",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/ROM.11.17-18?format=text",
+      "httpStatus": 200,
+      "reference": "Romans 11:17-18",
+      "contentSha256": "d051c0dfc25f8a5dddc9db60c78039794eb76e989f794576393ad5e50dac7522",
+      "checkedAt": "2026-09-06T21:14:06.159438+00:00"
+    },
+    {
+      "passageId": "ROM.11.16-24",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/ROM.11.16-24?format=text",
+      "httpStatus": 200,
+      "reference": "Romans 11:16-24",
+      "contentSha256": "85f7d8531ef7b6058c3afa4e849b59079b3f6d8c9feb71a0f6d1d1f2150b058f",
+      "checkedAt": "2026-09-06T21:14:06.572381+00:00"
+    },
+    {
+      "passageId": "ACT.2.6-8",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/ACT.2.6-8?format=text",
+      "httpStatus": 200,
+      "reference": "Acts 2:6-8",
+      "contentSha256": "9c2e563f0ae4b0bf3f1843083436c594494fae8eb3485718f14ffdb14be0b5bd",
+      "checkedAt": "2026-09-06T21:18:26.706099+00:00"
+    },
+    {
+      "passageId": "ACT.2.5-13",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/ACT.2.5-13?format=text",
+      "httpStatus": 200,
+      "reference": "Acts 2:5-13",
+      "contentSha256": "5272fba05b230c20d02abd876172f7e9b8e771c05d06918eab74381a1d8fe6d7",
+      "checkedAt": "2026-09-06T21:18:27.170101+00:00"
+    },
+    {
+      "passageId": "1KI.18.36-39",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/1KI.18.36-39?format=text",
+      "httpStatus": 200,
+      "reference": "1 Kings 18:36-39",
+      "contentSha256": "fc602b66ced0eb3912738cd309289642a91770cd1447c0704f49dac54fac5f62",
+      "checkedAt": "2026-09-06T21:18:27.598630+00:00"
+    },
+    {
+      "passageId": "1KI.18.30-39",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/1KI.18.30-39?format=text",
+      "httpStatus": 200,
+      "reference": "1 Kings 18:30-39",
+      "contentSha256": "c905c8eefd237764953e9a44b5c0e99de382c72d5ea2ae48ed73232d534e822a",
+      "checkedAt": "2026-09-06T21:18:28.303219+00:00"
+    },
+    {
+      "passageId": "JOB.19.23-24",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JOB.19.23-24?format=text",
+      "httpStatus": 200,
+      "reference": "Job 19:23-24",
+      "contentSha256": "6b3e82773cb5a10e828098fe8ccf8cdd2150029951149fe10f2d7da9900aeadf",
+      "checkedAt": "2026-09-06T21:18:28.920590+00:00"
+    },
+    {
+      "passageId": "JOB.19.21-29",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JOB.19.21-29?format=text",
+      "httpStatus": 200,
+      "reference": "Job 19:21-29",
+      "contentSha256": "c42cd4596388060098cfaab679b5416d37cc2a89d345382b9aeefffd7b5f7cc0",
+      "checkedAt": "2026-09-06T21:18:29.533268+00:00"
+    },
+    {
+      "passageId": "NUM.13.23",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/NUM.13.23?format=text",
+      "httpStatus": 200,
+      "reference": "Numbers 13:23",
+      "contentSha256": "57a907ee3c5395e977e3826b755a1b717a8c788baa65e7adaddd790e98105ba0",
+      "checkedAt": "2026-09-06T21:18:29.827555+00:00"
+    },
+    {
+      "passageId": "NUM.13.21-27",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/NUM.13.21-27?format=text",
+      "httpStatus": 200,
+      "reference": "Numbers 13:21-27",
+      "contentSha256": "06020129316a144fc84c0afe09192f3d7b4b8086a833fd5a126bfd9b11b9de4e",
+      "checkedAt": "2026-09-06T21:18:30.333383+00:00"
+    },
+    {
+      "passageId": "PSA.137.1-4",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/PSA.137.1-4?format=text",
+      "httpStatus": 200,
+      "reference": "Psalms 137:1-4",
+      "contentSha256": "fbad3cd22c5fac32160900511d3f3b261b63a5d102de42546f5b88468e716c41",
+      "checkedAt": "2026-09-06T21:18:30.679308+00:00"
+    },
+    {
+      "passageId": "PSA.137.1-9",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/PSA.137.1-9?format=text",
+      "httpStatus": 200,
+      "reference": "Psalms 137:1-9",
+      "contentSha256": "7584b3c80b17fb6d0467139d7c06842383106eb04d429b198a1e5f58145131b8",
+      "checkedAt": "2026-09-06T21:18:31.171989+00:00"
+    },
+    {
+      "passageId": "AMO.8.9",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/AMO.8.9?format=text",
+      "httpStatus": 200,
+      "reference": "Amos 8:9",
+      "contentSha256": "05aa5f0df325caec9b84085d26f2e113a6b4745e2186fb946f0a07002b95d0bd",
+      "checkedAt": "2026-09-06T21:23:15.313271+00:00"
+    },
+    {
+      "passageId": "AMO.8.4-10",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/AMO.8.4-10?format=text",
+      "httpStatus": 200,
+      "reference": "Amos 8:4-10",
+      "contentSha256": "1ca24b6835aca754d0e65cca554475fa3b7b1547fcdf9ee98146e152ecb43729",
+      "checkedAt": "2026-09-06T21:23:15.788381+00:00"
+    },
+    {
+      "passageId": "EXO.19.19",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/EXO.19.19?format=text",
+      "httpStatus": 200,
+      "reference": "Exodus 19:19",
+      "contentSha256": "63627be692d5e0c0c8dc2d42cb12a5317148d0e7f707e87866908643deb0b838",
+      "checkedAt": "2026-09-06T21:23:16.109019+00:00"
+    },
+    {
+      "passageId": "EXO.19.16-25",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/EXO.19.16-25?format=text",
+      "httpStatus": 200,
+      "reference": "Exodus 19:16-25",
+      "contentSha256": "8f1f1f3b716cb1ed0044b79c507694f82aa2415b9a361b9ec8a7e3ea41cc72d9",
+      "checkedAt": "2026-09-06T21:23:16.662639+00:00"
+    },
+    {
+      "passageId": "PRO.18.18",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/PRO.18.18?format=text",
+      "httpStatus": 200,
+      "reference": "Proverbs 18:18",
+      "contentSha256": "b71f8efcdb9bd7a4b38ae18fb93d763d62047af02d6534aeae7e57612dce42cc",
+      "checkedAt": "2026-09-06T21:23:16.976124+00:00"
+    },
+    {
+      "passageId": "PRO.18.13-22",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/PRO.18.13-22?format=text",
+      "httpStatus": 200,
+      "reference": "Proverbs 18:13-22",
+      "contentSha256": "89840ec5b7e58384c071f3e102d73236709ddb28e8573cd0a3836cb7737650af",
+      "checkedAt": "2026-09-06T21:23:17.450394+00:00"
+    },
+    {
+      "passageId": "ACT.12.6-8",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/ACT.12.6-8?format=text",
+      "httpStatus": 200,
+      "reference": "Acts 12:6-8",
+      "contentSha256": "ff63883eb04087a0aff6a1ee5fd12f30399f2bc0fcd0126937ccfb6b1b323157",
+      "checkedAt": "2026-09-06T21:23:17.889914+00:00"
+    },
+    {
+      "passageId": "ACT.12.6-12",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/ACT.12.6-12?format=text",
+      "httpStatus": 200,
+      "reference": "Acts 12:6-12",
+      "contentSha256": "8ef3f22a0944a12e28e14d575a6c3979015642937fae7afda442f2b823ad213f",
+      "checkedAt": "2026-09-06T21:23:18.505020+00:00"
+    }
+  ]
+}

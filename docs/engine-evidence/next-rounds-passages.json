@@ -1,0 +1,120 @@
+[
+  {
+    "run": "4582e7cb-2225-4cf4-b3f9-074b22813088",
+    "candidate": "q1",
+    "reference": "Job 38:22",
+    "loaded": true,
+    "attribution": true,
+    "exactAnswerInPassage": false
+  },
+  {
+    "run": "4582e7cb-2225-4cf4-b3f9-074b22813088",
+    "candidate": "q2",
+    "reference": "Job 14:19",
+    "loaded": true,
+    "attribution": true,
+    "exactAnswerInPassage": false
+  },
+  {
+    "run": "4582e7cb-2225-4cf4-b3f9-074b22813088",
+    "candidate": "q3",
+    "reference": "1 Samuel 14:13",
+    "loaded": true,
+    "attribution": true,
+    "exactAnswerInPassage": false
+  },
+  {
+    "run": "4582e7cb-2225-4cf4-b3f9-074b22813088",
+    "candidate": "q4",
+    "reference": "Exodus 24:18",
+    "loaded": true,
+    "attribution": true,
+    "exactAnswerInPassage": false
+  },
+  {
+    "run": "4582e7cb-2225-4cf4-b3f9-074b22813088",
+    "candidate": "q5",
+    "reference": "Genesis 11:3",
+    "loaded": true,
+    "attribution": true,
+    "exactAnswerInPassage": false
+  },
+  {
+    "run": "4582e7cb-2225-4cf4-b3f9-074b22813088",
+    "candidate": "q6",
+    "reference": "Acts 27:14\u201316",
+    "loaded": true,
+    "attribution": true,
+    "exactAnswerInPassage": false
+  },
+  {
+    "run": "4582e7cb-2225-4cf4-b3f9-074b22813088",
+    "candidate": "q7",
+    "reference": "Jeremiah 17:8",
+    "loaded": true,
+    "attribution": true,
+    "exactAnswerInPassage": false
+  },
+  {
+    "run": "da8b2fea-7dc0-4749-9672-5eb78bde5ac8",
+    "candidate": "q1",
+    "reference": "Mark 4:21",
+    "loaded": true,
+    "attribution": true,
+    "exactAnswerInPassage": false
+  },
+  {
+    "run": "da8b2fea-7dc0-4749-9672-5eb78bde5ac8",
+    "candidate": "q2",
+    "reference": "Genesis 46:6",
+    "loaded": true,
+    "attribution": true,
+    "exactAnswerInPassage": false
+  },
+  {
+    "run": "da8b2fea-7dc0-4749-9672-5eb78bde5ac8",
+    "candidate": "q4",
+    "reference": "Judges 9:45",
+    "loaded": true,
+    "attribution": true,
+    "exactAnswerInPassage": false
+  },
+  {
+    "run": "da8b2fea-7dc0-4749-9672-5eb78bde5ac8",
+    "candidate": "q6",
+    "reference": "Romans 11:17",
+    "loaded": true,
+    "attribution": true,
+    "exactAnswerInPassage": false
+  },
+  {
+    "run": "da8b2fea-7dc0-4749-9672-5eb78bde5ac8",
+    "candidate": "q7",
+    "reference": "Proverbs 26:20",
+    "loaded": true,
+    "attribution": true,
+    "exactAnswerInPassage": false
+  },
+  {
+    "run": "da8b2fea-7dc0-4749-9672-5eb78bde5ac8",
+    "candidate": "q3",
+    "reference": "Job 39:27\u201328",
+    "loaded": true,
+    "attribution": true,
+    "exactAnswerInPassage": false
+  },
+  {
+    "run": "da8b2fea-7dc0-4749-9672-5eb78bde5ac8",
+    "candidate": "q5",
+    "reference": "1 Kings 17:5\u20137",
+    "loaded": true,
+    "attribution": true,
+    "exactAnswerInPassage": false
+  },
+  {
+    "run": "da8b2fea-7dc0-4749-9672-5eb78bde5ac8",
+    "candidate": "q8",
+    "reference": "Genesis 19:26",
+    "loaded": false
+  }
+]

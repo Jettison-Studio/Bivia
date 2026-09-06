@@ -1,3 +1,4 @@
+import { ScripturePreview } from "../ScripturePreview";
 import { useState } from "react";
 import type {
   Candidate,
@@ -133,6 +134,7 @@ export function CandidateReview({
           </span>
           <p>{candidate.hint}</p>
           <cite>{candidate.reference}</cite>
+          <ScripturePreview key={candidate.reference} reference={candidate.reference} />
         </div>
         <h3>The connection</h3>
         <p>{candidate.connectionExplanation}</p>
@@ -272,7 +274,7 @@ export function CandidateReview({
               checked={confirmApproval}
               onChange={(e) => setConfirmApproval(e.target.checked)}
             />
-            I reviewed the answer, sources, Bible context, and clue fairness for
+            I reviewed the answer, sources, full NIV passage, Bible context, and clue fairness for
             this revision.
           </label>
           <div className="button-row">

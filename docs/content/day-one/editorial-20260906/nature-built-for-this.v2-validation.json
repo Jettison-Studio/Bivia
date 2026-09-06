@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-09-06T19:33:03.509Z",
+  "source": "docs/content/editorial/nature-built-for-this.draft.json",
+  "importedQuestionCount": 5,
+  "roundValidationErrors": [
+    "Choose a category."
+  ],
+  "databaseSaveAttempted": false,
+  "editorialApproval": false,
+  "categoryValidationInterpretation": "Static helper mismatch; connected save path explicitly accepts backend catalog categories; runtime save verification pending. Standalone validate() errors do not prove a connected-save blocker.",
+  "connectedSaveSourceInspected": "/Users/lukefrederick/Projects/REACT/Bivia/apps/admin/src/App.tsx:164",
+  "runtimeSaveVerified": false
+}

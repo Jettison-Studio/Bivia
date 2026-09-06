@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-09-06T22:16:50.953695+00:00",
+  "originalManifestSha256": "7aaa9d70c0a8d84bb7d2aabbec761453e1963f8f71aa8106d0f31265950edbbd",
+  "originalFilesChecked": 166,
+  "originalFilesChanged": [],
+  "newProposals": 3,
+  "newPassageAndContextChecks": 6,
+  "allHintBenefitsUnmeasured": true,
+  "files": [
+    {
+      "path": "repair-band-1.passage-checks.json",
+      "sha256": "428214dd2a3121a614d2fd42ba2681737875c11d3c62277afc68350c711dc9ca"
+    },
+    {
+      "path": "repair-band-1.proposals.json",
+      "sha256": "79fafa01e3f5cbc8e38add1ccfe7043a6f84178e13b40a5fc83c9b7d02630baf"
+    },
+    {
+      "path": "repair-band-1.review.md",
+      "sha256": "4b1f51d92ee329c549b2081042367a7e676eb8164f578d173dc45b20e117f50a"
+    },
+    {
+      "path": "repair-band-1.validation.json",
+      "sha256": "cc17b30a93bdb79ae46da6387cfde04e117cf5bbf17c4ddbb7028bdbcd37c41c"
+    }
+  ]
+}

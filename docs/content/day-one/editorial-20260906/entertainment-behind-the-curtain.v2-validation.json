@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-09-06T20:37:17.030Z",
+  "draftId": "entertainment-behind-the-curtain-20260906-v2",
+  "questionCount": 5,
+  "staticHelperErrors": [
+    "Choose a category."
+  ],
+  "interpretation": "Static helper mismatch; connected save path explicitly accepts backend catalog categories; runtime save verification pending.",
+  "runtimeSaveVerified": false,
+  "editorialApproval": false,
+  "databaseSaveAttempted": false
+}

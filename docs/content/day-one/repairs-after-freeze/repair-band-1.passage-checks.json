@@ -1,0 +1,55 @@
+{
+  "translation": "NIV",
+  "bibleId": 111,
+  "licensedTextStored": false,
+  "checks": [
+    {
+      "passageId": "MRK.8.23-25",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/MRK.8.23-25?format=text",
+      "httpStatus": 200,
+      "reference": "Mark 8:23-25",
+      "contentSha256": "101cf1fd38f70e9caf28147384edaa6433b746d8b5418f8eb8e451b0961bbe0c",
+      "checkedAt": "2026-09-06T22:14:30.876376+00:00"
+    },
+    {
+      "passageId": "MRK.8.22-26",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/MRK.8.22-26?format=text",
+      "httpStatus": 200,
+      "reference": "Mark 8:22-26",
+      "contentSha256": "665631be8ab613f2b923349954515e3f754766f7842b90e11d7012789c19afbd",
+      "checkedAt": "2026-09-06T22:14:31.610479+00:00"
+    },
+    {
+      "passageId": "LUK.15.8-10",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/LUK.15.8-10?format=text",
+      "httpStatus": 200,
+      "reference": "Luke 15:8-10",
+      "contentSha256": "959f00feda4d7f9ea66642339aed26cda6c52c767bf1572d369bec1ede03b52f",
+      "checkedAt": "2026-09-06T22:14:32.304603+00:00"
+    },
+    {
+      "passageId": "LUK.15.1-10",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/LUK.15.1-10?format=text",
+      "httpStatus": 200,
+      "reference": "Luke 15:1-10",
+      "contentSha256": "ef180ef4d3ed194bd2f669cdef80e1fbc3a728da13720ca2d203bac292194ef6",
+      "checkedAt": "2026-09-06T22:14:32.766406+00:00"
+    },
+    {
+      "passageId": "EZK.47.8",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/EZK.47.8?format=text",
+      "httpStatus": 200,
+      "reference": "Ezekiel 47:8",
+      "contentSha256": "24b5f1ba49a3683302de7b764acdd189f90f50b4e1a1892f7f713d330b962a0e",
+      "checkedAt": "2026-09-06T22:14:33.026895+00:00"
+    },
+    {
+      "passageId": "EZK.47.6-12",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/EZK.47.6-12?format=text",
+      "httpStatus": 200,
+      "reference": "Ezekiel 47:6-12",
+      "contentSha256": "e09bf7e452b7477360a796dd1a32dfd9713a7e5fb7c31120356518ff7c685f0c",
+      "checkedAt": "2026-09-06T22:14:33.170470+00:00"
+    }
+  ]
+}

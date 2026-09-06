@@ -1,0 +1,266 @@
+{
+  "id": "cc0c5ae0-3ece-46c8-9d28-2c524d153703",
+  "draftId": "fitness-move-smarter-20260906-v5",
+  "title": "Move smarter",
+  "subtitle": "Notice how clothing and equipment change movement.",
+  "description": "Notice how clothing and equipment change movement.",
+  "categoryId": "fitness",
+  "mode": "category",
+  "status": "draft",
+  "reviewState": "five_editorially_reviewed_awaiting_verification_and_playtest",
+  "publishedAt": "",
+  "scheduledAt": "",
+  "updatedAt": "2026-09-06T22:00:57.247856+00:00",
+  "editorialDate": "2026-09-06",
+  "translation": "NIV",
+  "sourceMode": "references",
+  "hintKind": "original_clue",
+  "passageId": null,
+  "revision": 5,
+  "verification": {
+    "factsResearched": true,
+    "allOptionsReviewed": true,
+    "publicDomainContextChecked": false,
+    "exactNivRangesRetrieved": true,
+    "surroundingNivContextRetrieved": true,
+    "fullReadingLeakageReviewed": true,
+    "retrievalMethod": "Configured YouVersion version 111; hashes only retained",
+    "localPlayerRetrievalTested": false,
+    "blindPlaytestCompleted": false,
+    "engineGatesRun": false,
+    "humanApproved": false,
+    "publicationAuthorized": false,
+    "editorialShortfall": 0,
+    "editorialRecommendation": "Five editorial clearances for verification/playtest only; no factual verification or final approval conferred.",
+    "passageEvidenceFile": "fitness-move-smarter.v1-passage-checks.json",
+    "passageEvidenceFiles": [
+      "fitness-move-smarter.v1-passage-checks.json",
+      "fitness-move-smarter.v3-passage-checks.json",
+      "fitness-move-smarter.v4-passage-checks.json",
+      "fitness-move-smarter.v5-passage-checks.json"
+    ]
+  },
+  "questions": [
+    {
+      "id": "fitness-move-smarter-q1-v1",
+      "prompt": "What is a main purpose of the side splits in running shorts?",
+      "answers": [
+        "To keep the waistband from slipping",
+        "To let the legs move more freely",
+        "To compress the thigh muscles",
+        "To support items in the pockets"
+      ],
+      "correctIndex": 1,
+      "hint": "Think about what happens to a narrow hem when you lengthen your stride.",
+      "reference": "1 Kings 18:46",
+      "explanation": "Side splits allow the fabric to separate as the legs move. Elijah secures his cloak before running; that specific clothing adjustment supports an inference about avoiding restricted movement. The narrative attributes his feat to the Lord, not superior sportswear.",
+      "factualSourceUrls": [
+        "https://www.nike.com/gb/a/best-shorts-running-men"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/1KI.18.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/1KI.18.46?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/1KI.18.NIV",
+      "nivContentSha256": "ec4e9418600db057dcee33d3f8ce0ef0bb97198b5543bdff98428c0e09cfccf4",
+      "contextPassageId": "1KI.18.41-46",
+      "difficulty": {
+        "fact1to5": 1,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Easy proposal. The historic ledger used this same verse for the answer Running; this changes the tested concept to garment construction. Flag deliberate reference reuse, not a wholly fresh passage.",
+      "concept": "Running clothing and freedom of movement",
+      "lineage": {
+        "kind": "historical_reference_reuse",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    },
+    {
+      "id": "fitness-move-smarter-q2-v4",
+      "prompt": "Which test most directly measures the physical ability highlighted in Asahel\u2019s description?",
+      "answers": [
+        "A timed short sprint",
+        "A sit-and-reach test",
+        "A single-leg balance test",
+        "A maximum-repetition push-up test"
+      ],
+      "correctIndex": 0,
+      "hint": "For this ability, less time over the same distance means a better result.",
+      "reference": "2 Samuel 2:18\u201319",
+      "explanation": "Asahel is described through the image of a fast-running gazelle. Timing a short sprint over a fixed distance measures that running-speed ability most directly among these options. The other tests emphasize flexibility, balance, or repeated muscular effort. The narrative is a dangerous pursuit that ends in Asahel\u2019s death; the comparison extracts a physical description without presenting his choices as training advice.",
+      "factualSourceUrls": [
+        "https://www.acefitness.org/resources/everyone/blog/5061/youth-fitness-integrative-fitness-training/",
+        "https://www.acefitness.org/continuing-education/certified/february-2024/8566/get-it-done-4-fast-and-effective-workouts-from-ace-experts/"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/2SA.2.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/2SA.2.18-19?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/2SA.2.NIV",
+      "nivContentSha256": "260d2fcfa46af0acd82e71a49241b3d0f2db51348a9a266a27d45d80a598e443",
+      "contextPassageId": "2SA.2.18-23",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Replaces historical duplicate wall-sit/isometric item. Reading identifies speed; player then selects a measurement rather than merely matching the word speed. Four genuine fitness tests. Easy two-step classification, with a clue that makes the measurement rule explicit; no measured benefit claimed. Does not infer a race distance, measured speed, athletic test, or training regime in the biblical event. No claim that a short sprint isolates peak speed from acceleration. Separate from existing Fitness running-clothing and Sports route questions.",
+      "concept": "Running-speed test from Asahel\u2019s gazelle comparison",
+      "lineage": {
+        "kind": "replacement",
+        "previousQuestionId": "fitness-move-smarter-q2-v1",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "coordinatorDecision": {
+        "recordedAt": "2026-09-06T22:00:57.247856+00:00",
+        "decision": "Advance to verification/playtest only",
+        "caveat": "Easy candidate; preserve author and source caveats and test reading/hint contribution."
+      }
+    },
+    {
+      "id": "fitness-move-smarter-q3-v2",
+      "prompt": "Holding the same dumbbell at shoulder height, which position creates the least turning effect about the shoulder?",
+      "answers": [
+        "Arm straight forward, palm down",
+        "Elbow bent, weight close to the shoulder",
+        "Arm straight out to the side, palm down",
+        "Arm straight forward, palm up"
+      ],
+      "correctIndex": 1,
+      "hint": "Compare the horizontal distance between the weight and the joint.",
+      "reference": "Luke 15:5",
+      "explanation": "The dumbbell produces the smallest gravitational torque when its horizontal distance from the shoulder is smallest. Its weight has not changed. Turning the palm does not change the dumbbell\u2019s horizontal lever arm when the arm position stays the same. The shepherd places the sheep on his shoulders rather than at arm\u2019s length; this supplies the concrete load-placement analogy. Jesus explains joy over repentance, not an exercise prescription.",
+      "factualSourceUrls": [
+        "https://openstax.org/books/college-physics-2e/pages/9-6-forces-and-torques-in-muscles-and-joints",
+        "https://openstax.org/books/university-physics-volume-1/pages/10-6-torque"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/LUK.15.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/LUK.15.5?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/LUK.15.NIV",
+      "nivContentSha256": "f113eb6ba2bbfffe2a9617aaae1ecdd20f6d1208da560a68547be27120441156",
+      "contextPassageId": "LUK.15.3-7",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Replaces the impossible mass/air distractors with achievable holding positions. All weights are at shoulder height; bringing the weight close reduces its horizontal lever arm. Palm orientation is a plausible but irrelevant variable for the weight\u2019s gravitational torque. Tests external dumbbell torque only, not the total muscular effort including arm weight.",
+      "concept": "Load position and joint torque",
+      "lineage": {
+        "kind": "held_question_repair",
+        "historicalLedgerChecked": true,
+        "replaces": "fitness-move-smarter-q3-v1",
+        "reason": "Replace impossible distractors with real positions; ask about external torque explicitly."
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    },
+    {
+      "id": "fitness-move-smarter-q4-v3",
+      "prompt": "In a wet-floor version of this footing problem, how can shoe-tread channels help?",
+      "answers": [
+        "By giving the ankle more support",
+        "By draining liquid from beneath the sole",
+        "By cushioning the heel\u2019s impact",
+        "By keeping the foot cooler"
+      ],
+      "correctIndex": 1,
+      "hint": "Think of the grooves on a car tire in rain.",
+      "reference": "Psalm 94:18",
+      "explanation": "Tread channels can provide a route for liquid to escape from the shoe-floor interface, limiting the fluid layer that reduces traction. The other choices describe different footwear functions. Psalm 94 uses slipping and support to express reliance on God amid wrongdoing; the wet floor is an explicitly imagined modern comparison, not the setting asserted by the verse.",
+      "factualSourceUrls": [
+        "https://stacks.cdc.gov/view/cdc/225087",
+        "https://www.hse.gov.uk/slips/footprocure.htm",
+        "https://www.michelinman.com/auto/auto-tips-and-advice/tires-101/tire-tread-depth"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/PSA.94.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/PSA.94.18?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/PSA.94.NIV",
+      "nivContentSha256": "0510f0f12a8342ca9d98234b0c51bbcb28aef2558305477cd405effbe8ac2cf4",
+      "contextPassageId": "PSA.94.16-23",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Replaces held bicycle-gearing analogy to a dull axe. Four real footwear functions; tread drainage rather than cushioning is the intended distinction. Reading supplies a slipping-foot image, but it does not explain tread or specify wetness: that bridge remains the main review risk. Tire clue adds a familiar parallel without repeating the answer. Do not claim any tread guarantees traction, or generalize one material/pattern across all surfaces and contaminants. Near-context moral danger is preserved. Distinct from Challenger lateral stance width and accepted strap-pressure question.",
+      "concept": "Shoe tread drainage and wet-floor traction",
+      "lineage": {
+        "kind": "replacement",
+        "previousQuestionId": "fitness-move-smarter-q4-v1",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "coordinatorFinding": "Impossible distractors and axe sharpening is not the gearing tradeoff; replace pairing or question.",
+      "coordinatorDecision": {
+        "recordedAt": "2026-09-06T22:00:57.247856+00:00",
+        "decision": "Advance to verification/playtest only",
+        "caveat": "Easy candidate; preserve author and source caveats and test reading/hint contribution."
+      }
+    },
+    {
+      "id": "fitness-move-smarter-q5-v5",
+      "prompt": "Which gym exercise most closely matches lifting yourself toward a branch during a climb?",
+      "answers": [
+        "A bench press",
+        "An overhead press",
+        "A triceps dip",
+        "A pull-up"
+      ],
+      "correctIndex": 3,
+      "hint": "Your hands stay overhead while your elbows bend.",
+      "reference": "Luke 19:3\u20134",
+      "explanation": "A pull-up lifts the body toward hands fixed overhead, resembling one arm action that can occur when climbing a tree. Bench presses, overhead presses, and triceps dips primarily use pushing actions. The passage supplies Zacchaeus\u2019s climb to see Jesus; it does not describe his hand placement or prescribe a workout. Its wider focus is his encounter with Jesus and changed conduct.",
+      "factualSourceUrls": [
+        "https://www.acefitness.org/resources/everyone/exercise-library/191/pull-ups/",
+        "https://www.acefitness.org/resources/pros/expert-articles/5565/4-moves-to-help-you-master-the-pull-up/"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/LUK.19.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/LUK.19.3-4?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/LUK.19.NIV",
+      "nivContentSha256": "e29bbf429b20c21e3793a708bf58b1ad7c9f3f24070c698e95ec0cd933786b3d",
+      "contextPassageId": "LUK.19.1-10",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Replaces held resistance-band/bronze-bow pairing. All four choices are real upper-body exercises, so lower-body options do not give the answer away. The branch maneuver is an explicit illustrative part of climbing, not a claim about Zacchaeus\u2019s exact technique. Easy movement analogy. Reading contribution remains a review risk because the stem supplies the branch-climbing situation; test with full reading rather than treat as approved. Clue distinguishes fixed overhead hands from pressing a weight overhead, with no measured benefit claim. Do not claim pull-ups reproduce all climbing movements or exclude leg work.",
+      "concept": "Tree-climbing arm action and pull-ups",
+      "lineage": {
+        "kind": "replacement",
+        "previousQuestionId": "fitness-move-smarter-q5-v1",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "coordinatorDecision": {
+        "recordedAt": "2026-09-06T22:00:57.247856+00:00",
+        "decision": "Advance to verification/playtest only",
+        "caveat": "Easy candidate; preserve author and source caveats and test reading/hint contribution."
+      }
+    }
+  ]
+}

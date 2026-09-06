@@ -1,0 +1,33 @@
+{
+  "checkedAt": "2026-09-06T19:41:01.449Z",
+  "results": [
+    {
+      "source": "docs/content/editorial/geography-read-the-land.draft.json",
+      "draftId": "geo-read-the-land-20260906-v3",
+      "questionCount": 5,
+      "staticHelperErrors": [],
+      "runtimeSaveVerified": false
+    },
+    {
+      "source": "docs/content/editorial/nature-built-for-this.draft.json",
+      "draftId": "nature-built-for-this-20260906-v3",
+      "questionCount": 5,
+      "staticHelperErrors": [
+        "Choose a category."
+      ],
+      "runtimeSaveVerified": false
+    },
+    {
+      "source": "docs/content/editorial/food-kitchen-secrets.draft.json",
+      "draftId": "food-kitchen-secrets-20260906-v2",
+      "questionCount": 5,
+      "staticHelperErrors": [
+        "Choose a category."
+      ],
+      "runtimeSaveVerified": false
+    }
+  ],
+  "interpretation": "Connected save accepts backend catalog categories; helper error alone is not a runtime blocker.",
+  "databaseSaveAttempted": false,
+  "editorialApproval": false
+}

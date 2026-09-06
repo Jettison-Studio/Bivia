@@ -1,6 +1,6 @@
 """Real concurrent PostgreSQL sessions: answer retries must not duplicate points.
 Run: python3 supabase/tests/concurrency.py (Docker local Bivia must be running).
-Creates and removes only its own randomized auth fixture.
+Creates and removes only its own randomized auth and quiz fixtures.
 """
 import concurrent.futures
 import json
@@ -18,10 +18,15 @@ def sql(query):
 
 user_id = str(uuid.uuid4())
 request_id = str(uuid.uuid4())
-quiz_id = '10000000-0000-4000-8000-000000000001'
+quiz_id = str(uuid.uuid4())
 claims = f"select set_config('request.jwt.claim.sub','{user_id}',false);"
 try:
     sql(f"insert into auth.users(id,email,is_anonymous) values('{user_id}','{user_id}@example.invalid',false);")
+    sql(f'''insert into public.quizzes(id,category_id,title,status,publish_at)
+        values('{quiz_id}',(select id from public.categories limit 1),'Concurrent retry fixture','published',clock_timestamp()-interval '1 second');
+        insert into private.questions(quiz_id,position,prompt,options,correct_index,hint,hint_reference)
+        select '{quiz_id}',i,'Concurrent retry question','["A","B","C","D"]',0,'Hint','John 1:1'
+        from generate_series(0,1) i;''')
     lines = sql(claims + f"select public.bivia_start_attempt_v1('{quiz_id}','category',true);")
     state = json.loads(next(line for line in lines if line.startswith('{')))
     attempt_id, question_id = state['id'], state['question']['id']
@@ -40,4 +45,4 @@ try:
     assert score == '3', f'Duplicate points persisted: {score}'
     print('PASS: two concurrent authenticated retries returned the same response and persisted exactly 3 points.')
 finally:
-    sql(f"delete from auth.users where id='{user_id}';")
+    sql(f"delete from auth.users where id='{user_id}'; delete from public.quizzes where id='{quiz_id}';")

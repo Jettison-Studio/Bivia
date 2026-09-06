@@ -1,0 +1,260 @@
+{
+  "id": "be83437a-3cd4-42ae-bba4-02d589d563a5",
+  "draftId": "media-page-to-screen-20260906-v3",
+  "title": "Page to screen",
+  "subtitle": "Look closely at books, stories and screen craft.",
+  "description": "Look closely at books, stories and screen craft.",
+  "categoryId": "media",
+  "mode": "category",
+  "status": "draft",
+  "reviewState": "awaiting_independent_verification_and_playtest",
+  "publishedAt": "",
+  "scheduledAt": "",
+  "updatedAt": "2026-09-06T22:08:50.572356+00:00",
+  "editorialDate": "2026-09-06",
+  "translation": "NIV",
+  "sourceMode": "references",
+  "hintKind": "original_clue",
+  "passageId": null,
+  "revision": 3,
+  "verification": {
+    "factsResearched": true,
+    "allOptionsReviewed": true,
+    "publicDomainContextChecked": false,
+    "exactNivRangesRetrieved": true,
+    "surroundingNivContextRetrieved": true,
+    "fullReadingLeakageReviewed": true,
+    "retrievalMethod": "Configured YouVersion version 111; hashes only retained",
+    "localPlayerRetrievalTested": false,
+    "blindPlaytestCompleted": false,
+    "engineGatesRun": false,
+    "humanApproved": false,
+    "publicationAuthorized": false,
+    "editorialShortfall": 0,
+    "editorialRecommendation": "All five advance to independent verification and local playtest; no final approval.",
+    "passageEvidenceFile": "media-page-to-screen.v1-passage-checks.json",
+    "passageEvidenceFiles": [
+      "media-page-to-screen.v1-passage-checks.json",
+      "media-page-to-screen.v3-passage-checks.json"
+    ]
+  },
+  "questions": [
+    {
+      "id": "media-page-to-screen-q1-v1",
+      "prompt": "What distinguishes a codex from a scroll?",
+      "answers": [
+        "Writing on both sides",
+        "Separate leaves bound along one edge",
+        "Text arranged in columns",
+        "Writing on papyrus"
+      ],
+      "correctIndex": 1,
+      "hint": "Think of turning pages instead of unrolling a long strip.",
+      "reference": "Revelation 5:1",
+      "explanation": "A codex joins leaves along an edge in book form. Double-sided writing, columns and papyrus do not themselves define that structure. The vision explicitly describes a scroll written on both sides, which helps eliminate a tempting alternative. Revelation concerns the Lamb’s worthiness to open the sealed scroll; it is not a bookbinding history lesson.",
+      "factualSourceUrls": [
+        "https://folgerpedia.folger.edu/Glossary_of_book_history_terms",
+        "https://library.csun.edu/sca/peek-stacks/codex-hall"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/REV.5.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/REV.5.1?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/REV.5.NIV",
+      "nivContentSha256": "8946ee329c99f19b8a44f117e6491be8f710aa39550de73f0c059c27b4530bc7",
+      "contextPassageId": "REV.5.1-7",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "The passage rules out double-sided writing as the defining distinction without naming a codex. The hint adds how the object is handled. Historical scrolls were commonly written on one side; do not turn that custom into an absolute. Book format belongs to Media publishing scope.",
+      "concept": "Codex structure versus scroll features",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    },
+    {
+      "id": "media-page-to-screen-q2-v2",
+      "prompt": "Which note in a finely printed book may identify its printer, paper and typeface?",
+      "answers": [
+        "An index",
+        "An epigraph",
+        "A glossary",
+        "A colophon"
+      ],
+      "correctIndex": 3,
+      "hint": "Think of the closing credits of a film, applied to a printed book.",
+      "reference": "Romans 16:22",
+      "explanation": "A colophon can record production details and those responsible for making a book. Tertius identifies himself as the person who wrote down Paul’s letter; this supplies an analogy to a production credit distinct from authorship. The greeting is not called a modern colophon in the question or explanation. An index locates topics, an epigraph supplies an opening quotation, and a glossary explains terms.",
+      "factualSourceUrls": [
+        "https://www.abaa.org/glossary/colophon",
+        "https://folgerpedia.folger.edu/Glossary_of_book_history_terms",
+        "https://guides.loc.gov/russell-maret/glossary"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/ROM.16.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/ROM.16.22?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/ROM.16.NIV",
+      "nivContentSha256": "b2c5ad8e33e81319add56b141b1a4cce851a727a094b969c00dde66fe7766969",
+      "contextPassageId": "ROM.16.21-27",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Hint repair supplies a familiar credit-list analogy distinguishing colophon from an index, glossary or epigraph. Production details remain in stem; hint benefit is still unmeasured.",
+      "concept": "Colophon and production attribution",
+      "lineage": {
+        "kind": "hint_repair",
+        "previousQuestionId": "media-page-to-screen-q2-v1",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    },
+    {
+      "id": "media-page-to-screen-q3-v1",
+      "prompt": "Which John Steinbeck novel follows brothers Caleb and Aron Trask?",
+      "answers": [
+        "East of Eden",
+        "The Grapes of Wrath",
+        "Of Mice and Men",
+        "Cannery Row"
+      ],
+      "correctIndex": 0,
+      "hint": "Its title places the story beyond the garden in Genesis.",
+      "reference": "Genesis 4:6-9",
+      "explanation": "East of Eden reworks Cain-and-Abel themes through the Trask family. The reading offers the brother-rivalry source pattern without including Genesis 4:16, where the title wording appears. The other choices are different Steinbeck novels. The paid hint adds the title’s geographical image rather than claiming that the biblical brothers are literally the novel’s characters.",
+      "factualSourceUrls": [
+        "https://steinbeck.org/learn/",
+        "https://www.steinbeckintheschools.com/east-of-eden-reading-guides/character-summaries"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/GEN.4.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/GEN.4.6-9?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/GEN.4.NIV",
+      "nivContentSha256": "69c012440f8f994b85c3f9ce3cb0b5a4d5731de80ecb49d93c0a2ee6a8a760c9",
+      "contextPassageId": "GEN.4.1-10",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Direct literary-source connection; recognizing the novel still needs familiarity. No universal difficulty reduction claimed. The displayed range omits the exact title phrase, and no excerpt from the copyrighted novel is stored. Do not flatten every Trask character into a one-to-one biblical counterpart.",
+      "concept": "East of Eden and Cain-Abel adaptation",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    },
+    {
+      "id": "media-page-to-screen-q4-v1",
+      "prompt": "Which 1998 animated film follows a Hebrew child raised in Egypt’s royal household?",
+      "answers": [
+        "The Road to El Dorado",
+        "Joseph: King of Dreams",
+        "The Prince of Egypt",
+        "Sinbad: Legend of the Seven Seas"
+      ],
+      "correctIndex": 2,
+      "hint": "It features the song ‘When You Believe’.",
+      "reference": "Exodus 2:5-10",
+      "explanation": "The Prince of Egypt adapts Moses’ story; the passage’s adoption into Pharaoh’s household supports the title’s royal-Egypt connection. The other options are different animated films. The adaptation changes family relationships and dramatizes events; the Bible passage, not the screenplay, is the source for what Exodus says.",
+      "factualSourceUrls": [
+        "https://www.universalpicturesathome.com/movies/the-prince-of-egypt",
+        "https://www.dreamworks.com/movies/the-prince-of-egypt",
+        "https://www.oscars.org/oscars/ceremonies/1999"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/EXO.2.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/EXO.2.5-10?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/EXO.2.NIV",
+      "nivContentSha256": "a641a9b9ec7ad07feac740d305af9a07c10479866ecc2e8f71763ae27ead47dc",
+      "contextPassageId": "EXO.2.1-10",
+      "difficulty": {
+        "fact1to5": 1,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Easy adaptation recognition without a Moses-name answer. Joseph is a plausible Egyptian biblical-story confusion, though release year can independently help knowledgeable players. Distributor synopsis/year verified; the Academy’s 1999 ceremony record independently verifies the song hint. Historical ledger used Exodus 2:2–3 for pitch, not this exact adoption range.",
+      "concept": "Prince of Egypt and royal adoption",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    },
+    {
+      "id": "media-page-to-screen-q5-v3",
+      "prompt": "Which novel includes an early sermon about the voyage that ends in this scene?",
+      "answers": [
+        "Treasure Island",
+        "The Old Man and the Sea",
+        "Moby-Dick",
+        "Robinson Crusoe"
+      ],
+      "correctIndex": 2,
+      "hint": "Its captain is obsessed with pursuing a white whale.",
+      "reference": "Jonah 1:15–17",
+      "explanation": "In chapter 9 of Moby-Dick, Father Mapple preaches about Jonah and explicitly takes the end of Jonah 1 as his text. The other choices are sea-related novels but do not contain that Father Mapple sermon. This is a direct literary use of Scripture. NIV identifies a huge fish; the question does not infer its species from Melville’s whale imagery.",
+      "factualSourceUrls": [
+        "https://etc.usf.edu/lit2go/42/moby-dick/634/chapter-9-the-sermon/",
+        "https://www.gutenberg.org/files/2701/2701-h/2701-h.htm"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/JON.1.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/JON.1.15-17?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/JON.1.NIV",
+      "nivContentSha256": "b0440844dc5cac357ad42ac3e043df2d96afbb437fa173c32118a044c0ce7052",
+      "contextPassageId": "JON.1.9-17",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Replaces held Foley coconut-hoofbeats question with a verifiable literary source connection. Full reading identifies Jonah but does not name the novel. The whale-pursuit hint is a separate familiar plot clue; its benefit remains unmeasured. Four real sea-related novels. This adds a second novel-recognition item beside East of Eden, so review variety. Nearby Jonah2 Geography current question concerns ocean currents; no same answer concept or display-range reuse. Melville expands the narrative and offers disputed Tarshish geography: neither is adopted as biblical fact.",
+      "concept": "Jonah sermon in Moby-Dick",
+      "lineage": {
+        "kind": "replacement",
+        "previousQuestionId": "media-page-to-screen-q5-v1",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "coordinatorDecision": {
+        "recordedAt": "2026-09-06T22:08:50.572356+00:00",
+        "decision": "Advance to independent verification and local playtest; not final approval.",
+        "caveat": "Preserve adjacent distractors and source/context caveats. Moby-Dick hint remains strong/easy; huge fish is not identified as a whale."
+      }
+    }
+  ],
+  "coordinatorAssembly": {
+    "source": "media-page-to-screen.draft.json",
+    "editoriallyReviewed": true,
+    "independentlyVerified": false,
+    "runtimeTested": false,
+    "finalApproved": false,
+    "difficultyOrderMeasured": false
+  }
+}

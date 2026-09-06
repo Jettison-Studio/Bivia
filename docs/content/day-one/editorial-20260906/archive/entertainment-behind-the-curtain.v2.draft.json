@@ -1,0 +1,241 @@
+{
+  "id": "16bfbd2d-9258-4471-9311-ef4a5cc118cd",
+  "draftId": "entertainment-behind-the-curtain-20260906-v2",
+  "title": "Behind the curtain",
+  "subtitle": "Explore stage illusions, storytelling and familiar shows.",
+  "description": "Explore stage illusions, storytelling and familiar shows.",
+  "categoryId": "entertainment",
+  "mode": "category",
+  "status": "draft",
+  "reviewState": "two_reviewed_one_repair_two_held",
+  "publishedAt": "",
+  "scheduledAt": "",
+  "updatedAt": "2026-09-06T20:47:24.368282+00:00",
+  "editorialDate": "2026-09-06",
+  "translation": "NIV",
+  "sourceMode": "references",
+  "hintKind": "original_clue",
+  "passageId": null,
+  "revision": 2,
+  "verification": {
+    "factsResearched": true,
+    "allOptionsReviewed": true,
+    "publicDomainContextChecked": false,
+    "exactNivRangesRetrieved": true,
+    "surroundingNivContextRetrieved": true,
+    "fullReadingLeakageReviewed": true,
+    "retrievalMethod": "Configured YouVersion version 111; hashes only retained",
+    "localPlayerRetrievalTested": false,
+    "blindPlaytestCompleted": false,
+    "engineGatesRun": false,
+    "humanApproved": false,
+    "publicationAuthorized": false,
+    "editorialShortfall": 2,
+    "editorialRecommendation": "Q1/Q3 await verification/playtest; Q2 repair awaits review; Q4/Q5 held. Existing NIV evidence applies.",
+    "passageEvidenceFile": "entertainment-behind-the-curtain.v1-passage-checks.json"
+  },
+  "questions": [
+    {
+      "id": "entertainment-behind-the-curtain-q1-v1",
+      "prompt": "What creates the floating figure in the classic Pepper\u2019s Ghost stage illusion?",
+      "answers": [
+        "An image projected onto drifting mist",
+        "A hidden figure reflected in angled glass",
+        "A costume glowing under ultraviolet light",
+        "A painted figure revealed by a rotating screen"
+      ],
+      "correctIndex": 1,
+      "hint": "The audience can look through the same surface that reflects another image.",
+      "reference": "1 Corinthians 13:12",
+      "explanation": "Angled transparent glass can reflect a lit figure hidden from direct view while allowing the audience to see the stage beyond. Mist projection, ultraviolet effects and rotating scenery are other theatrical techniques. Paul contrasts a present reflected view with future face-to-face knowledge; the reflection detail supports the optical connection without turning his point about incomplete knowledge into an illusion claim.",
+      "factualSourceUrls": [
+        "https://wp.optics.arizona.edu/oscoutreach/peppers-ghost/",
+        "https://blog.cmog.org/2012/ghosts-and-magicand-glass-peppers-ghost-and-glass-optics"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/1CO.13.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/1CO.13.12?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/1CO.13.NIV",
+      "nivContentSha256": "9cd15480b051d1b5696af07b7079f1bb0de49d7ebfbc6a9f1f0441c2b606d572",
+      "contextPassageId": "1CO.13.8-13",
+      "difficulty": {
+        "fact1to5": 1,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "The reading explicitly supplies reflection, so it strongly narrows the choice; the added inference is transparent glass combining two views. Test whether this is too revealing. Distinct verse from Music 1 Corinthians 13:1; context ranges do not overlap.",
+      "concept": "Pepper\u2019s Ghost reflection and transmission",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    },
+    {
+      "id": "entertainment-behind-the-curtain-q2-v2",
+      "prompt": "A stage version of this scene could make Haman\u2019s confidence funny through which device?",
+      "answers": [
+        "Foreshadowing",
+        "Slapstick",
+        "Dramatic irony",
+        "Direct address"
+      ],
+      "correctIndex": 2,
+      "hint": "The audience has heard the king ask about Mordecai before Haman imagines his own reward.",
+      "reference": "Esther 6:1-10",
+      "explanation": "Dramatic irony creates an information gap between audience and character. The reader knows the king has been considering Mordecai\u2019s unrewarded service while Haman assumes that the honor must be for himself. This is a narrative example of the device; Esther is not asserted to have been written as a stage play. Foreshadowing points ahead, slapstick uses physical comedy, and direct address speaks to the audience.",
+      "factualSourceUrls": [
+        "https://www.rsc.org.uk/learn/schools-and-teachers/teacher-resources/signing-shakespeare-for-deaf-students/about",
+        "https://www.rsc.org.uk/shakespeare-learning-zone/romeo-and-juliet/language/analysis"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/EST.6.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/EST.6.1-10?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/EST.6.NIV",
+      "nivContentSha256": "a1b456b479210a4171a770613eb79c2dc46fd6d01960e3749362c11f148e9744",
+      "contextPassageId": "EST.6.1-10",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "The passage now supplies the example instead of the question restating the definition. The hint directs attention to the specific contrast between the king\u2019s opening question and Haman\u2019s assumption. It is an original paraphrase, not NIV text. Dramatic irony need not always be comic; this asks about this particular staging possibility. All paid-hint benefit remains unmeasured.",
+      "concept": "Dramatic irony and unequal knowledge",
+      "lineage": {
+        "kind": "held_question_repair",
+        "historicalLedgerChecked": true,
+        "replaces": "entertainment-behind-the-curtain-q2-v1",
+        "reason": "Let passage supply information gap; replace generic definition and hint with scene-specific clue."
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    },
+    {
+      "id": "entertainment-behind-the-curtain-q3-v1",
+      "prompt": "Which stage musical includes the song \u2018Light of the World\u2019?",
+      "answers": [
+        "Godspell",
+        "Jesus Christ Superstar",
+        "Pippin",
+        "Hair"
+      ],
+      "correctIndex": 0,
+      "hint": "Its score is by Stephen Schwartz, and its scenes act out Jesus\u2019 parables.",
+      "reference": "Matthew 5:14-16",
+      "explanation": "Godspell includes this song and draws heavily on Jesus\u2019 teaching. The reading provides its source image of visible light and good works. Jesus Christ Superstar is a different biblical musical; Pippin shares the composer but not this song; Hair is a contemporary musical with a different story. Only the song title is supplied, not lyrics.",
+      "factualSourceUrls": [
+        "https://www.mtishows.com/godspell",
+        "https://www.mtishows.com/print/node/489"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/MAT.5.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/MAT.5.14-16?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/MAT.5.NIV",
+      "nivContentSha256": "2c8ad982f156e6c2d5364d648cfa6ad76d5b4b13da84c558a58214767c4c9dc3",
+      "contextPassageId": "MAT.5.13-20",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Direct artistic-source connection. The reading may help recognize the song, while composer plus parable-based structure separates the remaining shows. Song title contains five words; no additional song lyrics stored. Entertainment covers staged work, while Music focuses on musical structure/instruments/recordings.",
+      "concept": "Godspell and light imagery",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    },
+    {
+      "id": "entertainment-behind-the-curtain-q4-v1",
+      "prompt": "Which stage musical includes a dream in which bundles of grain bow to one upright bundle?",
+      "answers": [
+        "Children of Eden",
+        "Jesus Christ Superstar",
+        "Godspell",
+        "Joseph and the Amazing Technicolor Dreamcoat"
+      ],
+      "correctIndex": 3,
+      "hint": "Its central character later interprets Pharaoh\u2019s dreams.",
+      "reference": "Genesis 37:5-8",
+      "explanation": "Joseph and the Amazing Technicolor Dreamcoat adapts the dreamer\u2019s story from Genesis, including the brothers\u2019 hostility. The other options are stage musicals with biblical material but not this scene. NIV describes an ornate robe in the surrounding context; the musical\u2019s Technicolor title is not presented as the NIV wording.",
+      "factualSourceUrls": [
+        "https://josephthemusical.com.au/wp-content/uploads/2022/05/joseph-education-kit-plot-synopsis.pdf",
+        "https://www.andrewlloydwebber.com/show/joseph"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/GEN.37.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/GEN.37.5-8?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/GEN.37.NIV",
+      "nivContentSha256": "b1000cbe8cb2c8697c00845944accc20042441995e5b5252daafc6f50a6e7fe3",
+      "contextPassageId": "GEN.37.3-11",
+      "difficulty": {
+        "fact1to5": 1,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_hold",
+      "authorFinding": "Easy direct adaptation recognition. Joseph\u2019s name appears in the reading and in the long correct title, so substantial answer cueing is explicit. The Pharaoh hint may be redundant for many players. Do not pretend this is a subtle inference. Earlier ledger has Genesis 37:25 for another concept, not this dream range.",
+      "concept": "Joseph musical and sheaf dream",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "coordinatorFinding": "Name/title giveaway and consecutive biblical musical after Godspell are too repetitive; replace with distinct concept."
+    },
+    {
+      "id": "entertainment-behind-the-curtain-q5-v1",
+      "prompt": "Which traditional backstage device can make a rolling thunder sound?",
+      "answers": [
+        "Canvas rubbed over a rotating slatted drum",
+        "A box of rice turned slowly",
+        "A large flexible metal sheet shaken by handles",
+        "Two hollow coconut halves struck in rhythm"
+      ],
+      "correctIndex": 2,
+      "hint": "A broad hanging panel flexes and rumbles.",
+      "reference": "Job 37:4-5",
+      "explanation": "A thunder sheet produces a rumbling effect when shaken. The other devices conventionally suggest wind, rain, and hoofbeats. Elihu describes thunder as God\u2019s majestic voice; the sound is being compared with an artificial stage effect, not explained away as theatrical machinery.",
+      "factualSourceUrls": [
+        "https://theatrecrafts.com/pages/home/topics/sound/sound-effects-for-the-stage/"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/JOB.37.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/JOB.37.4-5?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/JOB.37.NIV",
+      "nivContentSha256": "917c22b88770e5c33ac6cceb6974d8c1ba27938b730c768896d72ab3594c855f",
+      "contextPassageId": "JOB.37.1-8",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "author_hold",
+      "authorFinding": "All distractors are genuine sound-effect mechanisms, but the passage chiefly names the sound already in the question. Hold for weak added inference. Theatrecrafts is an authored specialist guide with linked historical apparatus evidence. Do not count this as ready solely because the fact is correct.",
+      "concept": "Theatrical thunder sheet",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    }
+  ]
+}

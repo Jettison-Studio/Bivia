@@ -5,7 +5,7 @@ import subprocess
 import sys
 
 root = Path(__file__).resolve().parents[2]
-for name in ('gameplay.sql', 'edge_cases.sql', 'engine.sql'):
+for name in ('gameplay.sql', 'edge_cases.sql', 'engine.sql', 'profile_names.sql', 'daily.sql', 'gameplay_flow.sql', 'timed_curve.sql', 'editorial_daily.sql', 'editorial_archive.sql'):
     result = subprocess.run(
         ['docker', 'exec', '-i', 'supabase_db_Bivia', 'psql', '-U', 'postgres', '-At', '-v', 'ON_ERROR_STOP=1'],
         input=(root / 'supabase/tests' / name).read_text(), text=True, capture_output=True,

@@ -1,0 +1,103 @@
+{
+  "translation": "NIV",
+  "bibleId": 111,
+  "licensedTextStored": false,
+  "checks": [
+    {
+      "passageId": "1KI.19.6",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/1KI.19.6?format=text",
+      "httpStatus": 200,
+      "reference": "1 Kings 19:6",
+      "contentSha256": "89eb59aa56bcd8b83ba5c3781f1391da5e07dd97b302bc1f855e3ab1c0043775",
+      "checkedAt": "2026-09-06T20:41:41.389765+00:00"
+    },
+    {
+      "passageId": "1KI.19.3-9",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/1KI.19.3-9?format=text",
+      "httpStatus": 200,
+      "reference": "1 Kings 19:3-9",
+      "contentSha256": "89e0767ead8ad503e28906da680f39531a0a1c1900076cc188f7cff011a7f2cd",
+      "checkedAt": "2026-09-06T20:41:41.906316+00:00"
+    },
+    {
+      "passageId": "JOB.37.3-4",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JOB.37.3-4?format=text",
+      "httpStatus": 200,
+      "reference": "Job 37:3-4",
+      "contentSha256": "ac45266694d4c47d7426faa447d1e2b8c2d5232dd2b0f22874ef959c8743050b",
+      "checkedAt": "2026-09-06T20:41:42.424709+00:00"
+    },
+    {
+      "passageId": "JOB.37.1-8",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JOB.37.1-8?format=text",
+      "httpStatus": 200,
+      "reference": "Job 37:1-8",
+      "contentSha256": "b105d3cb5b51bff73cd77b0e97d0cbd601f8371e3401f4ef866c7b0674fd8dd9",
+      "checkedAt": "2026-09-06T20:41:42.575829+00:00"
+    },
+    {
+      "passageId": "LUK.3.17",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/LUK.3.17?format=text",
+      "httpStatus": 200,
+      "reference": "Luke 3:17",
+      "contentSha256": "5143c6d1b3f53b50a1cc187345cd2d799c6d0d1fc83816a9f8626956cbed3a33",
+      "checkedAt": "2026-09-06T20:41:43.003104+00:00"
+    },
+    {
+      "passageId": "LUK.3.15-20",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/LUK.3.15-20?format=text",
+      "httpStatus": 200,
+      "reference": "Luke 3:15-20",
+      "contentSha256": "89c142ccd8a4ebde01fe44d9f1584572c98e83b2c8e8e6f56bc649ca1562d953",
+      "checkedAt": "2026-09-06T20:41:43.519084+00:00"
+    },
+    {
+      "passageId": "JER.32.14",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JER.32.14?format=text",
+      "httpStatus": 200,
+      "reference": "Jeremiah 32:14",
+      "contentSha256": "3d18873c672f6018283afcc8701822d0edd4795a335b1e39d7ee3b4b51713c5b",
+      "checkedAt": "2026-09-06T20:41:43.821111+00:00"
+    },
+    {
+      "passageId": "JER.32.9-15",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JER.32.9-15?format=text",
+      "httpStatus": 200,
+      "reference": "Jeremiah 32:9-15",
+      "contentSha256": "33258f49ebd6bed89341ea3ea9a925adabc8bd78d49756217f854eef278be771",
+      "checkedAt": "2026-09-06T20:41:44.261112+00:00"
+    },
+    {
+      "passageId": "ISA.50.2",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/ISA.50.2?format=text",
+      "httpStatus": 200,
+      "reference": "Isaiah 50:2",
+      "contentSha256": "ac92172874dd72e001b0c36bd0736cd7c9f5fd7cdfe6a39de47d99684a724f50",
+      "checkedAt": "2026-09-06T20:41:44.566988+00:00"
+    },
+    {
+      "passageId": "ISA.50.1-5",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/ISA.50.1-5?format=text",
+      "httpStatus": 200,
+      "reference": "Isaiah 50:1-5",
+      "contentSha256": "612dff479e1f70560a45a886d47a09340638d0d980d52709e76917b13353ee2f",
+      "checkedAt": "2026-09-06T20:41:44.988802+00:00"
+    },
+    {
+      "passageId": "LEV.2.5",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/LEV.2.5?format=text",
+      "httpStatus": 200,
+      "reference": "Leviticus 2:5",
+      "contentSha256": "f48b1e6a8694c1a5f7e8a8aa6d28246147b78d9fe481b3ae3acc6e98c86c11af",
+      "checkedAt": "2026-09-06T20:46:12.569013+00:00"
+    },
+    {
+      "passageId": "LEV.2.4-9",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/LEV.2.4-9?format=text",
+      "httpStatus": 200,
+      "reference": "Leviticus 2:4-9",
+      "contentSha256": "39e09863e49d37afefcac19f80691dd7536f07ca9aca3d4fd53d13d8e6debaf2",
+      "checkedAt": "2026-09-06T20:46:13.136619+00:00"
+    }
+  ]
+}

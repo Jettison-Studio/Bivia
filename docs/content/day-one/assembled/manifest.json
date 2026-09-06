@@ -1,0 +1,79 @@
+{
+  "newQuestions": 80,
+  "existingAcceptedScienceQuestions": 3,
+  "rounds": [
+    {
+      "file": "challenger-deeper-connections.draft.json",
+      "count": 20,
+      "mode": "challenger",
+      "categoryId": "mixed"
+    },
+    {
+      "file": "entertainment-behind-the-curtain.draft.json",
+      "count": 5,
+      "mode": "category",
+      "categoryId": "entertainment"
+    },
+    {
+      "file": "fitness-move-smarter.draft.json",
+      "count": 5,
+      "mode": "category",
+      "categoryId": "fitness"
+    },
+    {
+      "file": "food-kitchen-secrets.draft.json",
+      "count": 5,
+      "mode": "category",
+      "categoryId": "food"
+    },
+    {
+      "file": "geography-read-the-land.draft.json",
+      "count": 5,
+      "mode": "category",
+      "categoryId": "geography"
+    },
+    {
+      "file": "guest-small-discoveries.draft.json",
+      "count": 5,
+      "mode": "category",
+      "categoryId": "mixed"
+    },
+    {
+      "file": "history-clever-tools.draft.json",
+      "count": 5,
+      "mode": "category",
+      "categoryId": "history"
+    },
+    {
+      "file": "media-page-to-screen.draft.json",
+      "count": 5,
+      "mode": "category",
+      "categoryId": "media"
+    },
+    {
+      "file": "music-join-the-song.draft.json",
+      "count": 5,
+      "mode": "category",
+      "categoryId": "music"
+    },
+    {
+      "file": "nature-built-for-this.draft.json",
+      "count": 5,
+      "mode": "category",
+      "categoryId": "nature"
+    },
+    {
+      "file": "sports-read-the-play.draft.json",
+      "count": 5,
+      "mode": "category",
+      "categoryId": "sports"
+    },
+    {
+      "file": "timed-quick-connections.draft.json",
+      "count": 10,
+      "mode": "timed",
+      "categoryId": "mixed"
+    }
+  ],
+  "readyForPlayer": false
+}

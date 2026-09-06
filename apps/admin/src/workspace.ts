@@ -1,10 +1,10 @@
-import { categories, quizzes, type Quiz, type Question } from '@bivia/core';
+import { categories, type Quiz, type Question } from '@bivia/core';
 
 export type EditorialQuiz = Omit<Quiz, 'questions'> & { questions: (Question & { explanation?: string })[]; status: 'draft' | 'scheduled' | 'published'; scheduledAt: string; updatedAt: string };
 export const storageKey = 'bivia.editorial.v1';
 export function blankQuestion(): Question { return { id: crypto.randomUUID(), prompt: '', answers: ['', '', '', ''], correctIndex: 0, hint: '', reference: '' }; }
 export function blankQuiz(): EditorialQuiz { return { id: crypto.randomUUID(), title: '', subtitle: '', categoryId: categories[0]?.id ?? '', mode: 'category', questions: [blankQuestion()], publishedAt: '', status: 'draft', scheduledAt: '', updatedAt: new Date().toISOString() }; }
-export function initialQuizzes(): EditorialQuiz[] { return quizzes.map(q => ({ ...structuredClone(q), publishedAt: '', status: 'draft', scheduledAt: '', updatedAt: new Date().toISOString() })); }
+export function initialQuizzes(): EditorialQuiz[] { return []; }
 export function validate(quiz: EditorialQuiz): string[] {
   const errors: string[] = [];
   if (!quiz.title.trim()) errors.push('Give your quiz a title.');
@@ -31,15 +31,8 @@ export function parseQuestions(text: string): Question[] {
     return { id: crypto.randomUUID(), prompt: q.prompt, answers: q.answers as string[], correctIndex: q.correctIndex, hint: q.hint, reference: q.reference };
   });
 }
-export function loadWorkspace(): { quizzes: EditorialQuiz[]; error: string } {
-  try {
-    const raw = localStorage.getItem(storageKey);
-    if (!raw) return { quizzes: initialQuizzes(), error: '' };
-    const data = JSON.parse(raw) as unknown;
-    if (!Array.isArray(data) || !data.every(q => q && typeof q.id === 'string' && typeof q.title === 'string' && typeof q.subtitle === 'string' && typeof q.categoryId === 'string' && ['category', 'timed', 'challenger'].includes(q.mode) && ['draft', 'scheduled', 'published'].includes(q.status) && typeof q.scheduledAt === 'string' && Array.isArray(q.questions) && q.questions.every((question: Question) => question && typeof question.prompt === 'string' && typeof question.hint === 'string' && typeof question.reference === 'string' && Array.isArray(question.answers) && question.answers.every(a => typeof a === 'string')))) throw new Error('Invalid workspace');
-    return { quizzes: data as EditorialQuiz[], error: '' };
-  } catch { return { quizzes: initialQuizzes(), error: 'Saved workspace could not be read. Sample drafts loaded; export before saving if you need a separate backup.' }; }
-}
+// Legacy browser drafts are intentionally no longer loaded into the connected builder.
+export function loadWorkspace(): { quizzes: EditorialQuiz[]; error: string } { return { quizzes: [], error: '' }; }
 export function download(name: string, data: unknown) {
   const url = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }));
   const link = document.createElement('a'); link.href = url; link.download = name; link.click(); URL.revokeObjectURL(url);

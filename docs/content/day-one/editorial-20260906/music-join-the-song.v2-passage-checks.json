@@ -1,0 +1,23 @@
+{
+  "translation": "NIV",
+  "bibleId": 111,
+  "licensedTextStored": false,
+  "checks": [
+    {
+      "passageId": "1CO.13.1",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/1CO.13.1?format=text",
+      "httpStatus": 200,
+      "reference": "1 Corinthians 13:1",
+      "contentSha256": "934b309b256426ed3e0f0319016a943772b849fb112261b3485f4a833fa95637",
+      "checkedAt": "2026-09-06T20:17:11.177564+00:00"
+    },
+    {
+      "passageId": "1CO.13.1-7",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/1CO.13.1-7?format=text",
+      "httpStatus": 200,
+      "reference": "1 Corinthians 13:1-7",
+      "contentSha256": "0f29e27cc40379848e7a60d8ebd3ae94e9106b751b36f9e4dc8a1eb47e6db1ad",
+      "checkedAt": "2026-09-06T20:17:11.729958+00:00"
+    }
+  ]
+}

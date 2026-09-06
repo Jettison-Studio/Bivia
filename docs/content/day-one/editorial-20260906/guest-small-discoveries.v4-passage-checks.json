@@ -1,0 +1,31 @@
+{
+  "translation": "NIV",
+  "bibleId": 111,
+  "licensedTextStored": false,
+  "checks": [
+    {
+      "passageId": "JOS.9.4-6",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JOS.9.4-6?format=text",
+      "httpStatus": 200,
+      "reference": "Joshua 9:4-6",
+      "contentSha256": "693994209f36e93500aec3c59926059ec5b65f68024a3d2d90b228b8938c6685",
+      "checkedAt": "2026-09-06T21:08:30.491777+00:00"
+    },
+    {
+      "passageId": "JOS.9.3-12",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JOS.9.3-12?format=text",
+      "httpStatus": 200,
+      "reference": "Joshua 9:3-12",
+      "contentSha256": "253ba33b21ab638754bebef70f81593fa6dae5f54244ec287758ca76eb13ee35",
+      "checkedAt": "2026-09-06T21:08:31.105170+00:00"
+    },
+    {
+      "passageId": "JOS.9.12-14",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JOS.9.12-14?format=text",
+      "httpStatus": 200,
+      "reference": "Joshua 9:12-14",
+      "contentSha256": "e2d1177eb3f2dca8f4e21c5df2793043b70c2d2cd279caebfd258142881f7772",
+      "checkedAt": "2026-09-06T21:08:31.593099+00:00"
+    }
+  ]
+}

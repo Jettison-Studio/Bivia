@@ -1,0 +1,55 @@
+{
+  "translation": "NIV",
+  "bibleId": 111,
+  "licensedTextStored": false,
+  "checks": [
+    {
+      "passageId": "JAS.3.4",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JAS.3.4?format=text",
+      "httpStatus": 200,
+      "reference": "James 3:4",
+      "contentSha256": "9c3ebd7f79615769f97fe2682dac3a77d6eab945554223b9fe5114418bd83c24",
+      "checkedAt": "2026-09-06T20:13:31.275141+00:00"
+    },
+    {
+      "passageId": "JAS.3.1-6",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JAS.3.1-6?format=text",
+      "httpStatus": 200,
+      "reference": "James 3:1-6",
+      "contentSha256": "e5b95cede896618aa25178b8b50e75ce8b87998fa0b8809e73d252d198a83342",
+      "checkedAt": "2026-09-06T20:13:31.750987+00:00"
+    },
+    {
+      "passageId": "JOS.8.5-7",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JOS.8.5-7?format=text",
+      "httpStatus": 200,
+      "reference": "Joshua 8:5-7",
+      "contentSha256": "fbc9de1eb7f0f2ed863c3ec9d9e6fc4a3cfae93332d9512260bb3e9392921394",
+      "checkedAt": "2026-09-06T20:13:32.263358+00:00"
+    },
+    {
+      "passageId": "JOS.8.3-9",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JOS.8.3-9?format=text",
+      "httpStatus": 200,
+      "reference": "Joshua 8:3-9",
+      "contentSha256": "8bf38d7fc69b5ae068d5666400be100949c13a3138fee1196d941a9ccdd20629",
+      "checkedAt": "2026-09-06T20:13:32.794226+00:00"
+    },
+    {
+      "passageId": "1CO.9.24-25",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/1CO.9.24-25?format=text",
+      "httpStatus": 200,
+      "reference": "1 Corinthians 9:24-25",
+      "contentSha256": "4b05bd0005aeea8f217dc1240f4e7d6411f58ed46597d9b115910cbf5451527d",
+      "checkedAt": "2026-09-06T20:13:33.224188+00:00"
+    },
+    {
+      "passageId": "1CO.9.19-27",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/1CO.9.19-27?format=text",
+      "httpStatus": 200,
+      "reference": "1 Corinthians 9:19-27",
+      "contentSha256": "9a6e4265d7940801f57634895c825246a16eb8b3b97eb2bb445203e8680f53ce",
+      "checkedAt": "2026-09-06T20:13:33.758034+00:00"
+    }
+  ]
+}

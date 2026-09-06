@@ -1,0 +1,35 @@
+{
+  "updatedAt": "2026-09-06T22:17:04.387927+00:00",
+  "sourceSnapshot": "editorial-20260906",
+  "newFinalApprovals": 0,
+  "pendingReviewResolved": true,
+  "editorialAdvanceOnly": [
+    "challenger-deeper-connections-q7-v4",
+    "challenger-deeper-connections-q10-v4",
+    "challenger-deeper-connections-q11-v3",
+    "challenger-deeper-connections-q19-v4",
+    "challenger-deeper-connections-q9-v2",
+    "challenger-deeper-connections-q13-v3",
+    "challenger-deeper-connections-q20-v4",
+    "challenger-deeper-connections-q14-v3",
+    "challenger-deeper-connections-q16-v4",
+    "timed-quick-connections-q9-v5"
+  ],
+  "hintRepairsRequired": [
+    "challenger-deeper-connections-q18-v4",
+    "challenger-deeper-connections-q12-v3"
+  ],
+  "existingHolds": [
+    "challenger-deeper-connections-q17-v4",
+    "challenger-deeper-connections-q15-v3",
+    "timed-quick-connections-q10-v2"
+  ],
+  "remainingWork": [
+    "Independent source and NIV verification",
+    "Apply separately reviewed repair proposals",
+    "Local authenticated draft import preserving explanations/evidence",
+    "Guest NIV delivery and Timed curve verification",
+    "Player playtest and test slate approval"
+  ],
+  "note": "Editorial advancement is not factual verification, runtime verification or final approval. Preserve frozen snapshot."
+}

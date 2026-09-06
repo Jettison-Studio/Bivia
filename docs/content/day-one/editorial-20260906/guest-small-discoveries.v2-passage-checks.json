@@ -1,0 +1,23 @@
+{
+  "translation": "NIV",
+  "bibleId": 111,
+  "licensedTextStored": false,
+  "checks": [
+    {
+      "passageId": "JDG.9.8-15",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JDG.9.8-15?format=text",
+      "httpStatus": 200,
+      "reference": "Judges 9:8-15",
+      "contentSha256": "95870051394a2bbf2bf9b23a826593b739185db1145f4419a49f067a2806bc90",
+      "checkedAt": "2026-09-06T20:49:45.358697+00:00"
+    },
+    {
+      "passageId": "JDG.9.7-16",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JDG.9.7-16?format=text",
+      "httpStatus": 200,
+      "reference": "Judges 9:7-16",
+      "contentSha256": "4cc97c9c410423dc8f83a7d26c2c9891191da7aab72b9a7783efd2c883f66f36",
+      "checkedAt": "2026-09-06T20:49:45.897082+00:00"
+    }
+  ]
+}

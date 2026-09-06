@@ -1,0 +1,100 @@
+{
+  "checkedAt": "2026-09-06T19:05:58.876961+00:00",
+  "method": "Read-only daily catalog RPC with anonymous access; implementation inspected as SELECT-only",
+  "day": "2026-09-06",
+  "categories": [
+    {
+      "id": "geography",
+      "icon": "globe",
+      "name": "Geography",
+      "color": "#3F7D7C",
+      "sort_order": 0,
+      "description": "A little wonder around the world."
+    },
+    {
+      "id": "science",
+      "icon": "flask",
+      "name": "Science",
+      "color": "#6C73B8",
+      "sort_order": 1,
+      "description": "Discover the extraordinary in the everyday."
+    },
+    {
+      "id": "history",
+      "icon": "hourglass",
+      "name": "History",
+      "color": "#BB8848",
+      "sort_order": 2,
+      "description": "Big moments. Curious stories."
+    },
+    {
+      "id": "food",
+      "icon": "restaurant",
+      "name": "Food & Drink",
+      "color": "#CE543C",
+      "sort_order": 3,
+      "description": "A fresh serving of curiosity."
+    },
+    {
+      "id": "nature",
+      "icon": "leaf",
+      "name": "Nature",
+      "color": "#68966B",
+      "sort_order": 4,
+      "description": "Explore our remarkable living world."
+    },
+    {
+      "id": "entertainment",
+      "icon": "film",
+      "name": "Entertainment",
+      "color": "#B47596",
+      "sort_order": 5,
+      "description": "Stories, songs, and the things we love."
+    },
+    {
+      "id": "fitness",
+      "icon": "fitness",
+      "name": "Fitness",
+      "color": "#3F7D7C",
+      "sort_order": 6,
+      "description": "Movement, training, and everyday fitness."
+    },
+    {
+      "id": "sports",
+      "icon": "football",
+      "name": "Sports",
+      "color": "#CE543C",
+      "sort_order": 7,
+      "description": "Games, teams, and memorable moments."
+    },
+    {
+      "id": "media",
+      "icon": "film",
+      "name": "Media",
+      "color": "#B47596",
+      "sort_order": 8,
+      "description": "Stories on screens and beyond."
+    },
+    {
+      "id": "music",
+      "icon": "musical-notes",
+      "name": "Music",
+      "color": "#6C73B8",
+      "sort_order": 9,
+      "description": "Songs, instruments, and the people behind them."
+    }
+  ],
+  "rounds": [
+    {
+      "id": "8c2b05c6-249e-4f55-8f4c-295a87363fa3",
+      "mode": "category",
+      "score": null,
+      "title": "Mind over matter",
+      "quizId": "2166aecc-a061-4ec3-b98b-f19de7495610",
+      "status": "unplayed",
+      "attemptId": null,
+      "categoryId": "science",
+      "questionCount": 3
+    }
+  ]
+}

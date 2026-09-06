@@ -4,6 +4,7 @@ import {
   StyleSheet,
   Text,
   View,
+  useWindowDimensions,
   type ViewStyle,
   type TextStyle,
 } from "react-native";
@@ -48,6 +49,13 @@ export function T({
     >
       {children}
     </Text>
+  );
+}
+export function PointsUnit({ size = 15 }: { size?: number }) {
+  return (
+    <T style={{ fontSize: size, color: c.muted, letterSpacing: 0 }}>
+      {" pts"}
+    </T>
   );
 }
 export function Icon({
@@ -133,7 +141,7 @@ export function Button({
       >
         {children}
       </T>
-      {icon && (
+      {!!icon && (
         <Icon name={icon} size={18} color={white ? "white" : c.primary} />
       )}
     </Pressable>
@@ -148,13 +156,14 @@ export function Heading({
   subtitle?: string;
   action?: React.ReactNode;
 }) {
+  const { width } = useWindowDimensions();
   return (
-    <View style={s.heading}>
+    <View style={[s.heading, action && width < 560 ? { flexDirection: "column", alignItems: "stretch" } : undefined]}>
       <View style={{ flex: 1 }}>
         <T accessibilityRole="header" style={s.h1}>
           {title}
         </T>
-        {subtitle && <T style={{ color: c.muted, marginTop: 7 }}>{subtitle}</T>}
+        {!!subtitle && <T style={{ color: c.muted, marginTop: 7 }}>{subtitle}</T>}
       </View>
       {action}
     </View>

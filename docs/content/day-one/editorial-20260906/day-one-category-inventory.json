@@ -1,0 +1,56 @@
+{
+  "checkedAt": "2026-09-06T19:02:25.239259+00:00",
+  "method": "Read-only GET public categories with existing anonymous access; no session",
+  "rows": [
+    {
+      "id": "geography",
+      "name": "Geography",
+      "sort_order": 0
+    },
+    {
+      "id": "science",
+      "name": "Science",
+      "sort_order": 1
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "sort_order": 2
+    },
+    {
+      "id": "food",
+      "name": "Food & Drink",
+      "sort_order": 3
+    },
+    {
+      "id": "nature",
+      "name": "Nature",
+      "sort_order": 4
+    },
+    {
+      "id": "entertainment",
+      "name": "Entertainment",
+      "sort_order": 5
+    },
+    {
+      "id": "fitness",
+      "name": "Fitness",
+      "sort_order": 6
+    },
+    {
+      "id": "sports",
+      "name": "Sports",
+      "sort_order": 7
+    },
+    {
+      "id": "media",
+      "name": "Media",
+      "sort_order": 8
+    },
+    {
+      "id": "music",
+      "name": "Music",
+      "sort_order": 9
+    }
+  ]
+}

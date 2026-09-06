@@ -1,3 +1,5 @@
+import { listCatalog } from "../src/lib/remote";
+import { DailyHistory } from "../src/components/DailyHistory";
 import { ProfilePhoto } from "../src/components/ProfilePhoto";
 import { DeleteAccount } from "../src/components/DeleteAccount";
 import React, { useEffect, useState } from "react";
@@ -31,6 +33,10 @@ export default function Profile() {
 }
 function ProfileEditor() {
   const { profile, results, session, saveProfile, clearPractice } = useBivia();
+  const [topics, setTopics] = useState<{id:string;name:string}[]>(categories);
+  useEffect(() => { let active=true; void listCatalog().then(catalog => { if(active) setTopics(catalog.categories); }).catch(() => {}); return () => {active=false;}; }, []);
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [avatar, setAvatar] = useState<string | null>(null);
   const userId = session?.user.id ?? null;
   const [ready, setReady] = useState(!userId);
@@ -54,6 +60,8 @@ function ProfileEditor() {
     setLoading(true);
     setAvatar(null);
     setName("");
+    setFirstName("");
+    setLastName("");
     setSelected([]);
     setMessage("");
     if (!supabase) {
@@ -63,7 +71,7 @@ function ProfileEditor() {
     }
     supabase
       .from("profiles")
-      .select("display_name, preferred_categories, avatar_url")
+      .select("display_name, first_name, last_name, preferred_categories, avatar_url")
       .eq("id", userId)
       .single()
       .then(({ data, error }) => {
@@ -73,6 +81,8 @@ function ProfileEditor() {
         } else {
           setAvatar(data.avatar_url);
           setName(data.display_name);
+          setFirstName(data.first_name);
+          setLastName(data.last_name);
           setSelected(data.preferred_categories || []);
           setReady(true);
         }
@@ -92,7 +102,7 @@ function ProfileEditor() {
         if (!supabase) throw new Error("The account service is not configured.");
         const { error } = await supabase
           .from("profiles")
-          .update({ display_name: name.trim(), preferred_categories: selected })
+          .update({ display_name: name.trim(), first_name: firstName.trim(), last_name: lastName.trim(), preferred_categories: selected })
           .eq("id", userId);
         if (error) throw error;
       } else {
@@ -130,7 +140,7 @@ function ProfileEditor() {
             </T>
           </View>
           <View style={{ flex: 1 }}>
-            <T style={s.h2}>{loading ? "Loading your profile…" : name || "Hello, curious mind"}</T>
+            <T style={s.h2}>{loading ? "Loading your profile…" : firstName ? `Hello, ${firstName}` : "Hello, curious mind"}</T>
             <T style={s.small}>
               {session ? session.user.email : "Your practice profile"}
             </T>
@@ -149,10 +159,20 @@ function ProfileEditor() {
             and play ranked quizzes.
           </Notice>
         )}
+        <View style={{ gap: 12 }}>
+          <TextInput accessibilityLabel="First name" placeholder="First name"
+            placeholderTextColor={c.muted} autoComplete="given-name"
+            value={firstName} onChangeText={setFirstName}
+            editable={ready && !busy} maxLength={60} style={s.input} />
+          <TextInput accessibilityLabel="Last name" placeholder="Last name"
+            placeholderTextColor={c.muted} autoComplete="family-name"
+            value={lastName} onChangeText={setLastName}
+            editable={ready && !busy} maxLength={60} style={s.input} />
+        </View>
         <View style={{ gap: 8 }}>
-          <T style={s.label}>Your name</T>
+          <T style={s.label}>Display name</T>
           <TextInput
-            accessibilityLabel="Your name"
+            accessibilityLabel="Display name"
             value={name}
             editable={ready && !busy}
             onChangeText={setName}
@@ -167,12 +187,14 @@ function ProfileEditor() {
             More of what makes you curious.
           </T>
           <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 9 }}>
-            {categories.map((cat) => {
+            {topics.map((cat) => {
               const active = selected.includes(cat.id);
               return (
                 <Pressable
                   key={cat.id}
                   accessibilityRole="checkbox"
+                  aria-checked={active}
+                  accessibilityLabel={cat.name}
                   accessibilityState={{ checked: active, disabled: !ready || busy }}
                   disabled={!ready || busy}
                   onPress={() =>
@@ -247,6 +269,7 @@ function ProfileEditor() {
         )}
         {session && <DeleteAccount userId={session.user.id} />}
       </Card>
+      {session && <DailyHistory key={session.user.id} userId={session.user.id} />}
       <View style={{ marginTop: 32 }}>
         <Heading
           title="Practice history"

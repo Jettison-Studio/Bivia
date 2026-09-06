@@ -1,3 +1,4 @@
+import { VersePreview } from "../../src/components/VersePreview";
 import React, { useEffect, useRef, useState } from "react";
 import { View, Pressable, Modal, AppState } from "react-native";
 import { router, useLocalSearchParams } from "expo-router";
@@ -26,13 +27,16 @@ import { useBivia } from "../../src/lib/store";
 import { RankedGame } from "../../src/components/RankedGame";
 export default function QuizRoute() {
   const { session } = useBivia();
-  const { id, mode } = useLocalSearchParams<{ id: string; mode?: string }>();
+  const { id, mode, daily, attempt, view } = useLocalSearchParams<{ id: string; mode?: string; daily?: string; attempt?: string; view?: string }>();
   const quiz = quizzes.find((q) => q.id === id);
   if (!quiz && /^[0-9a-f-]{36}$/i.test(id || ""))
     return (
       <RankedGame
-        key={`${id}-${mode}-${session?.user.id ?? "guest"}`}
+        key={`${id}-${mode}-${daily}-${session?.user.id ?? "guest"}`}
         quizId={id}
+        dailyRoundId={daily}
+        attemptId={attempt}
+        viewResults={view === "results"}
         mode={mode === "timed" || mode === "challenger" ? mode : "category"}
       />
     );
@@ -57,6 +61,7 @@ function PracticeGame({ quiz }: { quiz: Quiz }) {
     [correct, setCorrect] = useState(0),
     [now, setNow] = useState(Date.now()),
     [hintOpen, setHintOpen] = useState(false),
+    [hintUsed, setHintUsed] = useState(false),
     [leaveOpen, setLeaveOpen] = useState(false),
     [feedback, setFeedback] = useState(""),
     [hintEnds, setHintEnds] = useState(0);
@@ -70,7 +75,7 @@ function PracticeGame({ quiz }: { quiz: Quiz }) {
   const elapsed = Math.max(0, (now - startRef.current) / 1000),
     limit = timeLimit(quiz.mode, index),
     remaining = Math.max(0, limit - elapsed);
-  const currentPoints = scoreAnswer(wrong.length, elapsed);
+  const currentPoints = Math.max(0, scoreAnswer(wrong.length, elapsed) - (hintUsed ? 1 : 0));
   useEffect(() => {
     if (phase === "intro") return;
     const timer = setInterval(() => setNow(Date.now()), 100);
@@ -81,7 +86,7 @@ function PracticeGame({ quiz }: { quiz: Quiz }) {
     };
   }, [phase]);
   useEffect(() => {
-    if (phase === "hint" && now >= hintEnds) {
+    if (phase === "hint" && hintEnds > 0 && now >= hintEnds) {
       startRef.current = hintEnds;
       inputLock.current = false;
       setPhase("question");
@@ -100,7 +105,9 @@ function PracticeGame({ quiz }: { quiz: Quiz }) {
     }
   }, [remaining, phase]);
   function beginHint() {
-    setHintEnds(Date.now() + 5000);
+    setHintOpen(false);
+    setHintUsed(false);
+    setHintEnds(0);
     setNow(Date.now());
     setPhase("hint");
   }
@@ -138,6 +145,11 @@ function PracticeGame({ quiz }: { quiz: Quiz }) {
     inputLock.current = false;
     beginHint();
   }
+  useEffect(() => {
+    if (phase !== "feedback" || leaveOpen || feedback === "Your result could not be saved. Try again.") return;
+    const timer = setTimeout(() => next(), 0);
+    return () => clearTimeout(timer);
+  }, [phase, index, leaveOpen, feedback]);
   function answer(answerIndex: number) {
     if (
       inputLock.current ||
@@ -147,10 +159,10 @@ function PracticeGame({ quiz }: { quiz: Quiz }) {
       return;
     if (answerIndex === question.correctIndex) {
       inputLock.current = true;
-      const earned = scoreAnswer(
+      const earned = Math.max(0, scoreAnswer(
         wrong.length,
         Math.max(0, (Date.now() - startRef.current) / 1000),
-      );
+      ) - (hintUsed ? 1 : 0));
       scoreRef.current += earned;
       correctRef.current++;
       setScore(scoreRef.current);
@@ -318,41 +330,7 @@ function PracticeGame({ quiz }: { quiz: Quiz }) {
         />
       </View>
       {phase === "hint" ? (
-        <View
-          style={{
-            backgroundColor: "#10091d",
-            borderRadius: 18,
-            padding: 34,
-            minHeight: 375,
-            justifyContent: "center",
-            alignItems: "center",
-            gap: 22,
-          }}
-        >
-          <Icon name="sparkles-outline" color="#d0b3ff" size={30} />
-          <T style={{ fontSize: 13, color: "#d0b3ff" }}>YOUR BIBLE HINT</T>
-          <T
-            style={{
-              color: "white",
-              fontSize: 25,
-              lineHeight: 36,
-              textAlign: "center",
-              fontFamily: font.medium,
-            }}
-          >
-            “{question.hint}”
-          </T>
-          <T style={{ color: "#d0b3ff", fontSize: 13 }}>{question.reference}</T>
-          <T
-            accessibilityLiveRegion="polite"
-            style={{ color: "white", fontFamily: font.bold, fontSize: 19 }}
-          >
-            {Math.max(1, Math.ceil((hintEnds - now) / 1000))}
-          </T>
-          <T style={{ color: "#b9aacb", fontSize: 12 }}>
-            Your question is coming up…
-          </T>
-        </View>
+        <VersePreview onExit={() => router.replace("/")} visible verse={question.hint} reference={question.reference} seconds={hintEnds ? Math.ceil((hintEnds - now) / 1000) : 0} reading={!hintEnds} onReady={() => { setNow(Date.now()); setHintEnds(Date.now() + 3000); }} />
       ) : (
         <>
           <View
@@ -407,7 +385,7 @@ function PracticeGame({ quiz }: { quiz: Quiz }) {
           <View style={{ gap: 12 }}>
             {question.answers.map((answerText, i) => {
               const reveal =
-                  phase === "feedback" && i === question.correctIndex,
+                  false,
                 incorrect = wrong.includes(i);
               return (
                 <Pressable
@@ -489,13 +467,8 @@ function PracticeGame({ quiz }: { quiz: Quiz }) {
           </View>
           {phase === "feedback" ? (
             <View style={{ marginTop: 25, gap: 16 }}>
-              <Notice>{feedback}</Notice>
-              <Button onPress={next} icon="arrow-forward">
-                {index === quiz.questions.length - 1 ||
-                (quiz.mode === "challenger" && totalWrong >= 5)
-                  ? "See my results"
-                  : "Next question"}
-              </Button>
+              {feedback === "Your result could not be saved. Try again." && <Notice>{feedback}</Notice>}
+              {feedback === "Your result could not be saved. Try again." && <Button onPress={next}>Retry</Button>}
             </View>
           ) : (
             <View style={{ marginTop: 25, gap: 18 }}>
@@ -508,7 +481,7 @@ function PracticeGame({ quiz }: { quiz: Quiz }) {
               >
                 <Pressable
                   accessibilityRole="button"
-                  onPress={() => setHintOpen(true)}
+                  onPress={() => { setHintUsed(true); setHintOpen(true); }}
                   style={[s.row, { paddingVertical: 8 }]}
                 >
                   <Icon name="sparkles-outline" color={c.primary} size={19} />
@@ -519,7 +492,7 @@ function PracticeGame({ quiz }: { quiz: Quiz }) {
                       fontFamily: font.semibold,
                     }}
                   >
-                    Bible hint
+                    {hintUsed ? "Bible hint" : "Bible hint · −1 point"}
                   </T>
                 </Pressable>
                 <T style={s.small}>{currentPoints} points available</T>
@@ -550,7 +523,7 @@ function PracticeGame({ quiz }: { quiz: Quiz }) {
             <T style={{ color: c.primary, fontFamily: font.semibold }}>
               A little guidance
             </T>
-            <T style={{ fontSize: 24, lineHeight: 34 }}>“{question.hint}”</T>
+            <T style={{ fontSize: 24, lineHeight: 34 }}>{question.hint}</T>
             <T style={s.small}>{question.reference}</T>
             <Button onPress={() => setHintOpen(false)}>
               Back to the question

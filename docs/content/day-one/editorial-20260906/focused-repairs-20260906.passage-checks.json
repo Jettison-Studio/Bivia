@@ -1,0 +1,87 @@
+{
+  "translation": "NIV",
+  "bibleId": 111,
+  "licensedTextStored": false,
+  "checks": [
+    {
+      "passageId": "JER.18.14",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JER.18.14?format=text",
+      "httpStatus": 200,
+      "reference": "Jeremiah 18:14",
+      "contentSha256": "8ca668a54570b6d78414598490112e88d3b79f5d243e5e060006610e9a5e6deb",
+      "checkedAt": "2026-09-06T19:36:48.014797+00:00"
+    },
+    {
+      "passageId": "JER.18.11-17",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JER.18.11-17?format=text",
+      "httpStatus": 200,
+      "reference": "Jeremiah 18:11-17",
+      "contentSha256": "2945ca25791b8f2bd64f25e5ad1bfbd535df2dead4eff30eff966fe7c7d1f7f0",
+      "checkedAt": "2026-09-06T19:36:48.632062+00:00"
+    },
+    {
+      "passageId": "JON.4.7-8",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JON.4.7-8?format=text",
+      "httpStatus": 200,
+      "reference": "Jonah 4:7-8",
+      "contentSha256": "3178eaeb60eae5b02a2ee10c67294361e4898f9e3beb74dd4fb7ecf781349ad9",
+      "checkedAt": "2026-09-06T19:36:49.130484+00:00"
+    },
+    {
+      "passageId": "JON.4.3-11",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JON.4.3-11?format=text",
+      "httpStatus": 200,
+      "reference": "Jonah 4:3-11",
+      "contentSha256": "3a62128dc6136315725ef8a9679cc8cd6f1b8687f55c1dcc8f0d2d5a7255be4c",
+      "checkedAt": "2026-09-06T19:36:49.672512+00:00"
+    },
+    {
+      "passageId": "1SA.30.11-12",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/1SA.30.11-12?format=text",
+      "httpStatus": 200,
+      "reference": "1 Samuel 30:11-12",
+      "contentSha256": "170782d463857e802fd4c6c8073fef7c7c54ea057eabbf6aa044ec228848bdde",
+      "checkedAt": "2026-09-06T19:36:50.176327+00:00"
+    },
+    {
+      "passageId": "1SA.30.9-15",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/1SA.30.9-15?format=text",
+      "httpStatus": 200,
+      "reference": "1 Samuel 30:9-15",
+      "contentSha256": "c350b13fb43f45ebb8fb53f198c5227ce1c8248b36956b536247b0c1d8924022",
+      "checkedAt": "2026-09-06T19:36:50.590453+00:00"
+    },
+    {
+      "passageId": "JER.48.11",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JER.48.11?format=text",
+      "httpStatus": 200,
+      "reference": "Jeremiah 48:11",
+      "contentSha256": "4b869fe1f137b2b7d4f65ec3fe500f800c5be07a09a72e154eab11cc6eaa2cda",
+      "checkedAt": "2026-09-06T19:38:10.363981+00:00"
+    },
+    {
+      "passageId": "JER.48.7-15",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JER.48.7-15?format=text",
+      "httpStatus": 200,
+      "reference": "Jeremiah 48:7-15",
+      "contentSha256": "ff56f8eefa23d17592abef2a666f431bc3e3c7f7747d060e225c06628ab95d18",
+      "checkedAt": "2026-09-06T19:38:10.823924+00:00"
+    },
+    {
+      "passageId": "RUT.2.14",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/RUT.2.14?format=text",
+      "httpStatus": 200,
+      "reference": "Ruth 2:14",
+      "contentSha256": "f8c5f61ce358e6fa9b2140fe05257d7d559ed9b203d002cc1027589146244a5f",
+      "checkedAt": "2026-09-06T19:38:11.224442+00:00"
+    },
+    {
+      "passageId": "RUT.2.8-16",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/RUT.2.8-16?format=text",
+      "httpStatus": 200,
+      "reference": "Ruth 2:8-16",
+      "contentSha256": "ede6cbfda061f833b5c49a0fb753347cc17e01269df1c6601dce75a8cbb7f221",
+      "checkedAt": "2026-09-06T19:38:11.712010+00:00"
+    }
+  ]
+}

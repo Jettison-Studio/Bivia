@@ -91,7 +91,7 @@ export default function Groups() {
             onChangeText={setSearch}
             style={[s.input, { marginBottom: 22 }]}
           />
-          {error && (
+          {!!error && (
             <View style={{ gap: 12, marginBottom: 18 }}>
               <Notice>{error}</Notice>
               <Button variant="secondary" onPress={load}>
@@ -197,7 +197,8 @@ export default function Groups() {
                 <Pressable
                   key={v}
                   accessibilityRole="radio"
-                  accessibilityState={{ selected: visibility === v }}
+                  aria-checked={visibility === v}
+                  accessibilityState={{ checked: visibility === v }}
                   onPress={() => setVisibility(v)}
                   style={{
                     flex: 1,

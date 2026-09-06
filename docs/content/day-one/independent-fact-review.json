@@ -1,0 +1,908 @@
+{
+  "scope": "Bounded independent fact-source review; not full source re-research or NIV retrieval. Does not grant final publication approval.",
+  "generatedAt": "2026-09-06T22:37:39.546352+00:00",
+  "questions": [
+    {
+      "id": "challenger-deeper-connections-q1-v1",
+      "draft": "challenger-deeper-connections.draft.json",
+      "key": "Earth spinning on its axis",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "challenger-deeper-connections-q3-v1",
+      "draft": "challenger-deeper-connections.draft.json",
+      "key": "Thermals",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "challenger-deeper-connections-q2-v1",
+      "draft": "challenger-deeper-connections.draft.json",
+      "key": "Feet side by side, shoulder-width apart",
+      "staticErrors": [],
+      "sourceVerification": "opened_but_incomplete",
+      "independentlyOpenedUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2934921/"
+      ],
+      "finding": "PMC returned recaptcha. Four displayed stances geometrically support keyed lateral base; primary article not independently read.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "challenger-deeper-connections-q16-v4",
+      "draft": "challenger-deeper-connections.draft.json",
+      "key": "Harry Houdini",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "challenger-deeper-connections-q6-v2",
+      "draft": "challenger-deeper-connections.draft.json",
+      "key": "Prefabrication",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "challenger-deeper-connections-q7-v4",
+      "draft": "challenger-deeper-connections.draft.json",
+      "key": "A revised edition",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://www.isbn.org/faqs_formats_reprints_editions"
+      ],
+      "finding": "ISBN authority distinguishes added or revised content from unchanged reprints.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "challenger-deeper-connections-q8-v2",
+      "draft": "challenger-deeper-connections.draft.json",
+      "key": "Free kernels from the harvested stalks",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://www.fao.org/4/x0039e/X0039E06.htm"
+      ],
+      "finding": "FAO section12.1 explicitly defines threshing as separating kernels from stalks or panicles.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "challenger-deeper-connections-q10-v4",
+      "draft": "challenger-deeper-connections.draft.json",
+      "key": "Pears",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://www.rhs.org.uk/advice/beginners-guide/fruit-basics/rootstocks/"
+      ],
+      "finding": "RHS lists quince rootstocks for pear trees; source supports pear identity retained.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "challenger-deeper-connections-q4-v1",
+      "draft": "challenger-deeper-connections.draft.json",
+      "key": "A lathe",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "challenger-deeper-connections-q11-v3",
+      "draft": "challenger-deeper-connections.draft.json",
+      "key": "The same decree in several scripts",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "challenger-deeper-connections-q18-v5",
+      "draft": "challenger-deeper-connections.draft.json",
+      "key": "Pressure amplitude",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://openstax.org/books/university-physics-volume-1/pages/17-3-sound-intensity"
+      ],
+      "finding": "Textbook relates intensity to square of pressure amplitude; fixed-pitch and comparable-conditions qualification preserved.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "challenger-deeper-connections-q17-v5",
+      "draft": "challenger-deeper-connections.draft.json",
+      "key": "Macbeth",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://www.folger.edu/explore/shakespeares-works/macbeth/read/5/4/"
+      ],
+      "finding": "Actual Act 5.4 orders soldiers to carry boughs to conceal numbers.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "challenger-deeper-connections-q5-v1",
+      "draft": "challenger-deeper-connections.draft.json",
+      "key": "Ectothermy",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "challenger-deeper-connections-q12-v4",
+      "draft": "challenger-deeper-connections.draft.json",
+      "key": "In grooves cut below the surface",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://www.metmuseum.org/perspectives/materials-and-techniques-printmaking-engraving"
+      ],
+      "finding": "Met states cut lines in plate hold ink in engraved intaglio.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "challenger-deeper-connections-q15-v4",
+      "draft": "challenger-deeper-connections.draft.json",
+      "key": "A freshly cut hard-boiled egg",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://www.canada.ca/en/conservation-institute/services/preventive-conservation/guidelines-collections/metal-objects/understanding-silver-tarnish.html"
+      ],
+      "finding": "CCI experiment uses cut freshly hard-boiled egg; hydrogen sulfide tarnishes silver in minutes.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "challenger-deeper-connections-q19-v4",
+      "draft": "challenger-deeper-connections.draft.json",
+      "key": "New moon",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://science.nasa.gov/moon/eclipses/"
+      ],
+      "finding": "NASA explicitly states solar eclipses occur only at new moon. Draft correctly keeps prophetic event hypothetical.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "challenger-deeper-connections-q9-v2",
+      "draft": "challenger-deeper-connections.draft.json",
+      "key": "Specular reflection",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "challenger-deeper-connections-q13-v3",
+      "draft": "challenger-deeper-connections.draft.json",
+      "key": "Tacet",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "challenger-deeper-connections-q20-v4",
+      "draft": "challenger-deeper-connections.draft.json",
+      "key": "Lord of the Flies",
+      "staticErrors": [],
+      "sourceVerification": "opened_but_incomplete",
+      "independentlyOpenedUrls": [
+        "https://william-golding.co.uk/books/lord-of-the-flies/",
+        "https://www.newadvent.org/cathen/02388c.htm"
+      ],
+      "finding": "Author site confirms book but not title etymology. Catholic Encyclopedia directly supports conventional Baalzebub translation; secondary reference, not author statement of intent. Key is plausible; do not strengthen explanation to certain author intent.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "challenger-deeper-connections-q14-v3",
+      "draft": "challenger-deeper-connections.draft.json",
+      "key": "Felix Mendelssohn",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://lsolive.lso.co.uk/products/lso0898-mendelssohn"
+      ],
+      "finding": "Orchestra recording identifies composer Felix Mendelssohn and Elijah oratorio.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "entertainment-behind-the-curtain-q1-v1",
+      "draft": "entertainment-behind-the-curtain.draft.json",
+      "key": "A hidden figure reflected in angled glass",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "entertainment-behind-the-curtain-q2-v2",
+      "draft": "entertainment-behind-the-curtain.draft.json",
+      "key": "Dramatic irony",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "entertainment-behind-the-curtain-q3-v1",
+      "draft": "entertainment-behind-the-curtain.draft.json",
+      "key": "Godspell",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://www.mtishows.com/godspell"
+      ],
+      "finding": "Licensor song list explicitly includes Light of the World.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "entertainment-behind-the-curtain-q4-v3",
+      "draft": "entertainment-behind-the-curtain.draft.json",
+      "key": "A soliloquy",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "entertainment-behind-the-curtain-q5-v4",
+      "draft": "entertainment-behind-the-curtain.draft.json",
+      "key": "A crane",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://liberalarts.oregonstate.edu/wlf/what-deus-ex-machina"
+      ],
+      "finding": "University theater explanation explicitly describes crane-like machinery delivering performers playing gods.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "fitness-move-smarter-q1-v1",
+      "draft": "fitness-move-smarter.draft.json",
+      "key": "To let the legs move more freely",
+      "staticErrors": [],
+      "sourceVerification": "opened_but_incomplete",
+      "independentlyOpenedUrls": [
+        "https://www.nike.com/gb/a/best-shorts-running-men"
+      ],
+      "finding": "Manufacturer page returned limited text; side-split claim not independently corroborated.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "fitness-move-smarter-q2-v4",
+      "draft": "fitness-move-smarter.draft.json",
+      "key": "A timed short sprint",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "fitness-move-smarter-q3-v2",
+      "draft": "fitness-move-smarter.draft.json",
+      "key": "Elbow bent, weight close to the shoulder",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "fitness-move-smarter-q4-v3",
+      "draft": "fitness-move-smarter.draft.json",
+      "key": "By draining liquid from beneath the sole",
+      "staticErrors": [],
+      "sourceVerification": "opened_but_incomplete",
+      "independentlyOpenedUrls": [
+        "https://stacks.cdc.gov/view/cdc/225087"
+      ],
+      "finding": "CDC metadata page opened but no drainage mechanism text in returned excerpt. Key plausible; do not claim full paper verified.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "fitness-move-smarter-q5-v5",
+      "draft": "fitness-move-smarter.draft.json",
+      "key": "A pull-up",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "food-kitchen-secrets-q1-v2",
+      "draft": "food-kitchen-secrets.draft.json",
+      "key": "Carbohydrate",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "food-kitchen-secrets-q2-v1",
+      "draft": "food-kitchen-secrets.draft.json",
+      "key": "Fat droplets",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://annex.exploratorium.edu/cooking/icooks/11-17-03.html"
+      ],
+      "finding": "Science museum explains membranes rupturing, allowing fat droplets to join as butter grains.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "food-kitchen-secrets-q3-v3",
+      "draft": "food-kitchen-secrets.draft.json",
+      "key": "Letting the cup stand briefly",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://www.mehmetefendi.com/eng/turkish-coffee/characteristics"
+      ],
+      "finding": "Producer describes unfiltered grounds settling in cup; standing rather than agitation follows. Unrelated health assertions not adopted.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "food-kitchen-secrets-q4-v2",
+      "draft": "food-kitchen-secrets.draft.json",
+      "key": "Sugars reacting with proteins",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://www.kingarthurbaking.com/blog/2022/02/15/understanding-the-maillard-reaction-in-baking"
+      ],
+      "finding": "Baker source describes protein/sugar browning and flavor generation. Draft appropriately says much, not all crust color.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "food-kitchen-secrets-q5-v1",
+      "draft": "food-kitchen-secrets.draft.json",
+      "key": "Carbon dioxide",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "geo-read-the-land-q1-v2",
+      "draft": "geography-read-the-land.draft.json",
+      "key": "The closest lines",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "geo-read-the-land-q2-v2",
+      "draft": "geography-read-the-land.draft.json",
+      "key": "Latitude",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "geo-read-the-land-q3-v2",
+      "draft": "geography-read-the-land.draft.json",
+      "key": "Sargasso Sea",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://oceanservice.noaa.gov/facts/sargassosea.html"
+      ],
+      "finding": "NOAA describes Sargasso as only sea without land boundary.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "geo-read-the-land-q4-v3",
+      "draft": "geography-read-the-land.draft.json",
+      "key": "Its elevation",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "geo-read-the-land-q5-v2",
+      "draft": "geography-read-the-land.draft.json",
+      "key": "Rain falling farther upstream",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://www.nps.gov/zion/planyourvisit/flash-flood.htm"
+      ],
+      "finding": "NPS confirms sunny overhead conditions and storms miles away can yield flash floods.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "guest-small-discoveries-q1-v1",
+      "draft": "guest-small-discoveries.draft.json",
+      "key": "Conduction",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "guest-small-discoveries-q2-v1",
+      "draft": "guest-small-discoveries.draft.json",
+      "key": "Light travels much faster than sound",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://www.weather.gov/fgz/Lightning"
+      ],
+      "finding": "NWS explicitly explains light traveling faster than thunder sound.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "guest-small-discoveries-q3-v1",
+      "draft": "guest-small-discoveries.draft.json",
+      "key": "Moving air",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://www.fao.org/4/x0039e/X0039E06.htm"
+      ],
+      "finding": "FAO section12.2.2 explicitly identifies moving air removing lighter material.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "guest-small-discoveries-q4-v4",
+      "draft": "guest-small-discoveries.draft.json",
+      "key": "Fungi",
+      "staticErrors": [],
+      "sourceVerification": "opened_but_incomplete",
+      "independentlyOpenedUrls": [
+        "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/molds-food-are-they-dangerous"
+      ],
+      "finding": "USDA page open failed; standard mold-fungi key plausible but prior evidence retained.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "guest-small-discoveries-q5-v2",
+      "draft": "guest-small-discoveries.draft.json",
+      "key": "Personification",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://poets.org/glossary/personification"
+      ],
+      "finding": "Poets academy defines giving nonhuman things human qualities, matching speaking trees.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "history-clever-tools-q1-v1",
+      "draft": "history-clever-tools.draft.json",
+      "key": "The raised letter faces",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "history-clever-tools-q2-v3",
+      "draft": "history-clever-tools.draft.json",
+      "key": "Harriet Tubman",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://www.gutenberg.org/cache/epub/9999/pg9999-images.html"
+      ],
+      "finding": "Bradford explicitly describes Tubman singing the named song to identify herself. Attribution in stem is necessary and retained.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "history-clever-tools-q3-v2",
+      "draft": "history-clever-tools.draft.json",
+      "key": "To help limit cracking as they dried",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://www.nps.gov/orgs/1739/upload/preservation-brief-05-adobe.pdf"
+      ],
+      "finding": "NPS p1 says straw helps uniform shrinkage during drying; not increased long-term strength. Key limiting cracks is consistent.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "history-clever-tools-q4-v2",
+      "draft": "history-clever-tools.draft.json",
+      "key": "Filling seams between planks",
+      "staticErrors": [],
+      "sourceVerification": "opened_but_incomplete",
+      "independentlyOpenedUrls": [
+        "https://www.rmg.co.uk/collections/objects/rmgc-object-69366"
+      ],
+      "finding": "Museum object page opened but no oakum/seam text returned; prior evidence retained.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "history-clever-tools-q5-v4",
+      "draft": "history-clever-tools.draft.json",
+      "key": "Signs that trouble is coming",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "media-page-to-screen-q1-v1",
+      "draft": "media-page-to-screen.draft.json",
+      "key": "Separate leaves bound along one edge",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "media-page-to-screen-q2-v2",
+      "draft": "media-page-to-screen.draft.json",
+      "key": "A colophon",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://www.abaa.org/glossary/colophon"
+      ],
+      "finding": "ABAA definition specifically includes printer, paper, typeface.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "media-page-to-screen-q3-v1",
+      "draft": "media-page-to-screen.draft.json",
+      "key": "East of Eden",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "media-page-to-screen-q4-v1",
+      "draft": "media-page-to-screen.draft.json",
+      "key": "The Prince of Egypt",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "media-page-to-screen-q5-v3",
+      "draft": "media-page-to-screen.draft.json",
+      "key": "Moby-Dick",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://etc.usf.edu/lit2go/42/moby-dick/634/chapter-9-the-sermon/"
+      ],
+      "finding": "Actual chapter 9 contains Father Mapple sermon on Jonah. Fictional expansions must not become Bible facts.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "music-join-the-song-q1-v1",
+      "draft": "music-join-the-song.draft.json",
+      "key": "The chorus",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "music-join-the-song-q2-v2",
+      "draft": "music-join-the-song.draft.json",
+      "key": "The small loose metal discs",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "music-join-the-song-q3-v3",
+      "draft": "music-join-the-song.draft.json",
+      "key": "Arpeggio",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://www.merriam-webster.com/dictionary/arpeggio"
+      ],
+      "finding": "Dictionary derives arpeggio from Italian arpeggiare and arpa, harp.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "music-join-the-song-q4-v1",
+      "draft": "music-join-the-song.draft.json",
+      "key": "Messiah",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "music-join-the-song-q5-v1",
+      "draft": "music-join-the-song.draft.json",
+      "key": "The Byrds",
+      "staticErrors": [],
+      "sourceVerification": "opened_but_incomplete",
+      "independentlyOpenedUrls": [
+        "https://www.rockhall.com/wp-content/uploads/2024/03/The_Byrds_1991.pdf"
+      ],
+      "finding": "PDF opened but exact Ecclesiastes adaptation/date support not isolated; prior author evidence retained.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "nature-built-for-this-q1-v2",
+      "draft": "nature-built-for-this.draft.json",
+      "key": "Soft pads inside hard hoof rims",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://www.nps.gov/articles/mountain-goats.htm"
+      ],
+      "finding": "NPS identifies soft inner pads and split hooves as grip adaptations.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "nature-built-for-this-q2-v1",
+      "draft": "nature-built-for-this.draft.json",
+      "key": "Smell",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://www.allaboutbirds.org/guide/Turkey_Vulture/"
+      ],
+      "finding": "Cornell explicitly describes keen smell and detection of carcasses under canopy.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "nature-built-for-this-q3-v3",
+      "draft": "nature-built-for-this.draft.json",
+      "key": "They block water moving through the stem",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://yardandgarden.extension.iastate.edu/faq/how-do-i-prevent-damage-my-squash-plants-squash-vine-borer"
+      ],
+      "finding": "Extension explicitly states larvae feeding in stems block water flow, causing wilt.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "nature-built-for-this-q4-v1",
+      "draft": "nature-built-for-this.draft.json",
+      "key": "Shortening daylight",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://www.allaboutbirds.org/news/the-basics-how-why-and-where-of-bird-migration/"
+      ],
+      "finding": "Cornell lists day-length changes among migration cues; question says many, not all birds.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "nature-built-for-this-q5-v2",
+      "draft": "nature-built-for-this.draft.json",
+      "key": "The same genetic makeup",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://research.fs.usda.gov/silvics/quaking-aspen"
+      ],
+      "finding": "USFS describes stems from one root system as a clone; usually wording accommodates biological variation.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "sports-read-the-play-q1-v2",
+      "draft": "sports-read-the-play.draft.json",
+      "key": "The coxswain",
+      "staticErrors": [],
+      "sourceVerification": "opened_but_incomplete",
+      "independentlyOpenedUrls": [
+        "https://www.britishrowing.org/2019/02/who-sits-where-in-a-rowing-eight/"
+      ],
+      "finding": "Governing-body page opened but no steering line in available excerpt. Coxswain key plausible, not source-confirmed in this pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "sports-read-the-play-q2-v1",
+      "draft": "sports-read-the-play.draft.json",
+      "key": "A backdoor cut",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "sports-read-the-play-q3-v1",
+      "draft": "sports-read-the-play.draft.json",
+      "key": "Fresh olive branches",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://www.open.edu/openlearn/history-the-arts/the-ancient-olympics-bridging-past-and-present/content-section-9"
+      ],
+      "finding": "University course quotes Pindar source lineage and explicitly identifies wild olive branches used in victor wreaths.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "sports-read-the-play-q4-v2",
+      "draft": "sports-read-the-play.draft.json",
+      "key": "Tacking",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "sports-read-the-play-q5-v2",
+      "draft": "sports-read-the-play.draft.json",
+      "key": "To make the distance equal in every lane",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "timed-quick-connections-q1-v1",
+      "draft": "timed-quick-connections.draft.json",
+      "key": "Pianissimo",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "timed-quick-connections-q2-v1",
+      "draft": "timed-quick-connections.draft.json",
+      "key": "Mediterranean Sea",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "timed-quick-connections-q3-v1",
+      "draft": "timed-quick-connections.draft.json",
+      "key": "Mime",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "timed-quick-connections-q4-v2",
+      "draft": "timed-quick-connections.draft.json",
+      "key": "To dry the body",
+      "staticErrors": [],
+      "sourceVerification": "opened_but_incomplete",
+      "independentlyOpenedUrls": [
+        "https://www.britishmuseum.org/sites/default/files/2019-09/Visit_Egypt_mummies_KS2.pdf"
+      ],
+      "finding": "Museum PDF open failed; standard natron drying key plausible but prior evidence retained.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "timed-quick-connections-q5-v2",
+      "draft": "timed-quick-connections.draft.json",
+      "key": "A relay",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "timed-quick-connections-q6-v1",
+      "draft": "timed-quick-connections.draft.json",
+      "key": "Steaming",
+      "staticErrors": [],
+      "sourceVerification": "inherited_author_evidence_only",
+      "independentlyOpenedUrls": [],
+      "finding": "Key reviewed for obvious factual contradiction; no contradiction identified. Listed author URLs were not reopened in this bounded pass.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "timed-quick-connections-q7-v3",
+      "draft": "timed-quick-connections.draft.json",
+      "key": "A tint",
+      "staticErrors": [],
+      "sourceVerification": "opened_but_incomplete",
+      "independentlyOpenedUrls": [
+        "https://www.moma.org/collection/terms/tint",
+        "https://www.khanacademy.org/humanities/art-history-basics/artists-materials-techniques/painting-materials-techniques/v/moma-art-term-tint-shade-tone"
+      ],
+      "finding": "MoMA page is embedded video; no definition text returned; Khan transcript unavailable. Standard tint answer plausible but not independently source-confirmed here.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "timed-quick-connections-q8-v2",
+      "draft": "timed-quick-connections.draft.json",
+      "key": "Whose authority stands behind the document",
+      "staticErrors": [],
+      "sourceVerification": "opened_but_incomplete",
+      "independentlyOpenedUrls": [
+        "https://www.nationalarchives.gov.uk/help-with-your-research/research-guides/seals/"
+      ],
+      "finding": "Open failed. Seal authority key plausible but rely on prior evidence pending independent text.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "timed-quick-connections-q9-v5",
+      "draft": "timed-quick-connections.draft.json",
+      "key": "Dungeons & Dragons",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://www.dndbeyond.com/sources/dnd/br-2024/playing-the-game"
+      ],
+      "finding": "2024 official rules identify the three D20 Tests named in question.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    },
+    {
+      "id": "timed-quick-connections-q10-v3",
+      "draft": "timed-quick-connections.draft.json",
+      "key": "Jordan",
+      "staticErrors": [],
+      "sourceVerification": "independently_corroborated",
+      "independentlyOpenedUrls": [
+        "https://www.nasa.gov/image-article/dead-sea-2/"
+      ],
+      "finding": "NASA identifies Jordan as principal inflow, distinct from occasional wadis.",
+      "nivVerification": "author_hash_and_version_contract_only_not_independent_retrieval"
+    }
+  ],
+  "summary": {
+    "questions": 80,
+    "sourceCorroborated": 32,
+    "openedIncomplete": 11,
+    "inheritedEvidenceOnly": 37,
+    "staticViolations": [],
+    "incorrectKeysIdentified": 0,
+    "independentNivRetrievals": 0
+  },
+  "releaseConsiderations": [
+    "Question difficulty progression and paid hint benefit remain unmeasured.",
+    "Actual passage retrieval/rendering must be verified in runtime, including guest delivery.",
+    "No new factual-key blocker found in bounded high-risk checks; this is not a claim all 80 sources were independently verified."
+  ]
+}

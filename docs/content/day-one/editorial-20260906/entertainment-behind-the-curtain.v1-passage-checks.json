@@ -1,0 +1,87 @@
+{
+  "translation": "NIV",
+  "bibleId": 111,
+  "licensedTextStored": false,
+  "checks": [
+    {
+      "passageId": "1CO.13.12",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/1CO.13.12?format=text",
+      "httpStatus": 200,
+      "reference": "1 Corinthians 13:12",
+      "contentSha256": "9cd15480b051d1b5696af07b7079f1bb0de49d7ebfbc6a9f1f0441c2b606d572",
+      "checkedAt": "2026-09-06T20:27:17.889822+00:00"
+    },
+    {
+      "passageId": "1CO.13.8-13",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/1CO.13.8-13?format=text",
+      "httpStatus": 200,
+      "reference": "1 Corinthians 13:8-13",
+      "contentSha256": "11de6e41a72ec1d119b978b3e3dcec2cee94f5a547462e949453812f8aab7911",
+      "checkedAt": "2026-09-06T20:27:18.492973+00:00"
+    },
+    {
+      "passageId": "EST.6.4-10",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/EST.6.4-10?format=text",
+      "httpStatus": 200,
+      "reference": "Esther 6:4-10",
+      "contentSha256": "074f034b901e93b044c75820b4e3b87ab98f1001e033b0ef0806244ae0a49ec1",
+      "checkedAt": "2026-09-06T20:27:18.933629+00:00"
+    },
+    {
+      "passageId": "EST.6.1-10",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/EST.6.1-10?format=text",
+      "httpStatus": 200,
+      "reference": "Esther 6:1-10",
+      "contentSha256": "a1b456b479210a4171a770613eb79c2dc46fd6d01960e3749362c11f148e9744",
+      "checkedAt": "2026-09-06T20:27:19.403076+00:00"
+    },
+    {
+      "passageId": "MAT.5.14-16",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/MAT.5.14-16?format=text",
+      "httpStatus": 200,
+      "reference": "Matthew 5:14-16",
+      "contentSha256": "2c8ad982f156e6c2d5364d648cfa6ad76d5b4b13da84c558a58214767c4c9dc3",
+      "checkedAt": "2026-09-06T20:27:19.840005+00:00"
+    },
+    {
+      "passageId": "MAT.5.13-20",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/MAT.5.13-20?format=text",
+      "httpStatus": 200,
+      "reference": "Matthew 5:13-20",
+      "contentSha256": "566749f0512f36417d831c937419c4010d7083c4b3c2c1b6acf8ec196560686c",
+      "checkedAt": "2026-09-06T20:27:20.323764+00:00"
+    },
+    {
+      "passageId": "GEN.37.5-8",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/GEN.37.5-8?format=text",
+      "httpStatus": 200,
+      "reference": "Genesis 37:5-8",
+      "contentSha256": "b1000cbe8cb2c8697c00845944accc20042441995e5b5252daafc6f50a6e7fe3",
+      "checkedAt": "2026-09-06T20:27:20.863248+00:00"
+    },
+    {
+      "passageId": "GEN.37.3-11",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/GEN.37.3-11?format=text",
+      "httpStatus": 200,
+      "reference": "Genesis 37:3-11",
+      "contentSha256": "767c14aacf5ae0095802f5e2668fb535f6687a5bab4c93531868135f710b3811",
+      "checkedAt": "2026-09-06T20:27:21.391209+00:00"
+    },
+    {
+      "passageId": "JOB.37.4-5",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JOB.37.4-5?format=text",
+      "httpStatus": 200,
+      "reference": "Job 37:4-5",
+      "contentSha256": "917c22b88770e5c33ac6cceb6974d8c1ba27938b730c768896d72ab3594c855f",
+      "checkedAt": "2026-09-06T20:27:22.003882+00:00"
+    },
+    {
+      "passageId": "JOB.37.1-8",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JOB.37.1-8?format=text",
+      "httpStatus": 200,
+      "reference": "Job 37:1-8",
+      "contentSha256": "b105d3cb5b51bff73cd77b0e97d0cbd601f8371e3401f4ef866c7b0674fd8dd9",
+      "checkedAt": "2026-09-06T20:27:22.450754+00:00"
+    }
+  ]
+}

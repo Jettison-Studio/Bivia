@@ -1,0 +1,23 @@
+{
+  "translation": "NIV",
+  "bibleId": 111,
+  "licensedTextStored": false,
+  "checks": [
+    {
+      "passageId": "LUK.19.3-4",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/LUK.19.3-4?format=text",
+      "httpStatus": 200,
+      "reference": "Luke 19:3-4",
+      "contentSha256": "e29bbf429b20c21e3793a708bf58b1ad7c9f3f24070c698e95ec0cd933786b3d",
+      "checkedAt": "2026-09-06T21:53:48.200965+00:00"
+    },
+    {
+      "passageId": "LUK.19.1-10",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/LUK.19.1-10?format=text",
+      "httpStatus": 200,
+      "reference": "Luke 19:1-10",
+      "contentSha256": "299da90f3e7e3caef58515ee73b0f02473dcc06e823b00a747e0c0f1cd03cbab",
+      "checkedAt": "2026-09-06T21:53:48.689736+00:00"
+    }
+  ]
+}

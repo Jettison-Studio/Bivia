@@ -1,0 +1,447 @@
+{
+  "id": "f84734df-1b9e-4ab0-b8cd-eefa9776e9af",
+  "draftId": "timed-quick-connections-20260906-v1",
+  "title": "Quick connections",
+  "subtitle": "Ten small links across everyday knowledge.",
+  "description": "Ten small links across everyday knowledge.",
+  "categoryId": "mixed",
+  "mode": "timed",
+  "status": "draft",
+  "reviewState": "four_reviewed_two_hint_refinements_four_held",
+  "publishedAt": "",
+  "scheduledAt": "",
+  "updatedAt": "2026-09-06T20:56:26.901188+00:00",
+  "editorialDate": "2026-09-06",
+  "translation": "NIV",
+  "sourceMode": "references",
+  "hintKind": "original_clue",
+  "passageId": null,
+  "revision": 1,
+  "verification": {
+    "factsResearched": true,
+    "allOptionsReviewed": true,
+    "publicDomainContextChecked": false,
+    "exactNivRangesRetrieved": true,
+    "surroundingNivContextRetrieved": true,
+    "fullReadingLeakageReviewed": true,
+    "retrievalMethod": "Configured YouVersion version 111; hashes only retained",
+    "localPlayerRetrievalTested": false,
+    "blindPlaytestCompleted": false,
+    "engineGatesRun": false,
+    "humanApproved": false,
+    "publicationAuthorized": false,
+    "editorialShortfall": 4,
+    "editorialRecommendation": "Four editorial clearances only, two pending hint refinement, four held for repair/replacement. No final approval.",
+    "passageEvidenceFile": "timed-quick-connections.v1-passage-checks.json",
+    "modeFinding": "Ten manually authored candidates, not approved or player-tested. Current decreasing timer tail reaches 2.5 seconds; no claim these remain meaningfully answerable at that speed. Author suggests 20 seconds as an untested starting point, not an app setting."
+  },
+  "questions": [
+    {
+      "id": "timed-quick-connections-q1-v1",
+      "prompt": "Which musical direction best matches the final sound Elijah hears?",
+      "answers": [
+        "Fortissimo",
+        "Crescendo",
+        "Sforzando",
+        "Pianissimo"
+      ],
+      "correctIndex": 3,
+      "hint": "On a score, it is commonly abbreviated pp.",
+      "reference": "1 Kings 19:11\u201312",
+      "explanation": "Pianissimo means very softly. The scene ends with a gentle whisper after dramatic events. Matching that contrast to a musical direction is a modern scoring analogy, not a claim about biblical music notation.",
+      "factualSourceUrls": [
+        "https://www.merriam-webster.com/dictionary/pianissimo",
+        "https://www.dictionary.com/browse/pianissimo"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/1KI.19.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/1KI.19.11-12?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/1KI.19.NIV",
+      "nivContentSha256": "445dec42716cdaafd8b9e8adf3d9d776c56bb1e6d8aecd24c6f2c3e781c0f408",
+      "contextPassageId": "1KI.19.9-15",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 20
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Reading supplies the sound to interpret; no answer term appears. Four genuine musical directions. The pp clue adds notation familiarity, with unmeasured benefit.",
+      "concept": "Pianissimo and a scene's quiet final sound",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "music"
+    },
+    {
+      "id": "timed-quick-connections-q2-v1",
+      "prompt": "Which sea west of Galilee supplies moisture to many rain-bearing winds?",
+      "answers": [
+        "Mediterranean Sea",
+        "Dead Sea",
+        "Red Sea",
+        "Caspian Sea"
+      ],
+      "correctIndex": 0,
+      "hint": "It also borders Greece and Italy.",
+      "reference": "Luke 12:54",
+      "explanation": "Westerly winds associated with Mediterranean weather systems carry moist air into northern Israel. Jesus uses familiar weather signs to challenge interpretation of the present time. The question asks about regional geography; it does not say every western cloud brings rain everywhere.",
+      "factualSourceUrls": [
+        "https://cris.haifa.ac.il/en/publications/meteorology-2/"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/LUK.12.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/LUK.12.54?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/LUK.12.NIV",
+      "nivContentSha256": "906039d2d4192c31df5185f60a00fe5e014fef7455b977038432509bf405d4c2",
+      "contextPassageId": "LUK.12.54-59",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 20
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Four real regional seas. Westward cue helps orient the answer; hint adds a second geographic location. Avoid extending the local observation into a universal forecast.",
+      "concept": "Mediterranean moisture and westward weather cue",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "geography"
+    },
+    {
+      "id": "timed-quick-connections-q3-v1",
+      "prompt": "Which stage art could portray Zechariah\u2019s response without spoken words?",
+      "answers": [
+        "Ventriloquism",
+        "Mime",
+        "Soliloquy",
+        "Voice-over"
+      ],
+      "correctIndex": 1,
+      "hint": "Marcel Marceau was famous for this art.",
+      "reference": "Luke 1:22",
+      "explanation": "Mime communicates through gesture and expression. Zechariah gestures because he cannot speak; the question transfers that communication method to acting, without treating his condition as a performance.",
+      "factualSourceUrls": [
+        "https://www.artofsilence-film.com/",
+        "https://www.worldmime.org/en/"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/LUK.1.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/LUK.1.22?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/LUK.1.NIV",
+      "nivContentSha256": "5e2d7acfd8e92690668b542f09a37cb385d922d0671192063ed91f5d54af29f0",
+      "contextPassageId": "LUK.1.18-25",
+      "difficulty": {
+        "fact1to5": 1,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 20
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Easy but reading provides the actual action. All four options are performance techniques, three involving voice. Hint adds a practitioner and depends on cultural familiarity.",
+      "concept": "Mime and gesture-based stage communication",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "entertainment"
+    },
+    {
+      "id": "timed-quick-connections-q4-v1",
+      "prompt": "Why did ancient Egyptian embalmers use natron?",
+      "answers": [
+        "To perfume the body",
+        "To dye the linen",
+        "To dry the body",
+        "To glue the wrappings"
+      ],
+      "correctIndex": 2,
+      "hint": "This salt mixture helped remove moisture.",
+      "reference": "Genesis 50:2\u20133",
+      "explanation": "Natron was used to dry bodies during Egyptian mummification. Genesis describes embalming before burial elsewhere, which supplies the preservation context. It does not name the substance used on Jacob or establish an identical recipe for all periods.",
+      "factualSourceUrls": [
+        "https://www.britishmuseum.org/sites/default/files/2019-09/Visit_Egypt_mummies_KS2.pdf",
+        "https://www.britishmuseum.org/collection/galleries/egyptian-death-and-afterlife-mummies"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/GEN.50.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/GEN.50.2-3?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/GEN.50.NIV",
+      "nivContentSha256": "0a09c66ce80f32c36556e99e39a45781b770d7ab67249309c3ca2f3f9acf3eac",
+      "contextPassageId": "GEN.50.1-6",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 20
+      },
+      "reviewState": "pending_hint_refinement",
+      "authorFinding": "Alternatives are plausible preparation tasks assigned to the wrong material. Reading gives preservation purpose but not drying mechanism. Hint nearly supplies the answer; test whether it is too explicit.",
+      "concept": "Natron drying in Egyptian embalming",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "history"
+    },
+    {
+      "id": "timed-quick-connections-q5-v1",
+      "prompt": "Which race best resembles this chain of passing teaching to others?",
+      "answers": [
+        "A hurdles race",
+        "A marathon",
+        "A decathlon",
+        "A relay"
+      ],
+      "correctIndex": 3,
+      "hint": "Each teammate receives a baton before completing a leg.",
+      "reference": "2 Timothy 2:2",
+      "explanation": "Relay runners pass a baton onward through a team. Entrusting teaching to people who can teach others has a similar succession pattern. This is a modern analogy; the verse does not describe a relay or promise a one-to-one mapping of every participant.",
+      "factualSourceUrls": [
+        "https://worldathletics.org/news/news/beyond-sprint-speed-relay-study-baton-exchang-4x100m-relay"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/2TI.2.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/2TI.2.2?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/2TI.2.NIV",
+      "nivContentSha256": "db4d6b46bc86f9b39090fd9df8da40865e26643859d1b8cc4d84f29de94f98dd",
+      "contextPassageId": "2TI.2.1-7",
+      "difficulty": {
+        "fact1to5": 1,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 20
+      },
+      "reviewState": "pending_hint_refinement",
+      "authorFinding": "Four actual athletics events. Passage carries succession pattern; hint adds baton fact and may make the easy analogy immediate. No current relay-zone dimensions asserted.",
+      "concept": "Relay handoff as teaching-succession analogy",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "sports"
+    },
+    {
+      "id": "timed-quick-connections-q6-v1",
+      "prompt": "Which method belongs with boiling as a moist-heat cooking method?",
+      "answers": [
+        "Grilling",
+        "Steaming",
+        "Toasting",
+        "Roasting"
+      ],
+      "correctIndex": 1,
+      "hint": "The food can sit above the water instead of in it.",
+      "reference": "Exodus 16:23",
+      "explanation": "Steaming cooks with hot water vapor, so it is a moist-heat method. The reading contrasts boiling with baking during preparation for Sabbath rest. It does not say that the manna was steamed or explain the miracle of its preservation.",
+      "factualSourceUrls": [
+        "https://www.escoffier.edu/blog/value-of-culinary-education/learning-how-to-cook-a-guide-for-beginners/"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/EXO.16.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/EXO.16.23?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/EXO.16.NIV",
+      "nivContentSha256": "789a7e48234b059662380bc1be63127029a3c14bf5fe0a748fc6ee8b221e35bd",
+      "contextPassageId": "EXO.16.22-27",
+      "difficulty": {
+        "fact1to5": 1,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 20
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Four real cooking methods; paid clue adds the above-water arrangement. Stem may already provide enough classification without reading, so reading benefit must be checked rather than assumed.",
+      "concept": "Moist-heat cooking classification",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "food"
+    },
+    {
+      "id": "timed-quick-connections-q7-v1",
+      "prompt": "What draws melted wax up a candle wick?",
+      "answers": [
+        "Convection",
+        "Evaporation",
+        "Capillary action",
+        "Diffusion"
+      ],
+      "correctIndex": 2,
+      "hint": "The same effect draws water into a paper towel.",
+      "reference": "Isaiah 42:3",
+      "explanation": "Capillary action moves liquid fuel through the wick's small spaces. Isaiah's smoldering-wick image expresses the servant's gentleness toward the vulnerable. A modern candle provides a related wick example, not an explanation of the whole prophetic image.",
+      "factualSourceUrls": [
+        "https://candles.org/candle-science/",
+        "https://www.usgs.gov/water-science-school/science/capillary-action-and-water"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/ISA.42.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/ISA.42.3?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/ISA.42.NIV",
+      "nivContentSha256": "d71c242b5f6ef1af65b0b6ad8daec654af97305b23d991ba311a3f4c8f749cb0",
+      "contextPassageId": "ISA.42.1-7",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 20
+      },
+      "reviewState": "author_hold",
+      "authorFinding": "Four real physical processes. Reading supplies a wick but not its transport mechanism; weaker Scripture inference than the best benchmark items. Hint gives a useful second everyday example. Do not assert that Isaiah's lamp used candle wax.",
+      "concept": "Capillary transport in a candle wick",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "science"
+    },
+    {
+      "id": "timed-quick-connections-q8-v1",
+      "prompt": "What did a personal seal mainly help establish on an old document?",
+      "answers": [
+        "Who authorized it",
+        "How much postage it cost",
+        "How long it took to write",
+        "How many pages it contained"
+      ],
+      "correctIndex": 0,
+      "hint": "Think of a signature impressed into wax.",
+      "reference": "Daniel 6:17",
+      "explanation": "A personal seal could authenticate a document by representing its owner's authority. Daniel's account names the king's and nobles' rings securing the den. The question transfers the identifying function to documents; the verse does not specify wax or describe a letter.",
+      "factualSourceUrls": [
+        "https://www.nationalarchives.gov.uk/help-with-your-research/research-guides/seals/",
+        "https://discovery.nationalarchives.gov.uk/details/r/C13431170"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/DAN.6.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/DAN.6.17?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/DAN.6.NIV",
+      "nivContentSha256": "56e67d694b14b2130032a3a18df5a410e038b8cb85d6c60e333e36350e0158a1",
+      "contextPassageId": "DAN.6.14-20",
+      "difficulty": {
+        "fact1to5": 1,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 20
+      },
+      "reviewState": "author_hold",
+      "authorFinding": "Easy function question. Passage identifies whose rings were used. Hint adds signature analogy. Main guide full-page retrieval failed; indexed guide text plus accessible collection catalogue support attribution. Review distractors for excessive ease.",
+      "concept": "Personal seals and authority authentication",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "history"
+    },
+    {
+      "id": "timed-quick-connections-q9-v1",
+      "prompt": "A candle under a jar goes out as which gas becomes too scarce?",
+      "answers": [
+        "Nitrogen",
+        "Carbon dioxide",
+        "Water vapor",
+        "Oxygen"
+      ],
+      "correctIndex": 3,
+      "hint": "Most animals also need this gas for respiration.",
+      "reference": "Proverbs 26:20",
+      "explanation": "A candle needs oxygen as well as fuel and sufficient heat. Covering it limits replenishment of oxygen, eventually stopping combustion. The proverb compares a quarrel losing gossip to a fire losing wood; the experiment removes a different requirement for fire.",
+      "factualSourceUrls": [
+        "https://www.rigb.org/learning/activities-and-resources/candle-chemistry"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/PRO.26.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/PRO.26.20?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/PRO.26.NIV",
+      "nivContentSha256": "84d929c980159e075d785032bd3047fdabae137986acf92f8cda2a5934eb199e",
+      "contextPassageId": "PRO.26.17-26",
+      "difficulty": {
+        "fact1to5": 1,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 20
+      },
+      "reviewState": "author_hold",
+      "authorFinding": "Reading supports the missing-ingredient principle, but does not identify oxygen. Four actual gases. Different mechanism from Q7, with another item between them; consider separating further if candle repetition feels conspicuous.",
+      "concept": "Combustion oxygen limitation",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "science"
+    },
+    {
+      "id": "timed-quick-connections-q10-v1",
+      "prompt": "What makes floating unusually easy in the Dead Sea?",
+      "answers": [
+        "Its low elevation",
+        "Its high salt concentration",
+        "Its warm surface water",
+        "Its calm surface"
+      ],
+      "correctIndex": 1,
+      "hint": "Dissolved salts increase the density of the water.",
+      "reference": "Ezekiel 47:8\u20139",
+      "explanation": "High dissolved-salt content makes Dead Sea water dense, increasing buoyancy for a person floating in it. Ezekiel's vision describes salty water becoming fresh and supporting life. The vision supplies the salt contrast; it does not teach buoyancy or report a modern desalination project.",
+      "factualSourceUrls": [
+        "https://science.nasa.gov/earth/earth-observatory/getting-saltier-145373/",
+        "https://www.amnh.org/explore/ology/marine-biology/test-density-with-a-supersaturated-solution"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/EZK.47.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/EZK.47.8-9?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/EZK.47.NIV",
+      "nivContentSha256": "a8ec458b8d9d61c21f07845345ae7fc7ac379432a331e3b671477fd9a5b48d22",
+      "contextPassageId": "EZK.47.6-12",
+      "difficulty": {
+        "fact1to5": 1,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 20
+      },
+      "reviewState": "author_hold",
+      "authorFinding": "All alternatives are plausible environmental attributes rather than impossible mechanisms. Strong salt-word cue in full reading makes this easy; hint gives density mechanism and may be more explanation than aid. No claim floating is risk-free.",
+      "concept": "Dead Sea salinity and buoyancy",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "geography"
+    }
+  ],
+  "delivery": "daily_round"
+}

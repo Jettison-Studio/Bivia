@@ -1,0 +1,159 @@
+{
+  "id": "fac5bd5f-f939-4bf9-bc96-b4e025989576",
+  "draftId": "sports-read-the-play-20260906-v1",
+  "title": "Read the play",
+  "subtitle": "Find the detail that changes the game.",
+  "description": "Find the detail that changes the game.",
+  "categoryId": "sports",
+  "mode": "category",
+  "status": "draft",
+  "reviewState": "three_proposals_two_missing",
+  "publishedAt": "",
+  "scheduledAt": "",
+  "updatedAt": "2026-09-06T20:15:07.492696+00:00",
+  "editorialDate": "2026-09-06",
+  "translation": "NIV",
+  "sourceMode": "references",
+  "hintKind": "original_clue",
+  "passageId": null,
+  "revision": 1,
+  "verification": {
+    "factsResearched": true,
+    "allOptionsReviewed": true,
+    "publicDomainContextChecked": false,
+    "exactNivRangesRetrieved": true,
+    "surroundingNivContextRetrieved": true,
+    "fullReadingLeakageReviewed": true,
+    "retrievalMethod": "Configured YouVersion version 111; hashes only retained",
+    "localPlayerRetrievalTested": false,
+    "blindPlaytestCompleted": false,
+    "engineGatesRun": false,
+    "humanApproved": false,
+    "publicationAuthorized": false,
+    "editorialShortfall": 2,
+    "editorialRecommendation": "Three proposals await review; two slots deliberately unfilled. No final approval or measured hint benefit.",
+    "passageEvidenceFile": "sports-read-the-play.v1-passage-checks.json"
+  },
+  "questions": [
+    {
+      "id": "sports-read-the-play-q1-v1",
+      "prompt": "In a coxed racing eight, who controls the steering without pulling an oar?",
+      "answers": [
+        "The stroke rower",
+        "The bow rower",
+        "The coxswain",
+        "The rower in seat four"
+      ],
+      "correctIndex": 2,
+      "hint": "Small control wires connect this crew member to the rudder.",
+      "reference": "James 3:4",
+      "explanation": "The coxswain operates the rudder in a coxed boat. Stroke, bow and seat four are rowing positions. James distinguishes the small steering device from the forces moving a large vessel; this supports separating steering from propulsion. His subject is the influence of speech, not rowing technique.",
+      "factualSourceUrls": [
+        "https://www.britishrowing.org/go-rowing/equipment/",
+        "https://www.britishrowing.org/knowledge/courses-qualifications/coxing/"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/JAS.3.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/JAS.3.4?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/JAS.3.NIV",
+      "nivContentSha256": "9c3ebd7f79615769f97fe2682dac3a77d6eab945554223b9fe5114418bd83c24",
+      "contextPassageId": "JAS.3.1-6",
+      "difficulty": {
+        "fact1to5": 1,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "unapproved",
+      "authorFinding": "Accessible role-identification question. Coxed in the prompt may cue the answer by word shape; assess that leakage. The hint adds the connection to controls, but benefit is unmeasured.",
+      "concept": "Coxswain steering versus propulsion",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    },
+    {
+      "id": "sports-read-the-play-q2-v1",
+      "prompt": "A basketball defender overplays the pass toward you. Which move attacks the space behind that defender?",
+      "answers": [
+        "A backdoor cut",
+        "A flare cut toward the sideline",
+        "A pop-out toward midcourt",
+        "A stationary post-up"
+      ],
+      "correctIndex": 0,
+      "hint": "Head toward the basket rather than toward the ball.",
+      "reference": "Joshua 8:5-7",
+      "explanation": "A backdoor cut exploits an overplaying defender by moving behind them toward the basket. The other choices seek separation elsewhere or establish position. At Ai, the defenders are drawn away while another group enters the exposed city. The shared idea is exploiting space vacated by a pursuing defender; the passage describes conquest, not sport or permission to transfer violence into play.",
+      "factualSourceUrls": [
+        "https://assets.fiba.basketball/image/upload/documents-corporate-wabc-coaching-level-manuals-level-1-eng.pdf",
+        "https://coaching.fibaeurope.com/default.asp?cid=%7B15897918-BDCF-4E6B-A175-FC13FEE8BABC%7D&marked=true&parent=%7B15897918-BDCF-4E6B-A179-FC13FEE8BABC%7D&playID=%7BD3B64418-16BF-423F-BD08-856797581B8E%7D"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/JOS.8.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/JOS.8.5-7?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/JOS.8.NIV",
+      "nivContentSha256": "fbc9de1eb7f0f2ed863c3ec9d9e6fc4a3cfae93332d9512260bb3e9392921394",
+      "contextPassageId": "JOS.8.3-9",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "unapproved",
+      "authorFinding": "All distractors are real basketball movements/positions. This is a tactical analogy, not an identical sequence: the basketball cutter changes direction, while Joshua uses a separate ambush group. The question wording itself strongly cues backdoor; test whether the reading still contributes.",
+      "concept": "Backdoor cut and vacated defensive space",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    },
+    {
+      "id": "sports-read-the-play-q3-v1",
+      "prompt": "What material was used for the traditional victory wreath at the ancient Olympic Games?",
+      "answers": [
+        "Fresh laurel branches",
+        "Gold shaped into olive leaves",
+        "Wool woven into a headband",
+        "Fresh olive branches"
+      ],
+      "correctIndex": 3,
+      "hint": "The tree also supplied a staple cooking oil.",
+      "reference": "1 Corinthians 9:24-25",
+      "explanation": "Ancient Olympic victors traditionally received a wreath of olive branches. The perishable athletic crown in Paul\u2019s comparison supports a plant-material inference, while the hint distinguishes olive from laurel. Paul is contrasting athletic discipline and temporary reward with enduring gospel purpose; he does not identify a particular festival or plant here. Do not claim all Greek games used olive.",
+      "factualSourceUrls": [
+        "https://www.open.edu/openlearn/history-the-arts/the-ancient-olympics-bridging-past-and-present/content-section-9",
+        "https://artsandculture.google.com/asset/athens-2004-ioc/egGJgTlH6dzXUA"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/1CO.9.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/1CO.9.24-25?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/1CO.9.NIV",
+      "nivContentSha256": "4b05bd0005aeea8f217dc1240f4e7d6411f58ed46597d9b115910cbf5451527d",
+      "contextPassageId": "1CO.9.19-27",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "unapproved",
+      "authorFinding": "Laurel is a plausible confusion with other classical honors; gold olive leaves are a plausible confusion with durable ceremonial wreaths. Wool is a textile headband alternative. Full reading narrows material but does not choose olive over laurel. No claim Paul specifically describes the Olympics.",
+      "concept": "Ancient Olympic perishable olive wreath",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    }
+  ]
+}

@@ -81,7 +81,7 @@ export function ProfilePhoto({
   }
   return (
     <View style={{ gap: 12 }}>
-      {url && (
+      {!!url && (
         <Image
           source={{ uri: url }}
           accessibilityLabel="Your profile photo"

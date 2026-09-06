@@ -1,12 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { initialQuizzes, parseQuestions, validate } from '../src/workspace';
+import { initialQuizzes, blankQuiz, parseQuestions, validate } from '../src/workspace';
 
-test('sample drafts including mixed-topic quizzes are ready for review', () => {
-  for (const quiz of initialQuizzes()) assert.deepEqual(validate(quiz), [], quiz.title);
-});
+test('the editorial workspace starts without legacy demos', () => { assert.deepEqual(initialQuizzes(), []); });
 test('publishing rejects ambiguous choices and missing biblical source', () => {
-  const quiz = initialQuizzes()[0];
+  const quiz = blankQuiz(); quiz.title = 'Test'; quiz.questions[0] = {id: 'test', prompt: 'Question?', answers: ['A','B','C','D'], correctIndex: 0, hint: 'An original clue', reference: 'Proverbs 4:23'};
   quiz.questions[0].answers = ['Apple', ' apple ', 'Pear', 'Orange'];
   quiz.questions[0].reference = '';
   assert.equal(validate(quiz).length, 2);

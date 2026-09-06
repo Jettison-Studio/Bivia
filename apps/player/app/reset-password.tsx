@@ -24,7 +24,7 @@ export default function Reset() {
           onChangeText={setPassword}
           style={s.input}
         />
-        {message && <Notice>{message}</Notice>}
+        {!!message && <Notice>{message}</Notice>}
         <Button
           disabled={busy}
           onPress={async () => {
@@ -37,10 +37,13 @@ export default function Reset() {
               return;
             }
             setBusy(true);
-            const { error } = await supabase.auth.updateUser({ password });
-            setBusy(false);
-            if (error) setMessage(error.message);
-            else router.replace("/profile");
+            try {
+              const { error } = await supabase.auth.updateUser({ password });
+              if (error) throw error;
+              router.replace("/profile");
+            } catch (error) {
+              setMessage(error instanceof Error ? error.message : "Couldn’t update your password. Try again.");
+            } finally { setBusy(false); }
           }}
         >
           {busy ? "Saving…" : "Update password"}

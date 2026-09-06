@@ -421,3 +421,8 @@ entrypoint = "./functions/avatar-upload/index.ts"
 enabled = true
 verify_jwt = false
 entrypoint = "./functions/trivia-engine/index.ts"
+
+[functions.bible-passage]
+enabled = true
+verify_jwt = false
+entrypoint = "./functions/bible-passage/index.ts"

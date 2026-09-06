@@ -1,0 +1,48 @@
+{
+  "id": "2166aecc-a061-4ec3-b98b-f19de7495610",
+  "mode": "category",
+  "title": "Mind over matter",
+  "questions": [
+    {
+      "hint": "The cloth in Jeremiah's rescue protected the places where narrow ropes pressed against his body.",
+      "prompt": "A wider backpack strap spreads the same load over more of your shoulder. Which physical quantity does this reduce?",
+      "answers": [
+        "Weight",
+        "Mass",
+        "Contact area",
+        "Pressure"
+      ],
+      "reference": "Jeremiah 38:12\u201313 \u00b7 Original clue (not a Bible quotation)",
+      "explanation": "Cloth protected Jeremiah where the rescue ropes contacted his body. Padding can distribute the supporting force over a larger effective area, connecting the rescue to reduced pressure under a wider strap.",
+      "correctIndex": 3
+    },
+    {
+      "hint": "Isaac's hands suggested one brother, but his ears suggested the other.",
+      "prompt": "A flute and a violin play the same note at the same loudness. Which sound property chiefly lets you tell them apart?",
+      "answers": [
+        "Pitch",
+        "Timbre",
+        "Loudness",
+        "Duration"
+      ],
+      "reference": "Genesis 27:22 \u00b7 Original clue (not a Bible quotation)",
+      "explanation": "Isaac distinguishes a familiar voice despite conflicting touch evidence. Recognizable vocal quality provides a route to timbre, which also helps distinguish instruments playing the same note.",
+      "correctIndex": 1
+    },
+    {
+      "hint": "The fleece behind Job's act of kindness has many tiny spaces between its fibers.",
+      "prompt": "What is the main way the fluffy structure of a wool sweater helps keep you warm?",
+      "answers": [
+        "It traps air that slows heat transfer",
+        "It conducts body heat toward the skin",
+        "It reflects nearly all outgoing heat",
+        "It blocks heat loss by absorbing moisture"
+      ],
+      "reference": "Job 31:20 \u00b7 Original clue (not a Bible quotation)",
+      "explanation": "Job associates sheep's fleece with warmth. The clue adds wool's fibrous structure, inviting the inference that trapped air provides insulation; the passage itself does not explain heat transfer.",
+      "correctIndex": 0
+    }
+  ],
+  "categoryId": "science",
+  "description": "Three questions. Give it some thought."
+}

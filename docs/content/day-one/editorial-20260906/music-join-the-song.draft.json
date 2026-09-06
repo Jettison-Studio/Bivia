@@ -1,0 +1,258 @@
+{
+  "id": "164e2601-5b0c-4619-b0ad-b3c80989633c",
+  "draftId": "music-join-the-song-20260906-v3",
+  "title": "Join the song",
+  "subtitle": "Follow familiar patterns from a chorus to the concert stage.",
+  "description": "Follow familiar patterns from a chorus to the concert stage.",
+  "categoryId": "music",
+  "mode": "category",
+  "status": "draft",
+  "reviewState": "five_editorially_reviewed_awaiting_verification_and_playtest",
+  "publishedAt": "",
+  "scheduledAt": "",
+  "updatedAt": "2026-09-06T22:08:50.572356+00:00",
+  "editorialDate": "2026-09-06",
+  "translation": "NIV",
+  "sourceMode": "references",
+  "hintKind": "original_clue",
+  "passageId": null,
+  "revision": 3,
+  "verification": {
+    "factsResearched": true,
+    "allOptionsReviewed": true,
+    "publicDomainContextChecked": false,
+    "exactNivRangesRetrieved": true,
+    "surroundingNivContextRetrieved": true,
+    "fullReadingLeakageReviewed": true,
+    "retrievalMethod": "Configured YouVersion version 111; hashes only retained",
+    "localPlayerRetrievalTested": false,
+    "blindPlaytestCompleted": false,
+    "engineGatesRun": false,
+    "humanApproved": false,
+    "publicationAuthorized": false,
+    "editorialShortfall": 0,
+    "editorialRecommendation": "All five advance to independent verification and local playtest; no final approval.",
+    "passageEvidenceFile": "music-join-the-song.v2-passage-checks.json",
+    "additionalPassageEvidenceFiles": [
+      "music-join-the-song.v1-passage-checks.json"
+    ],
+    "passageEvidenceFiles": [
+      "music-join-the-song.v1-passage-checks.json",
+      "music-join-the-song.v3-passage-checks.json"
+    ]
+  },
+  "questions": [
+    {
+      "id": "music-join-the-song-q1-v1",
+      "prompt": "In a typical pop song, which section returns with the same main lyrics and tune?",
+      "answers": [
+        "The introduction",
+        "The bridge",
+        "The chorus",
+        "The verse"
+      ],
+      "correctIndex": 2,
+      "hint": "It often carries the song\u2019s title.",
+      "reference": "Psalm 136:1-3",
+      "explanation": "A chorus commonly returns with stable lyrics and melody, whereas verses usually develop changing words and a bridge supplies contrast. Psalm 136 uses a recurring thanksgiving refrain. That repeated textual structure provides the analogy; no ancient pop-song arrangement or surviving melody is claimed.",
+      "factualSourceUrls": [
+        "https://online.berklee.edu/takenote/four-critical-listening-tips-for-songwriters/",
+        "https://online.berklee.edu/takenote/writing-bridges-for-your-songs-can-be-much-easier/"
+      ],
+      "contextSourceUrls": [
+        "https://ebible.org/eng-web/PSA136.htm"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/PSA.136.1-3?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/PSA.136.NIV",
+      "nivContentSha256": "2aa6e0a81bb5c84f3355edc262c5ad0a0a805008a9eeeb4d7f67242b9cbb7dd2",
+      "contextPassageId": "PSA.136.1-9",
+      "difficulty": {
+        "fact1to5": 1,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Easy opener. Repetition is visible in the reading but the musical label is not. Chorus/refrain are related, not universally interchangeable; the question deliberately specifies a typical pop song.",
+      "concept": "Recurring chorus and refrain structure",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    },
+    {
+      "id": "music-join-the-song-q2-v2",
+      "prompt": "What produces the rattling jingle when a tambourine is shaken?",
+      "answers": [
+        "The stretched drumhead",
+        "The wooden frame",
+        "The small loose metal discs",
+        "The taut cords holding the head"
+      ],
+      "correctIndex": 2,
+      "hint": "This part can keep sounding even on a tambourine with no drumhead.",
+      "reference": "1 Corinthians 13:1",
+      "explanation": "The loose metal discs, or jingles, sound when the tambourine moves. A head can add drum tone and the frame supports the parts; neither is the source of the characteristic jingle. Paul\u2019s gong and cymbal image provides a metallic-percussion association. His point is that eloquence without love is empty, not a lesson about tambourines.",
+      "factualSourceUrls": [
+        "https://philharmonia.co.uk/resources/instruments/percussion/",
+        "https://pearldrum.com/en/products/percussion/tambourines/quickmount-tambourine-steel-jingles"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/1CO.13.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/1CO.13.1?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/1CO.13.NIV",
+      "nivContentSha256": "934b309b256426ed3e0f0319016a943772b849fb112261b3485f4a833fa95637",
+      "contextPassageId": "1CO.13.1-7",
+      "difficulty": {
+        "fact1to5": 1,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Replacement adds instrument construction rather than a second form-definition question. Drumhead and frame are actual components; cords are a plausible drum-construction misconception, not universal tambourine construction. Reading suggests metallic sound but does not identify discs; check whether the association is strong enough. The headless-instrument hint supplies a separate elimination step; benefit unmeasured.",
+      "concept": "Tambourine metal jingles versus drumhead",
+      "lineage": {
+        "kind": "replacement",
+        "historicalLedgerChecked": true,
+        "replaces": "music-join-the-song-q2-v1",
+        "reason": "Replace near-verbatim call-and-response definition and repetitive structure."
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    },
+    {
+      "id": "music-join-the-song-q3-v3",
+      "prompt": "Which musical term has its roots in the Italian name for the instrument in this verse?",
+      "answers": [
+        "Legato",
+        "Arpeggio",
+        "Vibrato",
+        "Staccato"
+      ],
+      "correctIndex": 1,
+      "hint": "A pianist uses this to play a chord\u2019s notes one after another.",
+      "reference": "Psalm 147:7",
+      "explanation": "Arpeggio comes through Italian arpeggiare, associated with playing the harp, from arpa, the Italian name for a harp. In present musical use it describes sounding a chord\u2019s notes in sequence. The other choices refer to smooth connection, pitch fluctuation, or detached articulation. The psalm names the instrument in a call to grateful praise; it does not prescribe an arpeggio or any particular modern performance technique.",
+      "factualSourceUrls": [
+        "https://www.merriam-webster.com/dictionary/arpeggio",
+        "https://www.merriam-webster.com/dictionary/legato",
+        "https://www.merriam-webster.com/dictionary/vibrato",
+        "https://www.merriam-webster.com/dictionary/staccato"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/PSA.147.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/PSA.147.7?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/PSA.147.NIV",
+      "nivContentSha256": "bee742d01209e2380651632c8ebc2534e056f4d0d5c760fc289bfb75e688a512",
+      "contextPassageId": "PSA.147.1-9",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Replaces held trumpet/lip-mechanism question with an exact word-origin connection. Reading supplies harp without the stem naming it. Four common Italian musical terms; the harp/arpa sound resemblance can support inference. Paid piano example supplies a separate modern-use route, with no measured benefit claimed. Terminology may be harder for non-musicians; author level3 before reading and2 after is a hypothesis. Distinct from Challenger tacet/psalm137 silence and current chorus/percussion/song questions. No assertion that every harp passage describes arpeggios.",
+      "concept": "Arpeggio word origin and harp",
+      "lineage": {
+        "kind": "replacement",
+        "previousQuestionId": "music-join-the-song-q3-v1",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "coordinatorDecision": {
+        "recordedAt": "2026-09-06T22:08:50.572356+00:00",
+        "decision": "Advance to independent verification and local playtest; not final approval.",
+        "caveat": "Preserve adjacent distractors and source/context caveats. Moby-Dick hint remains strong/easy; huge fish is not identified as a whale."
+      }
+    },
+    {
+      "id": "music-join-the-song-q4-v1",
+      "prompt": "Which Handel oratorio includes the chorus \u201cFor unto us a Child is born\u201d?",
+      "answers": [
+        "Messiah",
+        "Saul",
+        "Israel in Egypt",
+        "Judas Maccabaeus"
+      ],
+      "correctIndex": 0,
+      "hint": "The same work contains the famous Hallelujah chorus.",
+      "reference": "Isaiah 9:6-7",
+      "explanation": "The chorus belongs to Handel\u2019s Messiah. The libretto draws this movement from Isaiah\u2019s royal-child passage, so the reading is a direct artistic source rather than an attached theme. The other options are different Handel oratorios. The paid hint supplies a second recognizable movement.",
+      "factualSourceUrls": [
+        "https://data.carnegiehall.org/works/51657/about",
+        "https://lsolive.lso.co.uk/products/lso0607-handel",
+        "https://handelandhaydn.org/messiah-online/"
+      ],
+      "contextSourceUrls": [
+        "https://ebible.org/eng-web/ISA09.htm"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/ISA.9.6-7?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/ISA.9.NIV",
+      "nivContentSha256": "77a9a921b53220b20cf810ba49a6c176ded079dba0d8b3399f0948dc918e59df",
+      "contextPassageId": "ISA.9.1-7",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "The movement title is a public-domain historical title, not stored NIV passage text. Only that title is quoted; no song lyrics are supplied. Explain the work\u2019s Christian reading without erasing Isaiah\u2019s royal promise in context. No claim every performance follows identical numbering.",
+      "concept": "Handel Messiah and Isaiah source text",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    },
+    {
+      "id": "music-join-the-song-q5-v1",
+      "prompt": "Which band had a 1965 hit with a song adapted from Ecclesiastes?",
+      "answers": [
+        "The Beatles",
+        "The Beach Boys",
+        "The Animals",
+        "The Byrds"
+      ],
+      "correctIndex": 3,
+      "hint": "Think of folk rock with a chiming electric twelve-string guitar.",
+      "reference": "Ecclesiastes 3:1-8",
+      "explanation": "The Byrds recorded Pete Seeger\u2019s Turn! Turn! Turn!, whose adapted text comes from Ecclesiastes. The passage can prompt recognition of the song; identifying the band adds a music-history step. The other groups are plausible contemporary bands but not the performer of this particular hit. The reading remains NIV; the historic lyric\u2019s older English wording is not substituted.",
+      "factualSourceUrls": [
+        "https://www.officialcharts.com/songs/byrds-turn-turn-turn-to-everything-there-is-a-season/",
+        "https://www.rockhall.com/wp-content/uploads/2024/03/The_Byrds_1991.pdf",
+        "https://www.rhino.com/article/the-byrds"
+      ],
+      "contextSourceUrls": [
+        "https://ebible.org/eng-web/ECC03.htm"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/ECC.3.1-8?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/ECC.3.NIV",
+      "nivContentSha256": "5c75e782febc17fc255ec143bf59833243481289a5baaddcd548b0c6a7a25044",
+      "contextPassageId": "ECC.3.1-10",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "The full passage is eight verses and deliberately provides recognition cues without naming the band. No new lyric quotation stored. Hint usefulness depends on knowledge of the band\u2019s sound; do not assume it reduces difficulty for everyone. Other bands also used twelve-string guitars, so this is a nudge, not unique proof.",
+      "concept": "Byrds Ecclesiastes adaptation",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    }
+  ]
+}

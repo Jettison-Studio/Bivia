@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-09-06T19:47:24.542Z",
+  "source": "docs/content/editorial/history-clever-tools.draft.json",
+  "draftId": "history-clever-tools-20260906-v2",
+  "importedQuestionCount": 5,
+  "staticHelperErrors": [
+    "Choose a category."
+  ],
+  "interpretation": "Connected save explicitly accepts backend catalog categories; runtime save verification pending.",
+  "databaseSaveAttempted": false,
+  "editorialApproval": false
+}

@@ -1,0 +1,117 @@
+{
+  "draftId": "post-freeze-hint-repairs-1-20260906-v1",
+  "title": "Separate Challenger hint repairs",
+  "categoryId": "mixed",
+  "mode": "challenger",
+  "status": "draft",
+  "createdAt": "2026-09-06T22:19:11.515753+00:00",
+  "notAnImportReadyQuiz": true,
+  "questions": [
+    {
+      "id": "challenger-deeper-connections-q18-v5",
+      "prompt": "For a steady tone at the same pitch, what wave property increases as it gets louder?",
+      "answers": [
+        "Frequency",
+        "Wavelength",
+        "Speed through the air",
+        "Pressure amplitude"
+      ],
+      "correctIndex": 3,
+      "hint": "Picture giving a playground swing a stronger push on each trip, without a faster rhythm.",
+      "reference": "Exodus 19:19",
+      "explanation": "At fixed frequency and otherwise comparable conditions, greater sound-pressure amplitude corresponds to greater intensity and ordinarily greater perceived loudness. The reading says the trumpet sound grows louder; it does not specify frequency, waveform, or a physical mechanism for the divine event.",
+      "factualSourceUrls": [
+        "https://openstax.org/books/university-physics-volume-1/pages/17-3-sound-intensity"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/EXO.19.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/EXO.19.19?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/EXO.19.NIV",
+      "nivContentSha256": "63627be692d5e0c0c8dc2d42cb12a5317148d0e7f707e87866908643deb0b838",
+      "contextPassageId": "EXO.19.16-25",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 45
+      },
+      "reviewState": "unapproved_separate_hint_repair",
+      "authorFinding": "Four real wave properties. Same-pitch condition avoids confusing loudness with frequency. Different sound attribute from accepted Science timbre question. Hint names pressure swings and may closely paraphrase amplitude; evaluate clue value. Post-freeze hint repair: Uses a familiar motion analogy to distinguish strength of oscillation from repetition rate, without naming pressure or restating its definition. Not an exact model of pendulum timing. Test whether the extra analogy helps rather than adding another inference.",
+      "concept": "Sound pressure amplitude versus pitch and wave speed",
+      "lineage": {
+        "kind": "post_freeze_hint_only_repair",
+        "previousQuestionId": "challenger-deeper-connections-q18-v4",
+        "originalSlotId": "challenger-deeper-connections-q18-v4",
+        "frozenFinalPosition": 12,
+        "priorAuthoringNumber": 18,
+        "sourceArtifact": "challenger-deeper-connections.draft.json",
+        "note": "Question, answers, key, reference, explanation and evidence unchanged."
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "science",
+      "authorOrder": 12,
+      "priorAuthoringNumber": 18,
+      "difficultyBasis": "wave_property_distinction",
+      "hintRepair": {
+        "previousHint": "The pressure swings become larger, without happening more often.",
+        "reason": "Uses a familiar motion analogy to distinguish strength of oscillation from repetition rate, without naming pressure or restating its definition. Not an exact model of pendulum timing. Test whether the extra analogy helps rather than adding another inference.",
+        "coordinatorRequest": "Analogical nudge; previous hint directly restated the correct answer."
+      }
+    },
+    {
+      "id": "challenger-deeper-connections-q12-v4",
+      "prompt": "In an engraved intaglio print, where is the ink that forms the lines held?",
+      "answers": [
+        "In grooves cut below the surface",
+        "On raised ridges above the surface",
+        "Across unmarked flat areas",
+        "In openings through a mesh"
+      ],
+      "correctIndex": 0,
+      "hint": "Think about the residue left after wiping a scratched cutting board.",
+      "reference": "Job 19:23\u201324",
+      "explanation": "Intaglio engraving holds line-forming ink in incised grooves, which transfer it under pressure to paper. Job wishes for durable written or engraved words. The shared action is cutting into a surface; the passage does not describe printing from a metal plate.",
+      "factualSourceUrls": [
+        "https://www.metmuseum.org/perspectives/materials-and-techniques-printmaking-engraving"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/JOB.19.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/JOB.19.23-24?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/JOB.19.NIV",
+      "nivContentSha256": "6b3e82773cb5a10e828098fe8ccf8cdd2150029951149fe10f2d7da9900aeadf",
+      "contextPassageId": "JOB.19.21-29",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 45
+      },
+      "reviewState": "unapproved_separate_hint_repair",
+      "authorFinding": "Four real printmaking mechanisms. Distinct from category History relief-printing question, but intentionally related opposite technique; avoid neighboring sessions if repetition becomes noticeable. Hint provides wiping mechanism but is close to the answer. Post-freeze hint repair: Uses a household wiping analogy without naming ink, grooves, cuts or the correct option. The player must transfer the retained-residue idea to printing. Could still be strong; benefit remains unmeasured.",
+      "concept": "Intaglio ink in recessed engraved lines",
+      "lineage": {
+        "kind": "post_freeze_hint_only_repair",
+        "previousQuestionId": "challenger-deeper-connections-q12-v3",
+        "originalSlotId": "challenger-deeper-connections-q12-v3",
+        "frozenFinalPosition": 14,
+        "priorAuthoringNumber": 12,
+        "sourceArtifact": "challenger-deeper-connections.draft.json",
+        "note": "Question, answers, key, reference, explanation and evidence unchanged."
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "media",
+      "authorOrder": 14,
+      "priorAuthoringNumber": 12,
+      "difficultyBasis": "mechanism_and_terminology",
+      "hintRepair": {
+        "previousHint": "Wiping the surface leaves ink sheltered in the cuts.",
+        "reason": "Uses a household wiping analogy without naming ink, grooves, cuts or the correct option. The player must transfer the retained-residue idea to printing. Could still be strong; benefit remains unmeasured.",
+        "coordinatorRequest": "Analogical nudge; previous hint directly restated the correct answer."
+      }
+    }
+  ]
+}

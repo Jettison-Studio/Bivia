@@ -1,0 +1,78 @@
+{
+  "checkedAt": "2026-09-06T19:06:39.342251+00:00",
+  "version": 111,
+  "provider": "YouVersion",
+  "licensedTextStored": false,
+  "passages": [
+    {
+      "usfm": "PSA.104.18",
+      "reference": "Psalms 104:18",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/PSA.104.18?format=text",
+      "httpStatus": 200,
+      "contentSha256": "31190ba4ead855fb9b4e9689b530207bbb22e76fd05706ab20fca6c3d6838c05"
+    },
+    {
+      "usfm": "PSA.104.14-23",
+      "reference": "Psalms 104:14-23",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/PSA.104.14-23?format=text",
+      "httpStatus": 200,
+      "contentSha256": "05ffbe73c7e0e74a55aa0d12f6442f705217e2781baaf564d9f66b7524740124"
+    },
+    {
+      "usfm": "LUK.17.37",
+      "reference": "Luke 17:37",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/LUK.17.37?format=text",
+      "httpStatus": 200,
+      "contentSha256": "adfacb26f429a7c9a45bd3747ab67bfa3e94a0c4692e99197ef5a3ff66cd33c7"
+    },
+    {
+      "usfm": "LUK.17.28-37",
+      "reference": "Luke 17:28-37",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/LUK.17.28-37?format=text",
+      "httpStatus": 200,
+      "contentSha256": "0ecfbb368f2d80dd06c6579483877872923bf07529133b5fa1b8bdd4a7e7f15b"
+    },
+    {
+      "usfm": "JHN.12.24",
+      "reference": "John 12:24",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JHN.12.24?format=text",
+      "httpStatus": 200,
+      "contentSha256": "92ccf8bf84360bd7bc5440fe5bff3b32e7fc63fdf5b8af082b839d02c569affe"
+    },
+    {
+      "usfm": "JHN.12.20-28",
+      "reference": "John 12:20-28",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JHN.12.20-28?format=text",
+      "httpStatus": 200,
+      "contentSha256": "2fb9cdd5ac1df77ba179238285aa557462fe21d428ca5858dcb244bfb3f376e7"
+    },
+    {
+      "usfm": "JER.8.7",
+      "reference": "Jeremiah 8:7",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JER.8.7?format=text",
+      "httpStatus": 200,
+      "contentSha256": "ccd26dc6ab51aee29fffb0f7ab1f30a2aa72d4b566f14e6246eb524a39375b7d"
+    },
+    {
+      "usfm": "JER.8.4-10",
+      "reference": "Jeremiah 8:4-10",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/JER.8.4-10?format=text",
+      "httpStatus": 200,
+      "contentSha256": "867b9e502babbc62f9ed370f6e32510afc5d7d77b998e7433e953d5923ee5898"
+    },
+    {
+      "usfm": "ISA.11.1-3",
+      "reference": "Isaiah 11:1-3",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/ISA.11.1-3?format=text",
+      "httpStatus": 200,
+      "contentSha256": "7931cb9862e338590b7c31fd3621a6a5aa9a8ae7ea862e31c91124bab4b1858b"
+    },
+    {
+      "usfm": "ISA.11.1-10",
+      "reference": "Isaiah 11:1-10",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/ISA.11.1-10?format=text",
+      "httpStatus": 200,
+      "contentSha256": "fb124fc9bd47a82506b7cdfb1b997f4fe24a3935dc348a881f61298820b3d6a4"
+    }
+  ]
+}

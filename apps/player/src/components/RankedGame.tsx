@@ -1,8 +1,10 @@
+import { startDaily } from "../lib/daily";
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import {
   ActivityIndicator,
   AppState,
   Pressable,
+  Modal,
   StyleSheet,
   View,
 } from "react-native";
@@ -12,6 +14,11 @@ import { modeLabels, type Mode } from "@bivia/core";
 import { useBivia } from "../lib/store";
 import {
   getAttempt,
+  readyQuestion,
+  continueQuestion,
+  useQuestionHint,
+  listCatalog,
+  type Catalog,
   startAttempt,
   submitAnswer,
   type AnswerRequest,
@@ -19,7 +26,8 @@ import {
   type RankedFeedback,
   type RankedQuestion,
 } from "../lib/remote";
-import { Button, Card, Heading, Icon, Notice, T, c, font, s } from "./ui";
+import { Button, Card, Heading, Icon, Notice, PointsUnit, T, c, font, s } from "./ui";
+import { VersePreview } from "./VersePreview";
 import { Page } from "./Page";
 
 type Feedback = { feedback: RankedFeedback; question: RankedQuestion | null };
@@ -32,16 +40,27 @@ const message = (error: unknown) =>
 export function RankedGame({
   quizId,
   mode = "category",
+  dailyRoundId,
+  attemptId,
+  viewResults = false,
 }: {
   quizId: string;
   mode?: Mode;
+  dailyRoundId?: string;
+  attemptId?: string;
+  viewResults?: boolean;
 }) {
   const { session } = useBivia();
   const [attempt, setAttempt] = useState<RankedAttempt | null>(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const [feedback, setFeedback] = useState<Feedback | null>(null);
+  const [resultsOpen, setResultsOpen] = useState(viewResults);
+  const [leaveOpen, setLeaveOpen] = useState(false);
   const [hintOpen, setHintOpen] = useState(false);
+  const [overview, setOverview] = useState<Catalog["quizzes"][number] | null>(null);
+  const [overviewError, setOverviewError] = useState("");
+  const [overviewLoading, setOverviewLoading] = useState(true);
   const [now, setNow] = useState(Date.now());
   const offset = useRef(0);
   const pending = useRef<AnswerRequest | null>(null);
@@ -55,6 +74,8 @@ export function RankedGame({
     if (state.current?.question?.id !== next.question?.id) setHintOpen(false);
     state.current = next;
     setAttempt(next);
+    setFeedback(next.feedback && next.reviewQuestion
+      ? { feedback: next.feedback, question: next.reviewQuestion } : null);
     setNow(Date.now() + offset.current);
   }, []);
 
@@ -64,8 +85,9 @@ export function RankedGame({
     setBusy(true);
     setError("");
     try {
-      const next = await startAttempt(quizId, mode);
+      const next = attemptId ? await getAttempt(attemptId) : dailyRoundId ? await startDaily(dailyRoundId) : await startAttempt(quizId, mode);
       accept(next);
+      if (!attemptId) router.setParams({ attempt: next.id });
       pending.current = null;
     } catch (failure) {
       if (alive.current) setError(message(failure));
@@ -73,11 +95,10 @@ export function RankedGame({
       locked.current = false;
       if (alive.current) setBusy(false);
     }
-  }, [quizId, mode, session?.user.id, accept]);
+  }, [quizId, mode, dailyRoundId, attemptId, session?.user.id, accept]);
 
   useEffect(() => {
     alive.current = true;
-    void initialize();
     const interval = setInterval(
       () => setNow(Date.now() + offset.current),
       100,
@@ -86,7 +107,26 @@ export function RankedGame({
       alive.current = false;
       clearInterval(interval);
     };
-  }, [initialize]);
+  }, []);
+
+  useEffect(() => { if (viewResults && attemptId) void initialize(); }, [viewResults, attemptId, initialize]);
+
+  const loadOverview = useCallback(async () => {
+    setOverviewLoading(true);
+    setOverviewError("");
+    try {
+      const catalog = await listCatalog();
+      if (!alive.current) return;
+      const quiz = catalog.quizzes.find(item => item.id === quizId);
+      if (!quiz) throw new Error("This trivia is not available right now.");
+      setOverview(quiz);
+    } catch (failure) {
+      if (alive.current) setOverviewError(message(failure));
+    } finally {
+      if (alive.current) setOverviewLoading(false);
+    }
+  }, [quizId]);
+  useEffect(() => { void loadOverview(); }, [loadOverview]);
 
   const sync = useCallback(async () => {
     const current = state.current;
@@ -97,8 +137,7 @@ export function RankedGame({
     try {
       const next = await getAttempt(current.id);
       accept(next);
-      if (alive.current && next.feedback)
-        setFeedback({ feedback: next.feedback, question: current.question });
+
       pending.current = null;
     } catch (failure) {
       if (alive.current) setError(message(failure));
@@ -135,12 +174,13 @@ export function RankedGame({
         const response = await submitAnswer(request);
         // An idempotent replay contains the original timestamp/state. Refresh it so
         // another device or a long network interruption cannot rewind the UI clock.
-        const next = retrying ? await getAttempt(current.id) : response;
+        let next = retrying ? await getAttempt(current.id) : response;
+        if (next.awaitingNext) next = await continueQuestion(current.id);
         accept(next);
         if (alive.current)
           setFeedback(
             response.feedback
-              ? { feedback: response.feedback, question: current.question }
+              ? { feedback: response.feedback, question: next.reviewQuestion ?? current.question }
               : null,
           );
         pending.current = null;
@@ -154,7 +194,39 @@ export function RankedGame({
     [accept],
   );
 
-  const previewSeconds = attempt
+  const nextQuestion = useCallback(async () => {
+    if (!attempt || locked.current) return;
+    locked.current = true; setBusy(true); setError("");
+    try { accept(await continueQuestion(attempt.id)); setFeedback(null); }
+    catch (failure) { setError(message(failure)); }
+    finally { locked.current = false; setBusy(false); }
+  }, [attempt?.id, accept]);
+
+  useEffect(() => {
+    if (!attempt || busy || error || leaveOpen || resultsOpen) return;
+    if (!attempt.awaitingNext && attempt.status !== "completed") return;
+    if (attempt.status === "completed") setResultsOpen(true);
+    else void nextQuestion();
+  }, [attempt?.id, attempt?.questionIndex, attempt?.awaitingNext, attempt?.status, busy, error, leaveOpen, resultsOpen, nextQuestion]);
+
+  async function revealHint() {
+    if (!attempt?.question || locked.current) return;
+    if (attempt.question.hintUsed) { setHintOpen(!hintOpen); return; }
+    locked.current = true; setBusy(true); setError("");
+    try { accept(await useQuestionHint(attempt.id, attempt.question.id)); setHintOpen(true); }
+    catch (failure) { setError(message(failure)); }
+    finally { locked.current = false; setBusy(false); }
+  }
+
+  async function beginCountdown() {
+    if (!attempt?.question || locked.current) return;
+    locked.current = true; setBusy(true); setError("");
+    try { accept(await readyQuestion(attempt.id, attempt.question.id)); }
+    catch (failure) { setError(message(failure)); }
+    finally { locked.current = false; setBusy(false); }
+  }
+
+  const previewSeconds = attempt && !attempt.readingScripture
     ? Math.max(
         0,
         Math.ceil((Date.parse(attempt.questionStartedAt) - now) / 1000),
@@ -163,10 +235,11 @@ export function RankedGame({
   const remaining = attempt?.deadlineAt
     ? Math.max(0, (Date.parse(attempt.deadlineAt) - now) / 1000)
     : null;
-  const preview = previewSeconds > 0;
+  const preview = attempt?.status === "active" && !attempt.awaitingNext && (attempt.readingScripture || previewSeconds > 0);
   useEffect(() => {
     if (
       attempt?.status === "active" &&
+      !attempt.awaitingNext &&
       remaining === 0 &&
       !busy &&
       !error &&
@@ -194,7 +267,7 @@ export function RankedGame({
           onPress={() =>
             router.push({
               pathname: "/auth",
-              params: { next: `/quiz/${quizId}?mode=${mode}` },
+              params: { next: `/quiz/${quizId}?mode=${mode}${dailyRoundId ? `&daily=${dailyRoundId}` : ""}${attemptId ? `&attempt=${attemptId}` : ""}` },
             })
           }
         >
@@ -202,24 +275,41 @@ export function RankedGame({
         </Button>
       </Page>
     );
+  if (!attempt && viewResults) return <Page narrow><Heading title="Your results" />{error ? <View style={s.stack}><Notice>{error}</Notice><Button onPress={() => void initialize()}>Try again</Button></View> : <ActivityIndicator accessibilityLabel="Loading results" color={c.primary} />}</Page>;
   if (!attempt)
     return (
       <Page narrow>
-        <Heading
-          title="Your ranked round"
-          subtitle="Preparing your questions…"
-        />
-        {busy && <ActivityIndicator color={c.primary} />}
-        {!!error && (
-          <View style={s.stack}>
-            <Notice>{error}</Notice>
-            <Button onPress={() => void initialize()}>Try again</Button>
+        <Button variant="ghost" icon="arrow-back" onPress={() => router.push("/")}>Back to trivia</Button>
+        <Card style={{ padding: 32, marginTop: 20 }}>
+          <View style={[styles.trophy, { marginBottom: 22 }]}>
+            <Icon name={mode === "timed" ? "timer-outline" : mode === "challenger" ? "trophy-outline" : "help-circle-outline"} size={32} color={c.primary} />
           </View>
-        )}
+          <T style={[s.label, { color: c.primary, marginBottom: 8 }]}>{modeLabels[mode]}</T>
+          <T accessibilityRole="header" style={s.h1}>{overview?.title ?? "Your daily trivia"}</T>
+          {!!overview?.description && <T style={{ color: c.muted, marginTop: 12 }}>{overview.description}</T>}
+          <View style={{ marginVertical: 25, gap: 16 }}>
+            {overview && <T>{overview.question_count} questions. Four choices. One curious you.</T>}
+            <View style={s.row}><Icon name="book-outline" color={c.primary} /><T style={{ flex: 1 }}>Read the Scripture at your pace. Tap “I’m ready” to begin.</T></View>
+            <View style={s.row}><Icon name="timer-outline" color={c.primary} /><T style={{ flex: 1 }}>{mode === "timed" ? "The clock gets faster as you go." : "Answer within 30 seconds for the extra point."}</T></View>
+            <T style={s.small}>Reopening the Bible hint costs 1 point per question.</T>
+            {mode === "challenger" && <T>Five wrong answers end the challenge.</T>}
+            {!!attemptId && <T style={s.small}>Pick up where you left off.{mode === "timed" ? " If the current question expired, you’ll review it before starting the next." : ""}</T>}
+          </View>
+          {overviewLoading && <ActivityIndicator color={c.primary} />}
+          {!!(error || overviewError) && <Notice>{error || overviewError}</Notice>}
+          {overviewError ? <Button onPress={() => void loadOverview()}>Try again</Button> :
+            <Button disabled={busy || overviewLoading || !overview} icon="arrow-forward" onPress={() => void initialize()}>
+              {busy ? "Opening…" : attemptId ? "Continue round" : "Start trivia"}
+            </Button>}
+        </Card>
       </Page>
     );
 
   const question = attempt.question;
+  const questionDuration = attempt.deadlineAt
+    ? (Date.parse(attempt.deadlineAt) - Date.parse(attempt.questionStartedAt)) / 1000 : 30;
+  const secondsLeft = remaining ?? Math.max(0, 30 - (now - Date.parse(attempt.questionStartedAt)) / 1000);
+  const timePercent = Math.max(0, Math.min(100, secondsLeft / Math.max(0.1, questionDuration) * 100));
   const originalClue = question?.hintReference.includes("Original clue (not a Bible quotation)") ?? false;
   const feedbackText = feedback
     ? feedback.feedback.timedOut
@@ -230,10 +320,6 @@ export function RankedGame({
           ? "That question is complete."
           : "Not quite. Try another answer."
     : "";
-  const correctAnswer =
-    feedback?.feedback.resolved && feedback.feedback.correctIndex !== undefined
-      ? feedback.question?.options[feedback.feedback.correctIndex]
-      : undefined;
   return (
     <Page narrow>
       <View
@@ -242,12 +328,12 @@ export function RankedGame({
         <Button
           variant="ghost"
           icon="arrow-back"
-          onPress={() => router.push("/")}
+          onPress={() => setLeaveOpen(true)}
         >
-          Trivia
+          Exit
         </Button>
         <T style={styles.badge}>
-          RANKED · {modeLabels[attempt.mode].toUpperCase()}
+          {modeLabels[attempt.mode]}
         </T>
       </View>
       {!!error && (
@@ -270,7 +356,7 @@ export function RankedGame({
           </Button>
         </View>
       )}
-      {feedback && (
+      {feedback && !feedback.feedback.resolved && !preview && attempt.status === "active" && (
         <View
           accessibilityLiveRegion="polite"
           style={[
@@ -290,20 +376,21 @@ export function RankedGame({
           >
             {feedbackText}
           </T>
-          {correctAnswer && !feedback.feedback.correct && (
-            <T style={s.small}>Answer: {correctAnswer}</T>
-          )}
-          {!!feedback.feedback.explanation && (
-            <T style={s.small}>{feedback.feedback.explanation}</T>
-          )}
         </View>
       )}
+      {leaveOpen && <Card style={{ marginBottom: 20, gap: 16 }}>
+        <T style={s.h2}>Leave this round?</T>
+        <T>Your progress is saved.{attempt.mode === "timed" ? " The current question’s clock keeps running." : ""}</T>
+        <Button onPress={() => setLeaveOpen(false)}>Keep playing</Button>
+        <Button variant="ghost" onPress={() => router.replace("/")}>Leave round</Button>
+      </Card>}
+      {question && <VersePreview onExit={() => router.replace("/")} visible={preview} verse={question.hint} reference={question.hintReference} seconds={previewSeconds} reading={attempt.readingScripture} onReady={() => void beginCountdown()} busy={busy} error={error} />}
       {attempt.status === "completed" ? (
         <Card style={{ alignItems: "center", gap: 20, paddingVertical: 42 }}>
           <View style={styles.trophy}>
             <Icon name="trophy-outline" size={40} color={c.primary} />
           </View>
-          <T style={s.h1}>Round complete!</T>
+          <T accessibilityRole="header" style={s.h1}>Round complete!</T>
           <T
             style={{
               fontSize: 62,
@@ -313,7 +400,7 @@ export function RankedGame({
             }}
           >
             {attempt.score}
-            <T style={{ color: c.muted }}> pts</T>
+            <PointsUnit />
           </T>
           <T style={{ textAlign: "center", color: c.muted }}>
             Your score is saved.
@@ -328,7 +415,7 @@ export function RankedGame({
           <Button onPress={() => router.replace("/")}>Back to trivia</Button>
         </Card>
       ) : (
-        question && (
+        question && attempt.status === "active" && !attempt.awaitingNext && (
           <>
             <View
               style={[
@@ -357,7 +444,7 @@ export function RankedGame({
                 {Math.max(0, 5 - attempt.wrongCount)} mistakes remaining
               </T>
             )}
-            <Card style={{ marginBottom: 20, gap: 18 }}>
+            <View style={{ marginBottom: 20, gap: 24 }}>
               {preview ? (
                 <>
                   <View style={s.row}>
@@ -387,12 +474,15 @@ export function RankedGame({
                       {remaining !== null
                         ? `${remaining.toFixed(1)}s left`
                         : now - Date.parse(attempt.questionStartedAt) < 30000
-                          ? "Speed bonus active"
+                          ? `${Math.max(0, Math.ceil(30 - (now - Date.parse(attempt.questionStartedAt)) / 1000))}s · speed bonus`
                           : "Keep going — you can still earn points"}
                     </T>
                     {busy && (
                       <ActivityIndicator size="small" color={c.primary} />
                     )}
+                  </View>
+                  <View accessibilityRole="progressbar" accessibilityLabel="Time remaining" accessibilityValue={{ min: 0, max: 100, now: Math.round(timePercent) }} style={[styles.progress, { marginBottom: 0, height: 7 }]}>
+                    <View style={{ height: 7, backgroundColor: remaining !== null && remaining < 5 ? c.pink : c.primary, width: `${timePercent}%` }} />
                   </View>
                   <T
                     accessibilityRole="header"
@@ -452,22 +542,26 @@ export function RankedGame({
                   <Button
                     variant="secondary"
                     icon="book-outline"
-                    onPress={() => setHintOpen(!hintOpen)}
+                    disabled={busy || remaining === 0}
+                    onPress={() => void revealHint()}
                   >
-                    {hintOpen ? "Hide Bible hint" : "Show Bible hint"}
+                    {hintOpen ? "Hide Bible hint" : question.hintUsed ? "Bible hint" : "Bible hint · −1 point"}
                   </Button>
-                  {hintOpen && (
-                    <View style={{ gap: 8 }}>
-                      <T>{originalClue ? question.hint : `“${question.hint}”`}</T>
-                      <T style={s.small}>{question.hintReference}</T>
+                  <Modal visible={hintOpen && !preview} transparent animationType="fade" onRequestClose={() => setHintOpen(false)}>
+                    <View style={{ flex: 1, backgroundColor: "#10091dbb", justifyContent: "center", padding: 24 }}>
+                      <Card style={{ alignSelf: "center", width: "100%", maxWidth: 560, gap: 20 }}>
+                        <T style={s.h2}>{originalClue ? "Your clue" : "Bible hint"}</T>
+                        <T style={{ fontSize: 22, lineHeight: 32 }}>{originalClue ? question.hint : `“${question.hint}”`}</T>
+                        <T style={s.small}>{question.hintReference}</T>
+                        <T style={s.small}>1 point used{attempt.mode === "timed" ? " · The clock is still running" : ""}</T>
+                        <Button onPress={() => setHintOpen(false)}>Back to question</Button>
+                      </Card>
                     </View>
-                  )}
+                  </Modal>
                 </>
               )}
-            </Card>
-            <T style={[s.small, { textAlign: "center" }]}>
-              Your answers and points are verified as you play.
-            </T>
+            </View>
+
           </>
         )
       )}

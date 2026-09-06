@@ -1,0 +1,10 @@
+{
+  "checkedAt": "2026-09-06T22:09:10.117Z",
+  "draftId": "timed-quick-connections-20260906-v5",
+  "questionCount": 10,
+  "staticHelperErrors": [],
+  "runtimeSaveVerified": false,
+  "editorialApproval": false,
+  "databaseSaveAttempted": false,
+  "note": "Static category-helper mismatch does not establish a connected save blocker. Parser regenerates IDs and discards editorial evidence; preserve source ID mapping."
+}

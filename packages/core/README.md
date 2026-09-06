@@ -6,7 +6,7 @@ All bundled questions are development practice examples with intentionally publi
 
 Bible hints are short KJV excerpts used as associative clues. Sample content should receive editorial review before publication.
 
-`timeLimit` returns the 30-second bonus window in category/challenger mode. In timed mode it returns the per-question deadline: 30, 25, 20, 15, 10, 5, then 2.5 seconds. Only timed mode should expire a question automatically.
+`timeLimit` returns the 30-second bonus window in category/challenger mode. In timed mode it returns the per-question deadline: 30, 28, 26, 24, 22, 20, 18, 16, then a 15-second minimum. Only timed mode should expire a question automatically.
 
 `validateQuiz` returns an array of validation messages (empty means valid). It is feedback for authors, not a replacement for backend authorization or validation.
 

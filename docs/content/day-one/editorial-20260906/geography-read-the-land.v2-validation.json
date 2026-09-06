@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-09-06T18:01:33.928Z",
+  "draftId": "geo-read-the-land-20260906-v2",
+  "parser": "/Users/lukefrederick/Projects/REACT/Bivia/apps/admin/src/workspace.ts",
+  "parsedQuestions": 5,
+  "structuralErrors": [],
+  "passageChecks": 10,
+  "priorVersionPreserved": true,
+  "editorialShortfall": 0,
+  "humanApproved": false,
+  "wordCounts": [
+    {
+      "id": "geo-read-the-land-q1-v2",
+      "stem": 11,
+      "hint": 12
+    },
+    {
+      "id": "geo-read-the-land-q2-v2",
+      "stem": 13,
+      "hint": 14
+    },
+    {
+      "id": "geo-read-the-land-q3-v2",
+      "stem": 10,
+      "hint": 13
+    },
+    {
+      "id": "geo-read-the-land-q4-v2",
+      "stem": 14,
+      "hint": 11
+    },
+    {
+      "id": "geo-read-the-land-q5-v2",
+      "stem": 15,
+      "hint": 13
+    }
+  ],
+  "categoryValidationInterpretation": "Static helper mismatch; connected save path explicitly accepts backend catalog categories; runtime save verification pending. Standalone validate() errors do not prove a connected-save blocker.",
+  "connectedSaveSourceInspected": "/Users/lukefrederick/Projects/REACT/Bivia/apps/admin/src/App.tsx:164",
+  "runtimeSaveVerified": false
+}

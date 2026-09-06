@@ -1,0 +1,247 @@
+{
+  "id": "6ddd7c42-b721-4384-b422-6de658934629",
+  "draftId": "guest-small-discoveries-20260906-v3",
+  "title": "Small discoveries",
+  "subtitle": "Everyday things worth a second look.",
+  "description": "Everyday things worth a second look.",
+  "categoryId": "mixed",
+  "mode": "category",
+  "status": "draft",
+  "reviewState": "four_reviewed_one_held_guest_placement",
+  "publishedAt": "",
+  "scheduledAt": "",
+  "updatedAt": "2026-09-06T21:01:39.227667+00:00",
+  "editorialDate": "2026-09-06",
+  "translation": "NIV",
+  "sourceMode": "references",
+  "hintKind": "original_clue",
+  "passageId": null,
+  "revision": 3,
+  "verification": {
+    "factsResearched": true,
+    "allOptionsReviewed": true,
+    "publicDomainContextChecked": false,
+    "exactNivRangesRetrieved": true,
+    "surroundingNivContextRetrieved": true,
+    "fullReadingLeakageReviewed": true,
+    "retrievalMethod": "Configured YouVersion version 111; hashes only retained",
+    "localPlayerRetrievalTested": false,
+    "blindPlaytestCompleted": false,
+    "engineGatesRun": false,
+    "humanApproved": false,
+    "publicationAuthorized": false,
+    "editorialShortfall": 1,
+    "editorialRecommendation": "Five proposals awaiting review; no final approval or measured hint benefit.",
+    "passageEvidenceFile": "guest-small-discoveries.v1-passage-checks.json",
+    "additionalPassageEvidenceFiles": [
+      "guest-small-discoveries.v2-passage-checks.json"
+    ]
+  },
+  "questions": [
+    {
+      "id": "guest-small-discoveries-q1-v1",
+      "prompt": "How does a hot griddle mainly transfer heat into dough touching its surface?",
+      "answers": [
+        "Convection",
+        "Conduction",
+        "Radiation",
+        "Evaporation"
+      ],
+      "correctIndex": 1,
+      "hint": "Focus on the place where the dough meets the cooking surface.",
+      "reference": "Leviticus 2:5",
+      "explanation": "Heat passes by conduction across the contact between a hot cooking surface and dough. The reading describes a grain offering prepared on a griddle; it supplies a concrete example of contact cooking, not a physics explanation.",
+      "factualSourceUrls": [
+        "https://www.kingarthurbaking.com/blog/2021/10/04/how-to-turn-any-home-oven-into-a-pizza-oven"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/LEV.2.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/LEV.2.5?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/LEV.2.NIV",
+      "nivContentSha256": "f48b1e6a8694c1a5f7e8a8aa6d28246147b78d9fe481b3ae3acc6e98c86c11af",
+      "contextPassageId": "LEV.2.4-9",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Easy terminology transfer. Hint directs attention to contact but may add little for players who already know conduction; benefit unmeasured. Rejected 1 Kings 19:6 pairing because NIV specifies coals, not a baking stone.",
+      "concept": "contact heat transfer from griddle to dough",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "science"
+    },
+    {
+      "id": "guest-small-discoveries-q2-v1",
+      "prompt": "Why do you see distant lightning before hearing its thunder?",
+      "answers": [
+        "Thunder begins several seconds after the flash",
+        "The light has a shorter distance to travel",
+        "Light travels much faster than sound",
+        "Your ears take several seconds to detect sound"
+      ],
+      "correctIndex": 2,
+      "hint": "The flash and thunder originate in the same lightning event.",
+      "reference": "Job 37:3\u20134",
+      "explanation": "Light reaches an observer far faster than the sound of thunder. Elihu's speech places the flash before the roar, offering an observable sequence; it does not state a measured speed of either wave.",
+      "factualSourceUrls": [
+        "https://www.weather.gov/fgz/Lightning"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/JOB.37.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/JOB.37.3-4?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/JOB.37.NIV",
+      "nivContentSha256": "ac45266694d4c47d7426faa447d1e2b8c2d5232dd2b0f22874ef959c8743050b",
+      "contextPassageId": "JOB.37.1-8",
+      "difficulty": {
+        "fact1to5": 1,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Easy causal explanation with competing timing, distance and perception hypotheses. Hint weakens the delayed-origin option. Adjacent passage reused from held Entertainment thunder-sheet question; different concept, but avoid both in a final session.",
+      "concept": "lightning thunder arrival speeds",
+      "lineage": {
+        "kind": "new_concept_with_held_passage_overlap",
+        "historicalLedgerChecked": true,
+        "relatedHeldQuestion": "entertainment-behind-the-curtain-q5-v2"
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "science"
+    },
+    {
+      "id": "guest-small-discoveries-q3-v1",
+      "prompt": "In traditional winnowing, what carries the loose chaff away from the grain?",
+      "answers": [
+        "Moving air",
+        "Flowing water",
+        "A mesh screen",
+        "Rotating grindstones"
+      ],
+      "correctIndex": 0,
+      "hint": "The lighter pieces travel farther from where the mixture falls.",
+      "reference": "Luke 3:17",
+      "explanation": "Winnowing uses moving air to separate lighter chaff from heavier grain. John's image distinguishes gathering grain from disposing of chaff; burning follows separation and is not the separating mechanism. The surrounding passage concerns judgment, not instructions for farming.",
+      "factualSourceUrls": [
+        "https://www.fao.org/4/x0039e/X0039E06.htm"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/LUK.3.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/LUK.3.17?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/LUK.3.NIV",
+      "nivContentSha256": "5143c6d1b3f53b50a1cc187345cd2d799c6d0d1fc83816a9f8626956cbed3a33",
+      "contextPassageId": "LUK.3.15-20",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "All choices are real processing mechanisms. Reading names the operation but does not name the answer; hint supplies weight contrast. Familiarity with winnowing still affects difficulty.",
+      "concept": "winnowing airflow separates chaff",
+      "lineage": {
+        "kind": "new_concept",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "food"
+    },
+    {
+      "id": "guest-small-discoveries-q4-v3",
+      "prompt": "Which transparent film is commonly used for conservation sleeves for stable ink documents?",
+      "answers": [
+        "Cellophane",
+        "Flexible PVC",
+        "Uncoated polyester",
+        "Cellulose nitrate"
+      ],
+      "correctIndex": 2,
+      "hint": "It is sold under names such as Mylar and Melinex.",
+      "reference": "Jeremiah 32:14",
+      "explanation": "Uncoated polyester is a common stable film for document sleeves. Flexible PVC is unsuitable for long-term conservation storage. Jeremiah specifies an enclosure to keep documents for a long time; this supports choosing the container carefully, without prescribing a modern plastic. Flaking or friable media need different handling because plastic static can disturb them.",
+      "factualSourceUrls": [
+        "https://www.archives.gov/preservation/holdings-maintenance/paper",
+        "https://www.canada.ca/en/conservation-institute/services/conservation-preservation-publications/technical-bulletins/products-used-preventive-conservation.html"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/JER.32.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/JER.32.14?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/JER.32.NIV",
+      "nivContentSha256": "3d18873c672f6018283afcc8701822d0edd4795a335b1e39d7ee3b4b51713c5b",
+      "contextPassageId": "JER.32.9-15",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "author_hold",
+      "authorFinding": "Replaces adjective-loaded household-location question with four real transparent films and a PVC-sleeve misconception. Reading supplies long-term document enclosure purpose, not polymer chemistry. More specialized than prior guest question; test familiarity and brand-name clue usefulness. No final clearance. Coordinator held for guest placement: specialized polymer and brand vocabulary is not a welcoming everyday discovery; stop refining this narrow concept.",
+      "concept": "Stable polyester document sleeves versus unsuitable plastic films",
+      "lineage": {
+        "kind": "replacement_of_held_question",
+        "previousQuestionId": "guest-small-discoveries-q4-v1",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "media"
+    },
+    {
+      "id": "guest-small-discoveries-q5-v2",
+      "prompt": "Which device turns the trees into speaking characters in Jotham\u2019s story?",
+      "answers": [
+        "Alliteration",
+        "Flashback",
+        "Personification",
+        "Onomatopoeia"
+      ],
+      "correctIndex": 2,
+      "hint": "It also lets a cartoon teapot argue with its owner.",
+      "reference": "Judges 9:8\u201315",
+      "explanation": "Personification gives nonhuman things human qualities or actions. Jotham makes trees speak and choose a ruler in a warning about kingship. The trees are characters in his story, not a claim about plant behavior.",
+      "factualSourceUrls": [
+        "https://poets.org/glossary/personification"
+      ],
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/JDG.9.NIV"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/JDG.9.8-15?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/JDG.9.NIV",
+      "nivContentSha256": "95870051394a2bbf2bf9b23a826593b739185db1145f4419a49f067a2806bc90",
+      "contextPassageId": "JDG.9.7-16",
+      "difficulty": {
+        "fact1to5": 1,
+        "afterFullReading1to5": 1,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Replaces held fish question. Reading supplies the actual example; hint offers a second familiar example. Easy literary terminology with four real devices. Eight-verse display may be long for an easy guest item; assess reading burden. Full reading contains no answer term.",
+      "concept": "Personification through speaking plant characters",
+      "lineage": {
+        "kind": "replacement_of_held_question",
+        "previousQuestionId": "guest-small-discoveries-q5-v1",
+        "historicalLedgerChecked": true
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "categoryId": "entertainment"
+    }
+  ],
+  "delivery": "device_local_guest"
+}

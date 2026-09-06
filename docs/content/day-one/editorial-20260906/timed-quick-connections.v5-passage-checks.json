@@ -1,0 +1,23 @@
+{
+  "translation": "NIV",
+  "bibleId": 111,
+  "licensedTextStored": false,
+  "checks": [
+    {
+      "passageId": "PRO.16.33",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/PRO.16.33?format=text",
+      "httpStatus": 200,
+      "reference": "Proverbs 16:33",
+      "contentSha256": "d50ec565f7468f363c06a5c4e9a3f77037d65325dc23ebf672ae10c5efd20fae",
+      "checkedAt": "2026-09-06T22:02:55.649601+00:00"
+    },
+    {
+      "passageId": "PRO.16.27-33",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/PRO.16.27-33?format=text",
+      "httpStatus": 200,
+      "reference": "Proverbs 16:27-33",
+      "contentSha256": "cbc5a5c767725f3bc07b5e74f9b886f7240ead58551ac8617f1890337a109c89",
+      "checkedAt": "2026-09-06T22:02:56.230483+00:00"
+    }
+  ]
+}

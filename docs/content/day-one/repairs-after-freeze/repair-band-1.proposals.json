@@ -1,0 +1,161 @@
+{
+  "draftId": "post-freeze-repair-band-1-20260906-v1",
+  "title": "Separate post-freeze repair proposals",
+  "categoryId": "mixed",
+  "mode": "challenger",
+  "status": "draft",
+  "createdAt": "2026-09-06T22:16:22.662046+00:00",
+  "reviewState": "unapproved_proposals_only",
+  "notAnImportReadyQuiz": true,
+  "scope": "Three replacement proposals spanning two modes; coordinator integrates accepted candidates separately. Frozen coverage and manifests unchanged.",
+  "questions": [
+    {
+      "id": "challenger-deeper-connections-q17-v5",
+      "categoryId": "entertainment",
+      "prompt": "Which Shakespeare tragedy disguises an advancing army in a way that resembles the man's first description of people?",
+      "answers": [
+        "Hamlet",
+        "King Lear",
+        "Macbeth",
+        "Julius Caesar"
+      ],
+      "correctIndex": 2,
+      "hint": "Three witches give the title character misleading assurances about his future.",
+      "reference": "Mark 8:23\u201325",
+      "concept": "Macbeth: soldiers carrying branches make Birnam Wood appear to move",
+      "explanation": "In Macbeth, Malcolm's soldiers carry branches to conceal their numbers, making Birnam Wood appear to move toward Dunsinane. The man's initial tree-like perception of people provides a visual comparison. Mark describes restored sight; this does not imply camouflage in the healing account or claim that Shakespeare borrowed from it.",
+      "factualSourceUrls": [
+        "https://www.folger.edu/explore/shakespeares-works/macbeth/read/5/4/",
+        "https://www.rsc.org.uk/learn/schools-and-teachers/teacher-resources/signing-shakespeare-for-deaf-students/act-5"
+      ],
+      "difficulty": {
+        "fact1to5": 4,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 45
+      },
+      "authorFinding": "Concrete dramatic action, not word-definition or arithmetic. Reading supplies the distinctive moving-tree image omitted from the stem. All four choices are Shakespeare tragedies involving rulers and conflict. Witches hint is a separate strong recognition route. The full display includes eventual clear sight, preventing the first perception from becoming the conclusion. Needs playtest for title-recognition dependence. This is a proposed replacement for final Q5, not a claim that its difficulty belongs at Q5. Consider the middle/later band against other literary questions; avoid clustering with Golding. No duplicate Macbeth concept found in the editorial artifacts.",
+      "reviewState": "unapproved_separate_repair_proposal",
+      "hintKind": "original_clue",
+      "passageId": null,
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/MRK.8.23-25?format=text",
+      "nivContentSha256": "101cf1fd38f70e9caf28147384edaa6433b746d8b5418f8eb8e451b0961bbe0c",
+      "contextPassageId": "MRK.8.22-26",
+      "nivContextUrl": "https://www.bible.com/bible/111/MRK.8.NIV",
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/MRK.8.NIV"
+      ],
+      "lineage": {
+        "kind": "post_freeze_editorial_replacement",
+        "previousQuestionId": "challenger-deeper-connections-q17-v4",
+        "originalSlotId": "challenger-deeper-connections-q17-v4",
+        "frozenFinalPosition": 5,
+        "priorAuthoringNumber": 17,
+        "sourceArtifact": "challenger-deeper-connections.draft.json",
+        "frozenManifestSha256": "7aaa9d70c0a8d84bb7d2aabbec761453e1963f8f71aa8106d0f31265950edbbd",
+        "note": "Separate proposal only; does not replace the frozen artifact."
+      }
+    },
+    {
+      "id": "challenger-deeper-connections-q15-v4",
+      "categoryId": "science",
+      "prompt": "Which kitchen item releases a gas that can quickly tarnish the metal in these coins?",
+      "answers": [
+        "Dry table salt",
+        "A freshly cut hard-boiled egg",
+        "Uncooked white rice",
+        "Granulated white sugar"
+      ],
+      "correctIndex": 1,
+      "hint": "Think of the element associated with an egg's distinctive smell.",
+      "reference": "Luke 15:8\u201310",
+      "concept": "Hydrogen sulfide from a boiled egg tarnishes silver",
+      "explanation": "The coins identify silver. A freshly cut hard-boiled egg releases hydrogen sulfide, which can produce silver-sulfide tarnish. The parable concerns joy over repentance; it does not describe tarnished coins or a cleaning method.",
+      "factualSourceUrls": [
+        "https://www.canada.ca/en/conservation-institute/services/preventive-conservation/guidelines-collections/metal-objects/understanding-silver-tarnish.html"
+      ],
+      "difficulty": {
+        "fact1to5": 4,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 45
+      },
+      "authorFinding": "Reading identifies the metal, then the player connects it to household chemistry. Choices are familiar kitchen materials; the key needs no chemical vocabulary. The hint supplies a sulfur route. Evidence demonstrates freshly polished silver exposed to a freshly cut egg in a covered container; no universal tarnishing time claimed. Narrow question concerns a released gas, not every possible effect of salt or moisture. Modern chemistry is separate from the parable. Author difficulty is unmeasured; test whether the other kitchen choices remain credible. The old final Q20 slot is lineage only: consider moving this to the middle/later band instead of assuming it is the hardest. Luke15:5 already appears in Fitness, but this is a different parable and concept.",
+      "reviewState": "unapproved_separate_repair_proposal",
+      "hintKind": "original_clue",
+      "passageId": null,
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/LUK.15.8-10?format=text",
+      "nivContentSha256": "959f00feda4d7f9ea66642339aed26cda6c52c767bf1572d369bec1ede03b52f",
+      "contextPassageId": "LUK.15.1-10",
+      "nivContextUrl": "https://www.bible.com/bible/111/LUK.15.NIV",
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/LUK.15.NIV"
+      ],
+      "lineage": {
+        "kind": "post_freeze_editorial_replacement",
+        "previousQuestionId": "challenger-deeper-connections-q15-v3",
+        "originalSlotId": "challenger-deeper-connections-q15-v3",
+        "frozenFinalPosition": 20,
+        "priorAuthoringNumber": 15,
+        "sourceArtifact": "challenger-deeper-connections.draft.json",
+        "frozenManifestSha256": "7aaa9d70c0a8d84bb7d2aabbec761453e1963f8f71aa8106d0f31265950edbbd",
+        "note": "Separate proposal only; does not replace the frozen artifact."
+      }
+    },
+    {
+      "id": "timed-quick-connections-q10-v3",
+      "categoryId": "geography",
+      "prompt": "Which river is the main natural tributary of the sea named here?",
+      "answers": [
+        "Nile",
+        "Tigris",
+        "Euphrates",
+        "Jordan"
+      ],
+      "correctIndex": 3,
+      "hint": "It flows south from the Sea of Galilee.",
+      "reference": "Ezekiel 47:8",
+      "concept": "Jordan River feeds the Dead Sea",
+      "explanation": "The NIV names the Dead Sea. Its main natural river inflow is the Jordan. This is a fact about the real lake, not an identification of the vision's life-giving river with the Jordan.",
+      "factualSourceUrls": [
+        "https://www.nasa.gov/image-article/dead-sea-2/",
+        "https://oceancolor.gsfc.nasa.gov/outreach/ocsciencefocus/EthiopiaRedSeaNileRiver.pdf"
+      ],
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 20
+      },
+      "authorFinding": "Replaces comparative buoyancy with one place-to-river association. Exact NIV identifies the lake but does not name the answer. Four major regional rivers; Galilee hint gives an independent geographical route. Display shortened to one complete verse; full vision context read separately. The river in the vision comes from the sanctuary, so do not equate it with the real Jordan. Twenty seconds is an unmeasured question-phase target after self-paced full reading; neither this nor the former buoyancy question is justified for a 2.5-second tail. If the current timer stays, place only in an early 20\u201330-second slot and test. No timer code changed. Same passage family as held Q10 intentionally preserved.",
+      "reviewState": "unapproved_separate_repair_proposal",
+      "hintKind": "original_clue",
+      "passageId": null,
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/EZK.47.8?format=text",
+      "nivContentSha256": "24b5f1ba49a3683302de7b764acdd189f90f50b4e1a1892f7f713d330b962a0e",
+      "contextPassageId": "EZK.47.6-12",
+      "nivContextUrl": "https://www.bible.com/bible/111/EZK.47.NIV",
+      "contextSourceUrls": [
+        "https://www.bible.com/bible/111/EZK.47.NIV"
+      ],
+      "lineage": {
+        "kind": "post_freeze_editorial_replacement",
+        "previousQuestionId": "timed-quick-connections-q10-v2",
+        "originalSlotId": "timed-quick-connections-q10-v2",
+        "frozenFinalPosition": 10,
+        "priorAuthoringNumber": null,
+        "sourceArtifact": "timed-quick-connections.draft.json",
+        "frozenManifestSha256": "7aaa9d70c0a8d84bb7d2aabbec761453e1963f8f71aa8106d0f31265950edbbd",
+        "note": "Separate proposal only; does not replace the frozen artifact."
+      }
+    }
+  ],
+  "verification": {
+    "sourceReadByAuthor": true,
+    "exactNivAndWiderContextRead": true,
+    "licensedTextStored": false,
+    "independentVerificationComplete": false,
+    "runtimeSaveVerified": false,
+    "editorialApproval": false
+  }
+}

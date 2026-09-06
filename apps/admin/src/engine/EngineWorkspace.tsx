@@ -52,6 +52,7 @@ export function EngineWorkspace({
   const [error, setError] = useState("");
   const [notice, setNotice] = useState("");
   const [library, setLibrary] = useState(false);
+  const [showArchive, setShowArchive] = useState(false);
   const [automatic, setAutomatic] = useState(false);
   const [checking, setChecking] = useState(false);
   const [pendingCreate, setPendingCreate] = useState(false);
@@ -107,7 +108,7 @@ export function EngineWorkspace({
         } catch {
           /* An unavailable browser store does not prevent history access. */
         }
-        if (previous && rows.some((item) => item.id === previous)) {
+        if (previous && rows.some((item) => item.id === previous && !item.archived)) {
           const saved = await engineRpc<EngineRun>("get", { id: previous });
           if (current) setRun(saved);
         }
@@ -393,8 +394,9 @@ export function EngineWorkspace({
       ) : (
         <div className="engine-layout">
           <aside className="engine-history">
+            <button className="text-button" onClick={() => {setShowArchive(!showArchive); setRun(null);}}>{showArchive ? "Back to active runs" : "View archive"}</button>
             <div className="section-heading">
-              <h2>Recent runs</h2>
+              <h2>{showArchive ? "Archived runs" : "Recent runs"}</h2>
               <button
                 className="text-button"
                 disabled={busy}
@@ -403,8 +405,8 @@ export function EngineWorkspace({
                 Refresh
               </button>
             </div>
-            {history.length ? (
-              history.map((item) => (
+            {history.filter(item => !!item.archived === showArchive).length ? (
+              history.filter(item => !!item.archived === showArchive).map((item) => (
                 <button
                   className={`run-history-item ${run?.id === item.id ? "selected" : ""}`}
                   key={item.id}

@@ -1,0 +1,31 @@
+{
+  "translation": "NIV",
+  "bibleId": 111,
+  "licensedTextStored": false,
+  "checks": [
+    {
+      "passageId": "DAN.5.25-28",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/DAN.5.25-28?format=text",
+      "httpStatus": 200,
+      "reference": "Daniel 5:25-28",
+      "contentSha256": "ccab3a039900bd4e322432c0e56b1c104d31ed464bdd0b777bb61a18ea16cd6f",
+      "checkedAt": "2026-09-06T21:49:25.088656+00:00"
+    },
+    {
+      "passageId": "DAN.5.22-30",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/DAN.5.22-30?format=text",
+      "httpStatus": 200,
+      "reference": "Daniel 5:22-30",
+      "contentSha256": "cec84689cd0951c748fa66b21ebe95401be690c3d3016ada11bf59c0251043eb",
+      "checkedAt": "2026-09-06T21:49:25.523954+00:00"
+    },
+    {
+      "passageId": "DAN.5.1-6",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/DAN.5.1-6?format=text",
+      "httpStatus": 200,
+      "reference": "Daniel 5:1-6",
+      "contentSha256": "45120af9ad7c390266c32eb941bf8046437594cf61b85385db0f945d57888149",
+      "checkedAt": "2026-09-06T21:49:26.052328+00:00"
+    }
+  ]
+}

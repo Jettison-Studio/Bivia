@@ -1,0 +1,273 @@
+{
+  "id": "174fc581-08e7-4ef8-a5c5-a54dc17b36d2",
+  "draftId": "geo-read-the-land-20260906-v3",
+  "title": "Read the land",
+  "subtitle": "Read mountain slopes, navigate by stars, and follow the clues in a changing landscape.",
+  "description": "Read mountain slopes, navigate by stars, and follow the clues in a changing landscape.",
+  "categoryId": "geography",
+  "mode": "category",
+  "status": "draft",
+  "reviewState": "five_editorially_reviewed_awaiting_verification_and_playtest",
+  "publishedAt": "",
+  "scheduledAt": "",
+  "updatedAt": "2026-09-06T22:03:56.531146+00:00",
+  "editorialDate": "2026-09-06",
+  "translation": "NIV",
+  "sourceMode": "references",
+  "hintKind": "original_clue",
+  "passageId": null,
+  "verification": {
+    "factsResearched": true,
+    "allOptionsReviewed": true,
+    "publicDomainContextChecked": true,
+    "exactNivRangesRetrieved": true,
+    "surroundingNivContextRetrieved": true,
+    "fullReadingLeakageReviewed": true,
+    "retrievalMethod": "Configured YouVersion API, version 111; not the authenticated local Edge function",
+    "localPlayerRetrievalTested": false,
+    "blindPlaytestCompleted": false,
+    "engineGatesRun": false,
+    "humanApproved": false,
+    "publicationAuthorized": false,
+    "editorialShortfall": 0,
+    "editorialRecommendation": "Five editorial clearances for verification/playtest; no final approvals.",
+    "passageEvidenceFile": "focused-repairs-20260906.passage-checks.json",
+    "pendingRepairReviewQuestions": 0,
+    "needsWritingRevision": 0,
+    "passageEvidenceFiles": [
+      "geography-read-the-land.v2-passage-checks.json",
+      "focused-repairs-20260906.passage-checks.json"
+    ]
+  },
+  "questions": [
+    {
+      "id": "geo-read-the-land-q1-v2",
+      "prompt": "On a hiking map, which contour lines mark the steepest ground?",
+      "answers": [
+        "The thickest lines",
+        "The closest lines",
+        "The highest-numbered lines",
+        "The widest loops"
+      ],
+      "correctIndex": 1,
+      "hint": "Think of the gaps between contours as the treads of a staircase.",
+      "reference": "1 Samuel 14:13",
+      "explanation": "Closely spaced contours show a large elevation change over a short horizontal distance. Jonathan's demanding ascent is a natural connection to steep terrain; the story does not describe a map. Line thickness marks index contours, and high elevation alone does not establish steepness.",
+      "factualSourceUrls": [
+        "https://pubs.usgs.gov/gip/TopographicMapSymbols/topomapsymbols.pdf"
+      ],
+      "contextSourceUrls": [
+        "https://ebible.org/eng-web/1SA14.htm"
+      ],
+      "nivContextUrl": "https://www.bible.com/bible/111/1SA.14.NIV",
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/1SA.14.13?format=text",
+      "nivContentSha256": "fa814f3a248bee3c86f1291a35f43d557939764d645e28743c0a901ee24e0325",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "lineage": {
+        "kind": "revision",
+        "previousQuestionId": "geo-read-the-land-q1-v1",
+        "priorLineage": {
+          "kind": "intentional_revision",
+          "runId": "4582e7cb-2225-4cf4-b3f9-074b22813088",
+          "candidateId": "q3"
+        }
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    },
+    {
+      "id": "geo-read-the-land-q2-v2",
+      "prompt": "What can a sailor estimate from the North Star's height above the horizon?",
+      "answers": [
+        "Longitude",
+        "Compass error",
+        "Direction of travel",
+        "Latitude"
+      ],
+      "correctIndex": 3,
+      "hint": "As you sail toward the North Pole, the star appears higher in the sky.",
+      "reference": "Acts 27:20",
+      "explanation": "The North Star, Polaris, appears at an angle above the horizon approximately equal to the observer's northern latitude. In Acts, the loss of visible sun and stars supplies a connection to celestial navigation. The passage does not identify Polaris or the crew's method. Longitude, travel direction and compass error require other information.",
+      "factualSourceUrls": [
+        "https://vos.noaa.gov/MWL/aug_08/navigation_tools.shtml",
+        "https://www.ncei.noaa.gov/products/magnetic-declination",
+        "https://www.ncei.noaa.gov/products/world-magnetic-model"
+      ],
+      "contextSourceUrls": [
+        "https://www.biblegateway.com/passage/?search=Acts+27:18-26&version=KJV"
+      ],
+      "nivContextUrl": "https://www.bible.com/bible/111/ACT.27.NIV",
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/ACT.27.20?format=text",
+      "nivContentSha256": "d5b65edbe709bf5d97fd1b75b8fdcf8d449d4905db9f91b05174ffd86e350db8",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "lineage": {
+        "kind": "revision",
+        "previousQuestionId": "geo-read-the-land-q2-v1",
+        "priorLineage": {
+          "kind": "new_concept",
+          "note": "Other Acts 27 passages were used for wind shelter and swimming; this is a different verse and answer concept."
+        }
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    },
+    {
+      "id": "geo-read-the-land-q3-v2",
+      "prompt": "Which sea is bounded by ocean currents instead of coastlines?",
+      "answers": [
+        "Sargasso Sea",
+        "Mediterranean Sea",
+        "Caribbean Sea",
+        "Arabian Sea"
+      ],
+      "correctIndex": 0,
+      "hint": "Think of floating rafts of brown seaweed, living out on the open ocean.",
+      "reference": "Jonah 2:3-6",
+      "explanation": "The Sargasso Sea's boundaries are ocean currents. It is famous for floating sargassum seaweed. The seaweed in Jonah's prayer provides the association, but the story does not name that species or place Jonah in the Sargasso Sea. The passage is a prayer recalling distress and rescue.",
+      "factualSourceUrls": [
+        "https://oceanservice.noaa.gov/facts/sargassosea.html",
+        "https://oceanexplorer.noaa.gov/expedition-feature/okeanos-ex2104-features-sargasso-sea/",
+        "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/seaname/details/116",
+        "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/seaname/details/50",
+        "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/seaname/details/36"
+      ],
+      "contextSourceUrls": [
+        "https://ebible.org/eng-web/JON02.htm"
+      ],
+      "nivContextUrl": "https://www.bible.com/bible/111/JON.2.NIV",
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/JON.2.3-6?format=text",
+      "nivContentSha256": "3db0b33722007f7e9f8b648329edb82e19a442644bc465393697fb3cd66e6dd5",
+      "difficulty": {
+        "fact1to5": 3,
+        "afterFullReading1to5": 3,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "lineage": {
+        "kind": "replacement",
+        "previousQuestionId": "geo-read-the-land-q3-v1",
+        "priorLineage": {
+          "kind": "intentional_revision",
+          "runId": "4582e7cb-2225-4cf4-b3f9-074b22813088",
+          "candidateId": "q4"
+        },
+        "note": "Retires cloud-water interception and Exodus 24 from this round. New named-sea concept and Jonah reference; no matching concept in retained history."
+      },
+      "hintKind": "original_clue",
+      "passageId": null,
+      "hintUsefulness": "unproven; requires separate recall of Sargasso seaweed association"
+    },
+    {
+      "id": "geo-read-the-land-q4-v3",
+      "prompt": "Which factor chiefly explains Kilimanjaro\u2019s cold summit despite its tropical location?",
+      "answers": [
+        "Its elevation",
+        "Its longitude",
+        "Nearby ocean currents",
+        "Seasonal monsoon winds"
+      ],
+      "correctIndex": 0,
+      "hint": "Climbers pass through several climate zones without travelling far north or south.",
+      "reference": "Jeremiah 18:14",
+      "explanation": "Temperature generally decreases with height in the troposphere. Kilimanjaro\u2019s elevation creates cold summit conditions despite its tropical latitude. Longitude does not provide a comparable temperature control; ocean currents and monsoon winds do not explain the mountain\u2019s vertical climate zones. Jeremiah contrasts reliable mountain snow and water with the people\u2019s unfaithfulness; the passage is not a prediction about present-day glaciers.",
+      "factualSourceUrls": [
+        "https://science.nasa.gov/earth/earth-observatory/the-zones-of-kilimanjaro-89605/",
+        "https://www.weather.gov/jkl/education"
+      ],
+      "contextSourceUrls": [
+        "https://ebible.org/eng-web/JER18.htm"
+      ],
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/JER.18.14?format=text",
+      "nivContextUrl": "https://www.bible.com/bible/111/JER.18.NIV",
+      "nivContentSha256": "8ca668a54570b6d78414598490112e88d3b79f5d243e5e060006610e9a5e6deb",
+      "contextPassageId": "JER.18.11-17",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "authorFinding": "Replaces the held river-pothole question and broadens terrain/place coverage. Easy-to-medium candidate; snow on rocky slopes supplies a mountain-climate association without naming elevation. Hint adds vertical climate zones. No claim that temperature always falls with height or glaciers cannot retreat.",
+      "concept": "Elevation and tropical mountain climate",
+      "lineage": {
+        "kind": "replacement",
+        "previousQuestionId": "geo-read-the-land-q4-v2",
+        "previousReference": "Job 14:18-20"
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    },
+    {
+      "id": "geo-read-the-land-q5-v2",
+      "prompt": "Summer flash floods in Zion can arrive under clear skies. What is their usual trigger?",
+      "answers": [
+        "Rapid mountain snowmelt",
+        "Rain falling farther upstream",
+        "A natural dam breaking",
+        "A surge from underground springs"
+      ],
+      "correctIndex": 1,
+      "hint": "Follow the valley beyond what you can see from where you are standing.",
+      "reference": "2 Kings 3:16-18",
+      "explanation": "Zion's flash floods are commonly triggered by intense rain, sometimes miles upstream from a sunny canyon. Elisha's promise describes a valley receiving water despite no visible wind or rain. That contrast supports the modern inference that local skies need not reveal a valley's water source. It does not establish rainfall as the cause of the biblical event, which the passage presents as God's provision.",
+      "factualSourceUrls": [
+        "https://home.nps.gov/zion/planyourvisit/flash-flood.htm",
+        "https://www.nps.gov/zion/learn/news/upload/Zion_Wilderness_Guide_2021web.pdf",
+        "https://www.weather.gov/safety/flood-hazards",
+        "https://www.nps.gov/zion/planyourvisit/watersources.htm"
+      ],
+      "contextSourceUrls": [
+        "https://ebible.org/eng-web/2KI03.htm"
+      ],
+      "nivContextUrl": "https://www.bible.com/bible/111/2KI.3.NIV",
+      "nivPassageUrl": "https://api.youversion.com/v1/bibles/111/passages/2KI.3.16-18?format=text",
+      "nivContentSha256": "580544641e7d87b3318997aacd372041aaad804c95b873705d222a31d9f2cda4",
+      "difficulty": {
+        "fact1to5": 2,
+        "afterFullReading1to5": 2,
+        "withPaidHint1to5": null,
+        "suggestedTimerSeconds": 30
+      },
+      "reviewState": "coordinator_editorial_reviewed_awaiting_verification_and_playtest",
+      "lineage": {
+        "kind": "replacement",
+        "previousQuestionId": "geo-read-the-land-q5-v1",
+        "priorLineage": {
+          "kind": "new_concept",
+          "note": "Different from the earlier oasis and floodplain-root candidates; keep groundwater-family repetition visible."
+        },
+        "note": "Retires neighboring-well drawdown and Genesis 26. This is a runoff-source question, distinct from archived wadi identification; do not repeat either in a near-term mixed round."
+      },
+      "hintKind": "original_clue",
+      "passageId": null
+    }
+  ],
+  "revision": 3,
+  "previousDraftId": "geo-read-the-land-20260906-v2",
+  "coordinatorReview": {
+    "reviewedRevision": 2,
+    "approvedQuestions": 0,
+    "revisionRequiredIds": [
+      "geo-read-the-land-q4-v2"
+    ],
+    "notes": [
+      "Q3 needs hint-usefulness playtest; do not assume difficulty reduction.",
+      "Three water-centered items reduce geographical diversity.",
+      "NIV-only player content; public-domain research is never a player fallback."
+    ]
+  }
+}

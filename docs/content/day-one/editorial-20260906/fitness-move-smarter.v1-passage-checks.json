@@ -1,0 +1,87 @@
+{
+  "translation": "NIV",
+  "bibleId": 111,
+  "licensedTextStored": false,
+  "checks": [
+    {
+      "passageId": "1KI.18.46",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/1KI.18.46?format=text",
+      "httpStatus": 200,
+      "reference": "1 Kings 18:46",
+      "contentSha256": "ec4e9418600db057dcee33d3f8ce0ef0bb97198b5543bdff98428c0e09cfccf4",
+      "checkedAt": "2026-09-06T20:09:32.298517+00:00"
+    },
+    {
+      "passageId": "1KI.18.41-46",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/1KI.18.41-46?format=text",
+      "httpStatus": 200,
+      "reference": "1 Kings 18:41-46",
+      "contentSha256": "daa09167b7e027f70b882586a767bf5373b50498b080d2f1b8bbc157a56a1df0",
+      "checkedAt": "2026-09-06T20:09:32.822868+00:00"
+    },
+    {
+      "passageId": "EXO.17.11-12",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/EXO.17.11-12?format=text",
+      "httpStatus": 200,
+      "reference": "Exodus 17:11-12",
+      "contentSha256": "20aec7d7487d7461fe2ceb7886bee0e89581f1f696b1d1715879b07564046ac6",
+      "checkedAt": "2026-09-06T20:09:33.242999+00:00"
+    },
+    {
+      "passageId": "EXO.17.8-13",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/EXO.17.8-13?format=text",
+      "httpStatus": 200,
+      "reference": "Exodus 17:8-13",
+      "contentSha256": "a421ced47e43f83614dea13a6370812d92f06fccec8ec2d935c659b3a2651d72",
+      "checkedAt": "2026-09-06T20:09:33.727356+00:00"
+    },
+    {
+      "passageId": "LUK.15.5",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/LUK.15.5?format=text",
+      "httpStatus": 200,
+      "reference": "Luke 15:5",
+      "contentSha256": "f113eb6ba2bbfffe2a9617aaae1ecdd20f6d1208da560a68547be27120441156",
+      "checkedAt": "2026-09-06T20:09:34.222807+00:00"
+    },
+    {
+      "passageId": "LUK.15.3-7",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/LUK.15.3-7?format=text",
+      "httpStatus": 200,
+      "reference": "Luke 15:3-7",
+      "contentSha256": "586547d3a06a2b68f0d1463fcf86cb1292a5f47a1c52608e9626d5dd03344056",
+      "checkedAt": "2026-09-06T20:09:34.700426+00:00"
+    },
+    {
+      "passageId": "ECC.10.10",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/ECC.10.10?format=text",
+      "httpStatus": 200,
+      "reference": "Ecclesiastes 10:10",
+      "contentSha256": "dedc9f44f3d51ef0b4be2c863091e037552355496f3b44c187240e297fa0e157",
+      "checkedAt": "2026-09-06T20:09:35.154026+00:00"
+    },
+    {
+      "passageId": "ECC.10.8-14",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/ECC.10.8-14?format=text",
+      "httpStatus": 200,
+      "reference": "Ecclesiastes 10:8-14",
+      "contentSha256": "d638765b85c7de7c12c3f9f9e37c14929e05a6b182b54c795b88494bd9cd98d6",
+      "checkedAt": "2026-09-06T20:09:35.583780+00:00"
+    },
+    {
+      "passageId": "PSA.18.34",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/PSA.18.34?format=text",
+      "httpStatus": 200,
+      "reference": "Psalms 18:34",
+      "contentSha256": "b5b0e814c9b58b6d19fb6ecc524a002178170811e188971331ee8a28d226f5a5",
+      "checkedAt": "2026-09-06T20:09:36.029136+00:00"
+    },
+    {
+      "passageId": "PSA.18.32-39",
+      "url": "https://api.youversion.com/v1/bibles/111/passages/PSA.18.32-39?format=text",
+      "httpStatus": 200,
+      "reference": "Psalms 18:32-39",
+      "contentSha256": "d246ac4fecd1d94f6f531fd8cd8deabfb61d216d82122383c2f4c0cced4802b7",
+      "checkedAt": "2026-09-06T20:09:36.455521+00:00"
+    }
+  ]
+}

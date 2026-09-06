@@ -1,0 +1,566 @@
+{
+  "provider": "YouVersion",
+  "version": 111,
+  "checks": [
+    {
+      "id": "sports-read-the-play-q1-v2",
+      "reference": "James 3:4",
+      "sha256": "9c3ebd7f79615769f97fe2682dac3a77d6eab945554223b9fe5114418bd83c24",
+      "matchesAuthorHash": true,
+      "textLength": 159
+    },
+    {
+      "id": "sports-read-the-play-q2-v1",
+      "reference": "Joshua 8:5-7",
+      "sha256": "fbc9de1eb7f0f2ed863c3ec9d9e6fc4a3cfae93332d9512260bb3e9392921394",
+      "matchesAuthorHash": true,
+      "textLength": 391
+    },
+    {
+      "id": "sports-read-the-play-q3-v1",
+      "reference": "1 Corinthians 9:24-25",
+      "sha256": "4b05bd0005aeea8f217dc1240f4e7d6411f58ed46597d9b115910cbf5451527d",
+      "matchesAuthorHash": true,
+      "textLength": 279
+    },
+    {
+      "id": "sports-read-the-play-q4-v2",
+      "reference": "Acts 27:7-8",
+      "sha256": "e47c50cf5d5ce6379deed961a3da72af47fd7c3b79facf3a5dbb29b8b2e0ab0f",
+      "matchesAuthorHash": true,
+      "textLength": 279
+    },
+    {
+      "id": "sports-read-the-play-q5-v2",
+      "reference": "2 Samuel 18:23",
+      "sha256": "75b4c414b5573f52252728466be41ed8b64411fc5c73725f11a43eb5a15e2ef5",
+      "matchesAuthorHash": true,
+      "textLength": 122
+    },
+    {
+      "id": "challenger-deeper-connections-q1-v1",
+      "reference": "Ecclesiastes 1:5",
+      "sha256": "4c6d032f40c949f0268918c6a101197fc678a37a3c25521a075baa9b64a4ae8b",
+      "matchesAuthorHash": true,
+      "textLength": 67
+    },
+    {
+      "id": "challenger-deeper-connections-q3-v1",
+      "reference": "Isaiah 40:31",
+      "sha256": "17d95409da3025145ab8b8e74f95c2877457aa7e6bc8cabc99bb2db44c7b8f39",
+      "matchesAuthorHash": true,
+      "textLength": 161
+    },
+    {
+      "id": "challenger-deeper-connections-q2-v1",
+      "reference": "Psalms 18:36",
+      "sha256": "4dfd5b9053a4618c1ed7635681652c3c5459a152bd34671a17866de87dd5dfc9",
+      "matchesAuthorHash": true,
+      "textLength": 72
+    },
+    {
+      "id": "challenger-deeper-connections-q16-v4",
+      "reference": "Acts 12:6-8",
+      "sha256": "ff63883eb04087a0aff6a1ee5fd12f30399f2bc0fcd0126937ccfb6b1b323157",
+      "matchesAuthorHash": true,
+      "textLength": 481
+    },
+    {
+      "id": "challenger-deeper-connections-q6-v2",
+      "reference": "1 Kings 6:7",
+      "sha256": "81cb1346e96c066f8da8412f90abef489deb437bba8fae282cd993fcd65f7e11",
+      "matchesAuthorHash": true,
+      "textLength": 168
+    },
+    {
+      "id": "challenger-deeper-connections-q7-v4",
+      "reference": "Jeremiah 36:32",
+      "sha256": "801009e0805a99c3433738b2adfd30a0863527e8957f1b44ea9f523a431af21e",
+      "matchesAuthorHash": true,
+      "textLength": 248
+    },
+    {
+      "id": "challenger-deeper-connections-q8-v2",
+      "reference": "Deuteronomy 25:4",
+      "sha256": "3c7278e448afc0f5e81ac47ac623aea034f54842f31c2e57b6b2ebea461dcada",
+      "matchesAuthorHash": true,
+      "textLength": 55
+    },
+    {
+      "id": "challenger-deeper-connections-q10-v4",
+      "reference": "Romans 11:17-18",
+      "sha256": "d051c0dfc25f8a5dddc9db60c78039794eb76e989f794576393ad5e50dac7522",
+      "matchesAuthorHash": true,
+      "textLength": 323
+    },
+    {
+      "id": "challenger-deeper-connections-q4-v1",
+      "reference": "Jeremiah 18:3-4",
+      "sha256": "c2d8cdc60b26a9a594e88199879b070ca5eaf20ab92512b604317b5d7f93500a",
+      "matchesAuthorHash": true,
+      "textLength": 215
+    },
+    {
+      "id": "challenger-deeper-connections-q11-v3",
+      "reference": "Acts 2:6-8",
+      "sha256": "9c2e563f0ae4b0bf3f1843083436c594494fae8eb3485718f14ffdb14be0b5bd",
+      "matchesAuthorHash": true,
+      "textLength": 262
+    },
+    {
+      "id": "challenger-deeper-connections-q18-v5",
+      "reference": "Exodus 19:19",
+      "sha256": "63627be692d5e0c0c8dc2d42cb12a5317148d0e7f707e87866908643deb0b838",
+      "matchesAuthorHash": true,
+      "textLength": 98
+    },
+    {
+      "id": "challenger-deeper-connections-q17-v5",
+      "reference": "Mark 8:23-25",
+      "sha256": "101cf1fd38f70e9caf28147384edaa6433b746d8b5418f8eb8e451b0961bbe0c",
+      "matchesAuthorHash": true,
+      "textLength": 370
+    },
+    {
+      "id": "challenger-deeper-connections-q5-v1",
+      "reference": "Nahum 3:17",
+      "sha256": "ad03ce65ed093537fd48835ec377c726026d69d64d5ab26262bbf88a0e556f13",
+      "matchesAuthorHash": true,
+      "textLength": 171
+    },
+    {
+      "id": "challenger-deeper-connections-q12-v4",
+      "reference": "Job 19:23-24",
+      "sha256": "6b3e82773cb5a10e828098fe8ccf8cdd2150029951149fe10f2d7da9900aeadf",
+      "matchesAuthorHash": true,
+      "textLength": 150
+    },
+    {
+      "id": "challenger-deeper-connections-q15-v4",
+      "reference": "Luke 15:8-10",
+      "sha256": "959f00feda4d7f9ea66642339aed26cda6c52c767bf1572d369bec1ede03b52f",
+      "matchesAuthorHash": true,
+      "textLength": 377
+    },
+    {
+      "id": "challenger-deeper-connections-q19-v4",
+      "reference": "Amos 8:9",
+      "sha256": "05aa5f0df325caec9b84085d26f2e113a6b4745e2186fb946f0a07002b95d0bd",
+      "matchesAuthorHash": true,
+      "textLength": 120
+    },
+    {
+      "id": "challenger-deeper-connections-q9-v2",
+      "reference": "Proverbs 27:19",
+      "sha256": "965b29f2c13d87870fe0180d2de199d8746d5fd0708f7483454f0806e083bd34",
+      "matchesAuthorHash": true,
+      "textLength": 61
+    },
+    {
+      "id": "challenger-deeper-connections-q13-v3",
+      "reference": "Psalms 137:1-4",
+      "sha256": "fbad3cd22c5fac32160900511d3f3b261b63a5d102de42546f5b88468e716c41",
+      "matchesAuthorHash": true,
+      "textLength": 295
+    },
+    {
+      "id": "challenger-deeper-connections-q20-v4",
+      "reference": "2 Kings 1:2",
+      "sha256": "0b7d7ff9a8d75e943852cbfe0ed3a8ea75cac9fb510c1b887f4e2cc1afee0e8a",
+      "matchesAuthorHash": true,
+      "textLength": 221
+    },
+    {
+      "id": "challenger-deeper-connections-q14-v3",
+      "reference": "1 Kings 18:36-39",
+      "sha256": "fc602b66ced0eb3912738cd309289642a91770cd1447c0704f49dac54fac5f62",
+      "matchesAuthorHash": true,
+      "textLength": 613
+    },
+    {
+      "id": "food-kitchen-secrets-q1-v2",
+      "reference": "1 Samuel 30:11-12",
+      "sha256": "170782d463857e802fd4c6c8073fef7c7c54ea057eabbf6aa044ec228848bdde",
+      "matchesAuthorHash": true,
+      "textLength": 268
+    },
+    {
+      "id": "food-kitchen-secrets-q2-v1",
+      "reference": "Proverbs 30:33",
+      "sha256": "36ac3f2e1334272653aadc383eb88280fec96fe410445a3d549d7fdb88f685c5",
+      "matchesAuthorHash": true,
+      "textLength": 118
+    },
+    {
+      "id": "food-kitchen-secrets-q3-v3",
+      "reference": "Jeremiah 48:11",
+      "sha256": "4b869fe1f137b2b7d4f65ec3fe500f800c5be07a09a72e154eab11cc6eaa2cda",
+      "matchesAuthorHash": true,
+      "textLength": 182
+    },
+    {
+      "id": "food-kitchen-secrets-q4-v2",
+      "reference": "Ruth 2:14",
+      "sha256": "f8c5f61ce358e6fa9b2140fe05257d7d559ed9b203d002cc1027589146244a5f",
+      "matchesAuthorHash": true,
+      "textLength": 216
+    },
+    {
+      "id": "food-kitchen-secrets-q5-v1",
+      "reference": "Matthew 9:17",
+      "sha256": "8b4921d81059aa9fec7a12640d7f62cdbfa324e86a7c3bd4ea46f4ff7ec1fbda",
+      "matchesAuthorHash": true,
+      "textLength": 209
+    },
+    {
+      "id": "music-join-the-song-q1-v1",
+      "reference": "Psalms 136:1-3",
+      "sha256": "2aa6e0a81bb5c84f3355edc262c5ad0a0a805008a9eeeb4d7f67242b9cbb7dd2",
+      "matchesAuthorHash": true,
+      "textLength": 184
+    },
+    {
+      "id": "music-join-the-song-q2-v2",
+      "reference": "1 Corinthians 13:1",
+      "sha256": "934b309b256426ed3e0f0319016a943772b849fb112261b3485f4a833fa95637",
+      "matchesAuthorHash": true,
+      "textLength": 118
+    },
+    {
+      "id": "music-join-the-song-q3-v3",
+      "reference": "Psalms 147:7",
+      "sha256": "bee742d01209e2380651632c8ebc2534e056f4d0d5c760fc289bfb75e688a512",
+      "matchesAuthorHash": true,
+      "textLength": 73
+    },
+    {
+      "id": "music-join-the-song-q4-v1",
+      "reference": "Isaiah 9:6-7",
+      "sha256": "77a9a921b53220b20cf810ba49a6c176ded079dba0d8b3399f0948dc918e59df",
+      "matchesAuthorHash": true,
+      "textLength": 450
+    },
+    {
+      "id": "music-join-the-song-q5-v1",
+      "reference": "Ecclesiastes 3:1-8",
+      "sha256": "5c75e782febc17fc255ec143bf59833243481289a5baaddcd548b0c6a7a25044",
+      "matchesAuthorHash": true,
+      "textLength": 643
+    },
+    {
+      "id": "guest-small-discoveries-q1-v1",
+      "reference": "Leviticus 2:5",
+      "sha256": "f48b1e6a8694c1a5f7e8a8aa6d28246147b78d9fe481b3ae3acc6e98c86c11af",
+      "matchesAuthorHash": true,
+      "textLength": 120
+    },
+    {
+      "id": "guest-small-discoveries-q2-v1",
+      "reference": "Job 37:3-4",
+      "sha256": "ac45266694d4c47d7426faa447d1e2b8c2d5232dd2b0f22874ef959c8743050b",
+      "matchesAuthorHash": true,
+      "textLength": 215
+    },
+    {
+      "id": "guest-small-discoveries-q3-v1",
+      "reference": "Luke 3:17",
+      "sha256": "5143c6d1b3f53b50a1cc187345cd2d799c6d0d1fc83816a9f8626956cbed3a33",
+      "matchesAuthorHash": true,
+      "textLength": 156
+    },
+    {
+      "id": "guest-small-discoveries-q4-v4",
+      "reference": "Joshua 9:4-6",
+      "sha256": "693994209f36e93500aec3c59926059ec5b65f68024a3d2d90b228b8938c6685",
+      "matchesAuthorHash": true,
+      "textLength": 404
+    },
+    {
+      "id": "guest-small-discoveries-q5-v2",
+      "reference": "Judges 9:8-15",
+      "sha256": "95870051394a2bbf2bf9b23a826593b739185db1145f4419a49f067a2806bc90",
+      "matchesAuthorHash": true,
+      "textLength": 847
+    },
+    {
+      "id": "geo-read-the-land-q1-v2",
+      "reference": "1 Samuel 14:13",
+      "sha256": "fa814f3a248bee3c86f1291a35f43d557939764d645e28743c0a901ee24e0325",
+      "matchesAuthorHash": true,
+      "textLength": 177
+    },
+    {
+      "id": "geo-read-the-land-q2-v2",
+      "reference": "Acts 27:20",
+      "sha256": "d5b65edbe709bf5d97fd1b75b8fdcf8d449d4905db9f91b05174ffd86e350db8",
+      "matchesAuthorHash": true,
+      "textLength": 125
+    },
+    {
+      "id": "geo-read-the-land-q3-v2",
+      "reference": "Jonah 2:3-6",
+      "sha256": "3db0b33722007f7e9f8b648329edb82e19a442644bc465393697fb3cd66e6dd5",
+      "matchesAuthorHash": true,
+      "textLength": 470
+    },
+    {
+      "id": "geo-read-the-land-q4-v3",
+      "reference": "Jeremiah 18:14",
+      "sha256": "8ca668a54570b6d78414598490112e88d3b79f5d243e5e060006610e9a5e6deb",
+      "matchesAuthorHash": true,
+      "textLength": 118
+    },
+    {
+      "id": "geo-read-the-land-q5-v2",
+      "reference": "2 Kings 3:16-18",
+      "sha256": "580544641e7d87b3318997aacd372041aaad804c95b873705d222a31d9f2cda4",
+      "matchesAuthorHash": true,
+      "textLength": 343
+    },
+    {
+      "id": "history-clever-tools-q1-v1",
+      "reference": "Job 38:14",
+      "sha256": "6c127feccc61211b558636e20f54eae71ae4c72d696ad070aa1d2a493db14819",
+      "matchesAuthorHash": true,
+      "textLength": 93
+    },
+    {
+      "id": "history-clever-tools-q2-v3",
+      "reference": "Exodus 8:1-3",
+      "sha256": "241bdfd8432d8aedd62ca19fdf97382824d105e14afd873c664e846de548eab5",
+      "matchesAuthorHash": true,
+      "textLength": 416
+    },
+    {
+      "id": "history-clever-tools-q3-v2",
+      "reference": "Exodus 5:6-8",
+      "sha256": "81a9d38a61081a91b2272cff97952e5fb24c6d69f5e882d7f11400e85eb08bfd",
+      "matchesAuthorHash": true,
+      "textLength": 379
+    },
+    {
+      "id": "history-clever-tools-q4-v2",
+      "reference": "Genesis 6:14",
+      "sha256": "e7efad9782a19da1e6f020ae8f399973cf7bd0f0c559a21154066f8707880b55",
+      "matchesAuthorHash": true,
+      "textLength": 96
+    },
+    {
+      "id": "history-clever-tools-q5-v4",
+      "reference": "Daniel 5:25-28",
+      "sha256": "ccab3a039900bd4e322432c0e56b1c104d31ed464bdd0b777bb61a18ea16cd6f",
+      "matchesAuthorHash": true,
+      "textLength": 306
+    },
+    {
+      "id": "entertainment-behind-the-curtain-q1-v1",
+      "reference": "1 Corinthians 13:12",
+      "sha256": "9cd15480b051d1b5696af07b7079f1bb0de49d7ebfbc6a9f1f0441c2b606d572",
+      "matchesAuthorHash": true,
+      "textLength": 151
+    },
+    {
+      "id": "entertainment-behind-the-curtain-q2-v2",
+      "reference": "Esther 6:1-10",
+      "sha256": "a1b456b479210a4171a770613eb79c2dc46fd6d01960e3749362c11f148e9744",
+      "matchesAuthorHash": true,
+      "textLength": 1564
+    },
+    {
+      "id": "entertainment-behind-the-curtain-q3-v1",
+      "reference": "Matthew 5:14-16",
+      "sha256": "2c8ad982f156e6c2d5364d648cfa6ad76d5b4b13da84c558a58214767c4c9dc3",
+      "matchesAuthorHash": true,
+      "textLength": 330
+    },
+    {
+      "id": "entertainment-behind-the-curtain-q4-v3",
+      "reference": "Luke 12:16-21",
+      "sha256": "9a593fca10c933bafc7f6b9de8c124f2fee59944481343a455c950f55f0caddd",
+      "matchesAuthorHash": true,
+      "textLength": 656
+    },
+    {
+      "id": "entertainment-behind-the-curtain-q5-v4",
+      "reference": "Matthew 28:2-4",
+      "sha256": "fa2b51f4269660be667aea510b60d03a7477d7462351a1c6248713fb470b02e3",
+      "matchesAuthorHash": true,
+      "textLength": 285
+    },
+    {
+      "id": "fitness-move-smarter-q1-v1",
+      "reference": "1 Kings 18:46",
+      "sha256": "ec4e9418600db057dcee33d3f8ce0ef0bb97198b5543bdff98428c0e09cfccf4",
+      "matchesAuthorHash": true,
+      "textLength": 118
+    },
+    {
+      "id": "fitness-move-smarter-q2-v4",
+      "reference": "2 Samuel 2:18-19",
+      "sha256": "260d2fcfa46af0acd82e71a49241b3d0f2db51348a9a266a27d45d80a598e443",
+      "matchesAuthorHash": true,
+      "textLength": 194
+    },
+    {
+      "id": "fitness-move-smarter-q3-v2",
+      "reference": "Luke 15:5",
+      "sha256": "f113eb6ba2bbfffe2a9617aaae1ecdd20f6d1208da560a68547be27120441156",
+      "matchesAuthorHash": true,
+      "textLength": 58
+    },
+    {
+      "id": "fitness-move-smarter-q4-v3",
+      "reference": "Psalms 94:18",
+      "sha256": "0510f0f12a8342ca9d98234b0c51bbcb28aef2558305477cd405effbe8ac2cf4",
+      "matchesAuthorHash": true,
+      "textLength": 76
+    },
+    {
+      "id": "fitness-move-smarter-q5-v5",
+      "reference": "Luke 19:3-4",
+      "sha256": "e29bbf429b20c21e3793a708bf58b1ad7c9f3f24070c698e95ec0cd933786b3d",
+      "matchesAuthorHash": true,
+      "textLength": 182
+    },
+    {
+      "id": "timed-quick-connections-q1-v1",
+      "reference": "1 Kings 19:11-12",
+      "sha256": "445dec42716cdaafd8b9e8adf3d9d776c56bb1e6d8aecd24c6f2c3e781c0f408",
+      "matchesAuthorHash": true,
+      "textLength": 433
+    },
+    {
+      "id": "timed-quick-connections-q2-v1",
+      "reference": "Luke 12:54",
+      "sha256": "906039d2d4192c31df5185f60a00fe5e014fef7455b977038432509bf405d4c2",
+      "matchesAuthorHash": true,
+      "textLength": 119
+    },
+    {
+      "id": "timed-quick-connections-q3-v1",
+      "reference": "Luke 1:22",
+      "sha256": "5e2d7acfd8e92690668b542f09a37cb385d922d0671192063ed91f5d54af29f0",
+      "matchesAuthorHash": true,
+      "textLength": 158
+    },
+    {
+      "id": "timed-quick-connections-q4-v2",
+      "reference": "Genesis 50:2-3",
+      "sha256": "0a09c66ce80f32c36556e99e39a45781b770d7ab67249309c3ca2f3f9acf3eac",
+      "matchesAuthorHash": true,
+      "textLength": 231
+    },
+    {
+      "id": "timed-quick-connections-q5-v2",
+      "reference": "2 Timothy 2:2",
+      "sha256": "db4d6b46bc86f9b39090fd9df8da40865e26643859d1b8cc4d84f29de94f98dd",
+      "matchesAuthorHash": true,
+      "textLength": 141
+    },
+    {
+      "id": "timed-quick-connections-q6-v1",
+      "reference": "Exodus 16:23",
+      "sha256": "789a7e48234b059662380bc1be63127029a3c14bf5fe0a748fc6ee8b221e35bd",
+      "matchesAuthorHash": true,
+      "textLength": 234
+    },
+    {
+      "id": "timed-quick-connections-q7-v3",
+      "reference": "Isaiah 1:18",
+      "sha256": "adfcd349bd1baad2e4cd3e7933d2e1a229ef2a8d4fe744c97d6ffb977f825302",
+      "matchesAuthorHash": true,
+      "textLength": 177
+    },
+    {
+      "id": "timed-quick-connections-q8-v2",
+      "reference": "Daniel 6:17",
+      "sha256": "56e67d694b14b2130032a3a18df5a410e038b8cb85d6c60e333e36350e0158a1",
+      "matchesAuthorHash": true,
+      "textLength": 188
+    },
+    {
+      "id": "timed-quick-connections-q9-v5",
+      "reference": "Proverbs 16:33",
+      "sha256": "d50ec565f7468f363c06a5c4e9a3f77037d65325dc23ebf672ae10c5efd20fae",
+      "matchesAuthorHash": true,
+      "textLength": 70
+    },
+    {
+      "id": "timed-quick-connections-q10-v3",
+      "reference": "Ezekiel 47:8",
+      "sha256": "24b5f1ba49a3683302de7b764acdd189f90f50b4e1a1892f7f713d330b962a0e",
+      "matchesAuthorHash": true,
+      "textLength": 186
+    },
+    {
+      "id": "media-page-to-screen-q1-v1",
+      "reference": "Revelation 5:1",
+      "sha256": "8946ee329c99f19b8a44f117e6491be8f710aa39550de73f0c059c27b4530bc7",
+      "matchesAuthorHash": true,
+      "textLength": 122
+    },
+    {
+      "id": "media-page-to-screen-q2-v2",
+      "reference": "Romans 16:22",
+      "sha256": "b2c5ad8e33e81319add56b141b1a4cce851a727a094b969c00dde66fe7766969",
+      "matchesAuthorHash": true,
+      "textLength": 62
+    },
+    {
+      "id": "media-page-to-screen-q3-v1",
+      "reference": "Genesis 4:6-9",
+      "sha256": "69c012440f8f994b85c3f9ce3cb0b5a4d5731de80ecb49d93c0a2ee6a8a760c9",
+      "matchesAuthorHash": true,
+      "textLength": 499
+    },
+    {
+      "id": "media-page-to-screen-q4-v1",
+      "reference": "Exodus 2:5-10",
+      "sha256": "a641a9b9ec7ad07feac740d305af9a07c10479866ecc2e8f71763ae27ead47dc",
+      "matchesAuthorHash": true,
+      "textLength": 763
+    },
+    {
+      "id": "media-page-to-screen-q5-v3",
+      "reference": "Jonah 1:15-17",
+      "sha256": "b0440844dc5cac357ad42ac3e043df2d96afbb437fa173c32118a044c0ce7052",
+      "matchesAuthorHash": true,
+      "textLength": 298
+    },
+    {
+      "id": "nature-built-for-this-q1-v2",
+      "reference": "Psalms 104:18",
+      "sha256": "31190ba4ead855fb9b4e9689b530207bbb22e76fd05706ab20fca6c3d6838c05",
+      "matchesAuthorHash": true,
+      "textLength": 82
+    },
+    {
+      "id": "nature-built-for-this-q2-v1",
+      "reference": "Luke 17:37",
+      "sha256": "adfacb26f429a7c9a45bd3747ab67bfa3e94a0c4692e99197ef5a3ff66cd33c7",
+      "matchesAuthorHash": true,
+      "textLength": 100
+    },
+    {
+      "id": "nature-built-for-this-q3-v3",
+      "reference": "Jonah 4:7-8",
+      "sha256": "3178eaeb60eae5b02a2ee10c67294361e4898f9e3beb74dd4fb7ecf781349ad9",
+      "matchesAuthorHash": true,
+      "textLength": 279
+    },
+    {
+      "id": "nature-built-for-this-q4-v1",
+      "reference": "Jeremiah 8:7",
+      "sha256": "ccd26dc6ab51aee29fffb0f7ab1f30a2aa72d4b566f14e6246eb524a39375b7d",
+      "matchesAuthorHash": true,
+      "textLength": 186
+    },
+    {
+      "id": "nature-built-for-this-q5-v2",
+      "reference": "Isaiah 11:1-3",
+      "sha256": "7931cb9862e338590b7c31fd3621a6a5aa9a8ae7ea862e31c91124bab4b1858b",
+      "matchesAuthorHash": true,
+      "textLength": 392
+    }
+  ]
+}
