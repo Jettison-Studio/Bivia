@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { ActivityIndicator, Modal, ScrollView, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Button, Icon, T, font } from './ui';
+import { CountdownTakeover } from './CountdownTakeover';
 import { supabase } from '../lib/supabase';
 
 export function VersePreview({ visible, verse, reference, seconds, reading = false, onReady, busy = false, error, onExit }: { visible: boolean; verse: string; reference: string; seconds: number; reading?: boolean; onReady?: () => void; busy?: boolean; error?: string; onExit?: () => void }) {
@@ -31,8 +32,8 @@ export function VersePreview({ visible, verse, reference, seconds, reading = fal
   const displayText = fullPassage?.text ?? (useNiv ? '' : verse);
   const original = !useNiv && reference.includes('Original clue');
   return <Modal visible={visible} animationType="fade" presentationStyle="fullScreen" onRequestClose={onExit ?? (() => {})}>
-    <SafeAreaView style={{ flex: 1, backgroundColor: '#10091d' }}>
-      <ScrollView contentContainerStyle={{ flexGrow: 1, justifyContent: 'center', alignItems: 'center', padding: 32, gap: 26 }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: reading ? '#10091d' : '#5f00e6' }}>
+      {!reading ? <CountdownTakeover seconds={seconds} /> : <ScrollView contentContainerStyle={{ flexGrow: 1, justifyContent: 'center', alignItems: 'center', padding: 32, gap: 26 }}>
         <Icon name="book-outline" color="#d0b3ff" size={32} />
         <T style={{ color: '#d0b3ff', fontSize: 12, letterSpacing: 2 }}>{original ? 'YOUR CLUE' : 'YOUR BIBLE VERSE'}</T>
         <T style={{ maxWidth: 680, fontSize: 28, lineHeight: 42, fontFamily: font.medium, color: 'white', textAlign: 'center' }}>{displayText ? (original ? displayText : `“${displayText}”`) : (loadError ? 'Let’s try that again.' : 'Your Scripture is loading…')}</T>
@@ -44,7 +45,7 @@ export function VersePreview({ visible, verse, reference, seconds, reading = fal
           <Button variant="white" onPress={onReady ?? (() => {})} disabled={busy || !onReady || (useNiv && !fullPassage)}>{busy ? 'Opening…' : 'I’m ready'}</Button>
         </View> : <View style={{ marginTop: 24 }}><T accessibilityLiveRegion="polite" style={{ color: 'white', fontFamily: font.bold, fontSize: 56, lineHeight: 68 }}>{Math.max(1, Math.min(3, seconds))}</T></View>}
         {fullPassage && <T style={{ color: '#b9aacb', fontSize: 11, lineHeight: 17, textAlign: 'center', maxWidth: 600 }}>Scripture provided by YouVersion{'\n'}{fullPassage.copyright}</T>}
-      </ScrollView>
+      </ScrollView>}
     </SafeAreaView>
   </Modal>;
 }

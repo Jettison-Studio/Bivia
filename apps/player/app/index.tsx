@@ -11,7 +11,7 @@ import { router, useFocusEffect } from "expo-router";
 import { LinearGradient } from "expo-linear-gradient";
 import { categories, quizzes } from "@bivia/core";
 import { Page } from "../src/components/Page";
-import { T, Icon, LegacyIcon, Button, c, s, font } from "../src/components/ui";
+import { T, Icon, Button, c, s, font } from "../src/components/ui";
 import { supabase } from "../src/lib/supabase";
 import { useBivia } from "../src/lib/store";
 const icons: Record<string, string> = {
@@ -21,10 +21,14 @@ const icons: Record<string, string> = {
   media: "film-outline",
   music: "musical-notes-outline",
   science: "flask-outline",
+  nature: "leaf-outline",
+  history: "hourglass-outline",
+  food: "restaurant-outline",
+  entertainment: "ticket-outline",
 };
 export default function Home() {
   const { width } = useWindowDimensions();
-  const { profile, session, authReady } = useBivia();
+  const { session, authReady } = useBivia();
   const daily = useDaily();
   function openQuiz(round?: DailyRound) {
     if (daily.error) { void daily.refresh(); return; }
@@ -53,406 +57,109 @@ export default function Home() {
     challenger = daily.data?.rounds.find(q => q.mode === "challenger");
   const shown = (daily.data?.categories ?? categories).filter(
     (cat) =>
-      cat.name.toLowerCase().includes(search.toLowerCase()) &&
+      cat.id !== "mixed" && cat.name.toLowerCase().includes(search.toLowerCase()) &&
       (!session || !onlyFavorites || favorites.includes(cat.id)),
   );
+  const rounds = daily.data?.rounds ?? [];
+  const completed = rounds.filter(round => round.status === "completed").length;
+  const edition = daily.data?.day ?? new Date().toISOString().slice(0, 10);
+  const date = new Date(`${edition}T12:00:00Z`);
+  const status = (round?: DailyRound) => {
+    if (daily.loading || daily.error || !round) return dailyLabel(round, daily.loading, daily.error);
+    if (!session) return `${round.questionCount} questions`;
+    if (round.status === "completed") return `Done · ${round.score ?? 0} pts`;
+    return round.status === "active" ? "Resume" : `${round.questionCount} questions`;
+  };
   return (
     <Page>
-      <View
-        style={{
-          flexDirection: "row",
-          alignItems: "center",
-          justifyContent: "space-between",
-          marginBottom: 28,
-        }}
-      >
-        <View style={{ flex: 1 }}>
-          <T accessibilityRole="header" style={[s.h1, { fontSize: compact ? 28 : 34 }]}>
-            {new Date().toLocaleDateString("en-US", {
-              weekday: "long",
-              month: "long",
-              day: "numeric",
-            })}
-          </T>
-          <T style={{ fontSize: 14, color: c.muted, marginTop: 8 }}>
-            Trivia with a hint of bible
-          </T>
-        </View>
-        {!compact && (
-          <View
-            style={{
-              backgroundColor: c.lavender,
-              paddingHorizontal: 16,
-              paddingVertical: 10,
-              borderRadius: 30,
-            }}
-          >
-            <T
-              style={{
-                color: c.primary,
-                fontSize: 13,
-                fontFamily: font.semibold,
-              }}
-            >
-              Made for curious minds
-            </T>
-          </View>
-        )}
-      </View>
-      <LinearGradient
-        colors={["#5f00e6", "#7307e9"]}
-        start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 1 }}
-        style={{
-          borderRadius: 24,
-          padding: compact ? 24 : 36,
-          overflow: "hidden",
-        }}
-      >
-        <View style={{ flexDirection: "row", gap: 20, alignItems: "center" }}>
-          <View style={{ flex: 1 }}>
-            <T
-              style={{
-                fontSize: compact ? 28 : 36,
-                lineHeight: compact ? 36 : 44,
-                fontFamily: font.bold,
-                color: "white",
-                letterSpacing: -1,
-              }}
-            >
-              Give your curiosity{compact ? " " : "\n"}a little daily exercise.
-            </T>
-            <T
-              style={{
-                color: "#e7d8ff",
-                marginTop: 13,
-                maxWidth: 420,
-                lineHeight: 24,
-              }}
-            >
-              Pick a topic, follow the clues, and see what you know. Your next
-              “I knew that!” is waiting.
-            </T>
-            <Button
-              variant="white"
-              icon="arrow-forward"
-              disabled={!authReady || (!!session && (daily.loading || (!daily.data?.rounds.length && !daily.error)))}
-              onPress={() => session
-                ? openQuiz(daily.data?.rounds.find(round => round.status === "active")
-                  ?? daily.data?.rounds.find(round => round.status === "unplayed")
-                  ?? daily.data?.rounds[0])
-                : router.push(`/quiz/${quizzes[0].id}` as any)}
-              style={{ alignSelf: "flex-start", marginTop: 24 }}
-            >
-              Let’s play
-            </Button>
-          </View>
-          {!compact && (
-            <View
-              style={{
-                width: 185,
-                height: 185,
-                alignItems: "center",
-                justifyContent: "center",
-                borderRadius: 96,
-                borderWidth: 1,
-                borderColor: "#ffffff35",
-                backgroundColor: "#ffffff0d",
-                transform: [{ rotate: "-10deg" }],
-              }}
-            >
-              <View
-                style={{
-                  width: 118,
-                  height: 138,
-                  backgroundColor: "white",
-                  borderRadius: 18,
-                  alignItems: "center",
-                  justifyContent: "center",
-                  boxShadow: "0 12px 30px #36006d35",
-                }}
-              >
-                <T
-                  style={{
-                    fontSize: 90,
-                    lineHeight: 108,
-                    fontFamily: font.bold,
-                    color: c.primary,
-                  }}
-                >
-                  ?
-                </T>
-                <View
-                  style={{
-                    position: "absolute",
-                    right: -20,
-                    bottom: -10,
-                    backgroundColor: "#f9d1e8",
-                    borderRadius: 16,
-                    padding: 13,
-                    transform: [{ rotate: "20deg" }],
-                  }}
-                >
-                  <Icon name="sparkles" size={32} color={c.pink} />
-                </View>
-              </View>
-            </View>
-          )}
-        </View>
-      </LinearGradient>
-      <View
-        style={{
-          marginTop: 36,
-          marginBottom: 18,
-          flexDirection: "row",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-      >
-        <T accessibilityRole="header" style={s.h2}>
-          Today’s trivia
+      <View style={{ alignItems: "center", paddingTop: 4, paddingBottom: 28, gap: 8 }}>
+        <T style={{ fontSize: 11, letterSpacing: 2.5, color: c.muted, fontFamily: font.semibold }}>
+          {date.toLocaleDateString("en-US", { weekday: "long", timeZone: "UTC" }).toUpperCase()}
         </T>
-
+        <T accessibilityRole="header" style={[s.h1, { textAlign: "center", fontSize: compact ? 38 : 52, lineHeight: compact ? 48 : 62 }]}>
+          {date.toLocaleDateString("en-US", { month: "long", day: "numeric", timeZone: "UTC" })}
+        </T>
+        <View style={{ flexDirection: "row", alignItems: "center", gap: 12 }}>
+          <View style={{ width: 24, height: 1, backgroundColor: c.border }} />
+          <T style={{ fontSize: 13, color: c.muted }}>Trivia with a hint of bible</T>
+          <View style={{ width: 24, height: 1, backgroundColor: c.border }} />
+        </View>
       </View>
-      <View style={{ flexDirection: compact ? "column" : "row", gap: 16 }}>
+      {session && !!rounds.length && !daily.error && <View style={{ gap: 9, marginBottom: 26 }}>
+        <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
+          <T style={{ fontSize: 12, color: c.muted }}>Today’s progress</T>
+          <T style={{ fontSize: 12, color: c.primary, fontFamily: font.semibold }}>{completed} of {rounds.length} complete</T>
+        </View>
+        <View accessibilityRole="progressbar" accessibilityLabel="Today’s completed rounds" accessibilityValue={{ min: 0, max: rounds.length, now: completed }} style={{ height: 4, backgroundColor: c.lavender, borderRadius: 4, overflow: "hidden" }}>
+          <View style={{ width: `${completed / rounds.length * 100}%`, height: "100%", backgroundColor: c.primary }} />
+        </View>
+      </View>}
+      {!session && <LinearGradient colors={["#5f00e6", "#760ce6"]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={{ borderRadius: 22, padding: compact ? 24 : 30, marginBottom: 26, overflow: "hidden" }}>
+        <View pointerEvents="none" style={{ position: "absolute", right: -12, top: -35, transform: [{ rotate: "14deg" }], opacity: 0.12 }}>
+          <T style={{ fontSize: 230, lineHeight: 270, fontFamily: font.bold, color: "white" }}>?</T>
+        </View>
+        <T style={{ color: "#e7d8ff", fontSize: 11, letterSpacing: 1.5, fontFamily: font.semibold }}>A LITTLE WARM-UP</T>
+        <T style={{ color: "white", fontSize: compact ? 28 : 34, lineHeight: 42, fontFamily: font.bold, marginTop: 8 }}>{quizzes[0].title}</T>
+        <T style={{ color: "#e7d8ff", fontSize: 13, marginTop: 5 }}>{quizzes[0].questions.length} questions. See what clicks.</T>
+        <Button variant="white" icon="arrow-forward" disabled={!authReady} onPress={() => router.push(`/quiz/${quizzes[0].id}` as any)} style={{ alignSelf: "flex-start", marginTop: 20 }}>Play a sample</Button>
+      </LinearGradient>}
+      <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "baseline", marginBottom: 12 }}>
+        <T accessibilityRole="header" style={{ fontFamily: font.semibold, fontSize: 18 }}>Today’s challenges</T>
+        <T style={{ fontSize: 12, color: c.muted }}>Two ways to play</T>
+      </View>
+      <View style={{ flexDirection: "row", gap: 12 }}>
         {[
-          {
-            quiz: timed,
-            title: "Beat the clock",
-            description: "Think fast. Every second counts.",
-            icon: "timed" as const,
-            bg: "#f2ebff",
-            color: c.primary,
-            label: "Timed trivia",
-
-          },
-          {
-            quiz: challenger,
-            title: "Go the distance",
-            description: "How far can your knowledge take you?",
-            icon: "trophy" as const,
-            bg: "#fff0f7",
-            color: "#b80070",
-            label: "Challenger",
-
-          },
-        ].map((x) => (
-          <Pressable
-            key={x.title}
-            accessibilityRole="button"
-            accessibilityLabel={`${session ? "Play" : "Sign in to play"} ${x.label}`}
-            disabled={!authReady || daily.loading || (!x.quiz && !daily.error)}
-            onPress={() => openQuiz(x.quiz)}
-            style={({ hovered, pressed }: any) => ({
-              flex: 1,
-              padding: compact ? 22 : 26,
-              borderRadius: 22,
-              opacity: pressed ? 0.88 : 1,
-              backgroundColor: x.bg,
-              borderWidth: 1,
-              borderColor: hovered ? x.color + "55" : "transparent",
-            })}
-          >
-            <View
-              style={{
-                flexDirection: "row",
-                justifyContent: "space-between",
-                alignItems: "center",
-              }}
-            >
-              <View
-                style={{
-                  backgroundColor: "white",
-                  borderRadius: 14,
-                  padding: 11,
-                }}
-              >
-                <LegacyIcon name={x.icon} size={26} />
-              </View>
-              <T
-                style={{
-                  fontSize: 12,
-                  color: x.color,
-                  fontFamily: font.semibold,
-                }}
-              >
-                {x.label}
-              </T>
-            </View>
-            <T style={[s.h2, { marginTop: 20, fontSize: 23, lineHeight: 31 }]}>{x.title}</T>
-            <T style={{ fontSize: 14, color: c.muted, marginTop: 5 }}>
-              {x.description}
-            </T>
-            <View
-              style={{
-                marginTop: 22,
-                flexDirection: "row",
-                justifyContent: "space-between",
-                alignItems: "center",
-              }}
-            >
-              <View style={{ gap: 4 }}>
-                {!!x.quiz && <T style={{ fontSize: 12, color: x.color }}>{x.quiz.questionCount} questions</T>}
-                <T style={{ fontSize: 13, color: x.color, fontFamily: font.semibold }}>
-                  {dailyLabel(x.quiz, daily.loading, daily.error)}
-                </T>
-              </View>
-              <Icon name={x.quiz?.status === "completed" ? "checkmark-circle" : "arrow-forward"} color={x.color} size={20} />
-            </View>
-          </Pressable>
-        ))}
+          { quiz: timed, title: "Beat the clock", icon: "timer-outline", bg: "#5f00e6", label: "TIMED" },
+          { quiz: challenger, title: "Go the distance", icon: "flash-outline", bg: "#251736", label: "CHALLENGER" },
+        ].map(x => <Pressable key={x.label} accessibilityRole="button" accessibilityLabel={`${x.label}. ${status(x.quiz)}${session ? "" : ". Sign in to play"}`} disabled={!authReady || daily.loading || (!x.quiz && !daily.error)} onPress={() => openQuiz(x.quiz)} style={({ pressed, hovered }: any) => ({ flex: 1, minHeight: 178, padding: compact ? 16 : 24, borderRadius: 20, backgroundColor: x.bg, opacity: pressed ? 0.8 : hovered ? 0.94 : 1, justifyContent: "space-between", gap: 18 })}>
+          <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
+            <Icon name={x.icon} size={26} color="white" />
+            <Icon name={x.quiz?.status === "completed" ? "checkmark-circle" : session ? "arrow-forward" : "lock-closed-outline"} size={16} color="#dfcaff" />
+          </View>
+          <View style={{ minHeight: compact ? 100 : 90 }}>
+            <T style={{ color: "#dfcaff", fontSize: 9, letterSpacing: 1.3, fontFamily: font.semibold }}>{x.label}</T>
+            <T style={{ color: "white", fontSize: compact ? 19 : 25, lineHeight: compact ? 25 : 32, fontFamily: font.bold, marginTop: 5 }}>{x.title}</T>
+            <T style={{ color: "#e7d8ff", fontSize: 11, marginTop: 8 }}>{status(x.quiz)}</T>
+          </View>
+        </Pressable>)}
       </View>
-      <View style={{ marginTop: 36, marginBottom: 18, gap: 16 }}>
-        <View
-          style={{
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "space-between",
-          }}
-        >
-          <T accessibilityRole="header" style={s.h2}>
-            Find your thing
-          </T>
-          {session && <Pressable
-            accessibilityRole="button"
-            onPress={() => setOnlyFavorites(!onlyFavorites)}
-          >
-            <T
-              style={{
-                color: c.primary,
-                fontSize: 13,
-                fontFamily: font.semibold,
-              }}
-            >
-              {onlyFavorites ? "All topics" : "My topics"}
-            </T>
-          </Pressable>}
+      <View style={{ marginTop: 28, marginBottom: 14, gap: 14 }}>
+        <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
+          <T accessibilityRole="header" style={{ fontFamily: font.semibold, fontSize: 18 }}>Find your thing</T>
+          {session && <Pressable accessibilityRole="button" onPress={() => setOnlyFavorites(!onlyFavorites)}><T style={{ color: c.primary, fontSize: 13, fontFamily: font.semibold }}>{onlyFavorites ? "All topics" : "My topics"}</T></Pressable>}
         </View>
-        <View
-          style={{
-            flexDirection: "row",
-            alignItems: "center",
-            gap: 10,
-            paddingHorizontal: 15,
-            borderRadius: 14,
-            backgroundColor: c.surface,
-          }}
-        >
+        <View style={{ flexDirection: "row", alignItems: "center", gap: 10, paddingHorizontal: 15, borderRadius: 12, backgroundColor: c.surface }}>
           <Icon name="search-outline" size={18} color={c.muted} />
-          <TextInput
-            accessibilityLabel="Search topics"
-            placeholder="Search topics"
-            placeholderTextColor={c.muted}
-            value={search}
-            onChangeText={setSearch}
-            style={
-              {
-                flex: 1,
-                fontFamily: font.regular,
-                paddingVertical: 13,
-                fontSize: 14,
-                color: c.text,
-              } as any
-            }
-          />
+          <TextInput accessibilityLabel="Search topics" placeholder="Search topics" placeholderTextColor={c.muted} value={search} onChangeText={setSearch} style={{ flex: 1, fontFamily: font.regular, paddingVertical: 12, fontSize: 14, color: c.text }} />
         </View>
       </View>
-      <View style={{ flexDirection: "row", flexWrap: "wrap", columnGap: "2%", rowGap: 14 }}>
-        {shown.map((cat) => {
-          const quiz = daily.data?.rounds.find(q => q.categoryId === cat.id && q.mode === "category");
+      <View style={{ flexDirection: "row", flexWrap: "wrap", columnGap: "2%", rowGap: 12 }}>
+        {shown.map(cat => {
+          const quiz = rounds.find(q => q.categoryId === cat.id && q.mode === "category");
           const played = quiz?.status === "completed";
-          return (
-            <Pressable
-              key={cat.id}
-              accessibilityRole="button"
-              accessibilityLabel={`${session ? "Play" : "Sign in to play"} ${cat.name}`}
-              disabled={!authReady || daily.loading || (!quiz && !daily.error)}
-              onPress={() => openQuiz(quiz)}
-              style={({ hovered, pressed }: any) => ({
-                width: topicWidth,
-                backgroundColor: pressed ? c.lavender : hovered ? "#fcfaff" : "white",
-                borderWidth: 1,
-                borderColor: hovered ? "#d4c2f4" : c.border,
-                borderRadius: 20,
-                padding: compact ? 16 : 22,
-                gap: 18,
-              })}
-            >
-              <View
-                style={{
-                  flexDirection: "row",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                }}
-              >
-                <View
-                  style={{
-                    width: 44,
-                    height: 44,
-                    borderRadius: 14,
-                    backgroundColor: cat.color + "15",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  <Icon
-                    name={icons[cat.id] || "bulb-outline"}
-                    color={cat.color}
-                    size={23}
-                  />
-                </View>
-                {played ? (
-                  <Icon name="checkmark-circle" size={18} color={c.success} />
-                ) : (
-                  <Icon name="arrow-forward" size={17} color={c.muted} />
-                )}
-              </View>
-              <View>
-                <T style={{ fontFamily: font.semibold, fontSize: 16 }}>
-                  {cat.name}
-                </T>
-                <T style={{ fontSize: 12, color: c.muted, marginTop: 3 }}>
-                  {quiz ? `${quiz.questionCount} questions · ` : ""}
-                  {dailyLabel(quiz, daily.loading, daily.error)}
-                </T>
-              </View>
-            </Pressable>
-          );
+          const action = quiz && !daily.loading && !daily.error && quiz.status === "unplayed"
+            ? `Play · ${quiz.questionCount} questions` : status(quiz);
+          return <Pressable key={cat.id} accessibilityRole="button" accessibilityLabel={`${cat.name}. ${quiz?.title ?? ""}. ${action}${session ? "" : ". Sign in to play"}`} disabled={!authReady || daily.loading || (!quiz && !daily.error)} onPress={() => openQuiz(quiz)} style={({ hovered, pressed }: any) => ({ width: topicWidth, minHeight: compact ? 180 : 188, padding: compact ? 14 : 18, borderWidth: 1, borderColor: hovered ? cat.color : c.border, borderRadius: 18, overflow: "hidden", backgroundColor: pressed ? c.lavender : cat.color + "09" })}>
+            <View pointerEvents="none" accessibilityElementsHidden importantForAccessibility="no-hide-descendants" style={{ position: "absolute", right: -15, top: -12, opacity: 0.07, transform: [{ rotate: "-14deg" }] }}>
+              <Icon name={icons[cat.id] || "bulb-outline"} color={cat.color} size={100} />
+            </View>
+            <Icon name={icons[cat.id] || "bulb-outline"} color={cat.color} size={25} />
+            <T style={{ fontFamily: font.bold, fontSize: compact && cat.name.length > 12 ? 17 : 19, lineHeight: 25, marginTop: 10 }}>{cat.name}</T>
+            <T numberOfLines={2} style={{ fontSize: 12, lineHeight: 17, color: c.muted, marginTop: 4, minHeight: 34 }}>{quiz?.title ?? "A new round is on its way"}</T>
+            <View style={{ flex: 1, minHeight: 12 }} />
+            <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 4, paddingTop: 10, borderTopWidth: 1, borderTopColor: cat.color + "20" }}>
+              <T style={{ flex: 1, fontSize: 11, color: played ? c.success : c.text, fontFamily: font.semibold }}>{action}</T>
+              <Icon name={played ? "checkmark-circle" : session ? "arrow-forward" : "lock-closed-outline"} size={15} color={played ? c.success : cat.color} />
+            </View>
+          </Pressable>;
         })}
       </View>
       {onlyFavorites && favoritesError && <T style={{ color: c.muted }}>Couldn’t load your favorite topics. Open your profile to try again.</T>}
-      {!shown.length && !favoritesError && (
-        <View style={s.empty}>
-          <Icon name="search-outline" size={30} color={c.muted} />
-          <T>No topics found.</T>
-          <Button
-            variant="ghost"
-            onPress={() => {
-              setSearch("");
-              setOnlyFavorites(false);
-            }}
-          >
-            Show all topics
-          </Button>
-        </View>
-      )}
-      <View
-        style={{
-          marginTop: 36,
-          paddingTop: 23,
-          borderTopWidth: 1,
-          borderColor: c.border,
-          alignItems: "center",
-          gap: 5,
-        }}
-      >
-        <T style={{ fontSize: 13, color: c.muted }}>
-          A fresh perspective. One question at a time.
-        </T>
-        <T style={{ fontSize: 11, color: "#928b9d" }}>
-          Daily rounds reset at midnight UTC
-        </T>
-      </View>
+      {!shown.length && !favoritesError && <View style={s.empty}>
+        <Icon name="search-outline" size={30} color={c.muted} /><T>No topics found.</T>
+        <Button variant="ghost" onPress={() => { setSearch(""); setOnlyFavorites(false); }}>Show all topics</Button>
+      </View>}
+      <T style={{ marginTop: 28, fontSize: 11, color: c.muted, textAlign: "center" }}>Daily rounds reset at midnight UTC</T>
     </Page>
   );
 }
